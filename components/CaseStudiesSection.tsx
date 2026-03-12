@@ -160,7 +160,7 @@ export function CaseStudiesSection() {
                         ref={wheelRef}
                         className="absolute left-1/2"
                         style={{
-                            top: "1250px", // Fixed very large radius pivot point below screen
+                            top: "1800px", // Fixed very large radius pivot point below screen
                             width: 0, height: 0
                         }}
                     >
@@ -169,10 +169,10 @@ export function CaseStudiesSection() {
                             return (
                                 <div
                                     key={item.uid}
-                                    className={`carousel-card absolute left-1/2 top-0 w-[360px] h-[480px] -ml-[180px] rounded-[32px] p-8 pb-0 flex flex-col ${item.bg} ${item.color} shadow-2xl overflow-hidden`}
+                                    className={`carousel-card absolute left-1/2 top-0 w-[420px] h-[480px] -ml-[210px] rounded-[32px] p-8 pb-0 flex flex-col ${item.bg} ${item.color} shadow-2xl overflow-hidden`}
                                     style={{
                                         transformOrigin: "50% 0%",
-                                        transform: `rotate(${angle}deg) translateY(-1250px)`,
+                                        transform: `rotate(${angle}deg) translateY(-1800px)`,
                                     }}
                                 >
                                     <div className="flex items-center gap-3 mb-8">
