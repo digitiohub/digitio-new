@@ -30,7 +30,7 @@ export function StatsSection() {
                 stagger: 0.1, // this stagger will make them animate sequentially
                 scrollTrigger: {
                     trigger: sectionRef.current,
-                    start: "top top", // pin when section reaches top
+                    start: "top 5%", // pin slightly below the top of the viewport
                     end: "+=150%", // duration of scroll/pin
                     pin: true,
                     scrub: 1,
