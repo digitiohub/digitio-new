@@ -2,10 +2,6 @@ import Link from "next/link";
 
 const footerGroups = [
   {
-    title: "Pages",
-    links: ["All Products", "Studio", "Clients", "Pricing", "Blog"],
-  },
-  {
     title: "Socials",
     links: ["Facebook", "Instagram", "Twitter", "LinkedIn"],
   },
@@ -35,7 +31,7 @@ export function Footer() {
             </Link>
 
             <p className="mt-6 text-sm text-white/55">
-              © copyright DevStudios 2024. All rights reserved.
+              &copy; Copyright DigitioHub 2026. All rights reserved.
             </p>
           </div>
 
@@ -58,8 +54,8 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="pointer-events-none mt-14 overflow-hidden pt-8">
-          <p className="select-none text-center text-[clamp(5rem,19vw,15rem)] font-bold leading-[0.85] tracking-tight text-transparent bg-clip-text bg-linear-to-b from-white/16 via-white/8 to-transparent">
+        <div className="pointer-events-none mt-12 overflow-hidden px-4 pt-6 sm:mt-14 sm:px-0 sm:pt-8">
+          <p className="select-none whitespace-nowrap text-center text-[clamp(3.5rem,16vw,5rem)] font-bold leading-[0.98] tracking-tight text-transparent bg-clip-text bg-linear-to-b from-white/16 via-white/8 to-transparent sm:text-[clamp(5rem,19vw,15rem)] sm:leading-[0.85]">
             DigitioHub
           </p>
         </div>
