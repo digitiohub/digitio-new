@@ -2,16 +2,17 @@
 
 import { useEffect, useRef } from "react"
 import { ArrowLeft, ArrowRight } from "lucide-react"
+import Image from "next/image"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 const originalCaseStudies = [
-    { id: 1, brand: "Americana Group", title: "Engineered a predictive logistics intelligence core for the QSR giant.", metrics: ["100% increase in dispatch automation", "4X improvement in operational standards"], bg: "bg-[#fefce8]", color: "text-slate-900", imgBg: "bg-black" },
-    { id: 2, brand: "Flynas", title: "Re-engineered the digital passenger journey with an AI-native mobile ecosystem.", metrics: ["AI-driven booking", "Seamless UX restoring digital competitiveness"], bg: "bg-[#ccfbf1]", color: "text-slate-900", imgBg: "bg-teal-900" },
-    { id: 3, brand: "Sonny's Enterprises", title: "Reimagining BBQ digital experience for modern consumers.", metrics: ["Omnichannel approach", "Personalized marketing"], bg: "bg-[#fef0db]", color: "text-slate-900", imgBg: "bg-orange-950" },
-    { id: 4, brand: "KFC", title: "Scaling digital delivery and retail channels globally.", metrics: ["Increased mobile ordering", "Streamlined pickup"], bg: "bg-[#fee2e2]", color: "text-slate-900", imgBg: "bg-red-950" },
-    { id: 5, brand: "Adidas", title: "Scaling global e-commerce with scalable microservices.", metrics: ["2M+ downloads achieved post launch", "New strategic regions"], bg: "bg-[#ecfccb]", color: "text-slate-900", imgBg: "bg-lime-950" },
-    { id: 6, brand: "MyExec", title: "Architected a Multi-Agent GenAI system that functions as an autonomous, high-level consultant.", metrics: ["Agentic RAG framework", "Instant strategic decision-making"], bg: "bg-white", color: "text-slate-900", imgBg: "bg-gray-900" },
+    { id: 1, brand: "IIOLS", image: "/posters/iiols.png" },
+    { id: 2, brand: "Cherries Peaches", image: "/posters/cherries.png" },
+    { id: 3, brand: "GaavBazaar", image: "/posters/gaavbazaar.png" },
+    { id: 4, brand: "Real Estate Picture", image: "/posters/real-estate-pictures.png" },
+    { id: 5, brand: "Sajeev Krushi", image: "/posters/sajeev-krushi.png" },
+    { id: 6, brand: "ProMeat", image: "/posters/promeat.png" },
 ]
 
 // 3 copies = 18 items. 360 / 18 = 20 degrees difference
@@ -38,7 +39,6 @@ export function CaseStudiesSection() {
         let animationFrameId: number;
 
         const render = (time: number) => {
-            const dt = time - lastTime.current;
             lastTime.current = time;
 
             if (!isDragging.current) {
@@ -142,7 +142,7 @@ export function CaseStudiesSection() {
             {/* Drag Area wrapper */}
             <div
                 ref={dragAreaRef}
-                className="relative w-full h-[650px] mt-10 shrink-0 cursor-grab active:cursor-grabbing touch-pan-y select-none z-10 hidden sm:block"
+                className="relative w-screen h-280 -mx-[calc((100vw-100%)/2)] mt-10 shrink-0 cursor-grab active:cursor-grabbing touch-pan-y select-none z-10 hidden sm:block overflow-hidden"
                 onPointerDown={handlePointerDown}
                 onPointerMove={handlePointerMove}
                 onPointerUp={handlePointerUp}
@@ -160,7 +160,7 @@ export function CaseStudiesSection() {
                         ref={wheelRef}
                         className="absolute left-1/2"
                         style={{
-                            top: "1800px", // Fixed very large radius pivot point below screen
+                            top: "1200px", // Radius/pivot tuned to avoid clipping
                             width: 0, height: 0
                         }}
                     >
@@ -169,30 +169,24 @@ export function CaseStudiesSection() {
                             return (
                                 <div
                                     key={item.uid}
-                                    className={`carousel-card absolute left-1/2 top-0 w-[420px] h-[480px] -ml-[210px] rounded-[32px] p-8 pb-0 flex flex-col ${item.bg} ${item.color} shadow-2xl overflow-hidden`}
+                                    className={`carousel-card absolute rounded-[12px] overflow-hidden shadow-2xl`}
                                     style={{
+                                        width: '340px',
+                                        height: '420px',
+                                        left: '50%',
+                                        marginLeft: '-170px',
+                                        top: 0,
                                         transformOrigin: "50% 0%",
-                                        transform: `rotate(${angle}deg) translateY(-1800px)`,
+                                        transform: `rotate(${angle}deg) translateY(-1200px)`,
                                     }}
                                 >
-                                    <div className="flex items-center gap-3 mb-8">
-                                        <div className={`px-4 py-1.5 rounded-full text-sm font-semibold shadow-sm bg-white/80 backdrop-blur-md`}>
-                                            {item.brand}
-                                        </div>
-                                    </div>
-                                    <h3 className="text-[22px] font-bold leading-snug mb-8">
-                                        {item.title}
-                                    </h3>
-
-                                    <div className="grid grid-cols-2 gap-4 mb-8">
-                                        <div className="text-sm font-medium pr-4 leading-relaxed opacity-80">{item.metrics[0]}</div>
-                                        <div className="text-sm font-medium leading-relaxed opacity-80">{item.metrics[1]}</div>
-                                    </div>
-
-                                    <div className={`grow w-full rounded-t-3xl mt-auto ${item.imgBg} relative ring-1 ring-black/5`}>
-                                        {/* Mock image content space */}
-                                        <div className="absolute inset-x-8 -bottom-10 h-40 bg-white/10 rounded-[2rem] border border-white/20 backdrop-blur-md shadow-inner"></div>
-                                    </div>
+                                    <Image
+                                        src={item.image}
+                                        alt={item.brand}
+                                        fill
+                                        className="object-cover"
+                                        sizes="420px"
+                                    />
                                 </div>
                             )
                         })}
@@ -205,24 +199,19 @@ export function CaseStudiesSection() {
                 {originalCaseStudies.map((item, i) => (
                     <div
                         key={i}
-                        className={`min-w-[85vw] h-[450px] rounded-3xl p-6 pb-0 flex flex-col ${item.bg} ${item.color} shrink-0 snap-center relative overflow-hidden`}
+                        className={`rounded-3xl shrink-0 snap-center relative overflow-hidden`}
+                        style={{
+                            minWidth: '85vw',
+                            height: '450px',
+                        }}
                     >
-                        <div className="flex items-center gap-3 mb-6">
-                            <div className={`px-3 py-1 rounded-full text-xs font-semibold shadow-sm bg-white/80 backdrop-blur-md`}>
-                                {item.brand}
-                            </div>
-                        </div>
-                        <h3 className="text-lg font-bold leading-snug mb-6">
-                            {item.title}
-                        </h3>
-
-                        <div className="grid grid-cols-2 gap-2 mb-6">
-                            <div className="text-xs font-medium pr-2 leading-relaxed opacity-80">{item.metrics[0]}</div>
-                            <div className="text-xs font-medium leading-relaxed opacity-80">{item.metrics[1]}</div>
-                        </div>
-
-                        <div className={`grow w-full rounded-t-2xl mt-auto ${item.imgBg} relative ring-1 ring-black/5`}>
-                        </div>
+                        <Image
+                            src={item.image}
+                            alt={item.brand}
+                            fill
+                            className="object-cover"
+                            sizes="85vw"
+                        />
                     </div>
                 ))}
             </div>
@@ -233,7 +222,7 @@ export function CaseStudiesSection() {
 
                     {/* Decorative Background Elements (Glass Pillars forming a bar chart) */}
                     <div className="absolute right-0 bottom-0 top-0 w-full lg:w-1/2 overflow-hidden pointer-events-none flex items-end justify-end opacity-30 lg:opacity-60">
-                        <div className="flex items-end h-[85%] mb-[-10px] gap-2 lg:gap-4 pr-10 md:pr-16 translate-x-12">
+                        <div className="flex items-end h-[85%] -mb-2.5 gap-2 lg:gap-4 pr-10 md:pr-16 translate-x-12">
                             <div className="w-12 md:w-16 h-[30%] bg-linear-to-t from-blue-400/20 to-blue-300/40 backdrop-blur-md border border-white/30 rounded-t border-b-0 skew-x-[-15deg]"></div>
                             <div className="w-14 md:w-20 h-[50%] bg-linear-to-t from-blue-500/30 to-blue-400/50 backdrop-blur-md border border-white/30 rounded-t border-b-0 skew-x-[-15deg] z-10 -ml-8 lg:-ml-12"></div>
                             <div className="w-16 md:w-24 h-[70%] bg-linear-to-t from-blue-400/30 to-blue-200/60 backdrop-blur-xl border border-white/40 rounded-t border-b-0 skew-x-[-15deg] z-20 -ml-8 lg:-ml-12"></div>
@@ -248,8 +237,8 @@ export function CaseStudiesSection() {
                     {/* CTA Content */}
                     <div className="relative z-10 max-w-2xl text-left w-full flex flex-col items-start">
                         <h3 className="text-2xl md:text-3xl lg:text-[40px] font-normal mb-8 leading-tight tracking-tight w-full">
-                            You've seen how we helped <br className="hidden lg:block" />
-                            <span className="font-bold">Americana, Sonny's,</span> and <span className="font-bold">Adidas</span> <br className="hidden lg:block" />
+                            You&apos;ve seen how we helped <br className="hidden lg:block" />
+                            <span className="font-bold">IIOLS, GaavBazaar,</span> and <span className="font-bold">ProMeat</span> <br className="hidden lg:block" />
                             reclaim their market edge.
                         </h3>
                         <p className="text-gray-300 text-sm md:text-base mb-10 max-w-xl leading-relaxed font-light">
