@@ -30,8 +30,8 @@ export function Navbar() {
         >
             <div className="flex items-center gap-2">
                 {/* Placeholder Logo */}
-                <div className="w-8 h-8 bg-black rounded-lg"></div>
-                <span className="font-bold text-xl tracking-tight">Appinventiv</span>
+                <div className="w-8 h-8 rounded-lg bg-black text-white flex items-center justify-center">D</div>
+                <span className="font-bold text-xl tracking-tight">DigitioHub</span>
             </div>
 
             <nav className="hidden md:flex items-center gap-8 font-medium text-sm">
