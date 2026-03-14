@@ -120,7 +120,7 @@ export function CaseStudiesSection() {
             {/* Header Content & Nav Pills */}
             <div className="container mx-auto px-6 shrink-0 relative z-20 flex flex-col items-center text-center">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight max-w-2xl mb-12">
-                    Innovation, Engineered by Appinventiv
+                    Innovation, Engineered by DigitioHub
                 </h2>
 
                 {/* Navigation Pills */}

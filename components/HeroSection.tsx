@@ -50,7 +50,7 @@ export function HeroSection() {
                             variants={textVariants}
                             className="text-lg md:text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed"
                         >
-                            Appinventiv engineers secure, scalable digital systems by combining strong architecture, data engineering, and AI capabilities, helping organizations move from strategy to reliable systems in production.
+                            DigitioHub engineers secure, scalable digital systems by combining strong architecture, data engineering, and AI capabilities, helping organizations move from strategy to reliable systems in production.
                         </motion.p>
 
                         <motion.div variants={textVariants} className="flex flex-col sm:flex-row items-center justify-center gap-4">

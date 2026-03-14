@@ -9,23 +9,23 @@ import {
 
 const faqs = [
     {
-        question: "How does Appinventiv ensure the ethical and responsible use of AI?",
+        question: "How does DigitioHub ensure the ethical and responsible use of AI?",
         answer: "We ensure ethical AI by embedding governance, transparency, and fairness into our development lifecycle. Our models are continuously monitored for bias, and we adhere to stringent data privacy regulations.",
     },
     {
-        question: "How does Appinventiv company leverage AI in business and enterprise solutions?",
+        question: "How does DigitioHub company leverage AI in business and enterprise solutions?",
         answer: "We integrate AI into core enterprise workflows—enhancing decision-making, automating repetitive tasks via Agentic AI, and creating intelligent internal knowledge bases using Generative AI.",
     },
     {
-        question: "What types of digital products and services does Appinventiv offer?",
+        question: "What types of digital products and services does DigitioHub offer?",
         answer: "Our services span comprehensive digital product engineering, including cloud modernization, AI/ML integrations, IoT ecosystems, computer vision automation, and enterprise cybersecurity framing.",
     },
     {
-        question: "How does Appinventiv approach digital transformation for modern and legacy enterprises?",
+        question: "How does DigitioHub approach digital transformation for modern and legacy enterprises?",
         answer: "We don't do lift-and-shift. We rethink architectures, slowly decoupling monolithic legacy systems into secure, scalable, and resilient microservices capable of integrating modern AI.",
     },
     {
-        question: "How does Appinventiv ensure the security and quality of the software they develop?",
+        question: "How does DigitioHub ensure the security and quality of the software they develop?",
         answer: "Security and quality are baked into every sprint through secure coding standards, code reviews, continuous testing, and compliance-driven delivery practices.",
     },
     {
@@ -33,7 +33,7 @@ const faqs = [
         answer: "Project scope, platform complexity, integrations, and compliance needs define the final cost and timeline. We provide a phased estimate after a detailed discovery workshop.",
     },
     {
-        question: "Why choose Appinventiv as your digital product engineering company?",
+        question: "Why choose DigitioHub as your digital product engineering company?",
         answer: "We combine product strategy, engineering depth, and AI-first delivery to help enterprises launch faster, scale safely, and build long-term technology value.",
     },
     {
