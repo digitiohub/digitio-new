@@ -142,7 +142,7 @@ export function CaseStudiesSection() {
             {/* Drag Area wrapper */}
             <div
                 ref={dragAreaRef}
-                className="relative w-screen h-280 -mx-[calc((100vw-100%)/2)] mt-10 shrink-0 cursor-grab active:cursor-grabbing touch-pan-y select-none z-10 hidden sm:block overflow-hidden"
+                className="relative w-screen h-180 -mx-[calc((100vw-100%)/2)] mt-10 shrink-0 cursor-grab active:cursor-grabbing touch-pan-y select-none z-10 hidden sm:block overflow-hidden"
                 onPointerDown={handlePointerDown}
                 onPointerMove={handlePointerMove}
                 onPointerUp={handlePointerUp}
