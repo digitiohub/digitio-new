@@ -9,10 +9,11 @@ const footerGroups = [
     title: "Legal",
     links: ["Privacy Policy", "Terms of Service", "Cookie Policy"],
   },
-  {
-    title: "Register",
-    links: ["Sign Up", "Login", "Forgot Password"],
-  },
+];
+
+const contactInfo = [
+  { label: "Email", value: "info@digitiohub.com" },
+  { label: "Phone", value: "+1 234 567 8901" },
 ];
 
 export function Footer() {
@@ -20,38 +21,60 @@ export function Footer() {
     <footer className="relative overflow-hidden bg-black text-white">
       <div className="absolute inset-x-0 top-0 h-px bg-white/10" />
 
+
       <div className="relative mx-auto w-full max-w-7xl px-6 pb-14 pt-20 sm:px-8 lg:px-12 lg:pt-24">
-        <div className="grid gap-14 md:grid-cols-2 lg:grid-cols-5 lg:gap-10">
-          <div className="lg:col-span-1">
+        {/* Desktop: flex, links right, contact info far right; Mobile: stacked */}
+        <div className="grid gap-10 lg:grid-cols-3">
+          {/* Brand & copyright */}
+          <div>
             <Link href="#" className="inline-flex items-center gap-3">
               <span className="grid h-8 w-8 place-items-center rounded-md bg-white text-black">
                 <span className="text-base font-black leading-none">D</span>
               </span>
               <span className="text-xl font-semibold tracking-tight">DigitioHub</span>
             </Link>
-
             <p className="mt-6 text-sm text-white/55">
               &copy; Copyright DigitioHub 2026. All rights reserved.
             </p>
+            {/* Mobile: add gap before links */}
+            <div className="block lg:hidden h-6" />
           </div>
 
-          {footerGroups.map((group) => (
-            <div key={group.title} className="space-y-4">
-              <h3 className="text-base font-semibold tracking-tight text-white/95">{group.title}</h3>
-              <ul className="space-y-3">
-                {group.links.map((item) => (
-                  <li key={item}>
-                    <Link
-                      href="#"
-                      className="text-[15px] text-white/70 transition-colors duration-200 hover:text-white"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+          {/* Socials & Legal: 2-col grid on mobile, side-by-side on desktop */}
+          <div>
+            <div className="grid grid-cols-2 gap-8 lg:grid-cols-2 lg:gap-8">
+              {footerGroups.map((group) => (
+                <div key={group.title} className="space-y-4">
+                  <h3 className="text-base font-semibold tracking-tight text-white/95">{group.title}</h3>
+                  <ul className="space-y-3">
+                    {group.links.map((item) => (
+                      <li key={item}>
+                        <Link
+                          href="#"
+                          className="text-[15px] text-white/70 transition-colors duration-200 hover:text-white"
+                        >
+                          {item}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          {/* Contact info: Desktop right, Mobile below */}
+          <div className="mt-10 lg:mt-0 lg:text-right">
+            <div className="space-y-2">
+              <h3 className="text-base font-semibold tracking-tight text-white/95 mb-2">Contact</h3>
+              {contactInfo.map((info) => (
+                <div key={info.label} className="text-[15px] text-white/70">
+                  <span className="font-medium mr-2">{info.label}:</span>
+                  <span>{info.value}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="pointer-events-none mt-12 overflow-hidden px-4 pt-6 sm:mt-14 sm:px-0 sm:pt-8">
