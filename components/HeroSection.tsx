@@ -22,7 +22,8 @@ export function HeroSection() {
     const videoHeight = useTransform(smoothProgress, [0, 1], ["calc(45vw * 9/16)", "100vh"])
     const videoRight = useTransform(smoothProgress, [0, 0.6], ["40px", "0px"])
     const videoBottom = useTransform(smoothProgress, [0, 0.6], ["40px", "0px"])
-    const videoBorderRadius = useTransform(smoothProgress, [0, 0.8], ["24px", "0px"])
+    const videoBorderRadius = useTransform(smoothProgress, [0, 0.8], ["24px", "42px"])
+    const videoPadding = useTransform(smoothProgress, [0, 1], ["0px", "42px"])
     const videoScale = useTransform(smoothProgress, [0, 1], [1, 1.05])
 
     // Text fades out as video takes over
@@ -104,27 +105,32 @@ export function HeroSection() {
 
                     {/* ── Video card — anchored bottom-right, zooms to fill ── */}
                     <motion.div
-                        className="absolute z-20 overflow-hidden"
+                        className="absolute z-20"
                         style={{
                             width: videoWidth,
                             height: videoHeight,
-                            borderRadius: videoBorderRadius,
                             right: videoRight,
                             bottom: videoBottom,
+                            padding: videoPadding,
                         }}
                     >
-                        <motion.video
-                            ref={videoRef}
-                            src="/media/digitiohub.mp4"
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            className="w-full h-full object-cover"
-                            style={{ scale: videoScale }}
-                        />
-                        {/* Subtle gradient overlay */}
-                        <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+                        <motion.div 
+                            className="w-full h-full relative overflow-hidden"
+                            style={{ borderRadius: videoBorderRadius }}
+                        >
+                            <motion.video
+                                ref={videoRef}
+                                src="/media/digitiohub.mp4"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                className="absolute inset-0 w-full h-full object-cover"
+                                style={{ scale: videoScale }}
+                            />
+                            {/* Subtle gradient overlay */}
+                            <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+                        </motion.div>
                     </motion.div>
 
                     {/* Ambient background glow */}
