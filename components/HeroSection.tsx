@@ -145,7 +145,7 @@ export function HeroSection() {
                     <h1 className="text-white font-bold leading-[1.05] tracking-tight text-5xl">
                         We build the systems your <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-400">next decade</span> runs on.
                     </h1>
-                    <p className="text-white/50 text-base leading-relaxed mt-6">
+                    <p className="text-white/50 text-xl leading-relaxed mt-12">
                         Secure, scalable digital infrastructure engineered from strategy to production—without compromise.
                     </p>
                     <div className="flex items-center gap-4 mt-8">
@@ -159,15 +159,17 @@ export function HeroSection() {
                 </div>
 
                 {/* Video */}
-                <div className="rounded-2xl overflow-hidden w-full flex-1 relative min-h-0">
-                    <video
-                        src="/media/digitiohub.mp4"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="absolute inset-0 w-full h-full object-cover"
-                    />
+                <div className="flex-1 w-full min-h-0 flex flex-col justify-end">
+                    <div className="rounded-2xl overflow-hidden w-full aspect-video relative shrink-0">
+                        <video
+                            src="/media/digitiohub.mp4"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
                 </div>
             </section>
         </div>
