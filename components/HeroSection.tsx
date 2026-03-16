@@ -18,8 +18,8 @@ export function HeroSection() {
     const smoothProgress = useSpring(scrollYProgress, { stiffness: 60, damping: 20, mass: 0.5 })
 
     // Video container: starts as a 16:9 block bottom-right with gaps, grows to full screen
-    const videoWidth = useTransform(smoothProgress, [0, 1], ["45vw", "100%"])
-    const videoHeight = useTransform(smoothProgress, [0, 1], ["calc(45vw * 9/16)", "100%"])
+    const videoWidth = useTransform(smoothProgress, [0, 1], ["45vw", "100vw"])
+    const videoHeight = useTransform(smoothProgress, [0, 1], ["calc(45vw * 9/16)", "100vh"])
     const videoRight = useTransform(smoothProgress, [0, 0.6], ["40px", "0px"])
     const videoBottom = useTransform(smoothProgress, [0, 0.6], ["40px", "0px"])
     const videoBorderRadius = useTransform(smoothProgress, [0, 0.8], ["24px", "0px"])
