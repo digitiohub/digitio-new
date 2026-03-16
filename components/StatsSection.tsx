@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { RefreshCcw, Code, Grid, Database } from "lucide-react"
+import { TextAnimate } from "@/components/ui/text-animate"
 
 export function StatsSection() {
     const sectionRef = useRef<HTMLElement>(null)
@@ -79,9 +80,9 @@ export function StatsSection() {
             <section className="bg-zinc-50 relative z-10 w-full md:hidden pt-16 pb-12">
                 <div className="container mx-auto px-6 mb-8">
                     <div className="max-w-2xl">
-                        <p className="text-2xl font-bold tracking-tight text-slate-900 leading-tight">
+                        <TextAnimate animation="slideLeft" by="character" as="p" className="text-2xl font-bold tracking-tight text-slate-900 leading-tight">
                             Beyond Development. We Deliver Transformation.
-                        </p>
+                        </TextAnimate>
                     </div>
                 </div>
 
@@ -111,9 +112,9 @@ export function StatsSection() {
             >
                 <div className="container mx-auto px-6 mb-12 shrink-0">
                     <div className="max-w-4xl mx-auto text-center">
-                        <p className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
-                            Beyond Development. <br /> We Deliver Transformation.
-                        </p>
+                        <TextAnimate animation="slideLeft" by="character" as="p" className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
+                            {"Beyond Development.\nWe Deliver Transformation."}
+                        </TextAnimate>
                     </div>
                 </div>
 

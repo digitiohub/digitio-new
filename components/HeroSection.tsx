@@ -3,6 +3,7 @@
 import { useRef, useEffect } from "react"
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 import { ArrowRight, ArrowUpRight } from "lucide-react"
+import { TextAnimate } from "@/components/ui/text-animate"
 
 export function HeroSection() {
     const sectionRef = useRef<HTMLDivElement>(null)
@@ -71,7 +72,12 @@ export function HeroSection() {
                                 className="text-white font-bold leading-[1.02] tracking-tight"
                                 style={{ fontSize: "clamp(3rem, 5.5vw, 5.5rem)" }}
                             >
-                                We build the systems <br/> your <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-400">next decade</span> <br/> runs on.
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block mr-[0.25em]">We build the systems</TextAnimate>
+                                <br/>
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block mr-[0.25em]">your</TextAnimate>
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-400 mr-[0.25em]">next decade</TextAnimate>
+                                <br/>
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block">runs on.</TextAnimate>
                             </motion.h1>
                         </div>
 
@@ -149,7 +155,9 @@ export function HeroSection() {
                         Digital Product Engineering
                     </span>
                     <h1 className="text-white font-bold leading-[1.05] tracking-tight text-5xl">
-                        We build the systems your <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-400">next decade</span> runs on.
+                        <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block mr-[0.2em]">We build the systems your</TextAnimate>
+                        <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-400 mr-[0.2em]">next decade</TextAnimate>
+                        <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block">runs on.</TextAnimate>
                     </h1>
                     <p className="text-white/50 text-xl leading-relaxed mt-12">
                         Secure, scalable digital infrastructure engineered from strategy to production—without compromise.

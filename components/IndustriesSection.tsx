@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Building2, Landmark, Truck, Stethoscope, Factory } from "lucide-react"
+import { TextAnimate } from "@/components/ui/text-animate"
 
 const industries = [
     { icon: Building2, name: "FinTech" },
@@ -16,9 +17,9 @@ export function IndustriesSection() {
         <section className="py-24 bg-white">
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-4">
-                        Solving Complex Challenges Across Every Major Sector
-                    </h2>
+                    <TextAnimate animation="slideLeft" by="character" as="h2" className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-4">
+                        {`Solving Complex Challenges\nAcross Every Major Sector`}
+                    </TextAnimate>
                     <p className="text-gray-600 text-lg">
                         We adapt proven technology patterns to the specific operational constraints of regulated, data-intensive industries.
                     </p>

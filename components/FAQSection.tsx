@@ -6,6 +6,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+import { TextAnimate } from "@/components/ui/text-animate"
 
 const faqs = [
     {
@@ -55,9 +56,9 @@ export function FAQSection() {
         <section className="border-t border-slate-900/40 bg-black py-24 text-white">
             <div className="container mx-auto px-6">
                 <div className="mb-14 text-center">
-                    <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-5xl">
+                    <TextAnimate animation="slideLeft" by="character" as="h2" className="mb-4 text-3xl font-bold tracking-tight md:text-5xl">
                         Frequently Asked Questions
-                    </h2>
+                    </TextAnimate>
                     <p className="mx-auto max-w-3xl text-base text-slate-300 md:text-lg">
                         Everything you need to know about our engineering process and enterprise solutions.
                     </p>

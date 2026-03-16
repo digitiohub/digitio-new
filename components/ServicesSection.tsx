@@ -16,6 +16,7 @@ import {
     Glasses,
     Link
 } from "lucide-react"
+import { TextAnimate } from "@/components/ui/text-animate"
 
 const services = [
     { icon: Bot, title: "Artificial Intelligence", desc: "AI only creates value when it fits into how an organization actually works. We help enterprises apply intelligence in ways that improve decisions, reduce manual effort, and support operations at scale.", link: "#" },
@@ -61,10 +62,9 @@ export function ServicesSection() {
         <section ref={containerRef} className="py-24 bg-slate-50 border-t border-gray-100 relative">
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-6">
-                        Deep Technical Expertise, <br className="hidden md:block" />
-                        Supporting Modern Systems
-                    </h2>
+                    <TextAnimate animation="slideLeft" by="character" as="h2" className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-6">
+                        {"Deep Technical Expertise,\nSupporting Modern Systems"}
+                    </TextAnimate>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

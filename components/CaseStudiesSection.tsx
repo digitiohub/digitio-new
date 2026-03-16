@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { TextAnimate } from "@/components/ui/text-animate"
 
 const originalCaseStudies = [
     { id: 1, brand: "IIOLS", image: "/posters/iiols.png" },
@@ -119,9 +120,9 @@ export function CaseStudiesSection() {
 
             {/* Header Content & Nav Pills */}
             <div className="container mx-auto px-6 shrink-0 relative z-20 flex flex-col items-center text-center">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight max-w-2xl mb-12">
-                    Innovation, Engineered by DigitioHub
-                </h2>
+                <TextAnimate animation="slideLeft" by="character" as="h2" className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight max-w-2xl mb-12">
+                    {`Innovation, Engineered\nby DigitioHub`}
+                </TextAnimate>
 
                 {/* Navigation Pills */}
                 <div className="flex flex-wrap justify-center items-center gap-2 lg:gap-3">
