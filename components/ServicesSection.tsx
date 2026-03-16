@@ -67,9 +67,9 @@ export function ServicesSection() {
                             <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.3em]">Deep Technical Expertise,</TextAnimate>
                         </div>
                         <div className="flex flex-wrap items-center">
-                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.3em]">Supporting</TextAnimate>
-                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.3em]">Modern</TextAnimate>
-                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Systems</TextAnimate>
+                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">
+                                Supporting Modern Systems
+                            </TextAnimate>
                         </div>
                     </h2>
                 </div>

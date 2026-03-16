@@ -42,7 +42,14 @@ export function HeroSection() {
                             </div>
                             <div className="flex flex-wrap items-center">
                                 <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.3em]">your</TextAnimate>
-                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-400 whitespace-nowrap">next decade</TextAnimate>
+                                <TextAnimate 
+                                    animation="slideLeft" 
+                                    by="character" 
+                                    as="span"
+                                    className="inline-block text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-400 whitespace-nowrap"
+                                >
+                                    next decade
+                                </TextAnimate>
                             </div>
                             <div className="flex flex-wrap items-center">
                                 <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">runs on.</TextAnimate>

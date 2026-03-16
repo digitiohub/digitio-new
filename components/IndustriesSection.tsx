@@ -22,9 +22,9 @@ export function IndustriesSection() {
                             <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.25em]">Solving Complex Challenges</TextAnimate>
                         </div>
                         <div className="flex flex-wrap justify-center items-center">
-                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.25em]">Across Every</TextAnimate>
-                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.25em]">Major</TextAnimate>
-                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Sector</TextAnimate>
+                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">
+                                Across Every Major Sector
+                            </TextAnimate>
                         </div>
                     </h2>
                     <p className="text-gray-600 text-lg">

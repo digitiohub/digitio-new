@@ -57,8 +57,9 @@ export function FAQSection() {
             <div className="container mx-auto px-6">
                 <div className="mb-14 text-center">
                     <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-5xl">
-                        <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.2em]">Frequently Asked</TextAnimate>
-                        <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Questions</TextAnimate>
+                        <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">
+                            Frequently Asked Questions
+                        </TextAnimate>
                     </h2>
                     <p className="mx-auto max-w-3xl text-base text-slate-300 md:text-lg">
                         Everything you need to know about our engineering process and enterprise solutions.
