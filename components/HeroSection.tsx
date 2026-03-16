@@ -52,7 +52,7 @@ export function HeroSection() {
                         className="absolute inset-0 z-10 flex flex-col justify-between px-10 py-10 pointer-events-none"
                     >
                         {/* Headline — top area */}
-                        <div className="pt-24 max-w-[55%]">
+                        <div className="pt-24 max-w-[85%]">
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -67,12 +67,10 @@ export function HeroSection() {
                                 initial={{ opacity: 0, y: 50 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-                                className="text-white font-bold leading-[1.02] tracking-tight"
+                                className="text-white/70 font-bold leading-[1.02] tracking-tight"
                                 style={{ fontSize: "clamp(3rem, 5.5vw, 5.5rem)" }}
                             >
-                                We build systems<br />
-                                your next decade<br />
-                                <span className="text-white/30">runs on.</span>
+                                We build the systems <br/> your <span className="text-white">next decade</span> <br/> runs on.
                             </motion.h1>
                         </div>
 
@@ -163,7 +161,7 @@ export function HeroSection() {
                 </div>
 
                 {/* Video */}
-                <div className="rounded-2xl overflow-hidden w-full aspect-video shrink-0">
+                <div className="rounded-2xl overflow-hidden w-full flex-1 relative">
                     <video
                         src="/media/digitiohub.mp4"
                         autoPlay
