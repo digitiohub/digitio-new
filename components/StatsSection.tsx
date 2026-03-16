@@ -80,9 +80,10 @@ export function StatsSection() {
             <section className="bg-zinc-50 relative z-10 w-full md:hidden pt-16 pb-12">
                 <div className="container mx-auto px-6 mb-8">
                     <div className="max-w-2xl">
-                        <TextAnimate animation="slideLeft" by="character" as="p" className="text-2xl font-bold tracking-tight text-slate-900 leading-tight">
-                            Beyond Development. We Deliver Transformation.
-                        </TextAnimate>
+                        <h2 className="text-2xl font-bold tracking-tight text-slate-900 leading-tight">
+                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.2em]">Beyond Development.</TextAnimate>
+                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">We Deliver Transformation.</TextAnimate>
+                        </h2>
                     </div>
                 </div>
 

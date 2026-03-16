@@ -62,9 +62,16 @@ export function ServicesSection() {
         <section ref={containerRef} className="py-24 bg-slate-50 border-t border-gray-100 relative">
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mb-16">
-                    <TextAnimate animation="slideLeft" by="character" as="h2" className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-6">
-                        {"Deep Technical Expertise,\nSupporting Modern Systems"}
-                    </TextAnimate>
+                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-6">
+                        <div className="flex flex-wrap items-center">
+                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.3em]">Deep Technical Expertise,</TextAnimate>
+                        </div>
+                        <div className="flex flex-wrap items-center">
+                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.3em]">Supporting</TextAnimate>
+                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.3em]">Modern</TextAnimate>
+                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Systems</TextAnimate>
+                        </div>
+                    </h2>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

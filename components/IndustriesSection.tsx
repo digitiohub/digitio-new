@@ -17,9 +17,16 @@ export function IndustriesSection() {
         <section className="py-24 bg-white">
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <TextAnimate animation="slideLeft" by="character" as="h2" className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-4">
-                        {`Solving Complex Challenges\nAcross Every Major Sector`}
-                    </TextAnimate>
+                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-4">
+                        <div className="flex flex-wrap justify-center items-center">
+                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.25em]">Solving Complex Challenges</TextAnimate>
+                        </div>
+                        <div className="flex flex-wrap justify-center items-center">
+                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.25em]">Across Every</TextAnimate>
+                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.25em]">Major</TextAnimate>
+                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Sector</TextAnimate>
+                        </div>
+                    </h2>
                     <p className="text-gray-600 text-lg">
                         We adapt proven technology patterns to the specific operational constraints of regulated, data-intensive industries.
                     </p>
