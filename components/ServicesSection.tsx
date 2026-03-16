@@ -63,13 +63,28 @@ export function ServicesSection() {
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-6">
-                        <div className="flex flex-wrap items-center">
-                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.3em]">Deep Technical Expertise,</TextAnimate>
+                        {/* Desktop version: Keeps original line breaks */}
+                        <div className="hidden md:block">
+                            <div className="flex flex-wrap items-center">
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.3em]">Deep Technical Expertise,</TextAnimate>
+                            </div>
+                            <div className="flex flex-wrap items-center">
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">
+                                    Supporting Modern Systems
+                                </TextAnimate>
+                            </div>
                         </div>
-                        <div className="flex flex-wrap items-center">
-                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">
-                                Supporting Modern Systems
-                            </TextAnimate>
+                        {/* Mobile version: Breaks after "Supporting" */}
+                        <div className="block md:hidden">
+                            <div className="flex flex-wrap justify-center items-center gap-x-[0.3em]">
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Deep Technical Expertise,</TextAnimate>
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Supporting</TextAnimate>
+                            </div>
+                            <div className="flex flex-wrap justify-center items-center">
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">
+                                    Modern Systems
+                                </TextAnimate>
+                            </div>
                         </div>
                     </h2>
                 </div>

@@ -79,10 +79,14 @@ export function StatsSection() {
             {/* Mobile / tablet layout: simple stacked cards, no GSAP, no pinning */}
             <section className="bg-zinc-50 relative z-10 w-full md:hidden pt-16 pb-12">
                 <div className="container mx-auto px-6 mb-8">
-                    <div className="max-w-2xl">
-                        <h2 className="text-2xl font-bold tracking-tight text-slate-900 leading-tight">
-                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.2em]">Beyond Development.</TextAnimate>
-                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">We Deliver Transformation.</TextAnimate>
+                    <div className="max-w-2xl mx-auto flex flex-col items-center text-center">
+                        <h2 className="text-3xl font-bold tracking-tight text-slate-900 leading-tight">
+                            <div className="flex flex-wrap justify-center items-center gap-x-[0.25em]">
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Beyond Development.</TextAnimate>
+                            </div>
+                            <div className="flex flex-wrap justify-center items-center gap-x-[0.25em]">
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">We Deliver Transformation.</TextAnimate>
+                            </div>
                         </h2>
                     </div>
                 </div>
@@ -112,10 +116,15 @@ export function StatsSection() {
                 className="bg-zinc-50 relative z-10 w-full overflow-hidden hidden md:flex h-screen flex-col pt-24 pb-8"
             >
                 <div className="container mx-auto px-6 mb-12 shrink-0">
-                    <div className="max-w-4xl mx-auto text-center">
-                        <TextAnimate animation="slideLeft" by="character" as="p" className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
-                            {"Beyond Development.\nWe Deliver Transformation."}
-                        </TextAnimate>
+                    <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
+                        <div className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
+                            <div className="flex flex-wrap justify-center items-center gap-x-[0.25em]">
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Beyond Development.</TextAnimate>
+                            </div>
+                            <div className="flex flex-wrap justify-center items-center gap-x-[0.25em]">
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">We Deliver Transformation.</TextAnimate>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

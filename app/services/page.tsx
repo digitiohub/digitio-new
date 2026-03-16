@@ -4,6 +4,9 @@ import React from "react"
 import { motion } from "framer-motion"
 import servicesData from "@/data/services.json"
 import { ServiceCard, ServiceType } from "@/components/service-card"
+import { Spotlight } from "@/components/ui/spotlight-new"
+import { Particles } from "@/components/ui/particles"
+import { TextAnimate } from "@/components/ui/text-animate"
 
 
 // Ensures correct typings
@@ -12,10 +15,11 @@ const services: ServiceType[] = servicesData as ServiceType[]
 export default function ServicesPage() {
   return (
     <>      
-      <main className="relative">
+      <main className="relative bg-[#0a0a0a]">
+        <Spotlight />
         {/* Hero Section */}
-        <section className="relative overflow-hidden h-screen flex flex-col items-center justify-center pt-24 pb-16">
-          <div className="container mx-auto px-4 md:px-6 relative z-10 w-full mt-10 md:mt-16">
+        <section className="relative overflow-hidden min-h-[80vh] flex flex-col items-center justify-center pt-24 md:pt-32 pb-16">
+          <div className="container mx-auto px-4 md:px-6 relative z-10 w-full">
             <div className="max-w-4xl mx-auto text-center">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95, y: 20 }}
@@ -29,37 +33,36 @@ export default function ServicesPage() {
                 </span>
                 Our Expertise
               </motion.div>
-              <motion.h1 
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight mb-8 leading-[1.05] text-transparent bg-clip-text bg-linear-to-b from-white via-white/90 to-white/40"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-              >
-                Transforming Ideas into <br className="hidden md:block" />
-                <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-indigo-400 to-purple-400 drop-shadow-[0_0_40px_rgba(99,102,241,0.4)]">Digital Excellence</span>
-              </motion.h1>
+              
+              <div className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight mb-8 leading-[1.1] text-white">
+                <TextAnimate animation="slideLeft" by="word" as="h1">
+                  Transforming Ideas into
+                </TextAnimate>
+                <div className="mt-2">
+                  <TextAnimate 
+                    animation="slideLeft" 
+                    by="word" 
+                    as="span"
+                    className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-indigo-400 to-purple-400 drop-shadow-[0_0_40px_rgba(99,102,241,0.4)]"
+                  >
+                    Digital Excellence
+                  </TextAnimate>
+                </div>
+              </div>
+
               <motion.p 
-                className="text-lg sm:text-xl md:text-2xl text-white/60 max-w-3xl mx-auto leading-relaxed font-light mb-12"
+                className="text-sm sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed font-light mb-12 px-4"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
               >
                 We provide comprehensive, high-quality solutions tailored to elevate your business, drive tangible results, and establish your brand&apos;s digital presence.
               </motion.p>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-                className="flex flex-col sm:flex-row items-center justify-center gap-4"
-              >
-              </motion.div>
             </div>
           </div>
           
           {/* Background decorative elements */}
-          <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] sm:w-[1200px] sm:h-[600px] bg-blue-600/15 rounded-[100%] blur-[120px] -z-10 pointer-events-none" />
-          <div className="absolute top-0 right-[10%] w-[400px] h-[400px] bg-purple-600/20 rounded-full blur-[140px] -z-10 pointer-events-none" />
-          <div className="absolute bottom-[20%] left-[10%] w-[300px] h-[300px] bg-indigo-600/15 rounded-full blur-[100px] -z-10 pointer-events-none" />
+          <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] sm:w-[1000px] sm:h-[500px] bg-blue-600/10 rounded-[100%] blur-[120px] -z-10 pointer-events-none" />
         </section>
 
         {/* Services Grid Section */}

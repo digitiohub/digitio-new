@@ -18,13 +18,26 @@ export function IndustriesSection() {
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-4">
-                        <div className="flex flex-wrap justify-center items-center">
-                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.25em]">Solving Complex Challenges</TextAnimate>
+                        {/* Desktop version */}
+                        <div className="hidden md:block">
+                            <div className="flex flex-wrap justify-center items-center">
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.25em]">Solving Complex Challenges</TextAnimate>
+                            </div>
+                            <div className="flex flex-wrap justify-center items-center">
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">
+                                    Across Every Major Sector
+                                </TextAnimate>
+                            </div>
                         </div>
-                        <div className="flex flex-wrap justify-center items-center">
-                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">
-                                Across Every Major Sector
-                            </TextAnimate>
+                        {/* Mobile version */}
+                        <div className="block md:hidden">
+                            <div className="flex flex-wrap justify-center items-center gap-x-[0.25em]">
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Solving Complex</TextAnimate>
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Challenges</TextAnimate>
+                            </div>
+                            <div className="flex flex-wrap justify-center items-center gap-x-[0.25em]">
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Across Every Major Sector</TextAnimate>
+                            </div>
                         </div>
                     </h2>
                     <p className="text-gray-600 text-lg">

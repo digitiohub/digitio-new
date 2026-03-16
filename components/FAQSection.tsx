@@ -57,9 +57,19 @@ export function FAQSection() {
             <div className="container mx-auto px-6">
                 <div className="mb-14 text-center">
                     <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-5xl">
-                        <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">
-                            Frequently Asked Questions
-                        </TextAnimate>
+                        {/* Desktop version: Single line */}
+                        <div className="hidden md:flex flex-wrap justify-center items-center">
+                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Frequently Asked Questions</TextAnimate>
+                        </div>
+                        {/* Mobile version: Split into 2 lines */}
+                        <div className="flex md:hidden flex-col items-center">
+                            <div className="flex flex-wrap justify-center items-center">
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Frequently Asked</TextAnimate>
+                            </div>
+                            <div className="flex flex-wrap justify-center items-center">
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Questions</TextAnimate>
+                            </div>
+                        </div>
                     </h2>
                     <p className="mx-auto max-w-3xl text-base text-slate-300 md:text-lg">
                         Everything you need to know about our engineering process and enterprise solutions.
