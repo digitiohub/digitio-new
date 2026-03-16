@@ -3,9 +3,8 @@
 import React from "react"
 import { motion } from "framer-motion"
 import servicesData from "@/data/services.json"
-import { ServiceCard, ServiceType } from "@/components/service-card"
+import { ServiceCard, ServiceType } from "@/components/services/service-card"
 import { Spotlight } from "@/components/ui/spotlight-new"
-import { Particles } from "@/components/ui/particles"
 import { TextAnimate } from "@/components/ui/text-animate"
 
 
