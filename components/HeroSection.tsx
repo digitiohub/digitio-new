@@ -67,10 +67,10 @@ export function HeroSection() {
                                 initial={{ opacity: 0, y: 50 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-                                className="text-white/70 font-bold leading-[1.02] tracking-tight"
+                                className="text-white font-bold leading-[1.02] tracking-tight"
                                 style={{ fontSize: "clamp(3rem, 5.5vw, 5.5rem)" }}
                             >
-                                We build the systems <br/> your <span className="text-white">next decade</span> <br/> runs on.
+                                We build the systems <br/> your <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-400">next decade</span> <br/> runs on.
                             </motion.h1>
                         </div>
 
@@ -138,37 +138,35 @@ export function HeroSection() {
             {/* ── Mobile hero (static, no scroll magic) ── */}
             <section className="md:hidden min-h-screen bg-[#0a0a0a] flex flex-col px-6 pt-28 pb-8 gap-10">
                 {/* Headline */}
-                <div>
-                    <span className="inline-flex items-center gap-2 text-[10px] font-medium tracking-widest uppercase text-white/40 border border-white/10 rounded-full px-3 py-1 mb-5 w-fit">
+                <div className="flex flex-col">
+                    <span className="inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase text-white/50 border border-white/10 rounded-full px-4 py-1.5 mb-6 w-fit">
                         Digital Product Engineering
                     </span>
-                    <h1 className="text-white font-bold leading-[1.08] tracking-tight text-4xl">
-                        We build systems<br />
-                        your next decade<br />
-                        <span className="text-white/30">runs on.</span>
+                    <h1 className="text-white font-bold leading-[1.05] tracking-tight text-5xl">
+                        We build the systems your <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-400">next decade</span> runs on.
                     </h1>
-                    <p className="text-white/45 text-sm leading-relaxed mt-5">
+                    <p className="text-white/50 text-base leading-relaxed mt-6">
                         Secure, scalable digital infrastructure engineered from strategy to production—without compromise.
                     </p>
-                    <div className="flex items-center gap-4 mt-7">
-                        <button className="flex items-center gap-2 bg-white text-black text-sm font-semibold px-5 py-2.5 rounded-full">
-                            Start a Project <ArrowRight className="w-3.5 h-3.5" />
+                    <div className="flex items-center gap-4 mt-8">
+                        <button className="flex items-center gap-2 bg-white text-black text-base font-semibold px-6 py-3 rounded-full">
+                            Start a Project <ArrowRight className="w-4 h-4" />
                         </button>
-                        <button className="flex items-center gap-2 text-white/55 text-sm font-medium">
-                            Our Work <ArrowUpRight className="w-3.5 h-3.5" />
+                        <button className="flex items-center gap-2 text-white/60 text-base font-medium">
+                            Our Work <ArrowUpRight className="w-4 h-4" />
                         </button>
                     </div>
                 </div>
 
                 {/* Video */}
-                <div className="rounded-2xl overflow-hidden w-full flex-1 relative">
+                <div className="rounded-2xl overflow-hidden w-full flex-1 relative min-h-0">
                     <video
                         src="/media/digitiohub.mp4"
                         autoPlay
                         muted
                         loop
                         playsInline
-                        className="w-full h-full object-cover"
+                        className="absolute inset-0 w-full h-full object-cover"
                     />
                 </div>
             </section>
