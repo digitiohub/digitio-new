@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const footerGroups = [
   {
@@ -27,11 +28,8 @@ export function Footer() {
         <div className="grid gap-10 lg:grid-cols-3">
           {/* Brand & copyright */}
           <div>
-            <Link href="#" className="inline-flex items-center gap-3">
-              <span className="grid h-8 w-8 place-items-center rounded-md bg-white text-black">
-                <span className="text-base font-black leading-none">D</span>
-              </span>
-              <span className="text-xl font-semibold tracking-tight">DigitioHub</span>
+            <Link href="/" className="inline-flex items-center">
+              <Image src="/logos/Digi_Logo_Full_Cropped_White.png" alt="DigitioHub Logo" width={160} height={45} className="object-contain" />
             </Link>
             <p className="mt-6 text-sm text-white/55">
               &copy; Copyright DigitioHub 2026. All rights reserved.

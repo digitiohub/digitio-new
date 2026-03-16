@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { motion, useScroll, useMotionValueEvent } from "framer-motion"
 import { useState } from "react"
 
@@ -39,11 +40,9 @@ export function Navbar() {
             }`}
         >
             <div className="flex items-center gap-2">
-                {/* Logo placeholder - using a sleek text or icon */}
-                <div className="w-9 h-9 rounded-lg bg-white text-black flex items-center justify-center font-bold text-lg">
-                    D
-                </div>
-                <span className="font-bold text-xl tracking-tight text-white hidden sm:block">DigitioHub</span>
+                <Link href="/" className="inline-flex items-center">
+                    <Image src="/logos/Digi_Logo_Full_Cropped_White.png" alt="DigitioHub Logo" width={150} height={42} className="object-contain" />
+                </Link>
             </div>
 
             <nav className="hidden md:flex items-center gap-8 font-medium text-sm text-white/70">
