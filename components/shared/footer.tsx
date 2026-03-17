@@ -1,15 +1,33 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Instagram, Linkedin, Youtube } from "lucide-react";
 
 const footerGroups = [
   {
-    title: "Socials",
-    links: ["Facebook", "Instagram", "Twitter", "LinkedIn"],
+    title: "Quick Links",
+    links: [
+      { label: "Products", href: "#" },
+      { label: "AI Tech Solutions", href: "#" },
+      { label: "About Us", href: "/about" },
+      { label: "Services", href: "/services" },
+      { label: "Industry", href: "/#industries" },
+      { label: "Portfolio", href: "/portfolio" },
+    ],
   },
   {
     title: "Legal",
-    links: ["Privacy Policy", "Terms of Service", "Cookie Policy"],
+    links: [
+      { label: "Privacy Policy", href: "#" },
+      { label: "Terms of Service", href: "#" },
+      { label: "Cookie Policy", href: "#" },
+    ],
   },
+];
+
+const socialLinks = [
+  { label: "Instagram", href: "https://www.instagram.com/digitiohub", icon: Instagram },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/digitiohub/", icon: Linkedin },
+  { label: "YouTube", href: "https://www.youtube.com/@DigitioHub", icon: Youtube },
 ];
 
 const contactInfo = [
@@ -40,6 +58,23 @@ export function Footer() {
             <p className="mt-6 text-sm text-white/55">
               &copy; Copyright DigitioHub 2026. All rights reserved.
             </p>
+            <div className="mt-5 flex items-center gap-3">
+              {socialLinks.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={item.label}
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/75 transition-colors hover:border-white/45 hover:text-white"
+                  >
+                    <Icon className="h-4 w-4" />
+                  </a>
+                );
+              })}
+            </div>
             {/* Mobile: add gap before links */}
             <div className="block lg:hidden h-6" />
           </div>
@@ -52,12 +87,12 @@ export function Footer() {
                   <h3 className="text-base font-semibold tracking-tight text-white/95">{group.title}</h3>
                   <ul className="space-y-3">
                     {group.links.map((item) => (
-                      <li key={item}>
+                      <li key={item.label}>
                         <Link
-                          href="#"
+                          href={item.href}
                           className="text-[15px] text-white/70 transition-colors duration-200 hover:text-white"
                         >
-                          {item}
+                          {item.label}
                         </Link>
                       </li>
                     ))}
@@ -73,7 +108,7 @@ export function Footer() {
               <h3 className="text-base font-semibold tracking-tight text-white/95 mb-2">Contact</h3>
               {contactInfo.map((info) => (
                 <div key={info.label} className="text-[15px] text-white/70">
-                  <span className="font-medium mr-2">{info.label}:</span>
+                  {/* <span className="font-medium mr-2">{info.label}:</span> */}
                   {info.href ? (
                     <a
                       href={info.href}
@@ -93,7 +128,7 @@ export function Footer() {
         </div>
 
         <div className="pointer-events-none mt-12 overflow-hidden px-4 pt-6 sm:mt-14 sm:px-0 sm:pt-8">
-          <p className="select-none whitespace-nowrap text-center text-[clamp(3.5rem,16vw,5rem)] font-bold leading-[0.98] tracking-tight text-transparent bg-clip-text bg-linear-to-b from-white/16 via-white/8 to-transparent sm:text-[clamp(5rem,19vw,15rem)] sm:leading-[0.85]">
+          <p className="select-none whitespace-nowrap text-center text-[clamp(3.5rem,16vw,5rem)] font-bold leading-[0.98] tracking-tight text-transparent bg-clip-text bg-linear-to-b from-white/16 via-white/8 to-transparent sm:text-[clamp(5rem,19vw,15rem)] sm:leading-[0.85] pb-6">
             DigitioHub
           </p>
         </div>
