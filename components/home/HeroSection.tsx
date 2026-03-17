@@ -34,7 +34,7 @@ export function HeroSection() {
                     className="absolute inset-0 h-full w-full object-cover"
                     aria-hidden="true"
                 >
-                    <source src={HERO_VIDEOS[currentVideoIndex]} type="video/mp4" />
+                    <source src={HERO_VIDEOS[currentVideoIndex]} type="video/webm" />    
                 </motion.video>
             </AnimatePresence>
 
