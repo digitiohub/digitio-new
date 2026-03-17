@@ -83,34 +83,45 @@ export function FAQSection() {
                             We have more answers waiting for you. If your question did not make the list, do not hesitate to reach out.
                         </p>
 
-                        <form className="mt-7 space-y-4">
+                        <form className="mt-7 space-y-10">
                             <div className="grid gap-4 md:grid-cols-2">
                                 <label className="space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
-                                    Name
+                                    Name *
                                     <input
                                         type="text"
                                         placeholder="Full Name"
+                                        required
                                         className="h-10 w-full border-0 border-b border-blue-200/50 bg-transparent text-sm text-white placeholder:text-blue-100/65 focus:border-white focus:outline-none"
                                     />
                                 </label>
                                 <label className="space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
-                                    Designation
+                                    Contact Number *
                                     <input
-                                        type="text"
-                                        placeholder="Enter Your Designation"
+                                        type="tel"
+                                        placeholder="Enter Your Number"
+                                        required
                                         className="h-10 w-full border-0 border-b border-blue-200/50 bg-transparent text-sm text-white placeholder:text-blue-100/65 focus:border-white focus:outline-none"
                                     />
                                 </label>
                             </div>
 
                             <div className="grid gap-4 md:grid-cols-2">
-                                <label className="space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
-                                    Contact Number
-                                    <input
-                                        type="tel"
-                                        placeholder="Enter Your Number"
-                                        className="h-10 w-full border-0 border-b border-blue-200/50 bg-transparent text-sm text-white placeholder:text-blue-100/65 focus:border-white focus:outline-none"
-                                    />
+                                <label className="block space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
+                                    Budget Range
+                                    <select className="h-10 w-full border-0 border-b border-blue-200/50 bg-transparent text-sm text-white focus:border-white focus:outline-none">
+                                        <option value="" className="text-slate-900">
+                                            Select a Budget Range
+                                        </option>
+                                        <option value="under-25k" className="text-slate-900">
+                                            Under INR 10,00,000
+                                        </option>
+                                        <option value="25k-100k" className="text-slate-900">
+                                            INR 10,00,000 - INR 40,00,000
+                                        </option>
+                                        <option value="100k-plus" className="text-slate-900">
+                                            Above INR 40,00,000
+                                        </option>
+                                    </select>
                                 </label>
                                 <label className="space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
                                     Work Email
@@ -123,45 +134,16 @@ export function FAQSection() {
                             </div>
 
                             <label className="block space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
-                                Budget Range
-                                <select className="h-10 w-full border-0 border-b border-blue-200/50 bg-transparent text-sm text-white focus:border-white focus:outline-none">
-                                    <option value="" className="text-slate-900">
-                                        Select a Budget Range
-                                    </option>
-                                    <option value="under-25k" className="text-slate-900">
-                                        Under $25,000
-                                    </option>
-                                    <option value="25k-100k" className="text-slate-900">
-                                        $25,000 - $100,000
-                                    </option>
-                                    <option value="100k-plus" className="text-slate-900">
-                                        Above $100,000
-                                    </option>
-                                </select>
-                            </label>
-
-                            <label className="block space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
-                                Describe Your Project
+                                Describe Your Project *
                                 <textarea
-                                    rows={2}
+                                    rows={5}
                                     placeholder="Share a short brief"
+                                    required
                                     className="w-full resize-none border-0 border-b border-blue-200/50 bg-transparent pb-2 text-sm text-white placeholder:text-blue-100/65 focus:border-white focus:outline-none"
                                 />
                             </label>
 
-                            <div className="rounded-md border border-amber-100/60 bg-amber-50 px-3 py-2 text-sm font-medium text-slate-900">
-                                Fast 2-minute response, fully NDA-protected.
-                            </div>
-
-                            <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
-                                <div className="flex items-center gap-2 text-sm text-blue-100">
-                                    <span>1 + 2 =</span>
-                                    <input
-                                        type="text"
-                                        aria-label="captcha"
-                                        className="h-9 w-11 rounded-md border border-blue-200/70 bg-transparent px-2 text-center text-sm text-white focus:border-white focus:outline-none"
-                                    />
-                                </div>
+                            <div className="flex flex-wrap items-center justify-end gap-4 pt-2">
                                 <button
                                     type="submit"
                                     className="h-11 min-w-44 rounded-full bg-white px-8 text-sm font-semibold text-slate-900 transition hover:bg-slate-200"
