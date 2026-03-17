@@ -54,15 +54,45 @@ export default function ContactPage() {
               The more detail you share, the faster we can align on scope.
             </p>
 
-            <form className="mt-6 space-y-4">
+            <form className="mt-6 space-y-8">
               <div className="grid gap-4 md:grid-cols-2">
                 <label className="space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
-                  Full Name
+                  Full Name *
                   <input
                     type="text"
                     placeholder="Enter your name"
+                    required
                     className="h-10 w-full border-0 border-b border-blue-200/50 bg-transparent text-xs text-white placeholder:text-blue-100/65 focus:border-white focus:outline-none md:text-sm"
                   />
+                </label>
+                <label className="space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
+                  Contact Number *
+                  <input
+                    type="tel"
+                    placeholder="Enter your number"
+                    required
+                    className="h-10 w-full border-0 border-b border-blue-200/50 bg-transparent text-xs text-white placeholder:text-blue-100/65 focus:border-white focus:outline-none md:text-sm"
+                  />
+                </label>
+              </div>
+
+              <div className="grid gap-4 md:grid-cols-2">
+                <label className="block space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
+                  Budget Range
+                  <select className="h-10 w-full border-0 border-b border-blue-200/50 bg-transparent text-xs text-white focus:border-white focus:outline-none md:text-sm">
+                    <option value="" className="text-slate-900">
+                      Select a Budget Range
+                    </option>
+                    <option value="under-10l" className="text-slate-900">
+                      Under INR 10,00,000
+                    </option>
+                    <option value="10l-40l" className="text-slate-900">
+                      INR 10,00,000 - INR 40,00,000
+                    </option>
+                    <option value="40l-plus" className="text-slate-900">
+                      Above INR 40,00,000
+                    </option>
+                  </select>
                 </label>
                 <label className="space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
                   Work Email
@@ -74,30 +104,12 @@ export default function ContactPage() {
                 </label>
               </div>
 
-              <div className="grid gap-4 md:grid-cols-2">
-                <label className="space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
-                  Contact Number
-                  <input
-                    type="tel"
-                    placeholder="Enter your number"
-                    className="h-10 w-full border-0 border-b border-blue-200/50 bg-transparent text-xs text-white placeholder:text-blue-100/65 focus:border-white focus:outline-none md:text-sm"
-                  />
-                </label>
-                <label className="space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
-                  Company
-                  <input
-                    type="text"
-                    placeholder="Your organization"
-                    className="h-10 w-full border-0 border-b border-blue-200/50 bg-transparent text-xs text-white placeholder:text-blue-100/65 focus:border-white focus:outline-none md:text-sm"
-                  />
-                </label>
-              </div>
-
               <label className="block space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
-                Project Brief
+                Describe Your Project *
                 <textarea
                   rows={3}
                   placeholder="What are you building and when do you plan to launch?"
+                  required
                   className="w-full resize-none border-0 border-b border-blue-200/50 bg-transparent pb-2 text-xs text-white placeholder:text-blue-100/65 focus:border-white focus:outline-none md:text-sm"
                 />
               </label>
@@ -112,7 +124,6 @@ export default function ContactPage() {
               </div>
 
               <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
-                <p className="text-xs text-blue-100/85 md:text-sm">Fast response, NDA-ready discussion.</p>
                 <button
                   type="submit"
                   className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-2.5 text-xs font-semibold text-slate-900 transition hover:bg-slate-200 md:text-sm"
