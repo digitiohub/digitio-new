@@ -1,0 +1,38 @@
+[
+  {
+    "key": "home",
+    "slug": "home",
+    "route": "/",
+    "title": "DigitioHub",
+    "ogTitle": "DigitioHub",
+    "description": "DigitioHub builds AI-driven digital systems, products, and campaigns that help modern businesses grow with clarity and measurable results.",
+    "eyebrow": "AI-Driven Digital Growth"
+  },
+  {
+    "key": "about",
+    "slug": "about",
+    "route": "/about",
+    "title": "About Us | DigitioHub",
+    "ogTitle": "About DigitioHub",
+    "description": "Learn about DigitioHub, our vision, achievements, and leadership team building AI-driven digital systems for modern businesses.",
+    "eyebrow": "Who We Are"
+  },
+  {
+    "key": "contact",
+    "slug": "contact",
+    "route": "/contact",
+    "title": "Contact | DigitioHub",
+    "ogTitle": "Contact DigitioHub",
+    "description": "Start a conversation with DigitioHub about your next website, product, AI workflow, or growth-focused digital build.",
+    "eyebrow": "Let's Build Together"
+  },
+  {
+    "key": "services",
+    "slug": "services",
+    "route": "/services",
+    "title": "Services | DigitioHub",
+    "ogTitle": "DigitioHub Services",
+    "description": "Explore DigitioHub services across web development, branding, AI, SEO, social media, and scalable digital product execution.",
+    "eyebrow": "What We Do"
+  }
+]

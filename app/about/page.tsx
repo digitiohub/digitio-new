@@ -5,12 +5,9 @@ import { AboutHeroSection } from "@/components/about/AboutHeroSection";
 import { AboutTeamSection } from "@/components/about/AboutTeamSection";
 import { AboutVisionSection } from "@/components/about/AboutVisionSection";
 import { AboutWhySection } from "@/components/about/AboutWhySection";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "About Us | DigitioHub",
-  description:
-    "Learn about DigitioHub, our vision, achievements, and leadership team building AI-driven digital systems for modern businesses.",
-};
+export const metadata: Metadata = createPageMetadata("about");
 
 export default function AboutRoute() {
   return (

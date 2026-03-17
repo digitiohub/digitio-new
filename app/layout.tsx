@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SmoothScroll } from "@/components/SmoothScroll";
-
 import { Navbar } from "@/components/shared/Navbar";
 import { Footer } from "@/components/shared/footer";
+import { getSiteMetadataBase } from "@/lib/metadata";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: getSiteMetadataBase(),
   title: "DigitioHub",
   description: "DigitioHub is a leading digital marketing agency that provides comprehensive, high-quality solutions tailored to elevate your business, drive tangible results, and establish your brand's digital presence.",
   icons: {

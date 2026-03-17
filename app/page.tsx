@@ -1,4 +1,4 @@
-
+import type { Metadata } from "next";
 import { HeroSection } from "@/components/home/HeroSection";
 import { StatsSection } from "@/components/home/StatsSection";
 import { InventivAiSection } from "@/components/home/InventivAiSection";
@@ -9,7 +9,9 @@ import { CaseStudiesSection } from "@/components/home/CaseStudiesSection";
 import { IndustriesSection } from "@/components/home/IndustriesSection";
 import { PreFaqCtaSection } from "@/components/home/PreFaqCtaSection";
 import { FAQSection } from "@/components/home/FAQSection";
+import { createPageMetadata } from "@/lib/metadata";
 
+export const metadata: Metadata = createPageMetadata("home");
 
 export default function Home() {
   return (

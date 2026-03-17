@@ -1,5 +1,9 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Clock3, Mail, MapPin, Phone } from "lucide-react";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = createPageMetadata("contact");
 
 const contactMethods = [
   {
