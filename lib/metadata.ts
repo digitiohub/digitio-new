@@ -6,13 +6,14 @@ type OgPage = (typeof ogPages)[number];
 type PageMetadataKey = OgPage["key"];
 
 const SITE_NAME = "DigitioHub";
+const DEFAULT_SITE_URL = "https://digitiohub.in";
 
 const pageMetadataMap = Object.fromEntries(
   ogPages.map((page) => [page.key, page]),
 ) as Record<PageMetadataKey, OgPage>;
 
 export function getSiteMetadataBase() {
-  return new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000");
+  return new URL(DEFAULT_SITE_URL);
 }
 
 export function createPageMetadata(key: PageMetadataKey): Metadata {
