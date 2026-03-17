@@ -23,6 +23,9 @@ export function HeroSection() {
                     muted
                     playsInline
                     preload="metadata"
+                    onLoadedMetadata={(event) => {
+                        event.currentTarget.playbackRate = 2
+                    }}
                     onEnded={handleVideoEnd}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
