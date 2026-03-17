@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import {
@@ -14,7 +14,9 @@ import {
     ShieldCheck,
     Network,
     Glasses,
-    Link
+    Link,
+    ChevronDown,
+    ChevronUp,
 } from "lucide-react"
 import { TextAnimate } from "@/components/ui/text-animate"
 
@@ -34,6 +36,7 @@ const services = [
 
 export function ServicesSection() {
     const containerRef = useRef<HTMLElement>(null)
+    const [openIndex, setOpenIndex] = useState(1)
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
@@ -59,10 +62,10 @@ export function ServicesSection() {
     }, [])
 
     return (
-        <section ref={containerRef} className="py-24 bg-slate-50 border-t border-gray-100 relative">
+        <section ref={containerRef} className="relative border-t border-white/10 bg-black py-16 md:py-24">
             <div className="container mx-auto px-6">
-                <div className="max-w-4xl mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-6">
+                <div className="mx-auto mb-10 max-w-4xl md:mx-0 md:mb-16">
+                    <h2 className="mb-6 text-center text-3xl font-semibold tracking-tight text-white md:text-left md:text-5xl md:font-medium md:leading-tight">
                         {/* Desktop version: Keeps original line breaks */}
                         <div className="hidden md:block">
                             <div className="flex flex-wrap items-center">
@@ -76,37 +79,71 @@ export function ServicesSection() {
                         </div>
                         {/* Mobile version: Breaks after "Supporting" */}
                         <div className="block md:hidden">
-                            <div className="flex flex-wrap justify-center items-center gap-x-[0.3em]">
-                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Deep Technical Expertise,</TextAnimate>
-                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Supporting</TextAnimate>
-                            </div>
                             <div className="flex flex-wrap justify-center items-center">
+                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Deep Technical Expertise,</TextAnimate>
+                            </div>
+                            <div className="mt-2 flex flex-wrap justify-center items-center">
                                 <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">
-                                    Modern Systems
+                                    Supporting Modern Systems
                                 </TextAnimate>
                             </div>
                         </div>
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="hidden grid-cols-1 gap-6 md:grid md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
                     {services.map((service, i) => (
                         <a
                             key={i}
                             href={service.link}
-                            className="service-card group block p-8 rounded-2xl bg-white border border-gray-200 hover:border-blue-500 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                            className="service-card group flex min-h-56.25 flex-col rounded-2xl border border-white/15 bg-black p-7 transition-colors duration-300 hover:border-white/35"
                         >
-                            <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-                                <service.icon className="w-6 h-6" />
+                            <div className="min-h-33">
+                                <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-white/5 text-blue-500">
+                                    <service.icon className="h-5 w-5" />
+                                </div>
+                                <h3 className="text-xl font-semibold text-white">
+                                    <span className="relative inline-block after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-blue-500 after:transition-transform after:duration-300 group-hover:after:scale-x-100">
+                                        {service.title}
+                                    </span>
+                                </h3>
                             </div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors">
-                                {service.title}
-                            </h3>
-                            <p className="text-gray-600 leading-relaxed text-sm">
+                            <p className="text-sm leading-relaxed text-zinc-400">
                                 {service.desc}
                             </p>
                         </a>
                     ))}
+                </div>
+
+                <div className="md:hidden">
+                    {services.map((service, i) => {
+                        const isOpen = openIndex === i
+                        return (
+                            <div key={i} className="border-b border-white/15 py-5">
+                                <button
+                                    type="button"
+                                    className="flex w-full items-center justify-between gap-3 text-left"
+                                    onClick={() => setOpenIndex(isOpen ? -1 : i)}
+                                >
+                                    <div className="flex items-center gap-4">
+                                        <service.icon className="h-5 w-5 text-blue-500" />
+                                        <h3 className="text-md font-semibold leading-tight text-white">{service.title}</h3>
+                                    </div>
+                                    {isOpen ? (
+                                        <ChevronUp className="h-5 w-5 shrink-0 text-zinc-200" />
+                                    ) : (
+                                        <ChevronDown className="h-5 w-5 shrink-0 text-zinc-200" />
+                                    )}
+                                </button>
+
+                                {isOpen && (
+                                    <div className="pt-4">
+                                        <p className="text-sm leading-relaxed text-zinc-400">{service.desc}</p>
+                                    </div>
+                                )}
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
         </section>
