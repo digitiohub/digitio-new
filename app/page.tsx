@@ -7,6 +7,7 @@ import { TrustedLogosSection } from "@/components/home/TrustedLogosSection";
 import { ServicesSection } from "@/components/home/ServicesSection";
 import { CaseStudiesSection } from "@/components/home/CaseStudiesSection";
 import { IndustriesSection } from "@/components/home/IndustriesSection";
+import { PreFaqCtaSection } from "@/components/home/PreFaqCtaSection";
 import { FAQSection } from "@/components/home/FAQSection";
 
 
@@ -22,6 +23,7 @@ export default function Home() {
         <TrustedLogosSection />
         <ServicesSection />
         <IndustriesSection />
+        <PreFaqCtaSection />
         <FAQSection />
       </main>
     </>
