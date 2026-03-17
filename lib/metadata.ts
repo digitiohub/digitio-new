@@ -6,7 +6,7 @@ type OgPage = (typeof ogPages)[number];
 type PageMetadataKey = OgPage["key"];
 
 const SITE_NAME = "DigitioHub";
-const DEFAULT_SITE_URL = "https://digitiohub.netlify.app";
+const DEFAULT_SITE_URL = "https://digitio-new.netlify.app";
 
 const pageMetadataMap = Object.fromEntries(
   ogPages.map((page) => [page.key, page]),
