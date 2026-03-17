@@ -44,6 +44,7 @@ export function Navbar() {
         { name: "Services", href: "/services", desc: "Bespoke digital engineering" },
         { name: "Industry", href: "/#industries", desc: "Sectors we specialize in" },
         { name: "Portfolio", href: "/portfolio", desc: "Our latest work" },
+        { name: "Contact", href: "/contact", desc: "Start a conversation" },
     ]
 
     return (
@@ -73,9 +74,9 @@ export function Navbar() {
             </nav>
 
             <div className="flex items-center gap-4">
-                <button className="hidden md:block px-6 py-2.5 rounded-full bg-[#f84f39] text-white text-sm font-semibold hover:bg-[#ff614c] transition-colors shadow-lg shadow-[#f84f39]/20">
+                <Link href="/contact" className="hidden md:inline-flex px-6 py-2.5 rounded-full bg-[#f84f39] text-white text-sm font-semibold hover:bg-[#ff614c] transition-colors shadow-lg shadow-[#f84f39]/20">
                     Let&apos;s Connect
-                </button>
+                </Link>
                 
                 <Sheet>
                     <SheetTrigger asChild>
@@ -127,13 +128,13 @@ export function Navbar() {
 
                         <div className="p-8 pt-4 bg-linear-to-t from-[#0a0a0a] via-[#0a0a0a] to-transparent">
                             <SheetClose asChild>
-                                <button className="group w-full relative h-14 rounded-2xl bg-[#f84f39] text-white font-bold overflow-hidden shadow-2xl shadow-[#f84f39]/20 transition-transform active:scale-95">
+                                <Link href="/contact" className="group w-full relative h-14 rounded-2xl bg-[#f84f39] text-white font-bold overflow-hidden shadow-2xl shadow-[#f84f39]/20 transition-transform active:scale-95">
                                     <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                                     <span className="relative flex items-center justify-center gap-2">
                                         Let&apos;s Connect
                                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                     </span>
-                                </button>
+                                </Link>
                             </SheetClose>
                             <p className="text-center text-[10px] text-white/20 mt-6 font-medium">
                                 &copy; 2026 DIGITIOHUB. ALL RIGHTS RESERVED.
