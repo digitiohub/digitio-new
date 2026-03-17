@@ -17,7 +17,7 @@ export function AboutHeroSection() {
             {aboutIntro.eyebrow}
           </motion.p>
 
-          <div className="mt-8 max-w-4xl font-semibold leading-[1.02] tracking-tight text-white" style={{ fontSize: "clamp(2rem,6vw,3rem)" }}>
+          <div className="mt-8 max-w-4xl font-semibold leading-[1.02] tracking-tight text-white" style={{ fontSize: "clamp(1.5rem,6vw,3rem)" }}>
             <TextAnimate animation="slideLeft" by="word" as="h1">
               {aboutIntro.title}
             </TextAnimate>
