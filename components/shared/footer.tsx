@@ -13,8 +13,14 @@ const footerGroups = [
 ];
 
 const contactInfo = [
-  { label: "Email", value: "info@digitiohub.com" },
-  { label: "Phone", value: "+1 234 567 8901" },
+  { label: "Email", value: "digitiohub@gmail.com", href: "mailto:digitiohub@gmail.com" },
+  { label: "Phone", value: "+91 84839 52398", href: "tel:+918483952398" },
+  {
+    label: "Address",
+    value:
+      "Room No. 520, Bhaskarachraya Building, Somaiya Vidyavihar, Vidyavihar (E), Mumbai, Maharashtra 400077",
+    href: "https://maps.app.goo.gl/DuKSgAj4cvzqeDUV8",
+  },
 ];
 
 export function Footer() {
@@ -68,7 +74,18 @@ export function Footer() {
               {contactInfo.map((info) => (
                 <div key={info.label} className="text-[15px] text-white/70">
                   <span className="font-medium mr-2">{info.label}:</span>
-                  <span>{info.value}</span>
+                  {info.href ? (
+                    <a
+                      href={info.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline-offset-4 transition-colors hover:text-white hover:underline"
+                    >
+                      {info.value}
+                    </a>
+                  ) : (
+                    <span>{info.value}</span>
+                  )}
                 </div>
               ))}
             </div>
