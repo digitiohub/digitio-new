@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import { gsap } from "gsap"
@@ -29,10 +29,54 @@ export function CaseStudiesSection() {
     const wheelRef = useRef<HTMLDivElement>(null)
 
     const rotation = useRef(0)
+    const rotationTween = useRef<gsap.core.Tween | null>(null)
     const velocity = useRef(0)
     const isDragging = useRef(false)
     const lastX = useRef(0)
     const lastTime = useRef(0)
+    const [activeTab, setActiveTab] = useState(0)
+    const CARD_STEP_ANGLE = 20
+    const ROTATION_LOOP = originalCaseStudies.length * CARD_STEP_ANGLE
+    const CAROUSEL_RADIUS = 1420
+
+    const getNearestTabIndex = (currentRotation: number) => {
+        let nearestIndex = 0
+        let nearestDistance = Number.POSITIVE_INFINITY
+
+        for (let i = 0; i < originalCaseStudies.length; i++) {
+            const base = -(i * CARD_STEP_ANGLE)
+            const delta = currentRotation - base
+            const distance = Math.abs(delta - Math.round(delta / ROTATION_LOOP) * ROTATION_LOOP)
+
+            if (distance < nearestDistance) {
+                nearestDistance = distance
+                nearestIndex = i
+            }
+        }
+
+        return nearestIndex
+    }
+
+    const rotateToTab = (tabIndex: number) => {
+        const normalized = (tabIndex + originalCaseStudies.length) % originalCaseStudies.length
+        setActiveTab(normalized)
+        velocity.current = 0
+
+        const baseTarget = -(normalized * CARD_STEP_ANGLE)
+        const currentRotation = rotation.current
+        const nearestLoop = Math.round((currentRotation - baseTarget) / ROTATION_LOOP)
+        const targetRotation = baseTarget + nearestLoop * ROTATION_LOOP
+
+        rotationTween.current?.kill()
+        rotationTween.current = gsap.to(rotation, {
+            current: targetRotation,
+            duration: 0.8,
+            ease: "power3.out",
+            onComplete: () => {
+                rotationTween.current = null
+            },
+        })
+    }
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -78,11 +122,14 @@ export function CaseStudiesSection() {
 
         return () => {
             cancelAnimationFrame(animationFrameId);
+            rotationTween.current?.kill();
             ctx.revert();
         }
     }, [])
 
     const handlePointerDown = (e: React.PointerEvent) => {
+        rotationTween.current?.kill()
+        rotationTween.current = null
         isDragging.current = true
         lastX.current = e.clientX
         velocity.current = 0
@@ -102,17 +149,18 @@ export function CaseStudiesSection() {
 
     const handlePointerUp = () => {
         isDragging.current = false
+        setActiveTab(getNearestTabIndex(rotation.current))
         if (dragAreaRef.current) {
             dragAreaRef.current.style.cursor = 'grab'
         }
     }
 
     const handlePrev = () => {
-        velocity.current = 1.5; // give it a spin manually to the right
+        rotateToTab(activeTab - 1)
     }
 
     const handleNext = () => {
-        velocity.current = -1.5; // give it a spin manually to the left
+        rotateToTab(activeTab + 1)
     }
 
     return (
@@ -130,7 +178,11 @@ export function CaseStudiesSection() {
                         <ArrowLeft className="w-4 h-4 text-gray-400" />
                     </button>
                     {originalCaseStudies.map((item, i) => (
-                        <button key={i} className={`px-4 py-2 text-sm md:px-6 md:py-3 md:text-base rounded-full font-semibold transition-colors border ${i === 0 ? 'bg-white text-black border-white' : 'bg-[#161616] text-gray-300 border-white/10 hover:bg-white/10 hover:border-white/20'}`}>
+                        <button
+                            key={i}
+                            onClick={() => rotateToTab(i)}
+                            className={`px-4 py-2 text-sm md:px-6 md:py-3 md:text-base rounded-full font-semibold transition-colors border ${i === activeTab ? 'bg-white text-black border-white' : 'bg-[#161616] text-gray-300 border-white/10 hover:bg-white/10 hover:border-white/20'}`}
+                        >
                             {item.brand}
                         </button>
                     ))}
@@ -149,10 +201,6 @@ export function CaseStudiesSection() {
                 onPointerLeave={handlePointerUp}
                 onPointerCancel={handlePointerUp}
             >
-                {/* Drag Indicator */}
-                <div className="absolute left-10 md:left-24 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-xs font-semibold tracking-widest text-gray-300 pointer-events-none z-50">
-                    DRAG
-                </div>
 
                 {/* The Mathematical Circular Carousel */}
                 <div className="relative w-full h-full pointer-events-none">
@@ -160,12 +208,12 @@ export function CaseStudiesSection() {
                         ref={wheelRef}
                         className="absolute left-1/2"
                         style={{
-                            top: "1200px", // Radius/pivot tuned to avoid clipping
+                            top: `${CAROUSEL_RADIUS}px`, // Radius/pivot tuned to avoid clipping
                             width: 0, height: 0
                         }}
                     >
                         {caseStudies.map((item, i) => {
-                            const angle = i * 20;
+                            const angle = i * CARD_STEP_ANGLE;
                             return (
                                 <div
                                     key={item.uid}
@@ -177,7 +225,7 @@ export function CaseStudiesSection() {
                                         marginLeft: '-170px',
                                         top: 0,
                                         transformOrigin: "50% 0%",
-                                        transform: `rotate(${angle}deg) translateY(-1200px)`,
+                                        transform: `rotate(${angle}deg) translateY(-${CAROUSEL_RADIUS}px)`,
                                     }}
                                 >
                                     <Image
