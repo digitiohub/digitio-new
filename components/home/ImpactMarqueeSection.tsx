@@ -47,6 +47,7 @@ export function ImpactMarqueeSection() {
     <section className="w-full bg-black py-8 md:py-12">
       <Marquee
         pauseOnHover
+        draggable
         className="[--duration:45s] [--gap:14px] md:[--gap:16px] px-0"
       >
         {impactCards.map((card) => (
