@@ -112,14 +112,14 @@ export function FAQSection() {
                                         <option value="" className="text-slate-900">
                                             Select a Budget Range
                                         </option>
-                                        <option value="under-25k" className="text-slate-900">
-                                            Under INR 10,00,000
+                                        <option value="25k-50k" className="text-slate-900">
+                                            INR 25,000 - INR 50,000
                                         </option>
-                                        <option value="25k-100k" className="text-slate-900">
-                                            INR 10,00,000 - INR 40,00,000
+                                        <option value="50k-100k" className="text-slate-900">
+                                            INR 50,000 - INR 1,00,000
                                         </option>
-                                        <option value="100k-plus" className="text-slate-900">
-                                            Above INR 40,00,000
+                                        <option value="let's-discuss" className="text-slate-900">
+                                            Let&apos;s Discuss
                                         </option>
                                     </select>
                                 </label>
