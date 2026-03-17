@@ -1,124 +1,102 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { ArrowRight, ArrowUpRight } from "lucide-react"
-import { TextAnimate } from "@/components/ui/text-animate"
-import Image from "next/image"
+import { AnimatePresence, motion } from "framer-motion"
+import { ArrowUpRight } from "lucide-react"
+import Link from "next/link"
+import { useState } from "react"
+
+const HERO_VIDEOS = ["/media/hero1.webm", "/media/hero2.webm", "/media/hero3.webm", "/media/hero4.webm"]
 
 export function HeroSection() {
+    const [currentVideoIndex, setCurrentVideoIndex] = useState(0)
+
+    const handleVideoEnd = () => {
+        setCurrentVideoIndex((prev) => (prev + 1) % HERO_VIDEOS.length)
+    }
+
     return (
-        <div className="relative min-h-screen bg-[#0a0a0a] overflow-hidden">
-            {/* Ambient background glow */}
-            <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-1/4 left-1/4 w-[50vw] h-[50vw] rounded-full bg-blue-700/10 blur-[120px]" />
-                <div className="absolute bottom-1/4 right-1/4 w-[40vw] h-[40vw] rounded-full bg-indigo-800/10 blur-[100px]" />
-            </div>
+        <section className="relative isolate min-h-screen overflow-hidden bg-[#04070d]">
+            <AnimatePresence mode="sync">
+                <motion.video
+                    key={HERO_VIDEOS[currentVideoIndex]}
+                    autoPlay
+                    muted
+                    playsInline
+                    preload="metadata"
+                    onEnded={handleVideoEnd}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.8, ease: "easeInOut" }}
+                    className="absolute inset-0 h-full w-full object-cover"
+                    aria-hidden="true"
+                >
+                    <source src={HERO_VIDEOS[currentVideoIndex]} type="video/mp4" />
+                </motion.video>
+            </AnimatePresence>
 
-            <div className="relative z-10 container mx-auto px-6 md:px-10 min-h-screen flex items-center">
-                <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-12 lg:gap-20 items-center w-full pt-32 pb-20">
-                    
-                    {/* Left Side: Text Content */}
-                    <div className="flex flex-col w-full">
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                            className="mb-6"
-                        >
-                            <span className="inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase text-white/50 border border-white/10 rounded-full px-4 py-1.5 w-fit">
-                                Digital Product Engineering
-                            </span>
-                        </motion.div>
+            <div className="absolute inset-0 bg-[linear-gradient(96deg,rgba(4,8,16,0.93)_8%,rgba(4,8,16,0.7)_38%,rgba(4,8,16,0.24)_62%,rgba(4,8,16,0.68)_100%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_18%,rgba(72,130,255,0.2),transparent_36%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(4,8,16,0.84)_5%,transparent_45%)]" />
 
-                        <motion.h1
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-                            className="text-white font-bold leading-[1.1] tracking-tight mb-8"
-                            style={{ fontSize: "clamp(2.25rem, 5.5vw, 5rem)" }}
-                        >
-                            <div className="flex flex-wrap items-center">
-                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.3em]">We build the systems</TextAnimate>
-                            </div>
-                            <div className="flex flex-wrap items-center">
-                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap mr-[0.3em]">your</TextAnimate>
-                                <TextAnimate 
-                                    animation="slideLeft" 
-                                    by="character" 
-                                    as="span"
-                                    className="inline-block text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-400 whitespace-nowrap"
-                                >
-                                    next decade
-                                </TextAnimate>
-                            </div>
-                            <div className="flex flex-wrap items-center">
-                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">runs on.</TextAnimate>
-                            </div>
-                        </motion.h1>
-
-                        <motion.p
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-                            className="text-white/50 text-sm md:text-lg leading-relaxed mb-10 max-w-2xl"
-                        >
-                            Secure, scalable digital infrastructure engineered to last—combining strong architecture, data systems, and AI so your organisation moves from strategy to production without compromise.
-                        </motion.p>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.45 }}
-                            className="flex flex-wrap items-center gap-4"
-                        >
-                            <button className="group flex items-center gap-2 bg-white text-black text-sm md:text-base font-semibold px-8 py-4 rounded-full hover:bg-white/90 transition-all duration-300">
-                                Start a Project
-                                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-                            </button>
-                            <button className="group flex items-center gap-2 text-white/60 text-sm md:text-base font-medium hover:text-white transition-colors duration-300">
-                                View Our Work
-                                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                            </button>
-                        </motion.div>
-                    </div>
-
-                    {/* Right Side: Animated SVG */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9, x: 50 }}
-                        animate={{ 
-                            opacity: 1, 
-                            scale: 1, 
-                            x: 0,
-                            y: [0, -20, 0] 
-                        }}
-                        transition={{ 
-                            opacity: { duration: 1, ease: "easeOut", delay: 0.2 },
-                            scale: { duration: 1, ease: "easeOut", delay: 0.2 },
-                            x: { duration: 1, ease: "easeOut", delay: 0.2 },
-                            y: { duration: 6, ease: "easeInOut", repeat: Infinity }
-                        }}
-                        className="relative flex justify-center items-center h-[300px] md:h-[500px]"
+            <div className="relative z-10 container mx-auto flex min-h-screen items-end px-6 pb-16 pt-28 md:px-10 md:pb-24 lg:items-center">
+                <div className="max-w-4xl">
+                    <motion.p
+                        initial={{ opacity: 0, y: 12 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.65, ease: "easeOut" }}
+                        className="mb-5 inline-flex rounded-full border border-white/20 bg-black/35 px-4 py-1.5 text-[11px] font-semibold tracking-[0.22em] text-white/80 uppercase backdrop-blur-sm"
                     >
-                        <div className="relative w-full h-full max-w-[600px]">
-                            <Image 
-                                src="/media/devops.svg" 
-                                alt="DevOps Systems Illustration" 
-                                fill
-                                className="object-contain drop-shadow-[0_0_30px_rgba(59,130,246,0.2)]"
-                                priority
-                            />
-                        </div>
+                        Digital Product Engineering
+                    </motion.p>
 
-                        {/* Additional ambient decorative elements around the SVG */}
-                        <motion.div 
-                            animate={{ opacity: [0.2, 0.5, 0.2] }}
-                            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                            className="absolute -z-10 w-[120%] h-[120%] bg-blue-500/5 rounded-full blur-3xl"
-                        />
+                    <motion.h1
+                        initial={{ opacity: 0, y: 24 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+                        className="text-pretty font-bold leading-[1.05] tracking-tight text-white"
+                        style={{ fontSize: "clamp(2rem, 5.8vw, 3.5rem)" }}
+                    >
+                        We build the systems
+                        <br />
+                        your next decade
+                        <br />
+                        runs on.
+                    </motion.h1>
+
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.72, ease: "easeOut", delay: 0.22 }}
+                        className="mt-6 max-w-2xl text-sm leading-relaxed text-white/75 md:text-lg"
+                    >
+                        We secure and scale mission-critical products with strong architecture, data
+                        engineering, and AI so teams move from strategy to reliable production with
+                        confidence.
+                    </motion.p>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.72, ease: "easeOut", delay: 0.35 }}
+                        className="mt-10 flex flex-wrap items-center gap-4"
+                    >
+                        <Link
+                            href="/services"
+                            className="inline-flex items-center gap-2 rounded-full bg-[#2d79ff] px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#4387ff] md:text-base"
+                        >
+                            Consult Our Strategy Team
+                            <ArrowUpRight className="h-4 w-4" />
+                        </Link>
+                        <Link
+                            href="/portfolio"
+                            className="inline-flex items-center rounded-full border border-white/25 bg-black/20 px-7 py-3.5 text-sm font-semibold text-white/90 transition-colors hover:bg-black/35 md:text-base"
+                        >
+                            View Portfolio
+                        </Link>
                     </motion.div>
-
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
