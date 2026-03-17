@@ -139,7 +139,7 @@ export function StatsSection() {
                                 <div className="mb-12">
                                     <card.icon className="w-10 h-10 text-blue-600 mb-6" />
                                     <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-6 pr-4">{card.title}</h3>
-                                    <p className="text-sm text-gray-700 leading-relaxed min-h-[100px]">{card.desc}</p>
+                                    <p className="text-sm text-gray-700 leading-relaxed min-h-25">{card.desc}</p>
                                 </div>
                                 <div className="mt-auto">
                                     <button className="px-5 py-3 rounded-full border border-gray-900 text-sm font-semibold text-slate-900 hover:bg-slate-900 hover:text-white transition-colors w-full sm:w-auto text-center">
