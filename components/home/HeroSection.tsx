@@ -5,7 +5,7 @@ import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 
-const HERO_VIDEOS = ["/media/hero1.webm", "/media/hero2.webm", "/media/hero3.webm", "/media/hero4.webm"]
+const HERO_VIDEOS = ["/media/hero/hero1.webm", "/media/hero/hero2.webm", "/media/hero/hero3.webm", "/media/hero/hero4.webm"]
 
 export function HeroSection() {
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0)
