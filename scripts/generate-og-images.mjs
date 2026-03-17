@@ -70,7 +70,7 @@ function wrapText(value, maxLineLength, maxLines) {
 }
 
 function getPageLink(route) {
-  return route === "/" ? "digitiohub.com" : `digitiohub.com${route}`;
+  return route === "/" ? "digitiohub.in" : `digitiohub.in${route}`;
 }
 
 function renderBackground() {
@@ -133,7 +133,7 @@ function renderOverlay(page) {
     .map((line, index) => `<tspan x="70" dy="${index === 0 ? 0 : 23}">${line}</tspan>`)
     .join("");
 
-  const badgeText = isHome ? "digitiohub.com" : pageLink;
+  const badgeText = isHome ? "digitiohub.in" : pageLink;
   const topBadge = `
       <rect x="878" y="58" width="252" height="44" rx="22" fill="rgba(63,140,255,0.10)" stroke="rgba(63,140,255,0.32)" />
       <text x="914" y="86" fill="${COLORS.primaryLight}" font-size="16" font-family="Arial, sans-serif" font-weight="500">${badgeText}</text>
