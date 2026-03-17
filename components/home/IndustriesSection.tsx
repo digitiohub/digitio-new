@@ -68,12 +68,6 @@ const industries = [
         image: "https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=1600&q=80",
     },
     {
-        name: "Social Media",
-        description:
-            "We create social platforms with high-performance feeds, creator tooling, and community systems built for growth and safety.",
-        image: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=1600&q=80",
-    },
-    {
         name: "Logistics",
         description:
             "Our logistics solutions combine real-time visibility, fleet intelligence, and workflow automation to optimize deliveries and reduce delays.",
