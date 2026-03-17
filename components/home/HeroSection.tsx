@@ -5,7 +5,12 @@ import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 
-const HERO_VIDEOS = ["/media/hero/hero1.webm", "/media/hero/hero2.webm", "/media/hero/hero3.webm", "/media/hero/hero4.webm"]
+const HERO_VIDEOS = [
+    { webm: "/media/hero/hero1.webm", mp4: "/media/hero/hero1.mp4", poster: "/media/hero/hero1.jpg" },
+    { webm: "/media/hero/hero2.webm", mp4: "/media/hero/hero2.mp4", poster: "/media/hero/hero2.jpg" },
+    { webm: "/media/hero/hero3.webm", mp4: "/media/hero/hero3.mp4", poster: "/media/hero/hero3.jpg" },
+    { webm: "/media/hero/hero4.webm", mp4: "/media/hero/hero4.mp4", poster: "/media/hero/hero4.jpg" },
+]
 
 export function HeroSection() {
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0)
@@ -18,13 +23,14 @@ export function HeroSection() {
         <section className="relative isolate min-h-screen overflow-hidden bg-[#04070d]">
             <AnimatePresence mode="sync">
                 <motion.video
-                    key={HERO_VIDEOS[currentVideoIndex]}
+                    key={HERO_VIDEOS[currentVideoIndex].mp4}
                     autoPlay
                     muted
                     playsInline
                     preload="metadata"
+                    poster={HERO_VIDEOS[currentVideoIndex].poster}
                     onLoadedMetadata={(event) => {
-                        event.currentTarget.playbackRate = 2
+                        event.currentTarget.playbackRate = 1.5
                     }}
                     onEnded={handleVideoEnd}
                     initial={{ opacity: 0 }}
@@ -34,7 +40,8 @@ export function HeroSection() {
                     className="absolute inset-0 h-full w-full object-cover"
                     aria-hidden="true"
                 >
-                    <source src={HERO_VIDEOS[currentVideoIndex]} type="video/webm" />    
+                    <source src={HERO_VIDEOS[currentVideoIndex].webm} type="video/webm" />
+                    <source src={HERO_VIDEOS[currentVideoIndex].mp4} type="video/mp4" />
                 </motion.video>
             </AnimatePresence>
 
