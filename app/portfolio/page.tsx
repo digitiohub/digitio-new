@@ -41,8 +41,8 @@ export default function PortfolioPage() {
             <PortfolioHero />
             
             <div className="flex flex-col">
-                {projects.map((project) => (
-                    <ProjectSection key={project.id} project={project} />
+                {projects.map((project, index) => (
+                    <ProjectSection key={project.id} project={project} index={index} />
                 ))}
             </div>
 
