@@ -1,59 +1,66 @@
-"use client"
+"use client";
 
-import { use } from "react"
-import { motion } from "framer-motion"
-import { ArrowUpRight } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
-import projectsData from "@/data/projects.json"
-import { notFound } from "next/navigation"
+import { use } from "react";
+import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import projectsData from "@/data/projects.json";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = createPageMetadata("portfolio-detail");
 
 interface Project {
-    id: string
-    title: string
-    tagline?: string
-    year: string
-    type: string
-    slug: string
-    thumbnail: string
-    description?: string
-    overview?: string
-    industry?: string
-    brandOwner?: string
-    websiteLink?: string
-    techStack: string[]
-    item?: string[]
-    impact?: string[]
-    challenges?: string[]
-    goals?: string[]
+    id: string;
+    title: string;
+    tagline?: string;
+    year: string;
+    type: string;
+    slug: string;
+    thumbnail: string;
+    description?: string;
+    overview?: string;
+    industry?: string;
+    brandOwner?: string;
+    websiteLink?: string;
+    techStack: string[];
+    item?: string[];
+    impact?: string[];
+    challenges?: string[];
+    goals?: string[];
     solution_categories?: {
-        title: string
-        items: string[]
-    }[]
-    features?: string[]
-    results?: string[]
+        title: string;
+        items: string[];
+    }[];
+    features?: string[];
+    results?: string[];
 }
 
-const projects = projectsData as Project[]
+const projects = projectsData as Project[];
 
-export default function CaseStudyPage({ params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = use(params)
-    const project = projects.find((p) => p.slug === slug)
+export default function CaseStudyPage({
+    params,
+}: {
+    params: Promise<{ slug: string }>;
+}) {
+    const { slug } = use(params);
+    const project = projects.find((p) => p.slug === slug);
 
     if (!project) {
-        notFound()
+        notFound();
     }
 
     return (
         <main className="min-h-screen bg-black text-white selection:bg-blue-500/30 selection:text-blue-200 overflow-x-hidden">
-
             {/* Immersive Hero Section */}
             <section className="relative isolate min-h-screen overflow-hidden flex items-end pb-20 md:pb-32">
                 {/* Background Image with Overlays */}
                 <div className="absolute inset-0 -z-10">
-                    <Image 
-                        src={project.thumbnail} 
-                        alt="" 
+                    <Image
+                        src={project.thumbnail}
+                        alt=""
                         fill
                         priority
                         className="object-cover opacity-40 transition-transform duration-1000 scale-105"
@@ -72,7 +79,9 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                         >
                             <span>{project.type}</span>
                             <span className="h-1 w-1 rounded-full bg-zinc-800" />
-                            <span className="text-zinc-500">{project.year}</span>
+                            <span className="text-zinc-500">
+                                {project.year}
+                            </span>
                         </motion.div>
 
                         {project.tagline && (
@@ -86,10 +95,14 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                             </motion.p>
                         )}
 
-                        <motion.h1 
+                        <motion.h1
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+                            transition={{
+                                duration: 0.8,
+                                ease: "easeOut",
+                                delay: 0.1,
+                            }}
                             className="text-pretty font-bold leading-[1.05] tracking-tight text-white mb-10"
                             style={{ fontSize: "clamp(2.5rem, 8vw, 6rem)" }}
                         >
@@ -97,7 +110,7 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                         </motion.h1>
 
                         {/* Project Metadata Grid */}
-                        <motion.div 
+                        <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.4 }}
@@ -105,30 +118,45 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                         >
                             {project.brandOwner && (
                                 <div>
-                                    <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500">Client</p>
-                                    <p className="mt-2 text-sm font-medium text-white">{project.brandOwner}</p>
+                                    <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500">
+                                        Client
+                                    </p>
+                                    <p className="mt-2 text-sm font-medium text-white">
+                                        {project.brandOwner}
+                                    </p>
                                 </div>
                             )}
                             {project.industry && (
                                 <div>
-                                    <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500">Industry</p>
-                                    <p className="mt-2 text-sm font-medium text-white">{project.industry}</p>
+                                    <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500">
+                                        Industry
+                                    </p>
+                                    <p className="mt-2 text-sm font-medium text-white">
+                                        {project.industry}
+                                    </p>
                                 </div>
                             )}
                             <div>
-                                <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500">Services</p>
-                                <p className="mt-2 text-sm font-medium text-white">{project.type}</p>
+                                <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500">
+                                    Services
+                                </p>
+                                <p className="mt-2 text-sm font-medium text-white">
+                                    {project.type}
+                                </p>
                             </div>
                             {project.websiteLink && (
                                 <div>
-                                    <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500">Live Site</p>
-                                    <a 
-                                        href={project.websiteLink} 
-                                        target="_blank" 
+                                    <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500">
+                                        Live Site
+                                    </p>
+                                    <a
+                                        href={project.websiteLink}
+                                        target="_blank"
                                         rel="noopener noreferrer"
                                         className="mt-2 flex items-center gap-1 text-sm font-medium text-blue-500 hover:underline"
                                     >
-                                        Visit Website <ArrowUpRight className="h-3 w-3" />
+                                        Visit Website{" "}
+                                        <ArrowUpRight className="h-3 w-3" />
                                     </a>
                                 </div>
                             )}
@@ -142,7 +170,9 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                 <section className="py-24 border-b border-white/5">
                     <div className="container mx-auto px-6 md:px-10">
                         <div className="mx-auto max-w-4xl">
-                            <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-blue-500 mb-10">Overview</h2>
+                            <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-blue-500 mb-10">
+                                Overview
+                            </h2>
                             <p className="text-2xl md:text-4xl font-light leading-snug text-zinc-200">
                                 {project.overview || project.description}
                             </p>
@@ -163,14 +193,23 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                                     transition={{ duration: 0.7 }}
                                     viewport={{ once: true }}
                                 >
-                                    <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500 mb-10">Client Challenges</h3>
+                                    <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500 mb-10">
+                                        Client Challenges
+                                    </h3>
                                     <div className="space-y-6">
-                                        {project.challenges.map((challenge, i) => (
-                                            <div key={i} className="flex gap-4">
-                                                <div className="mt-2.5 h-1.5 w-1.5 rounded-full bg-blue-500/50 shrink-0" />
-                                                <p className="text-lg text-zinc-300">{challenge}</p>
-                                            </div>
-                                        ))}
+                                        {project.challenges.map(
+                                            (challenge, i) => (
+                                                <div
+                                                    key={i}
+                                                    className="flex gap-4"
+                                                >
+                                                    <div className="mt-2.5 h-1.5 w-1.5 rounded-full bg-blue-500/50 shrink-0" />
+                                                    <p className="text-lg text-zinc-300">
+                                                        {challenge}
+                                                    </p>
+                                                </div>
+                                            ),
+                                        )}
                                     </div>
                                 </motion.div>
                             )}
@@ -182,12 +221,16 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                                     transition={{ duration: 0.7, delay: 0.1 }}
                                     viewport={{ once: true }}
                                 >
-                                    <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500 mb-10">Goals & Requirements</h3>
+                                    <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500 mb-10">
+                                        Goals & Requirements
+                                    </h3>
                                     <div className="space-y-6">
                                         {project.goals.map((goal, i) => (
                                             <div key={i} className="flex gap-4">
                                                 <div className="mt-2.5 h-1.5 w-1.5 rounded-full bg-green-500/50 shrink-0" />
-                                                <p className="text-lg text-zinc-300">{goal}</p>
+                                                <p className="text-lg text-zinc-300">
+                                                    {goal}
+                                                </p>
                                             </div>
                                         ))}
                                     </div>
@@ -202,22 +245,34 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
             {project.solution_categories && (
                 <section className="py-24 md:py-32 bg-zinc-950/30">
                     <div className="container mx-auto px-6 md:px-10">
-                        <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-blue-500 mb-20 text-center">Our Solution</h2>
+                        <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-blue-500 mb-20 text-center">
+                            Our Solution
+                        </h2>
                         <div className="grid gap-8 md:grid-cols-2">
                             {project.solution_categories.map((cat, idx) => (
                                 <motion.div
                                     key={idx}
                                     initial={{ opacity: 0, scale: 0.95 }}
                                     whileInView={{ opacity: 1, scale: 1 }}
-                                    transition={{ duration: 0.5, delay: idx * 0.1 }}
+                                    transition={{
+                                        duration: 0.5,
+                                        delay: idx * 0.1,
+                                    }}
                                     viewport={{ once: true }}
                                     className="p-10 rounded-[2rem] border border-white/5 bg-white/5 backdrop-blur-sm"
                                 >
-                                    <h4 className="text-xl font-bold text-white mb-6 underline underline-offset-8 decoration-blue-500/50">{cat.title}</h4>
+                                    <h4 className="text-xl font-bold text-white mb-6 underline underline-offset-8 decoration-blue-500/50">
+                                        {cat.title}
+                                    </h4>
                                     <ul className="space-y-4">
                                         {cat.items.map((item, i) => (
-                                            <li key={i} className="text-zinc-400 text-base leading-relaxed flex gap-3">
-                                                <span className="text-blue-500/50">/</span>
+                                            <li
+                                                key={i}
+                                                className="text-zinc-400 text-base leading-relaxed flex gap-3"
+                                            >
+                                                <span className="text-blue-500/50">
+                                                    /
+                                                </span>
                                                 {item}
                                             </li>
                                         ))}
@@ -236,12 +291,19 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                         {/* Key Features */}
                         {project.features && (
                             <div>
-                                <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500 mb-12">Key Features Delivered</h3>
+                                <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-zinc-500 mb-12">
+                                    Key Features Delivered
+                                </h3>
                                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                                     {project.features.map((feature, idx) => (
-                                        <div key={idx} className="flex items-center gap-4 p-5 rounded-xl border border-white/5 bg-white/5">
+                                        <div
+                                            key={idx}
+                                            className="flex items-center gap-4 p-5 rounded-xl border border-white/5 bg-white/5"
+                                        >
                                             <div className="h-2 w-2 rounded-full bg-blue-500" />
-                                            <p className="text-sm font-medium text-zinc-200">{feature}</p>
+                                            <p className="text-sm font-medium text-zinc-200">
+                                                {feature}
+                                            </p>
                                         </div>
                                     ))}
                                 </div>
@@ -250,8 +312,8 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
 
                         {/* Impact / Results Section */}
                         {(() => {
-                            const items = project.results || project.impact
-                            if (!items) return null
+                            const items = project.results || project.impact;
+                            if (!items) return null;
                             return (
                                 <motion.div
                                     initial={{ opacity: 0, y: 40 }}
@@ -262,11 +324,16 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                                 >
                                     {/* Subtle glow */}
                                     <div className="absolute -top-24 -right-24 h-64 w-64 bg-blue-600/10 blur-[80px] transition-opacity group-hover:opacity-100 opacity-50" />
-                                    
-                                    <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-blue-500 mb-16">Results & Impact</h3>
+
+                                    <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-blue-500 mb-16">
+                                        Results & Impact
+                                    </h3>
                                     <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
                                         {items.map((item, index) => (
-                                            <div key={index} className="flex flex-col gap-6">
+                                            <div
+                                                key={index}
+                                                className="flex flex-col gap-6"
+                                            >
                                                 <div className="h-px w-12 bg-blue-500/50" />
                                                 <p className="text-xl font-medium text-white md:text-2xl leading-snug">
                                                     {item}
@@ -275,7 +342,7 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                                         ))}
                                     </div>
                                 </motion.div>
-                            )
+                            );
                         })()}
                     </div>
                 </div>
@@ -287,7 +354,7 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                 <div className="absolute inset-0 -z-10">
                     <div className="absolute inset-0 bg-[#04070d]/40 backdrop-blur-[2px]" />
                     <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/10 to-transparent" />
-                    <div className="absolute -bottom-1/2 left-1/2 h-[500px] w-[800px] -translate-x-1/2 bg-blue-600/10 blur-[100px]" />
+                    <div className="absolute -bottom-1/2 left-1/2 h-125 w-200 -translate-x-1/2 bg-blue-600/10 blur-[100px]" />
                 </div>
 
                 <div className="container relative z-10 mx-auto px-6 text-center md:px-10">
@@ -302,11 +369,13 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                             The Next Big Move
                         </p>
                         <h2 className="mb-10 text-3xl font-bold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
-                            Ready for your own 
+                            Ready for your own
                             <br />
-                            <span className="bg-linear-to-b from-white to-white/40 bg-clip-text text-transparent italic">Success Story?</span>
+                            <span className="bg-linear-to-b from-white to-white/40 bg-clip-text text-transparent italic">
+                                Success Story?
+                            </span>
                         </h2>
-                        
+
                         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                             <Link
                                 href="/contact"
@@ -315,7 +384,7 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                                 <span>Start Your Journey</span>
                                 <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                             </Link>
-                            
+
                             <Link
                                 href="/portfolio"
                                 className="group flex h-14 items-center gap-3 rounded-full border border-white/10 bg-white/5 px-8 text-base font-bold text-white backdrop-blur-md transition-all hover:bg-white/10 active:scale-95"
@@ -327,5 +396,5 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                 </div>
             </section>
         </main>
-    )
+    );
 }

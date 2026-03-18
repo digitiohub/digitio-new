@@ -31,7 +31,7 @@ export function AboutCtaSection() {
 
             <div className="mt-7 grid gap-3 sm:grid-cols-2">
               {ctaPoints.map((point) => (
-                <div key={point} className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3">
+                <div key={point} className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/3 px-4 py-3">
                   <CheckCircle2 className="h-4 w-4 text-sky-200" />
                   <span className="text-sm text-white/76">{point}</span>
                 </div>
@@ -49,10 +49,10 @@ export function AboutCtaSection() {
             </div>
           </motion.div>
 
-          <motion.div variants={revealUp} className="relative min-h-[320px]">
+          <motion.div variants={revealUp} className="relative min-h-80">
             <div className="absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full bg-sky-400/16 blur-3xl" />
-            <div className="absolute left-1/2 top-1/2 h-[18rem] w-[18rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10" />
-            <div className="absolute left-1/2 top-1/2 h-[12rem] w-[12rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-blue-300/20" />
+            <div className="absolute left-1/2 top-1/2 h-72 w-[18rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10" />
+            <div className="absolute left-1/2 top-1/2 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full border border-blue-300/20" />
 
             <div className="absolute left-[14%] top-[14%] flex items-center gap-3 rounded-2xl border border-white/10 bg-[#0b1018]/85 px-4 py-3 backdrop-blur-sm">
               <Sparkles className="h-4 w-4 text-sky-200" />
@@ -70,7 +70,7 @@ export function AboutCtaSection() {
               </div>
             </div>
 
-            <div className="absolute left-1/2 top-1/2 flex h-28 w-28 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2rem] border border-sky-200/20 bg-gradient-to-br from-sky-400/22 via-blue-500/18 to-cyan-300/10 text-center shadow-[0_0_80px_rgba(56,189,248,0.18)]">
+            <div className="absolute left-1/2 top-1/2 flex h-28 w-28 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2rem] border border-sky-200/20 bg-linear-to-br from-sky-400/22 via-blue-500/18 to-cyan-300/10 text-center shadow-[0_0_80px_rgba(56,189,248,0.18)]">
               <div>
                 <p className="text-[11px] uppercase tracking-[0.18em] text-white/55">Build</p>
                 <p className="mt-2 text-xl font-semibold tracking-tight text-white">Together</p>

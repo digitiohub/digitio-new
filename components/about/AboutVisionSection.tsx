@@ -45,11 +45,11 @@ export function AboutVisionSection() {
           </motion.div>
 
           <motion.div variants={revealUp} className="relative">
-            <div className="relative overflow-hidden rounded-[1.6rem] border border-white/10 bg-white/[0.03] p-6 md:p-7">
+            <div className="relative overflow-hidden rounded-[1.6rem] border border-white/10 bg-white/3 p-6 md:p-7">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(96,165,250,0.18),transparent_45%)]" />
               <div className="absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full border border-blue-300/15" />
               <div className="absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10" />
-              <div className="absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-sky-400/30 via-blue-500/20 to-cyan-300/10 blur-sm" />
+              <div className="absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full bg-linear-to-br from-sky-400/30 via-blue-500/20 to-cyan-300/10 blur-sm" />
 
               <div className="relative space-y-4">
                 {visionPillars.map((pillar) => {

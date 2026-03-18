@@ -34,5 +34,23 @@
     "ogTitle": "DigitioHub Services",
     "description": "Explore DigitioHub services across web development, branding, AI, SEO, social media, and scalable digital product execution.",
     "eyebrow": "What We Do"
+  },
+  {
+    "key": "portfolio",
+    "slug": "portfolio",
+    "route": "/portfolio",
+    "title": "Portfolio | DigitioHub",
+    "ogTitle": "DigitioHub Portfolio",
+    "description": "See our portfolio of digital builds, AI-driven projects, and creative solutions for modern businesses.",
+    "eyebrow": "Our Work"
+  },
+  {
+    "key": "portfolio-detail",
+    "slug": "[slug]",
+    "route": "/portfolio/[slug]",
+    "title": "Case Study | DigitioHub",
+    "ogTitle": "DigitioHub Project Case Study",
+    "description": "Explore detailed case studies of our digital projects, including challenges, solutions, and results.",
+    "eyebrow": "Success Stories"
   }
 ]
