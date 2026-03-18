@@ -1,53 +1,114 @@
 [
-  {
-    "id": "safari-crm",
-    "title": "Safari CRM",
-    "year": "2025",
-    "type": "SaaS",
-    "description": "A system that eliminated operational chaos for growing travel businesses.",
-    "thumbnail": "https://images.unsplash.com/photo-1481487196290-c152efe083f5?auto=format&fit=crop&w=1200&q=80",
-    "impact": [
-      "60% reduction in manual work",
-      "3x faster booking processing",
-      "Improved operational visibility"
-    ],
-    "problem": "Travel operators struggled with fragmented tools, manual workflows, and poor scalability.",
-    "solution": "We designed a centralized system that automates operations and improves efficiency.",
-    "techStack": ["Next.js", "Node.js", "MongoDB", "AWS"],
-    "slug": "safari-crm"
-  },
-  {
-    "id": "nexus-pos",
-    "title": "Nexus POS",
-    "year": "2024",
-    "type": "Retail Tech",
-    "description": "A cloud-native point of sale system for multi-location retail chains.",
-    "thumbnail": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=1200&q=80",
-    "impact": [
-      "40% increase in checkout speed",
-      "Real-time inventory sync across 50+ stores",
-      "Integrated loyalty program boosting retention by 25%"
-    ],
-    "problem": "Retailers faced inventory lag and slow checkout processes with legacy systems.",
-    "solution": "A high-performance POS with offline capabilities and real-time cloud synchronization.",
-    "techStack": ["React Native", "Go", "PostgreSQL", "Google Cloud"],
-    "slug": "nexus-pos"
-  },
-  {
-    "id": "flow-automation",
-    "title": "Flow Automation",
-    "year": "2024",
-    "type": "Automation",
-    "description": "Enterprise-grade workflow automation for financial reporting.",
-    "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
-    "impact": [
-      "Zero errors in quarterly reporting",
-      "Saved 400+ man-hours per month",
-      "Audit-ready logs for every transaction"
-    ],
-    "problem": "Finance teams were manually reconciling thousands of transactions, leading to errors and delays.",
-    "solution": "An automated pipeline that ingests, validates, and reports financial data with 99.9% accuracy.",
-    "techStack": ["Python", "FastAPI", "React", "Azure"],
-    "slug": "flow-automation"
-  }
+    {
+        "id": "promeat",
+        "title": "ProMeat",
+        "tagline": "IIT Bombay Incubated Startup",
+        "year": "2024",
+        "type": "Sustainable Food",
+        "industry": "Plant-Based Foods (FMCG)",
+        "brandOwner": "ProMeat (IIT-B Incubation)",
+        "websiteLink": "https://promeat.in/",
+        "thumbnail": "https://images.unsplash.com/photo-1607623273070-43ab836e7bb5?auto=format&fit=crop&w=1200&q=80",
+        "overview": "ProMeat is an IIT Bombay–incubated startup focused on creating plant-based meat alternatives for the Indian market. The brand approached LogicNodes to redesign their website with a clean, modern, and global look—similar to global brands like Impossible Foods—while ensuring a seamless, easy-to-manage backend for their non-technical team.",
+        "challenges": [
+            "Website lacked clarity in design and brand storytelling",
+            "No consistent use of brand colours or premium identity",
+            "Product updates required contacting a developer each time",
+            "Backend was complex and not suitable for non-technical founders",
+            "Website structure was not scalable for upcoming product launches"
+        ],
+        "goals": [
+            "A premium, international-quality website aligned with their brand",
+            "A simple backend to upload/edit products, images, and content",
+            "A scalable structure to support expansion into multiple product categories",
+            "Improved responsiveness, performance, and SEO",
+            "A design that increases trust and engagement"
+        ],
+        "solution_categories": [
+            {
+                "title": "Design & Brand Identity",
+                "items": [
+                    "Completely redesigned the UI with clean layouts and premium visual language",
+                    "Integrated brand colours consistently across the website",
+                    "Built a storytelling-focused section for mission, ingredients, and benefits"
+                ]
+            },
+            {
+                "title": "Development & Scalability",
+                "items": [
+                    "Developed a custom backend/admin panel for easy management",
+                    "Enabled product, pricing, image, and content updates—no developer needed",
+                    "Built scalable categories for future product expansion"
+                ]
+            },
+            {
+                "title": "Performance & Optimization",
+                "items": [
+                    "Improved page speed and reduced layout shift",
+                    "Implemented SEO-friendly structure and metadata",
+                    "Ensured mobile-first responsiveness"
+                ]
+            },
+            {
+                "title": "Ease of Use",
+                "items": [
+                    "Admin panel designed for non-technical teams",
+                    "Intuitive UI making updates simple and stress-free"
+                ]
+            }
+        ],
+        "features": [
+            "Premium international UI/UX redesign",
+            "Custom Admin Panel for product & content management",
+            "Scalable product module for future launches",
+            "SEO-optimized and high-performance pages",
+            "Mobile responsive layouts",
+            "Enhanced brand storytelling"
+        ],
+        "results": [
+            "Website now reflects international plant-based brand standards",
+            "Clear, premium, and consistent brand identity",
+            "Client can manage the entire website independently",
+            "Faster updates → reduced operational dependency",
+            "Increased clarity and engagement from customers",
+            "Strong digital presence supporting investor & customer trust"
+        ],
+        "slug": "promeat",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "Custom Admin Panel"
+        ]
+    },
+    {
+        "id": "safari-crm",
+        "title": "Safari CRM",
+        "year": "2025",
+        "type": "SaaS",
+        "description": "A system that eliminated operational chaos for growing travel businesses.",
+        "thumbnail": "https://images.unsplash.com/photo-1481487196290-c152efe083f5?auto=format&fit=crop&w=1200&q=80",
+        "slug": "safari-crm",
+        "techStack": ["Next.js", "Node.js", "MongoDB", "AWS"]
+    },
+    {
+        "id": "nexus-pos",
+        "title": "Nexus POS",
+        "year": "2024",
+        "type": "Retail Tech",
+        "description": "A cloud-native point of sale system for multi-location retail chains.",
+        "thumbnail": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=1200&q=80",
+        "slug": "nexus-pos",
+        "techStack": ["React Native", "Go", "PostgreSQL", "Google Cloud"]
+    },
+    {
+        "id": "flow-automation",
+        "title": "Flow Automation",
+        "year": "2024",
+        "type": "Automation",
+        "description": "Enterprise-grade workflow automation for financial reporting.",
+        "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+        "slug": "flow-automation",
+        "techStack": ["Python", "FastAPI", "React", "Azure"]
+    }
 ]

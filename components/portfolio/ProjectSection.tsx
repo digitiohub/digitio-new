@@ -12,9 +12,10 @@ interface ProjectSectionProps {
         title: string
         year: string
         type: string
-        description: string
         slug: string
         thumbnail: string
+        description?: string
+        overview?: string
     }
     index: number
 }
@@ -66,7 +67,7 @@ export function ProjectSection({ project, index }: ProjectSectionProps) {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
                             >
-                                {project.description}
+                                {project.overview || project.description}
                             </motion.p>
 
                             <motion.div 
