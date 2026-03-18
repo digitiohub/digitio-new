@@ -281,31 +281,46 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                 </div>
             </section>
 
-            {/* Closing CTA */}
-            <section className="border-t border-white/10 bg-zinc-950/20 py-32 md:py-48">
-                <div className="container mx-auto px-6 text-center md:px-10">
+            {/* Closing CTA - High Impact */}
+            <section className="relative isolate overflow-hidden py-16 md:py-24">
+                {/* Background Decor */}
+                <div className="absolute inset-0 -z-10">
+                    <div className="absolute inset-0 bg-[#04070d]/40 backdrop-blur-[2px]" />
+                    <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/10 to-transparent" />
+                    <div className="absolute -bottom-1/2 left-1/2 h-[500px] w-[800px] -translate-x-1/2 bg-blue-600/10 blur-[100px]" />
+                </div>
+
+                <div className="container relative z-10 mx-auto px-6 text-center md:px-10">
                     <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="mx-auto max-w-4xl"
+                        className="mx-auto max-w-4xl rounded-[3rem] border border-white/5 bg-white/2 p-10 md:p-16 backdrop-blur-3xl"
                     >
-                        <p className="mb-8 text-xs font-bold uppercase tracking-[0.3em] text-blue-500">
-                            Results Matter
+                        <p className="mb-6 text-[10px] font-bold uppercase tracking-[0.4em] text-blue-500">
+                            The Next Big Move
                         </p>
-                        <h2 className="text-4xl font-bold leading-tight tracking-tight text-white md:text-6xl">
+                        <h2 className="mb-10 text-3xl font-bold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
                             Ready for your own 
                             <br />
-                            <span className="text-zinc-500">success story?</span>
+                            <span className="bg-linear-to-b from-white to-white/40 bg-clip-text text-transparent italic">Success Story?</span>
                         </h2>
-                        <div className="mt-16 flex justify-center">
+                        
+                        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                             <Link
                                 href="/contact"
-                                className="group flex items-center gap-3 rounded-full bg-[#2d79ff] px-10 py-5 text-lg font-bold text-white transition-all hover:bg-[#4387ff] active:scale-95"
+                                className="group relative flex h-14 items-center gap-3 overflow-hidden rounded-full bg-[#2d79ff] px-8 text-base font-bold text-white transition-all hover:bg-[#4387ff] active:scale-95 shadow-[0_0_40px_-10px_rgba(45,121,255,0.4)]"
                             >
-                                <span>Let&apos;s Build Together</span>
-                                <ArrowUpRight className="h-6 w-6 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                                <span>Start Your Journey</span>
+                                <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                            </Link>
+                            
+                            <Link
+                                href="/portfolio"
+                                className="group flex h-14 items-center gap-3 rounded-full border border-white/10 bg-white/5 px-8 text-base font-bold text-white backdrop-blur-md transition-all hover:bg-white/10 active:scale-95"
+                            >
+                                <span>View All Projects</span>
                             </Link>
                         </div>
                     </motion.div>
