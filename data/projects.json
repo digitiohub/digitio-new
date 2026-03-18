@@ -8,7 +8,7 @@
         "industry": "Plant-Based Foods (FMCG)",
         "brandOwner": "ProMeat (IIT-B Incubation)",
         "websiteLink": "https://promeat.in/",
-        "thumbnail": "https://images.unsplash.com/photo-1607623273070-43ab836e7bb5?auto=format&fit=crop&w=1200&q=80",
+        "thumbnail": "/media/projects/promeat.png",
         "overview": "ProMeat is an IIT Bombay–incubated startup focused on creating plant-based meat alternatives for the Indian market. The brand approached LogicNodes to redesign their website with a clean, modern, and global look—similar to global brands like Impossible Foods—while ensuring a seamless, easy-to-manage backend for their non-technical team.",
         "challenges": [
             "Website lacked clarity in design and brand storytelling",
@@ -82,33 +82,492 @@
         ]
     },
     {
-        "id": "safari-crm",
-        "title": "Safari CRM",
-        "year": "2025",
-        "type": "SaaS",
-        "description": "A system that eliminated operational chaos for growing travel businesses.",
-        "thumbnail": "https://images.unsplash.com/photo-1481487196290-c152efe083f5?auto=format&fit=crop&w=1200&q=80",
-        "slug": "safari-crm",
-        "techStack": ["Next.js", "Node.js", "MongoDB", "AWS"]
+        "id": "gaavbazaar",
+        "title": "GaavBazaar.com",
+        "tagline": "riidl-Backed Startup",
+        "year": "2024",
+        "type": "E-commerce Redesign",
+        "industry": "Handcrafted Goods & Rural Commerce",
+        "brandOwner": "GaavBazaar",
+        "websiteLink": "https://gaavbazaar.com/",
+        "thumbnail": "/media/projects/gaavbazaar.png",
+        "overview": "GaavBazaar is a riidl-incubated startup dedicated to empowering rural artisans by taking handcrafted village products directly to online customers. They partnered with LogicNodes to build a modern, clean, and culturally rooted e-commerce platform that could communicate their mission while remaining simple enough for a non-technical team to operate.",
+        "challenges": [
+            "Website failed to express the village-to-customer story",
+            "Weak visual storytelling for artisans and handcrafted products",
+            "Product categories were confusing, leading to poor navigation",
+            "Team struggled to update products, stock, and prices",
+            "No structured analytics or scalable e-commerce framework"
+        ],
+        "goals": [
+            "A modern yet culturally authentic design",
+            "Clear storytelling around rural artisans and handcrafted goods",
+            "Easy-to-manage product and order system",
+            "Streamlined categories for smoother shopping",
+            "Scalable structure for future collections and artisans",
+            "Improved SEO and customer browsing experience"
+        ],
+        "solution_categories": [
+            {
+                "title": "Culturally Rooted UI Design",
+                "items": [
+                    "Blended modern e-commerce layouts with rural-inspired visuals",
+                    "Highlighted artisans, village craftsmanship, and product stories",
+                    "Built an emotional brand experience that reflects authenticity"
+                ]
+            },
+            {
+                "title": "Improved Navigation & Structure",
+                "items": [
+                    "Created clear, intuitive product categories",
+                    "Structured collections for handcrafted goods, village products, and special editions"
+                ]
+            },
+            {
+                "title": "Clean & Simple Admin Panel",
+                "items": [
+                    "Enabled easy product, image, price, and stock management",
+                    "Provided order processing and basic analytics tools",
+                    "Designed specifically for non-technical teams"
+                ]
+            },
+            {
+                "title": "Performance & SEO Enhancements",
+                "items": [
+                    "Optimized SEO structure to boost online visibility",
+                    "Improved page loading, browsing flow, and user experience"
+                ]
+            }
+        ],
+        "features": [
+            "Modern + culturally rich e-commerce UI",
+            "Simplified admin panel for daily operations",
+            "Clear storytelling around artisans and handmade value",
+            "Order management and basic analytics",
+            "Scalable structure for new products, artisans, and categories",
+            "SEO-friendly and performance-optimized website"
+        ],
+        "results": [
+            "Strong digital identity showcasing rural artisans and handcrafted culture",
+            "Client can manage the entire e-commerce platform independently",
+            "Enhanced customer trust and improved user experience",
+            "Smoother browsing → higher engagement and better conversions",
+            "Scalable platform supporting GaavBazaar’s vision to uplift village entrepreneurs"
+        ],
+        "slug": "gaavbazaar",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "Payload CMS",
+            "E-commerce Engine"
+        ]
     },
     {
-        "id": "nexus-pos",
-        "title": "Nexus POS",
+        "id": "sajeev-krushi",
+        "title": "Sajeev Krushi",
+        "tagline": "“Garbage to Green” Initiative",
         "year": "2024",
-        "type": "Retail Tech",
-        "description": "A cloud-native point of sale system for multi-location retail chains.",
-        "thumbnail": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=1200&q=80",
-        "slug": "nexus-pos",
-        "techStack": ["React Native", "Go", "PostgreSQL", "Google Cloud"]
+        "type": "Brand Storytelling & System",
+        "industry": "Organic Farming & Sustainability",
+        "brandOwner": "Sajeev Krushi (Founded by Sanjay Bhayade)",
+        "websiteLink": "https://sajeevkrushi.com/",
+        "thumbnail": "/media/projects/sajeev.png",
+        "overview": "Sajeev Krushi was built on a powerful mission: transforming organic waste into sustainable value through vermiculture. Inspired by Masanobu Fukuoka’s “One-Straw Revolution,” the founder aimed to create a system where biodegradable waste becomes high-quality compost, empowering farmers and restoring soil health.",
+        "challenges": [
+            "Lack of digital presence to express the powerful story of “Garbage to Green”",
+            "No scalable platform to manage vermiculture projects and compost production",
+            "Farmers did not have easy access to high-quality organic fertilisers",
+            "Difficulty in training people on vermiculture and waste management",
+            "No structured backend to track production, waste inputs, or operational efficiency",
+            "Trust-building and brand positioning challenges in the organic farming ecosystem"
+        ],
+        "goals": [
+            "A strong brand narrative that communicates sustainability and impact",
+            "A clean, nature-inspired website showcasing their mission, products, and services",
+            "A simple backend system to manage vermiculture units, compost production, and product listings",
+            "Tools to track waste input, worm culture growth, and production analytics",
+            "Educational sections to guide farmers and aspiring entrepreneurs",
+            "A credible digital identity that builds trust and supports expansion"
+        ],
+        "solution_categories": [
+            {
+                "title": "Brand Storytelling & Identity",
+                "items": [
+                    "Created the brand narrative “Garbage to Green”",
+                    "Positioned Sajeev Krushi as a blend of waste-management innovation + organic agriculture",
+                    "Highlighted founder expertise and mission-driven impact"
+                ]
+            },
+            {
+                "title": "UI/UX & Website Design",
+                "items": [
+                    "Designed a clean, green-themed website reflecting nature, growth, and sustainability",
+                    "Structured information around vermiculture services, compost products, training programs, and environmental impact"
+                ]
+            },
+            {
+                "title": "Operations & Admin System",
+                "items": [
+                    "Built an admin panel to manage vermiculture project tracking, compost monitoring, and order flow",
+                    "Simplified workflow for non-technical team members like farmers and managers"
+                ]
+            },
+            {
+                "title": "Waste-to-Value Project Tools",
+                "items": [
+                    "Added tools to track waste input and worm culture growth",
+                    "Enabled annual production analytics to identify efficient projects"
+                ]
+            }
+        ],
+        "features": [
+            "Strong brand narrative around sustainable waste conversion",
+            "Website with green-driven UI/UX",
+            "Simplified admin panel for project and product management",
+            "Waste-to-value analytics features",
+            "Structured educational resource hub",
+            "Clear storytelling that builds trust and credibility"
+        ],
+        "results": [
+            "Reduced urban and rural biodegradable waste by converting it into compost",
+            "Enabled farmers to generate income and restore soil health",
+            "Implemented ~20 commercial vermicompost projects",
+            "Scalable digital tools allow monitoring of each unit",
+            "Promoted organic farming and circular waste systems"
+        ],
+        "slug": "sajeev-krushi",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "Custom Operational CRM"
+        ]
     },
     {
-        "id": "flow-automation",
-        "title": "Flow Automation",
+        "id": "cherries-peaches",
+        "title": "Cherries & Peaches",
+        "tagline": "Influencer Lifestyle Brand",
         "year": "2024",
-        "type": "Automation",
-        "description": "Enterprise-grade workflow automation for financial reporting.",
-        "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
-        "slug": "flow-automation",
-        "techStack": ["Python", "FastAPI", "React", "Azure"]
+        "type": "Personal Brand Identity",
+        "industry": "Influencer Lifestyle",
+        "brandOwner": "Cherries & Peaches",
+        "websiteLink": "https://cherriesandpeaches.in/",
+        "thumbnail": "/media/projects/cherries.png",
+        "overview": "Cherries & Peaches is an influencer-driven lifestyle brand built around a vibrant personality, curated aesthetics, and strong visual storytelling. We transformed their social-media profile into a professional, standalone digital identity ready for merch, collaborations, and content monetization.",
+        "challenges": [
+            "Online identity existed mostly on social media, not as a professional brand",
+            "No structured platform to showcase content, collaborations, or merch",
+            "Needed a web presence that matched their vibrancy and aesthetic",
+            "Required an intuitive backend to update content effortlessly"
+        ],
+        "goals": [
+            "A digital-first identity that feels like a “brand,” not just a profile",
+            "A beautifully designed website matching their feminine, fruity aesthetic",
+            "Space to showcase lifestyle content, blogs, and collaborations",
+            "A simple admin panel to update posts and media independently",
+            "A mobile-first user experience for influencer audiences"
+        ],
+        "solution_categories": [
+            {
+                "title": "Brand Identity & Storytelling",
+                "items": [
+                    "Designed a website rooted in the “Cherries & Peaches” aesthetic",
+                    "Used soft pinks, peach tones, and cherry-inspired highlights",
+                    "Created story-centric sections: About Me, mission, and personality showcase"
+                ]
+            },
+            {
+                "title": "Website Structure & Design",
+                "items": [
+                    "Built a clean, lightweight UI for lifestyle visuals",
+                    "Created dedicated sections for Media, Blogs, and Merch",
+                    "Ensured design matches personal brand tone — feminine and expressive"
+                ]
+            },
+            {
+                "title": "Admin Panel for Independence",
+                "items": [
+                    "Developed a simple backend for updating blogs and collaborations",
+                    "Enabled easy media uploads and announcement management"
+                ]
+            }
+        ],
+        "features": [
+            "Full lifestyle brand-focused website",
+            "Custom storytelling-focused landing page",
+            "Sections for content, merch, collaborations, and contact",
+            "Easy-to-use admin panel for independent updates",
+            "Mobile-first, SEO-friendly design",
+            "Aesthetic matching the influencer’s brand identity"
+        ],
+        "results": [
+            "Transitioned from a social handle to a complete lifestyle brand",
+            "Increased credibility for potential brand partners and sponsors",
+            "Self-sufficient content management system",
+            "Future-ready foundation for Merch and Digital Products"
+        ],
+        "slug": "cherries-peaches",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "Lightweight CMS"
+        ]
+    },
+    {
+        "id": "iilos",
+        "title": "IILOS",
+        "tagline": "International Institute of Logistics Studies",
+        "year": "2024",
+        "type": "Education Framework & Web Design",
+        "industry": "Logistics & Supply Chain Education",
+        "brandOwner": "IILOS",
+        "websiteLink": "https://iilos.org/",
+        "thumbnail": "/media/projects/iilos.png",
+        "overview": "IILOS was founded to bridge the gap between logistics theory and real-world industry practices. We built a strong educational framework, established a premium digital presence, and designed a model that connects students with industry-led learning.",
+        "challenges": [
+            "Academic programs were outdated and disconnected from operations",
+            "Lack of platforms integrating students and logistics companies",
+            "Need for a blended model combining education + industry partnerships"
+        ],
+        "goals": [
+            "An industry-aligned curriculum across logistics domains",
+            "A premium online presence as a credible educational institute",
+            "Partnerships with logistics companies for internships and recruitment",
+            "A blended learning infrastructure combining online/offline methods"
+        ],
+        "solution_categories": [
+            {
+                "title": "Curriculum Development & Strategy",
+                "items": [
+                    "Co-designed modules in Supply Chain, Transportation, and Warehouse management",
+                    "Ensured all modules were industry-aligned and application-oriented"
+                ]
+            },
+            {
+                "title": "Digital Presence & Branding",
+                "items": [
+                    "Designed a professional institute website (iilos.org)",
+                    "Focused on “Industry + Knowledge + Innovation” messaging",
+                    "Structured content for students, professionals, and corporates"
+                ]
+            },
+            {
+                "title": "Industry Partnerships & Learning",
+                "items": [
+                    "Facilitated collaborations with logistics companies for internships",
+                    "Built a blended-learning system and mentorship network"
+                ]
+            }
+        ],
+        "features": [
+            "Industry-aligned curriculum framework",
+            "Professional institute website with a strong identity",
+            "Partnerships with logistics companies",
+            "Blended-learning infrastructure",
+            "Mentorship and alumni network ecosystem"
+        ],
+        "results": [
+            "Students receive practical, application-based learning exposure",
+            "Companies view IILOS as a reliable partner for recruitment",
+            "Scalable growth model into new geographies",
+            "Established along-term community of logistics professionals"
+        ],
+        "slug": "iilos",
+        "techStack": ["Next.js", "Tailwind CSS", "TypeScript", "LMS Framework"]
+    },
+    {
+        "id": "outline-next",
+        "title": "Outline Next",
+        "tagline": "Full-Service Marketing Agency",
+        "year": "2024",
+        "type": "Agency Website & CMS",
+        "industry": "Marketing & Creative Strategy",
+        "brandOwner": "Outline Next",
+        "websiteLink": "https://outline-next-dev.netlify.app/",
+        "thumbnail": "/media/projects/outline.png",
+        "overview": "Outline Next is a full-service marketing agency helping brands turn ideas into measurable impact. We built a website that acts as a narrative and conversion engine — showcasing their strategy, creative execution, and results.",
+        "challenges": [
+            "Difficult to differentiate in a crowded marketing agency landscape",
+            "Needed to clearly show strategic thinking + creative execution",
+            "Lack of a central place for case studies and proof of expertise",
+            "Needed a backend to manage services and portfolio independently"
+        ],
+        "goals": [
+            "A modern, premium agency website aligned with their brand",
+            "Strong positioning: strategy + creativity + results",
+            "Dedicated pages for services, case studies, and process",
+            "Conversion-optimized layout with lead-generation CTAs"
+        ],
+        "solution_categories": [
+            {
+                "title": "Brand Storytelling & Web Design",
+                "items": [
+                    "Designed a clean, modern interface with impact-focused storytelling",
+                    "Framed services as narratives: pain points → strategy → outcomes"
+                ]
+            },
+            {
+                "title": "Service-First Architecture",
+                "items": [
+                    "Created distinct pages for Strategy, Creative, and Growth",
+                    "Ensured each page communicates outcomes over simple service lists"
+                ]
+            },
+            {
+                "title": "Conversion-Driven Design",
+                "items": [
+                    "Integrated strong CTAs like “Book a Strategy Call” and “See Our Work”",
+                    "Strategically placed lead-capture forms for maximum conversions"
+                ]
+            }
+        ],
+        "features": [
+            "Premium modern agency website",
+            "Service-based narrative structure",
+            "“How We Work” process section",
+            "Integrated case studies and portfolio",
+            "Easy-to-use CMS for full control",
+            "SEO-ready, high-performance design"
+        ],
+        "results": [
+            "Website now effectively communicates their strategic identity",
+            "Showcasing process and expertise increases client trust",
+            "Converted website traffic into actual project leads",
+            "Team can easily add new content independently"
+        ],
+        "slug": "outline-next",
+        "techStack": ["Next.js", "Tailwind CSS", "TypeScript", "Custom CMS"]
+    },
+    {
+        "id": "alkem",
+        "title": "Alkem Laboratories",
+        "tagline": "Enterprise Events Manager Portal",
+        "year": "2024",
+        "type": "Enterprise Frontend Dev",
+        "industry": "Pharmaceuticals & Enterprise Tech",
+        "brandOwner": "Alkem Laboratories (10,000+ Employees)",
+        "websiteLink": "https://demo-eventsmanager.netlify.app/home",
+        "thumbnail": "/media/projects/alkem.png",
+        "overview": "Alkem Laboratories needed a centralized internal portal for 10,000+ employees. We delivered a production-ready, enterprise-level frontend in record time (3 weeks), following strict UI guidelines and complex backend workflows.",
+        "challenges": [
+            "Communication happened through scattered emails and Google Forms",
+            "Extremely tight 3-week timeline for a full enterprise portal",
+            "Mandatory pixel precision and corporate guideline alignment",
+            "Need for clean API mapping and backend collaboration"
+        ],
+        "goals": [
+            "A centralized system for employees to explore and register for events",
+            "Production-ready frontend delivered under heavy time pressure",
+            "Seamless backend integration and smooth data flow",
+            "Admin-friendly structure for event managers"
+        ],
+        "solution_categories": [
+            {
+                "title": "Enterprise Frontend in 3 Weeks",
+                "items": [
+                    "Delivered pixel-perfect screens following Alkem’s brand standards",
+                    "Built a scalable architecture for future feature expansion",
+                    "Optimized for high-performance and heavy traffic"
+                ]
+            },
+            {
+                "title": "User-Friendly Event Flow",
+                "items": [
+                    "Enabled instance event discovery and registration",
+                    "Built tracking systems for past and upcoming employee activities"
+                ]
+            },
+            {
+                "title": "API Collaboration",
+                "items": [
+                    "Mapped all API endpoints and provided integration-ready structures",
+                    "Shared continuous feedback for backend improvements"
+                ]
+            }
+        ],
+        "features": [
+            "Modern clean enterprise UI",
+            "Fast-loading frontend for internal traffic",
+            "Easy event discovery and registration flow",
+            "Admin portal for event creation and tracking",
+            "API-ready components and documentation"
+        ],
+        "results": [
+            "Complete delivery within the strict 3-week deadline",
+            "Higher employee engagement through a central portal",
+            "Eliminated manual work (emails/spreadsheets) for HR teams",
+            "Seamless backend-to-frontend workflow integration",
+            "Future-proof UI ready for analytics and role-based access"
+        ],
+        "slug": "alkem",
+        "techStack": [
+            "React",
+            "Enterprise UI Kits",
+            "Axios",
+            "Optimized Webpack"
+        ]
+    },
+    {
+        "id": "safari-sutra",
+        "title": "Safari Sutra",
+        "tagline": "Premium Travel Experience",
+        "year": "2024",
+        "type": "UI/UX & Website Development",
+        "industry": "Luxury Tours & Wildlife Safaris",
+        "brandOwner": "Safari Sutra",
+        "websiteLink": "https://thesafarisutra.com/",
+        "thumbnail": "/media/projects/safarisutra.png",
+        "overview": "Safari Sutra is a luxury safari brand offering curated journeys across India's wildlife destinations. We built an experiential platform that guides users through exploration, wildlife, and luxury travel with immersive storytelling.",
+        "challenges": [
+            "Brand presence didn’t reflect the premium nature of offerings",
+            "Difficult user journey for destination exploration",
+            "Need for an editorial-style design that elevated photography"
+        ],
+        "goals": [
+            "High-end visual storytelling and travel quality",
+            "Strong brand identity reflecting luxury and wilderness",
+            "A structured system for itineraries and destination details",
+            "Clean enquiry flow for high-conversion lead generation"
+        ],
+        "solution_categories": [
+            {
+                "title": "Premium UI/UX Design",
+                "items": [
+                    "Used earthy tones and large hero imagery for an immersive feel",
+                    "Editorial-style layouts with clean typography for luxury appeal"
+                ]
+            },
+            {
+                "title": "Experience-Driven Structure",
+                "items": [
+                    "Structured destination highlights and experience-based browsing",
+                    "Built a visual framework for itinerary storytelling"
+                ]
+            },
+            {
+                "title": "frontend Performance & Enquiry",
+                "items": [
+                    "Optimized image loading and smooth frontend transitions",
+                    "Implemented a high-conversion enquiry flow for travel bookings"
+                ]
+            }
+        ],
+        "features": [
+            "Full premium UI/UX redesign",
+            "Destination and packages architecture",
+            "Editorial-style visual storytelling",
+            "Mobile-responsive luxury layouts",
+            "Structured enquire flow",
+            "High-end performance and transitions"
+        ],
+        "results": [
+            "Digital positioning now matches real-world luxury quality",
+            "Increased user time-on-site exploring destinations",
+            "Improved enquiry conversion rates for safaris",
+            "Established Safari Sutra as a high-trust travel brand"
+        ],
+        "slug": "safari-sutra",
+        "techStack": ["Next.js", "Tailwind CSS", "GSAP", "Framer Motion"]
     }
 ]

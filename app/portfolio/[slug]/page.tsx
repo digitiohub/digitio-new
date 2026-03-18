@@ -2,7 +2,7 @@
 
 import { use } from "react"
 import { motion } from "framer-motion"
-import { ArrowLeft, ArrowUpRight } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import projectsData from "@/data/projects.json"
@@ -46,27 +46,9 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
 
     return (
         <main className="min-h-screen bg-black text-white selection:bg-blue-500/30 selection:text-blue-200 overflow-x-hidden">
-            {/* Navigation - More integrated */}
-            <nav className="absolute top-0 z-50 w-full bg-transparent">
-                <div className="container mx-auto flex h-24 items-center justify-between px-6 md:px-10">
-                    <Link 
-                        href="/portfolio" 
-                        className="group flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-white/60 transition-colors hover:text-white"
-                    >
-                        <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
-                        Back to Portfolio
-                    </Link>
-                    <Link
-                        href="/contact"
-                        className="hidden rounded-full border border-white/20 bg-white/5 px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-white backdrop-blur-md transition hover:bg-white/10 md:block"
-                    >
-                        Start a Project
-                    </Link>
-                </div>
-            </nav>
 
             {/* Immersive Hero Section */}
-            <section className="relative isolate min-h-[90vh] overflow-hidden flex items-end pb-20 md:pb-32">
+            <section className="relative isolate min-h-screen overflow-hidden flex items-end pb-20 md:pb-32">
                 {/* Background Image with Overlays */}
                 <div className="absolute inset-0 -z-10">
                     <Image 
