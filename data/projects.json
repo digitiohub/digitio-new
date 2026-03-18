@@ -1,0 +1,53 @@
+[
+  {
+    "id": "safari-crm",
+    "title": "Safari CRM",
+    "year": "2025",
+    "type": "SaaS",
+    "description": "A system that eliminated operational chaos for growing travel businesses.",
+    "thumbnail": "https://images.unsplash.com/photo-1481487196290-c152efe083f5?auto=format&fit=crop&w=1200&q=80",
+    "impact": [
+      "60% reduction in manual work",
+      "3x faster booking processing",
+      "Improved operational visibility"
+    ],
+    "problem": "Travel operators struggled with fragmented tools, manual workflows, and poor scalability.",
+    "solution": "We designed a centralized system that automates operations and improves efficiency.",
+    "techStack": ["Next.js", "Node.js", "MongoDB", "AWS"],
+    "slug": "safari-crm"
+  },
+  {
+    "id": "nexus-pos",
+    "title": "Nexus POS",
+    "year": "2024",
+    "type": "Retail Tech",
+    "description": "A cloud-native point of sale system for multi-location retail chains.",
+    "thumbnail": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=1200&q=80",
+    "impact": [
+      "40% increase in checkout speed",
+      "Real-time inventory sync across 50+ stores",
+      "Integrated loyalty program boosting retention by 25%"
+    ],
+    "problem": "Retailers faced inventory lag and slow checkout processes with legacy systems.",
+    "solution": "A high-performance POS with offline capabilities and real-time cloud synchronization.",
+    "techStack": ["React Native", "Go", "PostgreSQL", "Google Cloud"],
+    "slug": "nexus-pos"
+  },
+  {
+    "id": "flow-automation",
+    "title": "Flow Automation",
+    "year": "2024",
+    "type": "Automation",
+    "description": "Enterprise-grade workflow automation for financial reporting.",
+    "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+    "impact": [
+      "Zero errors in quarterly reporting",
+      "Saved 400+ man-hours per month",
+      "Audit-ready logs for every transaction"
+    ],
+    "problem": "Finance teams were manually reconciling thousands of transactions, leading to errors and delays.",
+    "solution": "An automated pipeline that ingests, validates, and reports financial data with 99.9% accuracy.",
+    "techStack": ["Python", "FastAPI", "React", "Azure"],
+    "slug": "flow-automation"
+  }
+]
