@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export function PreFaqCtaSection() {
     return (
-        <section className="bg-black pb-24">
+        <section className="bg-black py-24">
             <div className="container mx-auto px-6">
                 <div className="relative overflow-hidden rounded-[2rem] border border-slate-300/70 bg-[#efefef] text-slate-900">
                     <div className="grid items-stretch lg:grid-cols-[1fr_1.15fr]">
@@ -33,7 +33,7 @@ export function PreFaqCtaSection() {
 
                         <div className="relative min-h-[360px] lg:min-h-[560px]">
                             <div className="absolute -right-24 -top-10 h-[280px] w-[540px] rotate-[-14deg] rounded-[7rem] bg-[#1155ff]/20 blur-0" />
-                            <div className="absolute -right-14 bottom-12 h-[260px] w-[540px] rotate-[18deg] rounded-[7rem] bg-[#2f6bff]/16 blur-0" />
+                            <div className="absolute -right-14 bottom-12 h-[260px] w-[540px] rotate-18 rounded-[7rem] bg-[#2f6bff]/16 blur-0" />
                             <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_18%,#f7ef00_0%,#f7ef00_28%,transparent_29%),radial-gradient(circle_at_56%_58%,#f7ef00_0%,#f7ef00_34%,transparent_35%)]" />
 
                             <div className="absolute inset-x-6 bottom-0 top-8 overflow-hidden rounded-[1.8rem] border border-black/10 bg-white/30">
