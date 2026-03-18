@@ -32,7 +32,7 @@ export function PortfolioHero() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_18%,rgba(72,130,255,0.2),transparent_36%)]" />
             <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(4,8,16,0.84)_5%,transparent_45%)]" />
             
-            <div className="relative z-10 container mx-auto flex min-h-screen items-end px-6 pb-16 pt-28 md:px-10 md:pb-24 lg:items-center">
+            <div className="relative z-10 container mx-auto flex min-h-screen items-end px-6 pb-30 pt-28 md:px-10 md:pb-24 lg:items-center">
                 <div className="max-w-4xl">
                     <motion.p
                         initial={{ opacity: 0, y: 12 }}
