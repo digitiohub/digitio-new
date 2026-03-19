@@ -13,7 +13,7 @@
     "slug": "about",
     "route": "/about",
     "title": "About Us | DigitioHub",
-    "ogTitle": "About DigitioHub",
+    "ogTitle": "About Us",
     "description": "Learn about DigitioHub, our vision, achievements, and leadership team building AI-driven digital systems for modern businesses.",
     "eyebrow": "Who We Are"
   },
@@ -22,7 +22,7 @@
     "slug": "contact",
     "route": "/contact",
     "title": "Contact | DigitioHub",
-    "ogTitle": "Contact DigitioHub",
+    "ogTitle": "Contact Us",
     "description": "Start a conversation with DigitioHub about your next website, product, AI workflow, or growth-focused digital build.",
     "eyebrow": "Let's Build Together"
   },
@@ -31,7 +31,7 @@
     "slug": "services",
     "route": "/services",
     "title": "Services | DigitioHub",
-    "ogTitle": "DigitioHub Services",
+    "ogTitle": "Services",
     "description": "Explore DigitioHub services across web development, branding, AI, SEO, social media, and scalable digital product execution.",
     "eyebrow": "What We Do"
   },
@@ -40,17 +40,35 @@
     "slug": "portfolio",
     "route": "/portfolio",
     "title": "Portfolio | DigitioHub",
-    "ogTitle": "DigitioHub Portfolio",
+    "ogTitle": "Portfolio",
     "description": "See our portfolio of digital builds, AI-driven projects, and creative solutions for modern businesses.",
     "eyebrow": "Our Work"
   },
   {
-    "key": "portfolio-detail",
-    "slug": "[slug]",
-    "route": "/portfolio/[slug]",
-    "title": "Case Study | DigitioHub",
-    "ogTitle": "DigitioHub Project Case Study",
-    "description": "Explore detailed case studies of our digital projects, including challenges, solutions, and results.",
-    "eyebrow": "Success Stories"
+    "key": "cookie-policy",
+    "slug": "cookie-policy",
+    "route": "/cookie-policy",
+    "title": "Cookie Policy | DigitioHub",
+    "ogTitle": "Cookie Policy",
+    "description": "Learn about how DigitioHub uses cookies and similar technologies to improve your experience on our website.",
+    "eyebrow": "Transparency"
+  },
+  {
+    "key": "privacy-policy",
+    "slug": "privacy-policy",
+    "route": "/privacy-policy",
+    "title": "Privacy Policy | DigitioHub",
+    "ogTitle": "Privacy Policy",
+    "description": "Read our privacy policy to understand how we collect, use, and safeguard your personal data.",
+    "eyebrow": "Data Protection"
+  },
+  {
+    "key": "terms-of-service",
+    "slug": "terms-of-service",
+    "route": "/terms-of-service",
+    "title": "Terms of Service | DigitioHub",
+    "ogTitle": "Terms of Service",
+    "description": "Understand the terms and conditions governing your use of the DigitioHub website and services.",
+    "eyebrow": "Our Agreement"
   }
 ]
