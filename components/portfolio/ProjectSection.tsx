@@ -91,9 +91,10 @@ export function ProjectSection({ project, index }: ProjectSectionProps) {
                         {/* Image Showcase */}
                         <motion.div 
                             className={cn(
-                                "relative order-1 overflow-hidden rounded-2xl border border-white/5 bg-zinc-900/50 aspect-16/10",
+                                "relative order-1 overflow-hidden rounded-2xl border border-white/5 bg-zinc-900/50",
                                 isEven ? "lg:order-2" : "lg:order-1"
                             )}
+                            style={{ aspectRatio: '1.97 / 1' }}
                             initial={{ opacity: 0, scale: 0.95, x: isEven ? 20 : -20 }}
                             whileInView={{ opacity: 1, scale: 1, x: 0 }}
                             transition={{ duration: 0.7, ease: "easeOut" }}
