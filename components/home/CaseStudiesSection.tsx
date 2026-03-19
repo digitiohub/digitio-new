@@ -27,11 +27,13 @@ export function CaseStudiesSection() {
     const sectionRef = useRef<HTMLElement>(null)
     const dragAreaRef = useRef<HTMLDivElement>(null)
     const wheelRef = useRef<HTMLDivElement>(null)
+    const mobileScrollRef = useRef<HTMLDivElement>(null)
 
     const rotation = useRef(0)
     const rotationTween = useRef<gsap.core.Tween | null>(null)
     const velocity = useRef(0)
     const isDragging = useRef(false)
+    const isInternalScroll = useRef(false)
     const lastX = useRef(0)
     const lastTime = useRef(0)
     const [activeTab, setActiveTab] = useState(0)
@@ -61,6 +63,24 @@ export function CaseStudiesSection() {
         const normalized = (tabIndex + originalCaseStudies.length) % originalCaseStudies.length
         setActiveTab(normalized)
         velocity.current = 0
+
+        // Sync Mobile Fallback Scroll
+        if (mobileScrollRef.current) {
+            isInternalScroll.current = true;
+            const container = mobileScrollRef.current;
+            const targetChild = container.children[normalized] as HTMLElement;
+            if (targetChild) {
+                const scrollLeft = targetChild.offsetLeft - (container.offsetWidth - targetChild.offsetWidth) / 2;
+                container.scrollTo({
+                    left: scrollLeft,
+                    behavior: 'smooth'
+                });
+            }
+            // Reset internal scroll flag after animation completes (roughly)
+            setTimeout(() => {
+                isInternalScroll.current = false;
+            }, 800);
+        }
 
         const baseTarget = -(normalized * CARD_STEP_ANGLE)
         const currentRotation = rotation.current
@@ -163,6 +183,31 @@ export function CaseStudiesSection() {
         rotateToTab(activeTab + 1)
     }
 
+    const handleMobileScroll = () => {
+        if (!mobileScrollRef.current) return;
+        const container = mobileScrollRef.current;
+        const children = Array.from(container.children);
+        const center = container.scrollLeft + container.offsetWidth / 2;
+
+        let closestIndex = 0;
+        let minDistance = Infinity;
+
+        children.forEach((child, index) => {
+            const childCenter = (child as HTMLElement).offsetLeft + (child as HTMLElement).offsetWidth / 2;
+            const distance = Math.abs(center - childCenter);
+            if (distance < minDistance) {
+                minDistance = distance;
+                closestIndex = index;
+            }
+        });
+
+        // Only update if it's a manual scroll (we avoid updating while GSAP or scrollTo is active if possible)
+        // But for mobile, simple is often better.
+        if (closestIndex !== activeTab && !rotationTween.current && !isInternalScroll.current) {
+            setActiveTab(closestIndex);
+        }
+    }
+
     return (
         <section ref={sectionRef} className="bg-[#0a0a0a] text-white flex flex-col pt-32 pb-16 overflow-hidden relative overflow-x-hidden">
 
@@ -243,7 +288,11 @@ export function CaseStudiesSection() {
             </div>
 
             {/* Mobile Fallback for Carousel (Math is weird on very small screens) */}
-            <div className="flex sm:hidden overflow-x-auto gap-4 px-6 mt-12 pb-8 snap-x snap-mandatory hide-scrollbar">
+            <div
+                ref={mobileScrollRef}
+                onScroll={handleMobileScroll}
+                className="flex sm:hidden overflow-x-auto gap-4 px-6 mt-12 pb-8 snap-x snap-mandatory hide-scrollbar"
+            >
                 {originalCaseStudies.map((item, i) => (
                     <div
                         key={i}
