@@ -1,0 +1,396 @@
+{
+    "cookie-policy": {
+        "title": "Cookie Policy",
+        "lastUpdated": "March 2025",
+        "introduction": "This Cookie Policy explains how DigitioHub (“we”, “our”, “us”) uses cookies and similar technologies when you visit our website (DigitioHub.in). By continuing to browse or use our website, you agree to our use of cookies in accordance with this policy.",
+        "sections": [
+            {
+                "title": "1. What Are Cookies?",
+                "content": [
+                    "Cookies are small text files that are stored on your device (computer, mobile, tablet) when you visit a website.",
+                    "They help websites:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Function properly",
+                            "Improve user experience",
+                            "Analyze performance",
+                            "Deliver relevant content"
+                        ]
+                    },
+                    "Cookies do not typically identify you personally."
+                ]
+            },
+            {
+                "title": "2. How We Use Cookies",
+                "content": [
+                    "DigitioHub uses cookies to:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Ensure website functionality",
+                            "Understand user behavior and improve performance",
+                            "Personalize your browsing experience",
+                            "Provide relevant marketing and advertising"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "3. Types of Cookies We Use",
+                "content": [
+                    {
+                        "type": "subheading",
+                        "value": "a. Essential (Technical) Cookies"
+                    },
+                    "These cookies are necessary for the website to function properly. They enable:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Page navigation",
+                            "Form submissions",
+                            "Security features"
+                        ]
+                    },
+                    "Disabling these may affect website functionality.",
+                    {
+                        "type": "subheading",
+                        "value": "b. Performance Cookies"
+                    },
+                    "These cookies collect anonymous data about:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Website traffic",
+                            "User behavior",
+                            "Pages visited"
+                        ]
+                    },
+                    "They help us improve performance and usability.",
+                    {
+                        "type": "subheading",
+                        "value": "c. Functional (Customization) Cookies"
+                    },
+                    "These cookies:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Remember your preferences",
+                            "Enhance personalization",
+                            "Improve user experience"
+                        ]
+                    },
+                    "Without them, some features may not work as intended.",
+                    {
+                        "type": "subheading",
+                        "value": "d. Advertising & Marketing Cookies"
+                    },
+                    "These cookies are used to:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Deliver relevant ads",
+                            "Track campaign performance",
+                            "Show personalized content across platforms"
+                        ]
+                    },
+                    "They may be set by third-party advertising partners."
+                ]
+            },
+            {
+                "title": "4. Third-Party Cookies",
+                "content": [
+                    "We may use third-party services such as:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Analytics tools (e.g., Google Analytics)",
+                            "Advertising platforms",
+                            "Embedded tools (social media, chat widgets)"
+                        ]
+                    },
+                    "These third parties may also place cookies on your device. DigitioHub does not control these cookies directly."
+                ]
+            },
+            {
+                "title": "5. Managing Cookies",
+                "content": [
+                    "You can control or disable cookies anytime through your browser settings. Most browsers allow you to:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Block cookies",
+                            "Delete stored cookies",
+                            "Receive alerts before cookies are stored"
+                        ]
+                    },
+                    {
+                        "type": "note",
+                        "value": "⚠ Note: Disabling cookies may impact website performance and functionality."
+                    }
+                ]
+            },
+            {
+                "title": "6. Updates to This Policy",
+                "content": [
+                    "DigitioHub may update this Cookie Policy from time to time. Any changes will be posted on this page. We recommend reviewing it periodically."
+                ]
+            },
+            {
+                "title": "7. Contact Us",
+                "content": [
+                    "If you have any questions about this Cookie Policy:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Email: support@digitiohub.in",
+                            "Website: https://digitiohub.in"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "privacy-policy": {
+        "title": "Privacy Policy",
+        "lastUpdated": "March 2025",
+        "introduction": "At DigitioHub, we are committed to protecting and preserving the privacy of our clients, partners, and website visitors. This Privacy Policy explains how we collect, use, and safeguard your personal data. By accessing or using DigitioHub.in, you agree to the terms, practices, and policies described in this Privacy Policy.",
+        "sections": [
+            {
+                "title": "Information That We Collect",
+                "content": [
+                    "When you visit our website, we may collect and process the following data:",
+                    {
+                        "type": "subheading",
+                        "value": "1. Website Usage Data"
+                    },
+                    "This includes:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Pages visited",
+                            "Time spent on pages",
+                            "Traffic data",
+                            "Location & device information"
+                        ]
+                    },
+                    "This helps us improve our website and user experience.",
+                    {
+                        "type": "subheading",
+                        "value": "2. Information You Voluntarily Provide"
+                    },
+                    "When you fill out forms, request services, or subscribe, we may collect details such as:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Name",
+                            "Email",
+                            "Phone number",
+                            "Business details"
+                        ]
+                    },
+                    {
+                        "type": "subheading",
+                        "value": "3. Communication Data"
+                    },
+                    "When you contact us via email, contact forms, WhatsApp, or calls, we collect and store this information to assist and respond effectively.",
+                    {
+                        "type": "note",
+                        "value": "IMPORTANT NOTE: We DO NOT store any payment-related data, including credit card details, bank account information, or financial credentials."
+                    }
+                ]
+            },
+            {
+                "title": "Use of Cookies",
+                "content": [
+                    "DigitioHub uses cookies to enhance user experience and analyze performance. Cookies help us understand website usage patterns, user preferences, and device information.",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Technical Cookies: Enable core website functionality.",
+                            "Customization Cookies: Improve user experience by remembering preferences.",
+                            "Performance Cookies: Help us analyze traffic and improve performance.",
+                            "Advertising Cookies: Used for relevant ad targeting."
+                        ]
+                    },
+                    "You can disable cookies anytime via browser settings."
+                ]
+            },
+            {
+                "title": "Use of the Information That We Collect",
+                "content": [
+                    "We use your data to:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Provide services and respond to inquiries",
+                            "Share requested information about our offerings",
+                            "Improve our website and services",
+                            "Send updates or relevant business information (with consent)",
+                            "Offer solutions tailored to your needs"
+                        ]
+                    },
+                    "You can withdraw consent anytime."
+                ]
+            },
+            {
+                "title": "Saving Your Personal Information",
+                "content": [
+                    "We take appropriate measures to protect your data. However, data transmission over the internet is not 100% secure, and sharing information is at your own risk. We implement security practices to safeguard your data as much as possible."
+                ]
+            },
+            {
+                "title": "Disclosing Your Data",
+                "content": [
+                    "DigitioHub does NOT sell or rent personal data. We may share non-personal aggregated data with trusted partners for business or marketing purposes. This data does not identify individuals."
+                ]
+            },
+            {
+                "title": "Third-Party Links & Websites",
+                "content": [
+                    "Our website may include links to third-party websites. Please note that we are not responsible for their privacy policies, and users should review them before interacting.",
+                    {
+                        "type": "subheading",
+                        "value": "Embedded Tools & Sharing Features"
+                    },
+                    "Some pages may include social media buttons or embedded widgets which may use cookies and collect data independently."
+                ]
+            },
+            {
+                "title": "Amendments to This Privacy Policy",
+                "content": [
+                    "DigitioHub may update this policy at any time. Changes will be reflected on this page. We recommend reviewing it regularly to stay informed."
+                ]
+            },
+            {
+                "title": "Your Acceptance of This Policy",
+                "content": [
+                    "By using DigitioHub.in, you agree to this Privacy Policy. If you do not agree, please refrain from using our website. Continued use of the website after updates means you accept the revised policy."
+                ]
+            }
+        ]
+    },
+    "terms-of-service": {
+        "title": "Terms of Service",
+        "lastUpdated": "March 2025",
+        "introduction": "Welcome to DigitioHub. These Terms of Service (“Terms”) govern your access to and use of our website (DigitioHub.in) and the services we provide. By accessing our website or engaging with our services, you agree to be bound by these Terms. If you do not agree, please discontinue use immediately.",
+        "sections": [
+            {
+                "title": "1. About DigitioHub",
+                "content": [
+                    "DigitioHub is a technology solutions company offering services across software development, AI, digital transformation, and consulting."
+                ]
+            },
+            {
+                "title": "2. Services",
+                "content": [
+                    "DigitioHub provides, but is not limited to, the following services:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Software Consulting",
+                            "Artificial Intelligence & Data Science",
+                            "AI-Driven Business Solutions",
+                            "Machine Learning & NLP Models",
+                            "Custom Application Development",
+                            "Customer Experience & Interface Design",
+                            "Mobility Solutions (Native & Hybrid Apps)",
+                            "Web Development",
+                            "Cloud & DevOps Services",
+                            "Blockchain Development"
+                        ]
+                    },
+                    "All services are delivered based on mutually agreed proposals, timelines, and scope."
+                ]
+            },
+            {
+                "title": "3. User Obligations",
+                "content": [
+                    "By using our services, you agree to:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Provide accurate and complete information",
+                            "Use our services only for lawful purposes",
+                            "Not engage in activities that may harm, disrupt, or misuse our systems",
+                            "Maintain the confidentiality of any access credentials"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "4. Engagement & Scope of Work",
+                "content": [
+                    "All projects are executed based on a defined scope of work (SOW). Any requirements outside the agreed scope will be treated as additional work. Timelines are dependent on client approvals, resource availability, and external dependencies. DigitioHub shall not be liable for delays caused by client-side factors."
+                ]
+            },
+            {
+                "title": "5. Fees, Payments & Refunds",
+                "content": [
+                    "Fees are payable as per agreed milestones or terms. DigitioHub reserves the right to suspend or delay services in case of non-payment. Unless otherwise stated, payments are non-refundable once work has commenced."
+                ]
+            },
+            {
+                "title": "6. Revisions & Change Requests",
+                "content": [
+                    "Revisions are limited to those specified in the agreement. Additional revisions or major changes may incur extra charges. Scope changes may impact timelines and cost."
+                ]
+            },
+            {
+                "title": "7. Intellectual Property Rights",
+                "content": [
+                    "Ownership of final deliverables is transferred to the client only after full payment. DigitioHub retains the right to showcase work in portfolio and use deliverables for marketing purposes, unless restricted by a separate written agreement (e.g., NDA)."
+                ]
+            },
+            {
+                "title": "8. Third-Party Services & Tools",
+                "content": [
+                    "Projects may involve third-party platforms such as hosting providers, APIs, or integrations. DigitioHub is not responsible for downtime, policy changes, or failures of third-party services."
+                ]
+            },
+            {
+                "title": "9. Confidentiality",
+                "content": [
+                    "DigitioHub agrees to maintain confidentiality of all sensitive client information. No data will be shared without consent, and internal safeguards are maintained to protect information."
+                ]
+            },
+            {
+                "title": "10. Limitation of Liability",
+                "content": [
+                    "To the maximum extent permitted by law, DigitioHub shall not be liable for indirect, incidental, or consequential damages, loss of business revenue, or any issues arising from misuse or external factors."
+                ]
+            },
+            {
+                "title": "11. Termination",
+                "content": [
+                    "DigitioHub reserves the right to terminate or suspend services if terms are violated, payments are not fulfilled, or misuse is identified. Clients may terminate services with prior notice, subject to settlement of dues."
+                ]
+            },
+            {
+                "title": "12. Modifications to Terms",
+                "content": [
+                    "DigitioHub may revise these Terms at any time. Updated versions will be posted on the website. Continued use implies acceptance of revised Terms."
+                ]
+            },
+            {
+                "title": "13. Governing Law",
+                "content": [
+                    "These Terms shall be governed by the laws of India, and any disputes shall be subject to the jurisdiction of Indian courts."
+                ]
+            },
+            {
+                "title": "14. Contact Us",
+                "content": [
+                    "For any questions regarding these Terms:",
+                    {
+                        "type": "list",
+                        "items": [
+                            "Email: support@digitiohub.in",
+                            "Website: https://digitiohub.in"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
