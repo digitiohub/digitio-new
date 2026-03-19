@@ -45,6 +45,15 @@
     "eyebrow": "Our Work"
   },
   {
+    "key": "portfolio-detail",
+    "slug": "portfolio",
+    "route": "/portfolio/[slug]",
+    "title": "Case Study | DigitioHub",
+    "ogTitle": "Case Study",
+    "description": "Explore detailed case studies of our digital projects, including challenges, solutions, and results.",
+    "eyebrow": "Success Stories"
+  },
+  {
     "key": "cookie-policy",
     "slug": "cookie-policy",
     "route": "/cookie-policy",

@@ -173,8 +173,20 @@ async function generateImage(page, logoBuffer) {
 async function main() {
   await fs.mkdir(outputDir, { recursive: true });
   const logoBuffer = await fs.readFile(logoPath);
-  await Promise.all(ogPages.map((page) => generateImage(page, logoBuffer)));
-  console.log(`Generated ${ogPages.length} OG image(s) in ${outputDir}`);
+
+  // Filter out duplicate slugs to avoid redundant generation
+  const uniquePages = [];
+  const seenSlugs = new Set();
+
+  for (const page of ogPages) {
+    if (!seenSlugs.has(page.slug)) {
+      uniquePages.push(page);
+      seenSlugs.add(page.slug);
+    }
+  }
+
+  await Promise.all(uniquePages.map((page) => generateImage(page, logoBuffer)));
+  console.log(`Generated ${uniquePages.length} OG image(s) in ${outputDir}`);
 }
 
 main().catch((error) => {
