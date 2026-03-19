@@ -11,7 +11,7 @@ const industries = [
         name: "Healthcare",
         description:
             "We build secure patient experiences, clinical workflows, and data systems that improve outcomes while meeting strict compliance requirements.",
-        image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1600&q=80",
+        image: "/media/sectors/healthcare.webp",
     },
     {
         name: "Finance",
@@ -23,7 +23,7 @@ const industries = [
         name: "Banking",
         description:
             "Our banking platforms modernize onboarding, lending, and servicing with automation, fraud controls, and real-time operational visibility.",
-        image: "https://images.unsplash.com/photo-1565514020179-026b92b2d0e8?auto=format&fit=crop&w=1600&q=80",
+        image: "/media/sectors/banking.webp",
     },
     {
         name: "Restaurant",
@@ -41,7 +41,7 @@ const industries = [
         name: "EV",
         description:
             "We support EV businesses with connected mobility platforms, charging management systems, and analytics-driven fleet operations.",
-        image: "https://images.unsplash.com/photo-1593941707882-a56bbc8df8d2?auto=format&fit=crop&w=1600&q=80",
+        image: "/media/sectors/ev.webp",
     },
     {
         name: "SaaS",
