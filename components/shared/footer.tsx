@@ -6,8 +6,8 @@ const footerGroups = [
   {
     title: "Quick Links",
     links: [
-      { label: "Products", href: "#" },
-      { label: "AI Tech Solutions", href: "#" },
+      { label: "Products", href: "/products" },
+      { label: "AI Tech Solutions", href: "/ai-solutions" },
       { label: "About Us", href: "/about" },
       { label: "Services", href: "/services" },
       { label: "Industry", href: "/#industries" },

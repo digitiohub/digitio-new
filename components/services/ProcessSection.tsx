@@ -11,7 +11,7 @@ const processSteps = [
 
 export function ProcessSection() {
     return (
-        <section className="relative px-6 py-20 md:py-32 lg:py-0 lg:h-screen lg:min-h-[850px] border-t border-white/10 flex items-center">
+        <section className="relative px-6 py-20 md:py-32 lg:py-0 lg:h-screen lg:min-h-212.5 border-t border-white/10 flex items-center">
             <div className="container mx-auto max-w-7xl">
                 <div className="max-w-3xl mb-24 reveal">
                     <span className="text-xs font-medium uppercase tracking-[0.2em] text-blue-500 mb-4 block">Our Process</span>

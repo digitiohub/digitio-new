@@ -38,8 +38,8 @@ export function Navbar() {
     })
 
     const navLinks = [
-        { name: "Products", href: "#", desc: "Explore our product suite" },
-        { name: "AI Tech Solutions", href: "#", desc: "AI-first business solutions" },
+        { name: "Products", href: "/products", desc: "Explore our product suite" },
+        { name: "AI Tech Solutions", href: "/ai-solutions", desc: "AI-first business solutions" },
         { name: "About Us", href: "/about", desc: "Who we are" },
         { name: "Services", href: "/services", desc: "Bespoke digital engineering" },
         { name: "Industry", href: "/#industries", desc: "Sectors we specialize in" },
