@@ -8,8 +8,8 @@ export const metadata: Metadata = createPageMetadata("contact");
 const contactMethods = [
     {
         title: "Email",
-        value: "digitiohub@gmail.com",
-        href: "mailto:digitiohub@gmail.com",
+        value: "info@digitiohub.in",
+        href: "mailto:info@digitiohub.in",
         icon: Mail,
     },
     {
@@ -199,7 +199,7 @@ export default function ContactPage() {
                                 schedule a focused call around your roadmap.
                             </p>
                             <Link
-                                href="mailto:digitiohub@gmail.com?subject=Discovery%20Call%20Request"
+                                href="mailto:info@digitiohub.in?subject=Discovery%20Call%20Request"
                                 className="mt-4 inline-flex items-center gap-2 rounded-full border border-white/25 px-4 py-2 text-xs font-semibold text-white transition-colors hover:bg-white/10 md:text-sm"
                             >
                                 Request a Call

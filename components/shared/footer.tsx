@@ -31,7 +31,7 @@ const socialLinks = [
 ];
 
 const contactInfo = [
-  { label: "Email", value: "digitiohub@gmail.com", href: "mailto:digitiohub@gmail.com" },
+  { label: "Email", value: "info@digitiohub.in", href: "mailto:info@digitiohub.in" },
   { label: "Phone", value: "+91 84839 52398", href: "tel:+918483952398" },
   {
     label: "Address",
