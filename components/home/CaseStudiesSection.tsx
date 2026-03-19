@@ -8,12 +8,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { TextAnimate } from "@/components/ui/text-animate"
 
 const originalCaseStudies = [
-    { id: 1, brand: "IIOLS", image: "/posters/iiols.png" },
-    { id: 2, brand: "Cherries Peaches", image: "/posters/cherries.png" },
-    { id: 3, brand: "GaavBazaar", image: "/posters/gaavbazaar.png" },
-    { id: 4, brand: "Real Estate Picture", image: "/posters/real-estate-pictures.png" },
-    { id: 5, brand: "Sajeev Krushi", image: "/posters/sajeev-krushi.png" },
-    { id: 6, brand: "ProMeat", image: "/posters/promeat.png" },
+    { id: 1, brand: "IIOLS", image: "/posters/iiols.webp" },
+    { id: 2, brand: "Cherries Peaches", image: "/posters/cherries.webp" },
+    { id: 3, brand: "GaavBazaar", image: "/posters/gaavbazaar.webp" },
+    { id: 4, brand: "Real Estate Picture", image: "/posters/real-estate-pictures.webp" },
+    { id: 5, brand: "Sajeev Krushi", image: "/posters/sajeev-krushi.webp" },
+    { id: 6, brand: "ProMeat", image: "/posters/promeat.webp" },
 ]
 
 // 3 copies = 18 items. 360 / 18 = 20 degrees difference
