@@ -41,7 +41,7 @@ export function TrustedLogosSection() {
     <section className="w-full bg-black py-14 md:py-20">
       <div className="mx-auto w-full max-w-7xl px-6">
         <h2 className="mx-auto max-w-2xl text-center text-3xl font-semibold leading-tight text-white md:text-5xl">
-          Trusted by the Disruptors and Fortune 500s
+          Trusted by the Disruptors
         </h2>
 
         <div className="mt-10 md:hidden">
