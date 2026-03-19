@@ -5,40 +5,34 @@ import { Marquee } from "@/components/ui/marquee";
 
 const impactCards = [
   {
-    value: "35+",
+    value: "20+",
     title: "Industries",
     description: "mastered with deep exposure to compliance-heavy, regulated, data-intensive sectors",
-    image: "/service/ai.jpg",
+    image: "/media/impact/industry.webp",
   },
   {
-    value: "15+",
-    title: "Global Recognitions & Awards",
-    description: "acknowledging engineering excellence, growth, and enterprise delivery capability",
-    image: "/media/ISO.jpg",
-  },
-  {
-    value: "10+",
+    value: "2+",
     title: "Years of Experience",
     description: "as an enterprise technology consulting and digital engineering services firm",
-    image: "/service/cloud.png",
+    image: "/media/impact/exp.webp",
   },
   {
-    value: "1600+",
+    value: "20+",
     title: "Technology Specialists",
     description: "designing and building AI-led, cloud-native systems at enterprise scale",
-    image: "/media/team03.jpg",
+    image: "/media/impact/techspec.webp",
   },
   {
-    value: "3000+",
+    value: "60+",
     title: "Solutions",
     description: "delivered across consulting, engineering, and large-scale digital transformation initiatives",
-    image: "/service/softwaredev.png",
+    image: "/media/impact/solutions.webp",
   },
   {
-    value: "150+",
+    value: "70+",
     title: "AI Models",
     description: "deployed and operationalized across production systems, workflows, and decision platforms",
-    image: "/service/appdev.png",
+    image: "/media/impact/ai.webp",
   },
 ];
 
