@@ -34,6 +34,12 @@ interface Project {
 
 const projects = projectsData as Project[];
 
+export async function generateStaticParams() {
+    return projects.map((project) => ({
+        slug: project.slug,
+    }));
+}
+
 export default async function CaseStudyPage({
     params,
 }: {
