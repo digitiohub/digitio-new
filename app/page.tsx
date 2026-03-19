@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { HeroSection } from "@/components/home/HeroSection";
 import { StatsSection } from "@/components/home/StatsSection";
-import { InventivAiSection } from "@/components/home/InventivAiSection";
+import { DigitioAiSection } from "@/components/home/DigitioAiSection";
 import { ImpactMarqueeSection } from "@/components/home/ImpactMarqueeSection";
 import { TrustedLogosSection } from "@/components/home/TrustedLogosSection";
 import { ServicesSection } from "@/components/home/ServicesSection";
@@ -19,7 +19,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <StatsSection />
-        <InventivAiSection />
+        <DigitioAiSection />
         <ImpactMarqueeSection />
         <CaseStudiesSection />
         <TrustedLogosSection />

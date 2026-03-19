@@ -20,17 +20,21 @@ const capabilityCards = [
   },
 ];
 
-export function InventivAiSection() {
+export function DigitioAiSection() {
   return (
     <section className="w-full bg-black py-10 md:h-screen md:py-0">
       <div className="mx-auto h-full w-full max-w-360">
         <div className="grid h-full grid-cols-1 md:grid-cols-2">
           <div className="relative min-h-90 md:h-full md:min-h-0">
-            {/* Replace this media block with the final video when available. */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,#2f68ff_0%,#0b1020_26%,#000_58%),linear-gradient(150deg,#111827_0%,#070b14_45%,#000_100%)]" />
-            <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.05)_0%,rgba(255,255,255,0)_42%),linear-gradient(240deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0)_46%)]" />
+            {/* AI Handshake Image */}
+            <img
+              src="/media/human-ai.webp"
+              alt="AI Handshake"
+              className="absolute inset-0 h-full w-full object-cover rounded-2xl"
+              style={{ objectPosition: 'center' }}
+            />
             <div className="relative z-10 p-6 md:p-8">
-              <p className="text-2xl font-semibold tracking-tight text-white md:text-3xl">InventivAI</p>
+              <p className="text-2xl font-semibold tracking-tight text-white md:text-3xl">DigitioAI</p>
             </div>
           </div>
 
@@ -43,7 +47,7 @@ export function InventivAiSection() {
             </h3>
 
             <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-zinc-200 md:text-base">
-              <span className="font-semibold text-white">InventivAI</span> is our dedicated center of
+              <span className="font-semibold text-white">DigitioAI</span> is our dedicated center of
               excellence, to help enterprises navigate the AI revolution. From custom LLMs to automated
               workflows, we move your business beyond the hype into practical, revenue-generating AI
               implementation.
@@ -83,7 +87,7 @@ export function InventivAiSection() {
                 Book Your AI Advisory Session
               </button>
               <button className="w-full rounded-full border border-zinc-200 px-7 py-4 text-base font-semibold text-white transition hover:bg-white hover:text-black md:w-auto">
-                Discover InventivAI <span className="ml-2">↗</span>
+                Discover DigitioAI <span className="ml-2">↗</span>
               </button>
             </div>
           </div>
