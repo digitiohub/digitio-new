@@ -8,7 +8,7 @@
         "industry": "Plant-Based Foods (FMCG)",
         "brandOwner": "ProMeat (IIT-B Incubation)",
         "websiteLink": "https://promeat.in/",
-        "thumbnail": "/media/projects/promeat.png",
+        "thumbnail": "/media/projects/promeat.webp",
         "overview": "ProMeat is an IIT Bombay–incubated startup focused on creating plant-based meat alternatives for the Indian market. The brand approached LogicNodes to redesign their website with a clean, modern, and global look—similar to global brands like Impossible Foods—while ensuring a seamless, easy-to-manage backend for their non-technical team.",
         "challenges": [
             "Website lacked clarity in design and brand storytelling",
@@ -90,7 +90,7 @@
         "industry": "Handcrafted Goods & Rural Commerce",
         "brandOwner": "GaavBazaar",
         "websiteLink": "https://gaavbazaar.com/",
-        "thumbnail": "/media/projects/gaavbazaar.png",
+        "thumbnail": "/media/projects/gaavbazaar.webp",
         "overview": "GaavBazaar is a riidl-incubated startup dedicated to empowering rural artisans by taking handcrafted village products directly to online customers. They partnered with LogicNodes to build a modern, clean, and culturally rooted e-commerce platform that could communicate their mission while remaining simple enough for a non-technical team to operate.",
         "challenges": [
             "Website failed to express the village-to-customer story",
@@ -171,7 +171,7 @@
         "industry": "Organic Farming & Sustainability",
         "brandOwner": "Sajeev Krushi (Founded by Sanjay Bhayade)",
         "websiteLink": "https://sajeevkrushi.com/",
-        "thumbnail": "/media/projects/sajeev.png",
+        "thumbnail": "/media/projects/sajeev.webp",
         "overview": "Sajeev Krushi was built on a powerful mission: transforming organic waste into sustainable value through vermiculture. Inspired by Masanobu Fukuoka’s “One-Straw Revolution,” the founder aimed to create a system where biodegradable waste becomes high-quality compost, empowering farmers and restoring soil health.",
         "challenges": [
             "Lack of digital presence to express the powerful story of “Garbage to Green”",
@@ -252,7 +252,7 @@
         "industry": "Influencer Lifestyle",
         "brandOwner": "Cherries & Peaches",
         "websiteLink": "https://cherriesandpeaches.in/",
-        "thumbnail": "/media/projects/cherries.png",
+        "thumbnail": "/media/projects/cherries.webp",
         "overview": "Cherries & Peaches is an influencer-driven lifestyle brand built around a vibrant personality, curated aesthetics, and strong visual storytelling. We transformed their social-media profile into a professional, standalone digital identity ready for merch, collaborations, and content monetization.",
         "challenges": [
             "Online identity existed mostly on social media, not as a professional brand",
@@ -323,7 +323,7 @@
         "industry": "Logistics & Supply Chain Education",
         "brandOwner": "IILOS",
         "websiteLink": "https://iilos.org/",
-        "thumbnail": "/media/projects/iilos.png",
+        "thumbnail": "/media/projects/iilos.webp",
         "overview": "IILOS was founded to bridge the gap between logistics theory and real-world industry practices. We built a strong educational framework, established a premium digital presence, and designed a model that connects students with industry-led learning.",
         "challenges": [
             "Academic programs were outdated and disconnected from operations",
@@ -385,7 +385,7 @@
         "industry": "Marketing & Creative Strategy",
         "brandOwner": "Outline Next",
         "websiteLink": "https://outline-next-dev.netlify.app/",
-        "thumbnail": "/media/projects/outline.png",
+        "thumbnail": "/media/projects/outline.webp",
         "overview": "Outline Next is a full-service marketing agency helping brands turn ideas into measurable impact. We built a website that acts as a narrative and conversion engine — showcasing their strategy, creative execution, and results.",
         "challenges": [
             "Difficult to differentiate in a crowded marketing agency landscape",
@@ -448,7 +448,7 @@
         "industry": "Pharmaceuticals & Enterprise Tech",
         "brandOwner": "Alkem Laboratories (10,000+ Employees)",
         "websiteLink": "https://demo-eventsmanager.netlify.app/home",
-        "thumbnail": "/media/projects/alkem.png",
+        "thumbnail": "/media/projects/alkem.webp",
         "overview": "Alkem Laboratories needed a centralized internal portal for 10,000+ employees. We delivered a production-ready, enterprise-level frontend in record time (3 weeks), following strict UI guidelines and complex backend workflows.",
         "challenges": [
             "Communication happened through scattered emails and Google Forms",
@@ -517,7 +517,7 @@
         "industry": "Luxury Tours & Wildlife Safaris",
         "brandOwner": "Safari Sutra",
         "websiteLink": "https://thesafarisutra.com/",
-        "thumbnail": "/media/projects/safarisutra.png",
+        "thumbnail": "/media/projects/safarisutra.webp",
         "overview": "Safari Sutra is a luxury safari brand offering curated journeys across India's wildlife destinations. We built an experiential platform that guides users through exploration, wildlife, and luxury travel with immersive storytelling.",
         "challenges": [
             "Brand presence didn’t reflect the premium nature of offerings",
