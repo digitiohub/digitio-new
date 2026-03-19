@@ -19,10 +19,10 @@ const brandNames = [
   "Pronology",
   "Shubhaam Logistics",
   "The Silver Lining",
-  "ChaloGoa",
   "Pass Maldives",
   "CoreAxisGlobe",
   "eClean.Live",
+  "JB Ayurveda"
 ];
 
 const mobileRowOne = brandNames.slice(0, 10);
