@@ -1,0 +1,36 @@
+{
+  "slug": "garagemate",
+  "title": "GarageMate — Workshop ERP",
+  "overview": "GarageMate is a specialized ERP system designed for automotive workshops and service centers. It manages the entire customer journey from vehicle check-in and inventory tracking to invoicing and service history management.",
+  "problem": "Workshop owners often struggle with manual job card management, inaccurate inventory tracking, and poor communication with vehicle owners. This leads to delayed vehicle delivery, missed billing, and low customer satisfaction.",
+  "solution": "GarageMate digitizes every aspect of workshop operations. It provides clear visibility into active jobs, automates inventory updates, and simplifies the invoicing process, ensuring a professional and efficient service experience.",
+  "howItWorks": [
+    "Vehicle Check-in: Create digital job cards with photos and detailed service requirements upon arrival.",
+    "Service Orchestration: Assign technicians to specific tasks and monitor job progress in real-time.",
+    "Inventory Integration: Automatically deduct parts from stock as they are added to job cards.",
+    "Client Communication: Send automated status updates and digital estimates to customers.",
+    "Checkout & Analytics: Generate GST-ready invoices and track business performance through profitability reports."
+  ],
+  "features": [
+    "Digital Job Cards: Replace paper with easy-to-manage digital service records.",
+    "Inventory Management: Real-time tracking of spare parts with low-stock alerts.",
+    "Technician Portal: Dedicated view for mechanics to update their progress.",
+    "Service History: Complete digital records for every vehicle that visits the workshop.",
+    "Automated Billing: Instant generation of estimates and final invoices.",
+    "Customer Follow-ups: Remind clients about upcoming service intervals via SMS/WhatsApp."
+  ],
+  "useCases": [
+    "Multi-Brand Workshops: Manage diverse vehicle types and parts requirements efficiently.",
+    "Authroized Service Centers: Standardize processes and maintain detailed audit trails.",
+    "Car Detailers: Track high-touch service packages and manage appointment schedules.",
+    "Spare Part Retailers: Integrate sales with workshop demand for optimized stock levels."
+  ],
+  "whyBetter": [
+    "Streamlined Admin: Reduces time spent on paperwork by up to 60%.",
+    "Leakage Prevention: Ensures every nut and bolt used is billed correctly.",
+    "Professional Image: Impresses clients with digital estimates and professional invoices.",
+    "Built for India: Fully GST-compliant with support for local workshop workflows."
+  ],
+  "summary": "GarageMate empowers workshop owners to transition from chaotic manual management to a professional, data-driven service hub, driving both operational efficiency and customer trust.",
+  "status": "v1.0 Beta"
+}

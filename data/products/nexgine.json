@@ -1,0 +1,36 @@
+{
+  "slug": "nexgine",
+  "title": "NexGine — AI Knowledge System",
+  "overview": "NexGine is an advanced AI knowledge management platform that transforms unstructured organizational data into a searchable, interactive, and intelligent internal brain. It leverages Large Language Models (LLMs) to provide instant answers and insights to your team.",
+  "problem": "Modern companies are drowning in data trapped in PDFs, Slack threads, emails, and internal wikis. Employees spend countless hours searching for information, leading to wasted time and inconsistent decision-making.",
+  "solution": "NexGine centralizes all organizational knowledge into a single AI-powered interface. It allows team members to query their data in natural language, ensuring that the right information is always accessible and actionable.",
+  "howItWorks": [
+    "Data Ingestion: Upload PDFs, connect Slack, sync Google Drive, and crawl internal documentation.",
+    "Vector Indexing: NexGine converts your data into high-dimensional vectors for semantic search.",
+    "Query & Chat: Team members ask questions in natural language and receive context-aware answers.",
+    "Source Attribution: Every answer is backed by citations from your original documents for verification.",
+    "Continuous Learning: As new data is added, NexGine automatically updates its knowledge base."
+  ],
+  "features": [
+    "Semantic Search: Find information based on meaning, not just exact keywords.",
+    "Interactive AI Chat: Conversational interface for deep-diving into complex documents.",
+    "Multi-Format Support: Ingest data from PDFs, Word docs, Markdown files, and cloud integrations.",
+    "Role-Based Access: Control which team members can access specific knowledge silos.",
+    "Audit Logs: Monitor how knowledge is being accessed and utilized across the organization.",
+    "Custom AI Models: Option to use specialized models tailored to your industry's terminology."
+  ],
+  "useCases": [
+    "HR & Operations: Automate answers to common policy and procedure questions.",
+    "Customer Support: Empower agents with instant access to technical manuals and FAQs.",
+    "Legal & Compliance: Quickly search through vast libraries of contracts and regulations.",
+    "Product R&D: Centralize research findings and technical documentation for engineering teams."
+  ],
+  "whyBetter": [
+    "Context-Aware: Understands the nuances of your specific business and data.",
+    "Zero Search Time: Delivers instant answers instead of a list of potentially relevant links.",
+    "Enhanced Security: Private, secure environment for your most sensitive organizational data.",
+    "Scaleable Intelligence: Grows smarter as your organization adds more data."
+  ],
+  "summary": "NexGine turns your company's passive information into active intelligence, ensuring that every team member has the collective knowledge of the entire organization at their fingertips.",
+  "status": "Early Access"
+}
