@@ -12,6 +12,7 @@
     },
     "dependencies": {
         "@base-ui/react": "^1.3.0",
+        "@emailjs/browser": "^4.4.1",
         "@studio-freight/react-lenis": "^0.0.47",
         "@tsparticles/engine": "^3.9.1",
         "@tsparticles/react": "^3.0.0",

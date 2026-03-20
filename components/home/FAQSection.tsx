@@ -1,12 +1,10 @@
 "use client"
 
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion"
-import { TextAnimate } from "@/components/ui/text-animate"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { TextAnimate } from "@/components/ui/text-animate";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
 
 const faqs = [
     {
@@ -52,6 +50,64 @@ const faqs = [
 ]
 
 export function FAQSection() {
+    const [isSending, setIsSending] = useState(false);
+    const [formData, setFormData] = useState({
+        name: "",
+        phone: "",
+        budget: "",
+        email: "",
+        message: "",
+    });
+
+    const handleChange = (
+        e: React.ChangeEvent<
+            HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+        >
+    ) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({ ...prev, [name]: value }));
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsSending(true);
+
+        const serviceId = "service_rxgqmtr";
+        const templateId = "template_oksygsc";
+        const publicKey = "zuOK8ZiCIIRyP07Cm";
+
+        // Map form data to template parameters
+        const templateParams = {
+            name: formData.name,
+            phone: formData.phone,
+            email: formData.email,
+            reason: `Budget: ${formData.budget || "Not specified"}`,
+            message: formData.message,
+        };
+
+        try {
+            await emailjs.send(
+                serviceId,
+                templateId,
+                templateParams,
+                publicKey
+            );
+            toast.success("Inquiry sent successfully!");
+            setFormData({
+                name: "",
+                phone: "",
+                budget: "",
+                email: "",
+                message: "",
+            });
+        } catch (error) {
+            console.error("Failed to send email:", error);
+            toast.error("Failed to send inquiry. Please try again.");
+        } finally {
+            setIsSending(false);
+        }
+    };
+
     return (
         <section className="border-t border-slate-900/40 bg-black py-24 text-white">
             <div className="container mx-auto px-6">
@@ -59,38 +115,67 @@ export function FAQSection() {
                     <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-5xl">
                         {/* Desktop version: Single line */}
                         <div className="hidden md:flex flex-wrap justify-center items-center">
-                            <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Frequently Asked Questions</TextAnimate>
+                            <TextAnimate
+                                animation="slideLeft"
+                                by="character"
+                                as="span"
+                                className="inline-block whitespace-nowrap"
+                            >
+                                Frequently Asked Questions
+                            </TextAnimate>
                         </div>
                         {/* Mobile version: Split into 2 lines */}
                         <div className="flex md:hidden flex-col items-center">
                             <div className="flex flex-wrap justify-center items-center">
-                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Frequently Asked</TextAnimate>
+                                <TextAnimate
+                                    animation="slideLeft"
+                                    by="character"
+                                    as="span"
+                                    className="inline-block whitespace-nowrap"
+                                >
+                                    Frequently Asked
+                                </TextAnimate>
                             </div>
                             <div className="flex flex-wrap justify-center items-center">
-                                <TextAnimate animation="slideLeft" by="character" as="span" className="inline-block whitespace-nowrap">Questions</TextAnimate>
+                                <TextAnimate
+                                    animation="slideLeft"
+                                    by="character"
+                                    as="span"
+                                    className="inline-block whitespace-nowrap"
+                                >
+                                    Questions
+                                </TextAnimate>
                             </div>
                         </div>
                     </h2>
                     <p className="mx-auto max-w-3xl text-base text-slate-300 md:text-lg">
-                        Everything you need to know about our engineering process and enterprise solutions.
+                        Everything you need to know about our engineering
+                        process and enterprise solutions.
                     </p>
                 </div>
 
                 <div className="grid gap-8 lg:grid-cols-[1fr_1.5fr]">
                     <div className="order-2 rounded-3xl border border-blue-400/30 bg-linear-to-b from-[#001347] via-[#02206E] to-[#0E59FF] p-7 shadow-[0_30px_80px_rgba(0,68,255,0.25)] lg:order-1">
-                        <h3 className="text-2xl font-bold">Did not find what you were looking for?</h3>
+                        <h3 className="text-2xl font-bold">
+                            Did not find what you were looking for?
+                        </h3>
                         <p className="mt-3 text-sm leading-relaxed text-blue-100/90">
-                            We have more answers waiting for you. If your question did not make the list, do not hesitate to reach out.
+                            We have more answers waiting for you. If your
+                            question did not make the list, do not hesitate to
+                            reach out.
                         </p>
 
-                        <form className="mt-7 space-y-10">
+                        <form className="mt-7 space-y-10" onSubmit={handleSubmit}>
                             <div className="grid gap-4 md:grid-cols-2">
                                 <label className="space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
                                     Name *
                                     <input
                                         type="text"
+                                        name="name"
                                         placeholder="Full Name"
                                         required
+                                        value={formData.name}
+                                        onChange={handleChange}
                                         className="h-10 w-full border-0 border-b border-blue-200/50 bg-transparent text-sm text-white placeholder:text-blue-100/65 focus:border-white focus:outline-none"
                                     />
                                 </label>
@@ -98,8 +183,11 @@ export function FAQSection() {
                                     Contact Number *
                                     <input
                                         type="tel"
+                                        name="phone"
                                         placeholder="Enter Your Number"
                                         required
+                                        value={formData.phone}
+                                        onChange={handleChange}
                                         className="h-10 w-full border-0 border-b border-blue-200/50 bg-transparent text-sm text-white placeholder:text-blue-100/65 focus:border-white focus:outline-none"
                                     />
                                 </label>
@@ -108,17 +196,34 @@ export function FAQSection() {
                             <div className="grid gap-4 md:grid-cols-2">
                                 <label className="block space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
                                     Budget Range
-                                    <select className="h-10 w-full border-0 border-b border-blue-200/50 bg-transparent text-sm text-white focus:border-white focus:outline-none">
-                                        <option value="" className="text-slate-900">
+                                    <select
+                                        name="budget"
+                                        value={formData.budget}
+                                        onChange={handleChange}
+                                        className="h-10 w-full border-0 border-b border-blue-200/50 bg-transparent text-sm text-white focus:border-white focus:outline-none"
+                                    >
+                                        <option
+                                            value=""
+                                            className="text-slate-900"
+                                        >
                                             Select a Budget Range
                                         </option>
-                                        <option value="25k-50k" className="text-slate-900">
+                                        <option
+                                            value="25k-50k"
+                                            className="text-slate-900"
+                                        >
                                             INR 25,000 - INR 50,000
                                         </option>
-                                        <option value="50k-100k" className="text-slate-900">
+                                        <option
+                                            value="50k-100k"
+                                            className="text-slate-900"
+                                        >
                                             INR 50,000 - INR 1,00,000
                                         </option>
-                                        <option value="let's-discuss" className="text-slate-900">
+                                        <option
+                                            value="let's-discuss"
+                                            className="text-slate-900"
+                                        >
                                             Let&apos;s Discuss
                                         </option>
                                     </select>
@@ -127,7 +232,10 @@ export function FAQSection() {
                                     Work Email
                                     <input
                                         type="email"
+                                        name="email"
                                         placeholder="Enter Your Email Address"
+                                        value={formData.email}
+                                        onChange={handleChange}
                                         className="h-10 w-full border-0 border-b border-blue-200/50 bg-transparent text-sm text-white placeholder:text-blue-100/65 focus:border-white focus:outline-none"
                                     />
                                 </label>
@@ -136,9 +244,12 @@ export function FAQSection() {
                             <label className="block space-y-2 text-xs font-medium uppercase tracking-wide text-blue-100/85">
                                 Describe Your Project *
                                 <textarea
+                                    name="message"
                                     rows={5}
                                     placeholder="Share a short brief"
                                     required
+                                    value={formData.message}
+                                    onChange={handleChange}
                                     className="w-full resize-none border-0 border-b border-blue-200/50 bg-transparent pb-2 text-sm text-white placeholder:text-blue-100/65 focus:border-white focus:outline-none"
                                 />
                             </label>
@@ -146,9 +257,10 @@ export function FAQSection() {
                             <div className="flex flex-wrap items-center justify-end gap-4 pt-2">
                                 <button
                                     type="submit"
-                                    className="h-11 min-w-44 rounded-full bg-white px-8 text-sm font-semibold text-slate-900 transition hover:bg-slate-200"
+                                    disabled={isSending}
+                                    className="h-11 min-w-44 rounded-full bg-white px-8 text-sm font-semibold text-slate-900 transition hover:bg-slate-200 disabled:opacity-50"
                                 >
-                                    Submit
+                                    {isSending ? "Sending..." : "Submit"}
                                 </button>
                             </div>
                         </form>
@@ -159,7 +271,11 @@ export function FAQSection() {
                             data-lenis-prevent
                             className="faq-scroll max-h-152 overflow-y-auto pr-1"
                         >
-                            <Accordion type="single" collapsible className="w-full">
+                            <Accordion
+                                type="single"
+                                collapsible
+                                className="w-full"
+                            >
                                 {faqs.map((faq, i) => (
                                     <AccordionItem
                                         key={i}
@@ -168,8 +284,12 @@ export function FAQSection() {
                                     >
                                         <AccordionTrigger className="py-5 text-left font-semibold text-slate-900 no-underline hover:no-underline">
                                             <div className="grid w-full grid-cols-[52px_1fr] items-start gap-2 pr-2">
-                                                <span className="font-medium text-slate-500">[{String(i + 1).padStart(2, "0")}]</span>
-                                                <span className="text-lg leading-snug">{faq.question}</span>
+                                                <span className="font-medium text-slate-500">
+                                                    [{String(i + 1).padStart(2, "0")}]
+                                                </span>
+                                                <span className="text-lg leading-snug">
+                                                    {faq.question}
+                                                </span>
                                             </div>
                                         </AccordionTrigger>
                                         <AccordionContent className="pb-5 pl-13 text-base leading-relaxed text-slate-700">
@@ -183,5 +303,5 @@ export function FAQSection() {
                 </div>
             </div>
         </section>
-    )
+    );
 }
