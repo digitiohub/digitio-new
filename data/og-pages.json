@@ -3,7 +3,7 @@
     "key": "home",
     "slug": "home",
     "route": "/",
-    "title": "DigitioHub",
+    "title": "DigitioHub | AI-Driven Digital Growth Systems for Modern Businesses",
     "ogTitle": "DigitioHub",
     "description": "DigitioHub builds AI-driven digital systems, products, and campaigns that help modern businesses grow with clarity and measurable results.",
     "eyebrow": "AI-Driven Digital Growth"
@@ -12,7 +12,7 @@
     "key": "about",
     "slug": "about",
     "route": "/about",
-    "title": "About Us | DigitioHub",
+    "title": "About Us | DigitioHub - Our Vision, Leadership, and AI Innovation",
     "ogTitle": "About Us",
     "description": "Learn about DigitioHub, our vision, achievements, and leadership team building AI-driven digital systems for modern businesses.",
     "eyebrow": "Who We Are"
@@ -21,7 +21,7 @@
     "key": "contact",
     "slug": "contact",
     "route": "/contact",
-    "title": "Contact | DigitioHub",
+    "title": "Contact DigitioHub | Start Your Next Digital Build or AI Project",
     "ogTitle": "Contact Us",
     "description": "Start a conversation with DigitioHub about your next website, product, AI workflow, or growth-focused digital build.",
     "eyebrow": "Let's Build Together"
@@ -30,7 +30,7 @@
     "key": "services",
     "slug": "services",
     "route": "/services",
-    "title": "Services | DigitioHub",
+    "title": "Services | DigitioHub - Web Dev, SEO, AI, and Digital Marketing",
     "ogTitle": "Services",
     "description": "Explore DigitioHub services across web development, branding, AI, SEO, social media, and scalable digital product execution.",
     "eyebrow": "What We Do"
@@ -39,7 +39,7 @@
     "key": "portfolio",
     "slug": "portfolio",
     "route": "/portfolio",
-    "title": "Portfolio | DigitioHub",
+    "title": "Portfolio | DigitioHub - See Our AI-Driven Digital Build Projects",
     "ogTitle": "Portfolio",
     "description": "See our portfolio of digital builds, AI-driven projects, and creative solutions for modern businesses.",
     "eyebrow": "Our Work"
@@ -48,7 +48,7 @@
     "key": "portfolio-detail",
     "slug": "portfolio",
     "route": "/portfolio/[slug]",
-    "title": "Case Study | DigitioHub",
+    "title": "Case Studies | DigitioHub - Detailed Success Stories and Results",
     "ogTitle": "Case Study",
     "description": "Explore detailed case studies of our digital projects, including challenges, solutions, and results.",
     "eyebrow": "Success Stories"
@@ -57,7 +57,7 @@
     "key": "cookie-policy",
     "slug": "cookie-policy",
     "route": "/cookie-policy",
-    "title": "Cookie Policy | DigitioHub",
+    "title": "Cookie Policy | DigitioHub - Transparency and User Data Protection",
     "ogTitle": "Cookie Policy",
     "description": "Learn about how DigitioHub uses cookies and similar technologies to improve your experience on our website.",
     "eyebrow": "Transparency"
@@ -66,7 +66,7 @@
     "key": "privacy-policy",
     "slug": "privacy-policy",
     "route": "/privacy-policy",
-    "title": "Privacy Policy | DigitioHub",
+    "title": "Privacy Policy | DigitioHub - How We Protect Your Personal Data",
     "ogTitle": "Privacy Policy",
     "description": "Read our privacy policy to understand how we collect, use, and safeguard your personal data.",
     "eyebrow": "Data Protection"
@@ -75,7 +75,7 @@
     "key": "terms-of-service",
     "slug": "terms-of-service",
     "route": "/terms-of-service",
-    "title": "Terms of Service | DigitioHub",
+    "title": "Terms of Service | DigitioHub - Legal Agreement for Our Solutions",
     "ogTitle": "Terms of Service",
     "description": "Understand the terms and conditions governing your use of the DigitioHub website and services.",
     "eyebrow": "Our Agreement"
@@ -84,7 +84,7 @@
     "key": "products",
     "slug": "products",
     "route": "/products",
-    "title": "Products | DigitioHub",
+    "title": "Our Products | DigitioHub - AI-Driven Digital Tools for Growth",
     "ogTitle": "Products",
     "description": "Discover our suite of AI-driven digital products including Soryouth CRM, LeadFlow, NexGine, and more.",
     "eyebrow": "Our Suite"

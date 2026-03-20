@@ -16,15 +16,19 @@ export function getSiteMetadataBase() {
   return new URL(DEFAULT_SITE_URL);
 }
 
-export function createPageMetadata(key: PageMetadataKey): Metadata {
+export function createPageMetadata(key: PageMetadataKey, routeOverride?: string): Metadata {
   const page = pageMetadataMap[key];
   const imagePath = `/og/${page.slug}.png`;
-  const pageUrl = new URL(page.route, DEFAULT_SITE_URL).toString();
+  const route = routeOverride || page.route;
+  const pageUrl = new URL(route, DEFAULT_SITE_URL).toString();
   const imageUrl = new URL(imagePath, DEFAULT_SITE_URL).toString();
 
   return {
     title: page.title,
     description: page.description,
+    alternates: {
+      canonical: pageUrl,
+    },
     openGraph: {
       title: page.ogTitle,
       description: page.description,

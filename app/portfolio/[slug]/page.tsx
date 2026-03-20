@@ -4,7 +4,14 @@ import projectsData from "@/data/projects.json";
 import { createPageMetadata } from "@/lib/metadata";
 import CaseStudyClient from "./CaseStudyClient";
 
-export const metadata: Metadata = createPageMetadata("portfolio-detail");
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+    const { slug } = await params;
+    return createPageMetadata("portfolio-detail", `/portfolio/${slug}`);
+}
 
 interface Project {
     id: string;
