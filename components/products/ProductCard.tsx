@@ -109,7 +109,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
                     onClick={() => setIsExpanded(!isExpanded)}
                     style={isExpanded ? { backgroundColor: `${product.theme.accent}1a`, borderColor: `${product.theme.accent}4d`, color: product.theme.accent } : {}}
                     className={cn(
-                      "rounded-full px-6 py-6 border-white/10 bg-neutral-900/80 backdrop-blur-md hover:bg-neutral-800 transition-all text-white shrink-0 relative z-20",
+                      "rounded-full px-6 py-6 border border-white/10 bg-neutral-900/80 backdrop-blur-md hover:bg-neutral-800 hover:text-white transition-all text-white shrink-0 relative z-20",
                       isExpanded && "border-opacity-100"
                     )}
                   >
