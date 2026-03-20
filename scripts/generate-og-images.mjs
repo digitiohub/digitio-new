@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, "..");
 const outputDir = path.join(rootDir, "public", "og");
-const logoPath = path.join(rootDir, "public", "logos", "Digi_Logo_Full_Cropped_White.png");
+const logoPath = path.join(rootDir, "public", "logos", "logo_white.png");
 
 const WIDTH = 1200;
 const HEIGHT = 630;
