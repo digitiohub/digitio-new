@@ -1,36 +1,37 @@
 {
-  "slug": "trajectories",
-  "title": "Trajectories — Travel Management",
-  "overview": "Trajectories is a specialized, multi-tenant travel management platform designed to unify the entire workflow for tour operators, DMCs, and luxury travel agencies. It bridges the gap between lead generation and final payment, providing a premium experience.",
-  "problem": "Travel operators struggle with scattered communication across WhatsApp/Email, manual admin overload for Quotations, disconnected payments, and lack of operational visibility.",
-  "solution": "Trajectories provides a single, unified system for the complete travel workflow. It brings CRM, itinerary builder, quotation system, and payment gateway into one powerful, beautifully designed platform.",
-  "howItWorks": [
-    "Capture Inquiry: Leads from any channel are automatically routed and assigned to team members.",
-    "Build Itinerary: Draft visual, day-by-day journeys using a drag-and-drop builder.",
-    "Generate Quotation: Create professional branded PDFs or interactive web quotation links instantly.",
-    "Collect Payment: Clients review journeys on a premium portal and pay via integrated Razorpay.",
-    "Confirm Booking: System auto-updates statuses, generates invoices, and manages trip documents."
-  ],
-  "features": [
-    "Customer & Lead Management: Unified inbox, lead scoring, and full conversation history.",
-    "Visual Itinerary Builder: Build multi-day trips with saved flights, hotels, and activities.",
-    "Smart Quotation System: Interactive portals and branded PDFs with automated pricing.",
-    "Razorpay Integration: Secure payment flows for instant deposits and reconciliation.",
-    "Team & Permissions: Granular access control for managing large teams and multiple brands.",
-    "White-Label Ready: Customizable with your agency's logo, colors, and custom domain."
-  ],
-  "useCases": [
-    "Tour Operators: Automate high-volume bookings and scale operations.",
-    "DMCs: Manage complex ground operations and B2B agent relationships.",
-    "Luxury Travel Agencies: Deliver a high-touch premium digital experience.",
-    "Independent Planners: Professionalize brand appearance and automate admin."
-  ],
-  "whyBetter": [
-    "Industry-Specific: Built specifically for travel industry nuances, unlike generic CRMs.",
-    "Unified Workflow: Keeps your entire business in one tab—no tool-switching.",
-    "Premium Client UX: Interactive, mobile-responsive portals for a luxury feel.",
-    "Enterprise Architecture: Multi-tenant and secure for running multiple brands."
-  ],
-  "summary": "Trajectories transforms travel operations from a manual, fragmented process into a streamlined powerhouse, saving hours per week and boosting conversion rates.",
-  "status": "v1.0 Beta"
+    "slug": "trajectories",
+    "title": "Trajectories — Travel Management",
+    "overview": "Trajectories is a specialized, multi-tenant travel management platform designed to unify the entire workflow for tour operators, DMCs, and luxury travel agencies. It bridges the gap between lead generation and final payment, providing a premium experience.",
+    "problem": "Travel operators struggle with scattered communication across WhatsApp/Email, manual admin overload for Quotations, disconnected payments, and lack of operational visibility.",
+    "solution": "Trajectories provides a single, unified system for the complete travel workflow. It brings CRM, itinerary builder, quotation system, and payment gateway into one powerful, beautifully designed platform.",
+    "howItWorks": [
+        "Capture Inquiry: Leads from any channel are automatically routed and assigned to team members.",
+        "Build Itinerary: Draft visual, day-by-day journeys using a drag-and-drop builder.",
+        "Generate Quotation: Create professional branded PDFs or interactive web quotation links instantly.",
+        "Collect Payment: Clients review journeys on a premium portal and pay via integrated Razorpay.",
+        "Confirm Booking: System auto-updates statuses, generates invoices, and manages trip documents."
+    ],
+    "features": [
+        "Customer & Lead Management: Unified inbox, lead scoring, and full conversation history.",
+        "Visual Itinerary Builder: Build multi-day trips with saved flights, hotels, and activities.",
+        "Smart Quotation System: Interactive portals and branded PDFs with automated pricing.",
+        "Razorpay Integration: Secure payment flows for instant deposits and reconciliation.",
+        "Team & Permissions: Granular access control for managing large teams and multiple brands.",
+        "White-Label Ready: Customizable with your agency's logo, colors, and custom domain."
+    ],
+    "useCases": [
+        "Tour Operators: Automate high-volume bookings and scale operations.",
+        "DMCs: Manage complex ground operations and B2B agent relationships.",
+        "Luxury Travel Agencies: Deliver a high-touch premium digital experience.",
+        "Independent Planners: Professionalize brand appearance and automate admin."
+    ],
+    "whyBetter": [
+        "Industry-Specific: Built specifically for travel industry nuances, unlike generic CRMs.",
+        "Unified Workflow: Keeps your entire business in one tab—no tool-switching.",
+        "Premium Client UX: Interactive, mobile-responsive portals for a luxury feel.",
+        "Enterprise Architecture: Multi-tenant and secure for running multiple brands."
+    ],
+    "summary": "Trajectories transforms travel operations from a manual, fragmented process into a streamlined powerhouse, saving hours per week and boosting conversion rates.",
+    "image": "/products/trajectories.webp",
+    "status": "v1.0 Beta"
 }

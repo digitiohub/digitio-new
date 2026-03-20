@@ -1,37 +1,38 @@
 {
-  "slug": "soryouth",
-  "title": "Soryouth Renewable Energy - Solar EPC CRM",
-  "overview": "Soryouth Renewable Energy CRM is a comprehensive management platform tailored specifically for Solar EPC (Engineering, Procurement, and Construction) companies. It streamlines the entire solar project lifecycle—from initial lead generation and site surveys to installation, commissioning, and long-term maintenance (AMC).",
-  "problem": "Solar EPC companies often face fragmented workflows, relying on disconnected tools for lead tracking, site documentation, inventory management, and customer service. This lack of integration leads to delayed timelines, inventory mismatch, subsidy bureaucracy, and maintenance gaps.",
-  "solution": "Our CRM provides a single source of truth for Solar EPC operations. By consolidating all business functions into a unified dashboard, we enable teams to automate workflows, digitize documentation, optimize inventory, and standardize service.",
-  "howItWorks": [
-    "Lead to Proposal: Capture inquiries and generate technical solar proposals based on customer-specific requirements.",
-    "Survey & Design: Engineers conduct site assessments using mobile-responsive forms, capturing critical technical data and documentation.",
-    "Project Execution: Monitor the project through its pipeline, assigning tasks to specialized teams and tracking milestones.",
-    "Operations & Maintenance: Transition commissioned projects to the AMC phase with automated service ticketing and performance alerts.",
-    "Back-Office Integration: Manage invoicing, subsidies, vendor relationships, and expenses in one place."
-  ],
-  "features": [
-    "Project Pipeline: Visual tracking for residential, commercial, and industrial installations.",
-    "Site Survey Module: Digital technical assessments with document uploads.",
-    "Inventory Management: Real-time tracking of modules, inverters, and BOS components.",
-    "Service & AMC Ticketing: Portal for maintenance requests and contract renewals.",
-    "Government Subsidies: Documentation management for various financing schemes.",
-    "Performance Analytics: Dashboards for revenue trends and installation metrics.",
-    "Communication Hub: Centralized history of all customer interactions."
-  ],
-  "useCases": [
-    "Sales Teams: Quickly convert inquiries into technical proposals and monitor conversion rates.",
-    "Site Engineers: Perform assessments in the field with a tablet-optimized interface.",
-    "Project Owners: Monitor asset health and ROI through a dedicated customer view.",
-    "Operations Managers: Optimize procurement based on real-time project demand and stock levels."
-  ],
-  "whyBetter": [
-    "Industry-Specific: Built specifically for the solar EPC workflow, not adapted from generic platforms.",
-    "Mobile-First: Fully responsive UI designed for field work and office management alike.",
-    "Unified Ecosystem: Seamlessly integrates technical data with financial and inventory modules.",
-    "Premium User Experience: Built with a high-performance, dark-mode supported UI using React, TypeScript, and shadcn/ui."
-  ],
-  "summary": "Soryouth CRM transforms Solar EPC operations from a series of disjointed tasks into a streamlined, data-driven engine. By bridging the gap between sales, engineering, and maintenance, we empower renewable energy companies to scale faster and deliver superior customer experiences.",
-  "status": "v1.0 Beta"
+    "slug": "soryouth",
+    "title": "Soryouth Renewable Energy",
+    "overview": "Soryouth Renewable Energy CRM is a comprehensive management platform tailored specifically for Solar EPC (Engineering, Procurement, and Construction) companies. It streamlines the entire solar project lifecycle—from initial lead generation and site surveys to installation, commissioning, and long-term maintenance (AMC).",
+    "problem": "Solar EPC companies often face fragmented workflows, relying on disconnected tools for lead tracking, site documentation, inventory management, and customer service. This lack of integration leads to delayed timelines, inventory mismatch, subsidy bureaucracy, and maintenance gaps.",
+    "solution": "Our CRM provides a single source of truth for Solar EPC operations. By consolidating all business functions into a unified dashboard, we enable teams to automate workflows, digitize documentation, optimize inventory, and standardize service.",
+    "howItWorks": [
+        "Lead to Proposal: Capture inquiries and generate technical solar proposals based on customer-specific requirements.",
+        "Survey & Design: Engineers conduct site assessments using mobile-responsive forms, capturing critical technical data and documentation.",
+        "Project Execution: Monitor the project through its pipeline, assigning tasks to specialized teams and tracking milestones.",
+        "Operations & Maintenance: Transition commissioned projects to the AMC phase with automated service ticketing and performance alerts.",
+        "Back-Office Integration: Manage invoicing, subsidies, vendor relationships, and expenses in one place."
+    ],
+    "features": [
+        "Project Pipeline: Visual tracking for residential, commercial, and industrial installations.",
+        "Site Survey Module: Digital technical assessments with document uploads.",
+        "Inventory Management: Real-time tracking of modules, inverters, and BOS components.",
+        "Service & AMC Ticketing: Portal for maintenance requests and contract renewals.",
+        "Government Subsidies: Documentation management for various financing schemes.",
+        "Performance Analytics: Dashboards for revenue trends and installation metrics.",
+        "Communication Hub: Centralized history of all customer interactions."
+    ],
+    "useCases": [
+        "Sales Teams: Quickly convert inquiries into technical proposals and monitor conversion rates.",
+        "Site Engineers: Perform assessments in the field with a tablet-optimized interface.",
+        "Project Owners: Monitor asset health and ROI through a dedicated customer view.",
+        "Operations Managers: Optimize procurement based on real-time project demand and stock levels."
+    ],
+    "whyBetter": [
+        "Industry-Specific: Built specifically for the solar EPC workflow, not adapted from generic platforms.",
+        "Mobile-First: Fully responsive UI designed for field work and office management alike.",
+        "Unified Ecosystem: Seamlessly integrates technical data with financial and inventory modules.",
+        "Premium User Experience: Built with a high-performance, dark-mode supported UI using React, TypeScript, and shadcn/ui."
+    ],
+    "summary": "SorYouth is the essential digital partner for modern solar companies looking to scale their operations, empower their sales teams, and drive the clean energy transition.",
+    "image": "/products/soryouth.webp",
+    "status": "Beta"
 }

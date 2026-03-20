@@ -1,36 +1,37 @@
 {
-  "slug": "leadflow",
-  "title": "LeadFlow — The Smartest CRM",
-  "overview": "Leadflow is an AI-powered lead management and sales automation platform designed for modern sales teams. It centralizes lead capture from multiple sources and uses intelligent routing and automated follow-ups to maximize conversion rates.",
-  "problem": "Sales teams often struggle with slow lead response times, manual data entry, and lack of visibility into the sales pipeline. Leads are often lost due to poor tracking or inconsistent follow-up processes.",
-  "solution": "Leadflow automates the entire lead-to-deal transition. With instant lead notifications, AI-driven lead scoring, and automated multi-channel follow-ups, it ensures that no lead is ever ignored and sales reps focus on the highest-value opportunities.",
-  "howItWorks": [
-    "Multi-Source Capture: Instantly pull leads from Facebook, Instagram, Google, and your website into one central hub.",
-    "Intelligent Routing: Automatically assign leads to the right sales representatives based on predefined rules or AI scoring.",
-    "Automated Follow-ups: Launch immediate sequences across email, WhatsApp, and SMS to engage leads within seconds.",
-    "Pipeline Management: Track every stage of the customer journey with a clear, visual drag-and-drop kanban board.",
-    "Analytics & Insights: Gain real-time data on conversion rates, rep performance, and marketing ROI."
-  ],
-  "features": [
-    "Instant Lead Notifications: Alert your team the moment a new lead enters the system.",
-    "WhatsApp Automation: Send personalized messages and reminders directly to your leads.",
-    "AI Lead Scoring: Prioritize leads based on their likelihood to convert using historical data.",
-    "Custom Sales Pipelines: Build workflows that match your unique sales cycle.",
-    "Integrated Calendar: Schedule meetings and follow-ups without leaving the platform.",
-    "Unified Communication: Store all emails, calls, and messages in a single thread per lead."
-  ],
-  "useCases": [
-    "Real Estate Agencies: Manage thousands of property inquiries and automate initial qualification.",
-    "Education Providers: Streamline student enrollment from inquiry to admission.",
-    "Consulting Firms: Organize high-touch sales processes and monitor consultant performance.",
-    "E-commerce Brands: Automate post-purchase follow-ups and abandoned cart recovery."
-  ],
-  "whyBetter": [
-    "Speed to Lead: Reduces response times from hours to seconds with instant automation.",
-    "All-in-One Dashboard: Eliminates the need for multiple tools for email, WhatsApp, and CRM.",
-    "Simple Yet Powerful: Designed for ease of use without sacrificing advanced automation capabilities.",
-    "Data-Driven Growth: Provides the clarity needed to scale operations based on hard metrics."
-  ],
-  "summary": "Leadflow is the catalyst for sales growth, turning fragmented lead management into a high-octane conversion engine. By automating the mundane, it empowers sales teams to close more deals with less effort.",
-  "status": "v1.5 Beta"
+    "slug": "leadflow",
+    "title": "LeadFlow — The Smartest CRM",
+    "overview": "Leadflow is an AI-powered lead management and sales automation platform designed for modern sales teams. It centralizes lead capture from multiple sources and uses intelligent routing and automated follow-ups to maximize conversion rates.",
+    "problem": "Sales teams often struggle with slow lead response times, manual data entry, and lack of visibility into the sales pipeline. Leads are often lost due to poor tracking or inconsistent follow-up processes.",
+    "solution": "Leadflow automates the entire lead-to-deal transition. With instant lead notifications, AI-driven lead scoring, and automated multi-channel follow-ups, it ensures that no lead is ever ignored and sales reps focus on the highest-value opportunities.",
+    "howItWorks": [
+        "Multi-Source Capture: Instantly pull leads from Facebook, Instagram, Google, and your website into one central hub.",
+        "Intelligent Routing: Automatically assign leads to the right sales representatives based on predefined rules or AI scoring.",
+        "Automated Follow-ups: Launch immediate sequences across email, WhatsApp, and SMS to engage leads within seconds.",
+        "Pipeline Management: Track every stage of the customer journey with a clear, visual drag-and-drop kanban board.",
+        "Analytics & Insights: Gain real-time data on conversion rates, rep performance, and marketing ROI."
+    ],
+    "features": [
+        "Instant Lead Notifications: Alert your team the moment a new lead enters the system.",
+        "WhatsApp Automation: Send personalized messages and reminders directly to your leads.",
+        "AI Lead Scoring: Prioritize leads based on their likelihood to convert using historical data.",
+        "Custom Sales Pipelines: Build workflows that match your unique sales cycle.",
+        "Integrated Calendar: Schedule meetings and follow-ups without leaving the platform.",
+        "Unified Communication: Store all emails, calls, and messages in a single thread per lead."
+    ],
+    "useCases": [
+        "Real Estate Agencies: Manage thousands of property inquiries and automate initial qualification.",
+        "Education Providers: Streamline student enrollment from inquiry to admission.",
+        "Consulting Firms: Organize high-touch sales processes and monitor consultant performance.",
+        "E-commerce Brands: Automate post-purchase follow-ups and abandoned cart recovery."
+    ],
+    "whyBetter": [
+        "Speed to Lead: Reduces response times from hours to seconds with instant automation.",
+        "All-in-One Dashboard: Eliminates the need for multiple tools for email, WhatsApp, and CRM.",
+        "Simple Yet Powerful: Designed for ease of use without sacrificing advanced automation capabilities.",
+        "Data-Driven Growth: Provides the clarity needed to scale operations based on hard metrics."
+    ],
+    "summary": "Leadflow is the catalyst for sales growth, turning fragmented lead management into a high-octane conversion engine. By automating the mundane, it empowers sales teams to close more deals with less effort.",
+    "image": "/products/leadflow.webp",
+    "status": "v1.5 Beta"
 }
