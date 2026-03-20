@@ -10,7 +10,7 @@ interface ProductShowcaseProps {
 
 export function ProductShowcase({ products }: ProductShowcaseProps) {
   return (
-    <section className="py-20 relative">
+    <section id="products-grid" className="py-20 relative">
       <div className="container mx-auto px-4">
         <div className="flex flex-col gap-10">
           {products.map((product, index) => (
