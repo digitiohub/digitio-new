@@ -14,7 +14,7 @@ export function ProductHero() {
                 loop
                 playsInline
                 preload="metadata"
-                poster="/media/hero/hero1.jpg"
+                poster="/media/products/products.jpg"
                 onLoadedMetadata={(event) => {
                     event.currentTarget.playbackRate = 0.8
                 }}
@@ -24,8 +24,8 @@ export function ProductHero() {
                 className="absolute inset-0 h-full w-full object-cover"
                 aria-hidden="true"
             >
-                <source src="/media/hero/hero1.webm" type="video/webm" />
-                <source src="/media/hero/hero1.mp4" type="video/mp4" />
+                <source src="/media/products/products.webm" type="video/webm" />
+                <source src="/media/products/products.mp4" type="video/mp4" />
             </motion.video>
 
             {/* Content Overlays - Consistent with Services/Portfolio */}
