@@ -13,6 +13,7 @@ export interface ProductContent {
   whyBetter: string[];
   summary: string;
   status: string;
+  image: string;
   theme: {
     gradient: string;
     accent: string;
