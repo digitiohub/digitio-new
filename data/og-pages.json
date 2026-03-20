@@ -79,5 +79,14 @@
     "ogTitle": "Terms of Service",
     "description": "Understand the terms and conditions governing your use of the DigitioHub website and services.",
     "eyebrow": "Our Agreement"
+  },
+  {
+    "key": "products",
+    "slug": "products",
+    "route": "/products",
+    "title": "Products | DigitioHub",
+    "ogTitle": "Products",
+    "description": "Discover our suite of AI-driven digital products including Soryouth CRM, LeadFlow, NexGine, and more.",
+    "eyebrow": "Our Suite"
   }
 ]
