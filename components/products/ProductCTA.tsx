@@ -31,7 +31,7 @@ export function ProductCTA() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/contact" className="w-full sm:w-auto">
                 <button className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-all group">
-                  Start a Conversation
+                  Book a Call
                   <MessageSquare className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
               </Link>
