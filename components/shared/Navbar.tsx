@@ -135,7 +135,6 @@ export function Navbar() {
             desc: "Sectors we specialize in",
         },
         { name: "Portfolio", href: "/portfolio", desc: "Our latest work" },
-        { name: "Contact", href: "/contact", desc: "Start a conversation" },
     ];
 
     return (
@@ -380,7 +379,7 @@ export function Navbar() {
                             <SheetClose asChild>
                                 <Link
                                     href="/contact"
-                                    className="group w-full relative h-14 rounded-2xl bg-[#f84f39] text-white font-bold overflow-hidden shadow-2xl shadow-[#f84f39]/20 transition-transform active:scale-95"
+                                    className="group w-full relative h-14 rounded-2xl bg-[#f84f39] text-white font-bold overflow-hidden shadow-2xl shadow-[#f84f39]/20 transition-transform active:scale-95 flex items-center justify-center"
                                 >
                                     <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                                     <span className="relative flex items-center justify-center gap-2">
