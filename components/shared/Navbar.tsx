@@ -8,7 +8,8 @@ import {
     useMotionValueEvent,
     AnimatePresence,
 } from "framer-motion";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
+import { useLenis } from "@studio-freight/react-lenis";
 import {
     Menu,
     Instagram,
@@ -81,7 +82,17 @@ export function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isProductsHovered, setIsProductsHovered] = useState(false);
     const [activeProduct, setActiveProduct] = useState(products[0]);
+    const [isSheetOpen, setIsSheetOpen] = useState(false);
     const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+    const lenis = useLenis();
+
+    useEffect(() => {
+        if (isSheetOpen) {
+            lenis?.stop();
+        } else {
+            lenis?.start();
+        }
+    }, [isSheetOpen, lenis]);
 
     // Hide navbar on scroll down, show on scroll up
     useMotionValueEvent(scrollY, "change", (latest) => {
@@ -306,7 +317,7 @@ export function Navbar() {
                     Let&apos;s Connect
                 </Link>
 
-                <Sheet>
+                <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
                     <SheetTrigger asChild>
                         <button className="md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-all hover:scale-105 active:scale-95">
                             <Menu className="w-5 h-5" />
@@ -333,7 +344,7 @@ export function Navbar() {
                             </SheetDescription>
                         </SheetHeader>
 
-                        <div className="flex-1 overflow-y-auto px-6 py-8">
+                        <div className="flex-1 overflow-y-auto px-6 py-8" data-lenis-prevent>
                             <nav className="flex flex-col gap-2">
                                 {navLinks.map((link) => (
                                     <SheetClose key={link.name} asChild>
