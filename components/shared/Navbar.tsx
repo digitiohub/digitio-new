@@ -2,9 +2,26 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import { useState } from "react";
-import { Menu, Instagram, Linkedin, Twitter, ArrowRight } from "lucide-react";
+import {
+    motion,
+    useScroll,
+    useMotionValueEvent,
+    AnimatePresence,
+} from "framer-motion";
+import { useState, useRef } from "react";
+import {
+    Menu,
+    Instagram,
+    Linkedin,
+    Twitter,
+    ArrowRight,
+    ChevronRight,
+    LayoutGrid,
+    Cog,
+    Brain,
+    Sun,
+    Plane,
+} from "lucide-react";
 import {
     Sheet,
     SheetClose,
@@ -15,10 +32,56 @@ import {
     SheetDescription,
 } from "@/components/ui/sheet";
 
+const products = [
+    {
+        name: "LeadFlow",
+        title: "LeadFlow — The Smartest CRM",
+        slug: "leadflow",
+        desc: "AI-powered lead management and sales automation platform designed for modern sales teams.",
+        icon: LayoutGrid,
+        color: "#3b82f6",
+    },
+    {
+        name: "GarageMate",
+        title: "GarageMate — Workshop ERP",
+        slug: "garagemate",
+        desc: "Specialized ERP system designed for automotive workshops and service centers for end-to-end management.",
+        icon: Cog,
+        color: "#f59e0b",
+    },
+    {
+        name: "NexGine",
+        title: "NexGine — AI Knowledge System",
+        slug: "nexgine",
+        desc: "Advanced AI knowledge management platform that transforms unstructured data into an intelligent internal brain.",
+        icon: Brain,
+        color: "#8b5cf6",
+    },
+    {
+        name: "Soryouth",
+        title: "Soryouth Renewable Energy",
+        slug: "soryouth",
+        desc: "Comprehensive management platform tailored specifically for Solar EPC companies and project lifecycles.",
+        icon: Sun,
+        color: "#10b981",
+    },
+    {
+        name: "Trajectories",
+        title: "Trajectories — Travel Management",
+        slug: "trajectories",
+        desc: "Specialized, multi-tenant travel management platform designed for tour operators and luxury travel agencies.",
+        icon: Plane,
+        color: "#ec4899",
+    },
+];
+
 export function Navbar() {
     const { scrollY } = useScroll();
     const [hidden, setHidden] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isProductsHovered, setIsProductsHovered] = useState(false);
+    const [activeProduct, setActiveProduct] = useState(products[0]);
+    const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
     // Hide navbar on scroll down, show on scroll up
     useMotionValueEvent(scrollY, "change", (latest) => {
@@ -37,11 +100,23 @@ export function Navbar() {
         }
     });
 
+    const handleMouseEnter = () => {
+        if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+        setIsProductsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        hoverTimeoutRef.current = setTimeout(() => {
+            setIsProductsHovered(false);
+        }, 300);
+    };
+
     const navLinks = [
         {
             name: "Products",
             href: "/products",
             desc: "Explore our product suite",
+            hasDropdown: true,
         },
         {
             name: "AI Tech Solutions",
@@ -72,8 +147,8 @@ export function Navbar() {
             animate={hidden ? "hidden" : "visible"}
             transition={{ duration: 0.35, ease: "easeInOut" }}
             className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-5 transition-colors duration-300 ${
-                isScrolled
-                    ? "bg-[#0a0a0a]/80 backdrop-blur-lg border-b border-white/10"
+                isScrolled || isProductsHovered
+                    ? "bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-white/10"
                     : "bg-transparent border-transparent"
             }`}
         >
@@ -91,13 +166,136 @@ export function Navbar() {
 
             <nav className="hidden md:flex items-center gap-8 font-medium text-sm text-white/70">
                 {navLinks.map((link) => (
-                    <Link
+                    <div
                         key={link.name}
-                        href={link.href}
-                        className="hover:text-white transition-colors"
+                        className="relative"
+                        onMouseEnter={
+                            link.hasDropdown ? handleMouseEnter : undefined
+                        }
+                        onMouseLeave={
+                            link.hasDropdown ? handleMouseLeave : undefined
+                        }
                     >
-                        {link.name}
-                    </Link>
+                        <Link
+                            href={link.href}
+                            className={`hover:text-white transition-colors py-2 flex items-center gap-1 ${isProductsHovered && link.name === "Products" ? "text-white" : ""}`}
+                        >
+                            {link.name}
+                            {link.hasDropdown && (
+                                <motion.div
+                                    animate={{
+                                        rotate: isProductsHovered ? 180 : 0,
+                                    }}
+                                    transition={{ duration: 0.3 }}
+                                >
+                                    <ChevronRight className="w-3 h-3 rotate-90" />
+                                </motion.div>
+                            )}
+                        </Link>
+
+                        {link.hasDropdown && (
+                            <AnimatePresence>
+                                {isProductsHovered && (
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0, y: 10 }}
+                                        transition={{
+                                            duration: 0.2,
+                                            ease: "easeOut",
+                                        }}
+                                        className="absolute top-full left-1/2 -translate-x-[25%] mt-4 w-[600px] bg-[#0a0a0a] backdrop-blur-3xl border border-white/10 rounded-3xl overflow-hidden shadow-2xl z-50 pointer-events-auto"
+                                    >
+                                        <div className="flex h-[320px]">
+                                            {/* Left Column: List */}
+                                            <div className="w-[40%] bg-white/5 p-4 border-r border-white/5">
+                                                <div className="space-y-1">
+                                                    {products.map((product) => (
+                                                        <Link
+                                                            key={product.slug}
+                                                            href={`/products#${product.slug}`}
+                                                            onMouseEnter={() =>
+                                                                setActiveProduct(
+                                                                    product,
+                                                                )
+                                                            }
+                                                            className={`group flex items-center gap-3 p-3 rounded-2xl transition-all duration-300 ${
+                                                                activeProduct.slug ===
+                                                                product.slug
+                                                                    ? "bg-white/10 text-white shadow-lg"
+                                                                    : "hover:bg-white/5 text-white/70 hover:text-white/80"
+                                                            }`}
+                                                        >
+                                                            <div
+                                                                className={`p-2 rounded-xl transition-colors ${
+                                                                    activeProduct.slug ===
+                                                                    product.slug
+                                                                        ? "bg-[#f84f39]"
+                                                                        : "bg-white/5 group-hover:bg-white/10"
+                                                                }`}
+                                                            >
+                                                                <product.icon className="w-4 h-4" />
+                                                            </div>
+                                                            <span className="font-semibold text-sm tracking-tight">
+                                                                {product.name}
+                                                            </span>
+                                                            {activeProduct.slug ===
+                                                                product.slug && (
+                                                                <ChevronRight className="w-3 h-3 ml-auto animate-in fade-in slide-in-from-left-1" />
+                                                            )}
+                                                        </Link>
+                                                    ))}
+                                                </div>
+                                            </div>
+
+                                            {/* Right Column: Content */}
+                                            <div className="w-[60%] p-8 relative flex flex-col justify-center">
+                                                <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(248,79,57,0.05),transparent_70%)] pointer-events-none" />
+
+                                                <AnimatePresence mode="wait">
+                                                    <motion.div
+                                                        key={activeProduct.slug}
+                                                        initial={{
+                                                            opacity: 0,
+                                                            x: 20,
+                                                        }}
+                                                        animate={{
+                                                            opacity: 1,
+                                                            x: 0,
+                                                        }}
+                                                        exit={{
+                                                            opacity: 0,
+                                                            x: -20,
+                                                        }}
+                                                        transition={{
+                                                            duration: 0.2,
+                                                        }}
+                                                        className="space-y-4"
+                                                    >
+                                                        <h3 className="text-2xl font-bold text-white tracking-tight">
+                                                            {
+                                                                activeProduct.title
+                                                            }
+                                                        </h3>
+                                                        <p className="text-white/70 text-sm leading-relaxed">
+                                                            {activeProduct.desc}
+                                                        </p>
+                                                        <Link
+                                                            href={`/products#${activeProduct.slug}`}
+                                                            className="inline-flex items-center gap-2 mt-4 text-[#f84f39] text-sm font-bold hover:gap-3 transition-all"
+                                                        >
+                                                            Learn More{" "}
+                                                            <ArrowRight className="w-4 h-4" />
+                                                        </Link>
+                                                    </motion.div>
+                                                </AnimatePresence>
+                                            </div>
+                                        </div>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        )}
+                    </div>
                 ))}
             </nav>
 
