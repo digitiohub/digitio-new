@@ -14,6 +14,10 @@ export interface ProductContent {
   summary: string;
   status: string;
   image: string;
+  gallery?: {
+    src: string;
+    alt: string;
+  }[];
   theme: {
     gradient: string;
     accent: string;
