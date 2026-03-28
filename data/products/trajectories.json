@@ -33,5 +33,39 @@
     ],
     "summary": "Trajectories transforms travel operations from a manual, fragmented process into a streamlined powerhouse, saving hours per week and boosting conversion rates.",
     "image": "/products/trajectories.webp",
-    "status": "v1.0 Beta"
+    "status": "v1.0 Beta",
+    "gallery": [
+        {
+            "src": "/products/trajectories/blogs.webp",
+            "alt": "Trajectories blogs management screen"
+        },
+        {
+            "src": "/products/trajectories/blog-editor.webp",
+            "alt": "Trajectories blog editor interface"
+        },
+        {
+            "src": "/products/trajectories/itinerary-builder.webp",
+            "alt": "Trajectories itinerary builder workspace"
+        },
+        {
+            "src": "/products/trajectories/leads.webp",
+            "alt": "Trajectories lead management dashboard"
+        },
+        {
+            "src": "/products/trajectories/quotations.webp",
+            "alt": "Trajectories quotation generation screen"
+        },
+        {
+            "src": "/products/trajectories/reviews.webp",
+            "alt": "Trajectories reviews and feedback view"
+        },
+        {
+            "src": "/products/trajectories/tasks.webp",
+            "alt": "Trajectories task tracking dashboard"
+        },
+        {
+            "src": "/products/trajectories/tours.webp",
+            "alt": "Trajectories tours management screen"
+        }
+    ]
 }
