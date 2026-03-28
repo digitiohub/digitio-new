@@ -10,6 +10,7 @@ import projects from "@/data/projects.json";
 
 export default function PortfolioClient() {
     const containerRef = useRef<HTMLDivElement>(null);
+    const visibleProjects = projects.filter((project) => project.id !== "alkem");
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -44,7 +45,7 @@ export default function PortfolioClient() {
             <PortfolioHero />
 
             <div className="flex flex-col">
-                {projects.map((project, index) => (
+                {visibleProjects.map((project, index) => (
                     <ProjectSection
                         key={project.id}
                         project={project}
