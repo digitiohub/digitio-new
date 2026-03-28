@@ -569,5 +569,2229 @@
         ],
         "slug": "safari-sutra",
         "techStack": ["Next.js", "Tailwind CSS", "GSAP", "Framer Motion"]
+    },
+    {
+        "id": "realestatepicture",
+        "title": "RealEstatePicture",
+        "tagline": "Visual-First Real Estate Experience",
+        "year": "2024",
+        "type": "Real Estate Platform",
+        "industry": "Real Estate & Property Showcase",
+        "brandOwner": "RealEstatePicture",
+        "websiteLink": "https://realestatepicture.netlify.app/",
+        "thumbnail": "/media/projects/realestatepicture.webp",
+        "overview": "RealEstatePicture is a modern real estate brand focused on transforming property browsing into a visual, immersive experience. Instead of traditional transactional listing platforms, the website emphasizes storytelling through high-quality imagery, clean layouts, and intuitive navigation. LogicNodes partnered with the brand to create a sleek, visual-first platform that is easy to manage, user-friendly, and built to inspire trust among high-intent buyers.",
+        "challenges": [
+            "Existing real estate platforms felt cluttered, outdated, and overwhelming",
+            "Property listings lacked storytelling and visual depth",
+            "Managing listings, images, pricing, and availability was difficult for the team",
+            "Users struggled to filter, search, and explore properties efficiently",
+            "Brand lacked a premium digital presence in a competitive market"
+        ],
+        "goals": [
+            "Establish a visual-first brand identity focused on architecture and space",
+            "Create a clean, minimal website that highlights property imagery",
+            "Develop an easy-to-manage backend for listings and updates",
+            "Enable advanced filters for location, price, property type, and availability",
+            "Ensure fast performance, strong SEO, and mobile responsiveness",
+            "Incorporate trust-building elements to increase enquiries and conversions"
+        ],
+        "solution_categories": [
+            {
+                "title": "Design & Brand Identity",
+                "items": [
+                    "Created a visual language centered around architecture, space, and aesthetics",
+                    "Designed minimal layouts with strong whitespace and refined typography",
+                    "Adopted an image-first approach to highlight property ambience and features"
+                ]
+            },
+            {
+                "title": "UI/UX & User Experience",
+                "items": [
+                    "Designed a modern landing page with a strong visual hero section",
+                    "Built intuitive listing pages with filters for location, price, and property type",
+                    "Integrated map and gallery views for enhanced exploration",
+                    "Implemented progressive disclosure for better information flow",
+                    "Designed clean, distraction-free property detail pages"
+                ]
+            },
+            {
+                "title": "Development & Admin Panel",
+                "items": [
+                    "Developed a custom dashboard for managing property listings",
+                    "Enabled uploading/editing images, descriptions, pricing, and availability",
+                    "Built a no-code interface suitable for non-technical users"
+                ]
+            },
+            {
+                "title": "Performance & Optimization",
+                "items": [
+                    "Implemented mobile-first responsive design",
+                    "Optimized image loading with lazy loading techniques",
+                    "Enhanced SEO with structured metadata for better discoverability"
+                ]
+            },
+            {
+                "title": "Trust & Lead Generation",
+                "items": [
+                    "Integrated enquiry buttons across all property listings",
+                    "Added trust elements like testimonials and recent sales",
+                    "Created clear CTAs for contacting agents and scheduling visits"
+                ]
+            }
+        ],
+        "features": [
+            "Visual-first real estate platform",
+            "Clean and minimal UI/UX design",
+            "Advanced property filters and map-based browsing",
+            "Custom admin panel for listing management",
+            "High-quality gallery layouts and storytelling",
+            "SEO-optimized and high-performance pages",
+            "Mobile responsive design",
+            "Lead generation through enquiry forms"
+        ],
+        "results": [
+            "Increased user engagement with more property exploration and gallery views",
+            "Enabled independent and faster listing management for the client team",
+            "Established a premium and trustworthy brand presence",
+            "Improved user experience with intuitive browsing and filtering",
+            "Built a scalable platform ready for future features like virtual tours and premium listings"
+        ],
+        "slug": "realestatepicture",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "Custom Admin Panel"
+        ]
+    },
+    {
+        "id": "pptpro",
+        "title": "PPTPro",
+        "tagline": "Professional Presentations Made Easy",
+        "year": "2024",
+        "type": "SaaS Platform",
+        "industry": "SaaS, Productivity, Presentation Design",
+        "brandOwner": "PPTPro",
+        "websiteLink": "https://pptpro-react.netlify.app/",
+        "thumbnail": "/media/projects/pptpro.webp",
+        "overview": "PPTPro is a presentation-design SaaS platform built to simplify the creation of professional, high-quality slides for individuals, startups, and enterprises. The platform focuses on making visually appealing presentations accessible without requiring design expertise. LogicNodes partnered with PPTPro to build a strong digital presence that clearly communicates product value, showcases capabilities, and drives user sign-ups through a conversion-focused website.",
+        "challenges": [
+            "Users struggled with slide design, including consistency, alignment, and storytelling",
+            "Existing presentation tools felt overwhelming or lacked professional-quality templates",
+            "Difficulty in differentiating the brand in a crowded SaaS market",
+            "Need for a CMS to manage templates, pricing, blogs, and features easily",
+            "Lack of trust-building elements like testimonials and product proof"
+        ],
+        "goals": [
+            "Establish strong brand messaging focused on simplicity, creativity, and productivity",
+            "Build a product-first website showcasing features, templates, and use cases",
+            "Design conversion-focused pages to drive signups and demo requests",
+            "Develop an easy-to-manage CMS for content and updates",
+            "Incorporate trust-building elements like testimonials and social proof",
+            "Ensure fast performance, security, and SEO optimization"
+        ],
+        "solution_categories": [
+            {
+                "title": "Brand Strategy & Messaging",
+                "items": [
+                    "Positioned PPTPro as a platform for creating professional presentations effortlessly",
+                    "Crafted messaging around speed, simplicity, and design quality",
+                    "Highlighted key use cases including startups, sales teams, educators, and enterprises"
+                ]
+            },
+            {
+                "title": "UI/UX & Product Experience",
+                "items": [
+                    "Designed a modern, minimal interface focused on clarity and usability",
+                    "Showcased editable templates, slide previews, and feature highlights",
+                    "Integrated product interface mockups to demonstrate ease of use",
+                    "Ensured immediate user understanding of product value"
+                ]
+            },
+            {
+                "title": "Conversion & Growth Design",
+                "items": [
+                    "Implemented strong CTAs such as 'Try Free', 'See Templates', and 'Get Started'",
+                    "Added social proof elements including testimonials and company logos",
+                    "Highlighted use-case success stories to drive engagement and trust"
+                ]
+            },
+            {
+                "title": "Development & CMS",
+                "items": [
+                    "Built a CMS for managing templates, pricing plans, and product updates",
+                    "Enabled easy publishing of blog content and educational resources",
+                    "Provided a fully non-technical interface for content management"
+                ]
+            },
+            {
+                "title": "Performance & Optimization",
+                "items": [
+                    "Optimized website speed and responsiveness across devices",
+                    "Implemented SEO-friendly structure for better discoverability",
+                    "Integrated trust elements like secure UI indicators and testimonials"
+                ]
+            }
+        ],
+        "features": [
+            "Clean and professional SaaS website design",
+            "Template showcase and feature preview sections",
+            "Conversion-focused CTAs across the platform",
+            "Testimonials and logo clouds for trust-building",
+            "Fully manageable CMS backend",
+            "SEO-optimized and high-performance pages",
+            "Mobile responsive design",
+            "Clear product messaging and positioning"
+        ],
+        "results": [
+            "Clear communication of product value to new visitors",
+            "Improved conversion rates with strong CTAs and social proof",
+            "Enabled scalable marketing through easy content and template updates",
+            "Established a professional and credible SaaS brand identity",
+            "Enhanced user understanding and engagement with the platform"
+        ],
+        "slug": "pptpro",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "CMS Integration"
+        ]
+    },
+    {
+        "id": "bharatvishwasaarti",
+        "title": "BharatVishwasaArti",
+        "tagline": "Professional Driver Training & Road Safety Institute",
+        "year": "2024",
+        "type": "EdTech & Training Platform",
+        "industry": "Driver Training, Road Safety, Skill Development",
+        "brandOwner": "BharatVishwasaArti",
+        "websiteLink": "https://bharatvishwasaarti.netlify.app/",
+        "thumbnail": "/media/projects/bharatvishwasaarti.webp",
+        "overview": "BharatVishwasaArti is a professional driver-training institute focused on improving driving standards across India by transforming individuals into skilled, responsible, and safety-conscious drivers. LogicNodes partnered with the institute to build a strong digital presence along with a structured operational system that supports training delivery, scalability, and credibility for both individual learners and corporate clients.",
+        "challenges": [
+            "Lack of formal training and defensive driving knowledge among drivers",
+            "Absence of a structured curriculum combining theory and practical learning",
+            "No digital platform to showcase courses, trainers, certifications, and schedules",
+            "Difficulty in managing batches, trainers, and students at scale",
+            "Low trust in traditional driving schools requiring strong branding",
+            "Need for a lead-generation focused system to attract learners and corporate clients"
+        ],
+        "goals": [
+            "Build a strong brand identity focused on professionalism, safety, and trust",
+            "Develop a website with clear course structures and enrollment pathways",
+            "Incorporate trust signals like trainer profiles, testimonials, and certifications",
+            "Create a backend system to manage students, batches, trainers, and progress",
+            "Implement high-conversion lead capture forms and CTAs",
+            "Ensure mobile responsiveness, SEO optimization, and fast performance"
+        ],
+        "solution_categories": [
+            {
+                "title": "Branding & Positioning",
+                "items": [
+                    "Positioned the institute as a trusted and professional driver-training provider",
+                    "Developed messaging around road safety, responsibility, and skill development",
+                    "Used real-world visuals including training vehicles, instructors, and certification"
+                ]
+            },
+            {
+                "title": "UI/UX & Website Design",
+                "items": [
+                    "Designed a clean, structured, and credibility-focused website",
+                    "Created sections for courses, trainers, testimonials, and enrollment",
+                    "Focused on trust-building through clear information hierarchy and real visuals"
+                ]
+            },
+            {
+                "title": "Training Curriculum Structure",
+                "items": [
+                    "Built detailed program pages covering theory and practical modules",
+                    "Included topics like road laws, safety rules, parking, highway driving, and reverse driving",
+                    "Displayed certification details, duration, fees, and batch sizes clearly"
+                ]
+            },
+            {
+                "title": "Development & Admin System",
+                "items": [
+                    "Developed a comprehensive admin dashboard for operational management",
+                    "Enabled batch creation, trainer assignment, and schedule management",
+                    "Allowed student enrollment, attendance tracking, and progress monitoring",
+                    "Integrated certificate generation and performance reporting",
+                    "Provided analytics for trainees, batch occupancy, completion rates, and conversions"
+                ]
+            },
+            {
+                "title": "Conversion & Lead Generation",
+                "items": [
+                    "Implemented high-intent CTAs like 'Enroll Now', 'Book Trial Session', and 'Fleet Training'",
+                    "Designed lead capture forms with user details and training preferences",
+                    "Added testimonials and success stories to build credibility"
+                ]
+            },
+            {
+                "title": "Performance & Optimization",
+                "items": [
+                    "Optimized for mobile-first usage for accessibility across devices",
+                    "Implemented local SEO strategies for city and region-based searches",
+                    "Ensured fast loading speeds and smooth browsing experience"
+                ]
+            }
+        ],
+        "features": [
+            "Professional training-focused website design",
+            "Structured course modules with theory and practical breakdown",
+            "Custom admin dashboard for operational management",
+            "Batch, trainer, and student management system",
+            "Lead generation forms and conversion-focused CTAs",
+            "Testimonials and real-world training visuals",
+            "SEO-optimized and mobile responsive design",
+            "Scalable system for multi-location expansion"
+        ],
+        "results": [
+            "Improved driver competency through structured training programs",
+            "Enabled seamless operational scaling with multiple batches and trainers",
+            "Established strong credibility and trust among learners and corporates",
+            "Expanded business opportunities into fleet and corporate training segments",
+            "Increased lead generation and conversion through optimized CTAs and forms"
+        ],
+        "slug": "bharatvishwasaarti",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "Custom Admin Panel"
+        ]
+    },
+    {
+        "id": "expoindia",
+        "title": "Expo India",
+        "tagline": "Built From Zero to a Complete Exhibition Platform",
+        "year": "2024",
+        "type": "Corporate & Event Website",
+        "industry": "Exhibitions, Events, B2B Trade Shows",
+        "brandOwner": "Expo India",
+        "websiteLink": "https://www.expoindia.in/",
+        "thumbnail": "/media/projects/expoindia.webp",
+        "overview": "Expo India is a B2B exhibition platform that required a complete website built from scratch with minimal input and no predefined structure. The project involved designing and developing an entire digital experience—from layout and content structure to UI system and responsive implementation. LogicNodes delivered a clean, modern, and highly structured website that effectively communicates with exhibitors, visitors, and sponsors while maintaining clarity, trust, and usability.",
+        "challenges": [
+            "No wireframe, layout, or predefined website structure provided",
+            "Lack of clarity in content organization and page hierarchy",
+            "No brand identity including colors, typography, or design guidelines",
+            "Fragmented and unstructured content with overlaps and inconsistencies",
+            "Responsibility to ensure visual consistency and user-friendly experience from scratch"
+        ],
+        "goals": [
+            "Design a complete website architecture from zero",
+            "Create a clean, professional, and trustworthy digital presence",
+            "Structure scattered content into a clear and logical flow",
+            "Develop a consistent UI system including colors, typography, and components",
+            "Ensure responsiveness across mobile, tablet, and desktop",
+            "Build a smooth user journey for exhibitors, visitors, and organizers"
+        ],
+        "solution_categories": [
+            {
+                "title": "Research & Planning",
+                "items": [
+                    "Conducted research on exhibition industry requirements and user expectations",
+                    "Identified key information needs for exhibitors, visitors, and sponsors",
+                    "Defined content hierarchy and user journey from scratch"
+                ]
+            },
+            {
+                "title": "UI/UX Design & Structure",
+                "items": [
+                    "Designed a complete layout including hero sections, categories, and content flow",
+                    "Created a smooth scrolling experience with balanced spacing and readability",
+                    "Structured pages for sections like exhibitors, participation, and contact"
+                ]
+            },
+            {
+                "title": "Design System Creation",
+                "items": [
+                    "Developed a full UI system including color palette, typography, and spacing",
+                    "Designed buttons, grids, and visual components from scratch",
+                    "Ensured consistency and visual rhythm across the entire website"
+                ]
+            },
+            {
+                "title": "Content Structuring",
+                "items": [
+                    "Reorganized fragmented content into clear, meaningful sections",
+                    "Eliminated redundancy and improved readability",
+                    "Built a logical information flow for better user understanding"
+                ]
+            },
+            {
+                "title": "Development & Responsiveness",
+                "items": [
+                    "Built a fully responsive website optimized for mobile, tablet, and desktop",
+                    "Ensured smooth navigation and performance across all devices",
+                    "Maintained consistency across screen sizes and layouts"
+                ]
+            }
+        ],
+        "features": [
+            "Complete website built from scratch without initial wireframes",
+            "Custom UI system including colors, typography, and components",
+            "Clean and structured layout for B2B exhibition content",
+            "Highly readable and organized content sections",
+            "Responsive design across all devices",
+            "Smooth navigation and user-friendly experience",
+            "Modern and minimal visual design",
+            "Optimized performance and fast loading"
+        ],
+        "results": [
+            "Delivered a fully functional and professional website from minimal input",
+            "Established a strong and trustworthy digital presence for Expo India",
+            "Improved clarity and usability for exhibitors, visitors, and sponsors",
+            "Created a scalable structure for future content and expansion",
+            "Demonstrated capability to design complete systems from scratch",
+            "Enhanced brand credibility with a clean and modern interface"
+        ],
+        "slug": "expoindia",
+        "techStack": ["HTML", "CSS", "JavaScript", "Responsive Design"]
+    },
+    {
+        "id": "ecobird-recycling",
+        "title": "EcoBird Recycling",
+        "tagline": "A Purpose-Driven Digital Rebuild",
+        "year": "2024",
+        "type": "Corporate Website Redesign",
+        "industry": "Recycling, Waste Management, Environmental Services",
+        "brandOwner": "EcoBird Recycling",
+        "websiteLink": "https://ecobirddrecycling.com/",
+        "thumbnail": "/media/projects/ecobirddrecycling.webp",
+        "overview": "EcoBird Recycling is a sustainability-focused company working in waste management and environmental services. Despite having a strong mission, their existing website lacked clarity, structure, and credibility. LogicNodes partnered with EcoBird to rebuild their entire digital presence—transforming it into a clean, trustworthy, and purpose-driven platform that clearly communicates their services and values.",
+        "challenges": [
+            "Lack of clear structure and content hierarchy across pages",
+            "No consistent brand identity or visual language",
+            "Website failed to reflect sustainability and environmental responsibility",
+            "Slow performance and poor mobile optimization",
+            "Text-heavy and cluttered layouts reducing readability",
+            "Weak trust-building elements and unclear service communication"
+        ],
+        "goals": [
+            "Rebuild the website with a clear, structured, and user-friendly layout",
+            "Establish a strong brand identity aligned with sustainability values",
+            "Improve performance, responsiveness, and mobile usability",
+            "Simplify content for better clarity and quick understanding",
+            "Incorporate trust-building elements like certifications and credibility signals",
+            "Drive user actions such as service inquiries and pickup requests"
+        ],
+        "solution_categories": [
+            {
+                "title": "Brand Identity & Visual Design",
+                "items": [
+                    "Developed a natural color palette using greens and neutral tones",
+                    "Created a consistent visual language aligned with eco-conscious values",
+                    "Designed a clean and modern interface reflecting responsibility and trust"
+                ]
+            },
+            {
+                "title": "UI/UX & Content Experience",
+                "items": [
+                    "Restructured content into clear, logical sections for better understanding",
+                    "Implemented icon-based storytelling to replace heavy text blocks",
+                    "Designed a clean layout with strong hierarchy and readability",
+                    "Ensured each section answers a specific user question"
+                ]
+            },
+            {
+                "title": "Conversion & User Flow",
+                "items": [
+                    "Integrated clear CTAs such as 'Book Pickup', 'Know Our Services', and 'Contact Us'",
+                    "Placed action buttons strategically across key sections",
+                    "Designed flows to guide users toward inquiries and service requests"
+                ]
+            },
+            {
+                "title": "Development & Responsiveness",
+                "items": [
+                    "Built a mobile-first responsive website optimized for all devices",
+                    "Improved page speed and performance for smoother browsing",
+                    "Ensured touch-friendly navigation and crisp layouts on mobile"
+                ]
+            },
+            {
+                "title": "Performance & SEO Optimization",
+                "items": [
+                    "Structured content for SEO-friendly readability and indexing",
+                    "Reduced clutter and improved load times",
+                    "Enhanced discoverability through optimized page structure"
+                ]
+            }
+        ],
+        "features": [
+            "Clean and structured service-based website design",
+            "Icon-based service explanation for quick understanding",
+            "Trust elements like compliance badges and certifications",
+            "Lead generation through contact and pickup request forms",
+            "Mobile-first responsive design",
+            "SEO-optimized content and layout",
+            "Subtle animations for modern user experience",
+            "Clear and conversion-focused CTAs"
+        ],
+        "results": [
+            "Improved clarity of services for users and visitors",
+            "Increased corporate inquiries due to enhanced trust and credibility",
+            "Stronger brand perception aligned with sustainability values",
+            "Modern, consistent digital identity across the platform",
+            "Higher engagement and smoother user experience",
+            "Positioned EcoBird as a reliable and professional recycling partner"
+        ],
+        "slug": "ecobird-recycling",
+        "techStack": ["HTML", "CSS", "JavaScript", "Responsive Design"]
+    },
+    {
+        "id": "suman-steels",
+        "title": "Suman Steels",
+        "tagline": "Modern Industrial Website Redesign",
+        "year": "2024",
+        "type": "Corporate Website Redesign",
+        "industry": "Steel Supply, Industrial Materials",
+        "brandOwner": "Suman Steels",
+        "websiteLink": "https://suman-steel-dev.netlify.app/",
+        "thumbnail": "/media/projects/sumansteels.webp",
+        "overview": "Suman Steels is an established steel supplier with years of industry experience, but their outdated website failed to reflect their credibility and scale. LogicNodes redesigned the entire digital presence to create a modern, structured, and professional website that aligns with industry expectations, improves usability, and builds trust among B2B buyers.",
+        "challenges": [
+            "Unstructured content layout making it difficult to understand offerings",
+            "Outdated visuals lacking modern UI patterns and consistency",
+            "No clear visual hierarchy for products, certifications, and company strengths",
+            "Poor mobile responsiveness leading to loss of potential leads",
+            "Lack of trust-building elements expected in industrial websites"
+        ],
+        "goals": [
+            "Create a clean, structured, and professional website design",
+            "Establish a strong industrial brand identity",
+            "Improve clarity of product categories and company capabilities",
+            "Ensure mobile-first responsiveness and smooth performance",
+            "Incorporate trust signals like experience, certifications, and industries served",
+            "Enhance user flow for faster product discovery and inquiries"
+        ],
+        "solution_categories": [
+            {
+                "title": "Brand Identity & Visual Design",
+                "items": [
+                    "Developed an industrial color palette using steel-inspired shades like grey, blue, and white",
+                    "Created a modern, clean design language aligned with B2B expectations",
+                    "Established consistency in spacing, alignment, and layout structure"
+                ]
+            },
+            {
+                "title": "UI/UX & Website Structure",
+                "items": [
+                    "Redesigned the entire layout with a strong grid system and visual hierarchy",
+                    "Built intuitive navigation for company profile, products, industries, and contact",
+                    "Improved typography and readability for better content clarity"
+                ]
+            },
+            {
+                "title": "Product Experience",
+                "items": [
+                    "Designed product categories using card-based layouts and structured grids",
+                    "Enhanced product presentation with clear descriptions and visuals",
+                    "Created dedicated sections for industries served and company capabilities"
+                ]
+            },
+            {
+                "title": "Trust & Credibility",
+                "items": [
+                    "Added sections highlighting years of experience and industry expertise",
+                    "Included certifications, quality commitments, and industries served",
+                    "Integrated enquiry and contact options for quick conversions"
+                ]
+            },
+            {
+                "title": "Development & Responsiveness",
+                "items": [
+                    "Implemented a fully responsive, mobile-first design",
+                    "Ensured smooth performance across all devices",
+                    "Added subtle animations and hover effects for a modern feel"
+                ]
+            }
+        ],
+        "features": [
+            "Modern industrial website design",
+            "Structured product category layouts",
+            "Dedicated company overview and industry sections",
+            "Clear navigation and improved user flow",
+            "Trust-building sections with certifications and experience",
+            "Mobile-first responsive design",
+            "Subtle animations and interactive elements",
+            "Conversion-focused enquiry and contact system"
+        ],
+        "results": [
+            "Transformed the brand into a modern and credible industrial presence",
+            "Improved clarity of products and company capabilities",
+            "Enhanced trust among B2B buyers and new visitors",
+            "Increased usability and faster product discovery",
+            "Delivered a fully responsive and professional website experience",
+            "Aligned digital identity with the company’s industry reputation"
+        ],
+        "slug": "suman-steels",
+        "techStack": ["HTML", "CSS", "JavaScript", "Responsive Design"]
+    },
+    {
+        "id": "pronology",
+        "title": "Pronology",
+        "tagline": "From Concept to Complete Corporate Website",
+        "year": "2024",
+        "type": "Corporate Website",
+        "industry": "Corporate Services, Tech-Driven Solutions",
+        "brandOwner": "Pronology",
+        "websiteLink": "https://pronology-dev.netlify.app/",
+        "thumbnail": "/media/projects/pronology.webp",
+        "overview": "Pronology approached LogicNodes at an early stage with minimal inputs—no content, no structure, no brand identity, and no clear direction. The project required transforming a rough PPT and scattered discussions into a fully functional, professional corporate website. From layout and content to UI design and brand structure, everything was built from scratch to create a clean, credible, and business-ready digital presence.",
+        "challenges": [
+            "No wireframe, layout, or navigation structure provided",
+            "Incomplete and unclear content requiring full content creation",
+            "No visual identity including colors, typography, or design system",
+            "Unclear user journey and brand messaging",
+            "Need to translate abstract ideas into a structured digital experience"
+        ],
+        "goals": [
+            "Build a complete website structure from scratch",
+            "Create a strong corporate identity with clean and modern design",
+            "Develop clear, professional content aligned with business goals",
+            "Design intuitive navigation and user flow",
+            "Ensure responsiveness, performance, and usability across devices",
+            "Deliver a polished and business-ready online presence"
+        ],
+        "solution_categories": [
+            {
+                "title": "Research & Interpretation",
+                "items": [
+                    "Analyzed provided PPT and discussions to understand brand direction",
+                    "Defined core positioning around professionalism and tech-driven solutions",
+                    "Translated abstract ideas into clear website structure and messaging"
+                ]
+            },
+            {
+                "title": "UI/UX & Website Structure",
+                "items": [
+                    "Created complete wireframe including homepage, about, services, and contact",
+                    "Designed a logical navigation system and content hierarchy",
+                    "Built structured layouts ensuring clarity and readability"
+                ]
+            },
+            {
+                "title": "Brand Identity & Visual Design",
+                "items": [
+                    "Developed a clean corporate color palette and typography system",
+                    "Designed minimal, modern UI elements and consistent visual patterns",
+                    "Used box-based layouts for structured and professional presentation"
+                ]
+            },
+            {
+                "title": "Content Creation",
+                "items": [
+                    "Wrote complete website content from scratch",
+                    "Maintained a tone that is clear, confident, and corporate",
+                    "Structured messaging to improve understanding and engagement"
+                ]
+            },
+            {
+                "title": "Development & Responsiveness",
+                "items": [
+                    "Built a fully responsive website optimized for all devices",
+                    "Ensured clean spacing, smooth flow, and intuitive navigation",
+                    "Delivered a lightweight and high-performance user experience"
+                ]
+            }
+        ],
+        "features": [
+            "Complete corporate website built from scratch",
+            "Custom UI/UX design with modern and minimal aesthetics",
+            "Fully structured navigation and page hierarchy",
+            "Professionally written content across all pages",
+            "Box-based layouts for clarity and readability",
+            "Responsive design across mobile, tablet, and desktop",
+            "Clean icons and visual elements",
+            "Business-ready digital presence"
+        ],
+        "results": [
+            "Transformed raw ideas into a complete and functional website",
+            "Established a clear and professional brand identity",
+            "Improved clarity of services and offerings for potential clients",
+            "Enhanced credibility and presentation for business interactions",
+            "Provided a strong foundation for future marketing and growth",
+            "Delivered a polished and scalable digital presence"
+        ],
+        "slug": "pronology",
+        "techStack": ["HTML", "CSS", "JavaScript", "Responsive Design"]
+    },
+    {
+        "id": "shubhaam-logistics",
+        "title": "Shubhaam Logistics",
+        "tagline": "A Trustworthy, Modern Logistics Web Identity",
+        "year": "2024",
+        "type": "Corporate Website Redesign",
+        "industry": "Logistics, Transportation, Warehousing",
+        "brandOwner": "Shubhaam Logistics",
+        "websiteLink": "https://shubhaamlogistics.com/",
+        "thumbnail": "/media/projects/shubhaamlogistics.webp",
+        "overview": "Shubhaam Logistics is an established logistics company with strong operational capabilities, but their outdated website failed to reflect their reliability and professionalism. LogicNodes redesigned their entire digital presence to create a modern, structured, and trust-driven website that clearly communicates services, operational strength, and credibility to potential clients.",
+        "challenges": [
+            "Unclear website structure making it difficult for users to understand services and offerings",
+            "Weak visual hierarchy with important sections like services and fleet not highlighted properly",
+            "Lack of trust-building elements such as certifications, experience, and client base",
+            "Poor mobile responsiveness affecting user experience on the go",
+            "Generic and unbranded design lacking authority and industry alignment"
+        ],
+        "goals": [
+            "Create a modern, professional website aligned with logistics industry standards",
+            "Improve clarity of services, operations, and company capabilities",
+            "Establish a strong brand identity with trust-focused design",
+            "Enhance mobile responsiveness and performance",
+            "Incorporate trust signals like certifications, experience, and partnerships",
+            "Enable easy inquiry and lead generation through clear CTAs"
+        ],
+        "solution_categories": [
+            {
+                "title": "Research & Content Strategy",
+                "items": [
+                    "Conducted in-depth discussions to understand transport, warehousing, and freight services",
+                    "Defined content flow based on real-world logistics user needs",
+                    "Structured information around services, operations, and trust factors"
+                ]
+            },
+            {
+                "title": "UI/UX & Website Structure",
+                "items": [
+                    "Designed a clear user journey from services to contact and inquiries",
+                    "Created structured layouts for services, fleet/network, and company overview",
+                    "Improved navigation for quick access to key information"
+                ]
+            },
+            {
+                "title": "Brand Identity & Visual Design",
+                "items": [
+                    "Developed a logistics-focused color palette using blue, grey, and white tones",
+                    "Designed clean typography and industrial-style layouts",
+                    "Used transport-related iconography and grid-based design system"
+                ]
+            },
+            {
+                "title": "Trust & Conversion Design",
+                "items": [
+                    "Highlighted fleet capabilities, experience, and certifications",
+                    "Added partner logos and operational strengths for credibility",
+                    "Integrated strong CTAs like 'Contact' and 'Request a Quote'"
+                ]
+            },
+            {
+                "title": "Development & Responsiveness",
+                "items": [
+                    "Built a fully responsive, mobile-first website",
+                    "Optimized performance for fast loading and smooth navigation",
+                    "Ensured usability across desktop, tablet, and mobile devices"
+                ]
+            }
+        ],
+        "features": [
+            "Structured services section for transport, warehousing, and freight",
+            "Fleet and network overview for operational transparency",
+            "Company profile and mission for trust-building",
+            "Certifications and credentials display",
+            "Lead generation through inquiry and contact forms",
+            "Modern, clean UI aligned with logistics industry",
+            "Mobile-first responsive design",
+            "Clear navigation and user flow"
+        ],
+        "results": [
+            "Improved clarity of services leading to higher client inquiries",
+            "Enhanced trust and credibility through structured presentation",
+            "Positive user feedback highlighting modern and professional design",
+            "Stronger digital identity aligned with operational capabilities",
+            "Improved usability across all devices, especially mobile",
+            "Positioned the brand as a reliable and modern logistics partner"
+        ],
+        "slug": "shubhaam-logistics",
+        "techStack": ["HTML", "CSS", "JavaScript", "Responsive Design"]
+    },
+    {
+        "id": "the-silver-lining",
+        "title": "The Silver Lining",
+        "tagline": "A Compassionate Wellness Website for Mental Health",
+        "year": "2024",
+        "type": "Wellness & Healthcare Website",
+        "industry": "Mental Health, Counseling, Psychotherapy",
+        "brandOwner": "The Silver Lining Wellness Centre",
+        "websiteLink": "https://digitalteamwork.co.in/thesilverlining/",
+        "thumbnail": "/media/projects/the-silver-lining.webp",
+        "overview": "The Silver Lining Wellness Centre is a Mumbai-based mental health practice focused on providing counseling, psychotherapy, and wellness services. LogicNodes partnered with them to create a compassionate digital presence that prioritizes emotional comfort, trust, and clarity. The website was designed as a safe and welcoming space where users can understand services, feel reassured, and confidently reach out for support.",
+        "challenges": [
+            "Creating a sense of trust, safety, and emotional comfort through design",
+            "Explaining multiple services without overwhelming users",
+            "Presenting testimonials in a sensitive and authentic manner",
+            "Ensuring a smooth and comforting mobile experience",
+            "Educating users about online therapy and reducing hesitation"
+        ],
+        "goals": [
+            "Design a calm, empathetic, and user-friendly website",
+            "Clearly structure and communicate counseling and wellness services",
+            "Build trust through testimonials and human-centered content",
+            "Optimize the website for mobile-first accessibility",
+            "Provide educational resources to encourage mental health awareness",
+            "Enable easy and comfortable user interaction through contact and CTAs"
+        ],
+        "solution_categories": [
+            {
+                "title": "Empathy-Driven Design",
+                "items": [
+                    "Used soft color palettes and gentle spacing to create a calming experience",
+                    "Designed clean typography and minimal layouts to reduce cognitive load",
+                    "Focused on emotional comfort through visual simplicity and clarity"
+                ]
+            },
+            {
+                "title": "UI/UX & Service Structuring",
+                "items": [
+                    "Organized services into clear categories like counseling, psychotherapy, and workshops",
+                    "Created easy-to-understand descriptions for each service",
+                    "Designed structured sections to guide users without overwhelming them"
+                ]
+            },
+            {
+                "title": "Trust & Human Connection",
+                "items": [
+                    "Integrated real testimonials in a sensitive and relatable format",
+                    "Highlighted human stories to build emotional trust",
+                    "Created a warm and approachable tone across the website"
+                ]
+            },
+            {
+                "title": "Content & Education",
+                "items": [
+                    "Developed blog and resource sections for mental health awareness",
+                    "Provided educational content about therapy and emotional well-being",
+                    "Reduced stigma by simplifying complex mental health topics"
+                ]
+            },
+            {
+                "title": "Development & Responsiveness",
+                "items": [
+                    "Built a fully responsive website optimized for mobile, tablet, and desktop",
+                    "Ensured smooth navigation and readability on smaller screens",
+                    "Optimized performance for quick and distraction-free browsing"
+                ]
+            }
+        ],
+        "features": [
+            "Empathy-driven UI/UX design for emotional comfort",
+            "Structured service pages for counseling, therapy, and workshops",
+            "Authentic testimonial section for trust-building",
+            "Educational blog and resource content",
+            "Emotionally considerate contact and inquiry forms",
+            "Mobile-first responsive design",
+            "Clear and gentle CTAs like 'Get Help' and 'Know More'",
+            "Clean and minimal visual design"
+        ],
+        "results": [
+            "Increased comfort level among users reaching out for support",
+            "Enhanced trust through thoughtful design and real testimonials",
+            "Improved clarity of services and offerings",
+            "Encouraged mental health awareness through educational content",
+            "Provided a safe and welcoming digital space for users",
+            "Aligned the website experience with the brand’s compassionate mission"
+        ],
+        "slug": "the-silver-lining",
+        "techStack": ["HTML", "CSS", "JavaScript", "Responsive Design"]
+    },
+    {
+        "id": "automotive-crm-system",
+        "title": "Automotive CRM System",
+        "tagline": "From Manual Chaos to a Fully Digital Business Ecosystem",
+        "year": "2024",
+        "type": "Custom CRM & Business System",
+        "industry": "Automotive Products, Inventory & Service Operations",
+        "brandOwner": "Confidential Client",
+        "websiteLink": "https://crm.maulicardecor.com/",
+        "thumbnail": "/media/projects/autocrm.webp",
+        "overview": "This project involved building a complete Automotive CRM System that transformed a fully manual business into a structured, digital-first operation. The client managed everything through physical records, WhatsApp communication, and scattered spreadsheets. LogicNodes designed and developed a centralized system covering products, inventory, customers, employees, orders, analytics, and automation—creating a scalable and efficient digital ecosystem.",
+        "challenges": [
+            "Client had no technical background or experience with digital systems",
+            "Entire business was managed manually through physical logs and informal communication",
+            "No predefined requirements or system architecture",
+            "Frequent scope expansion as client discovered new possibilities",
+            "Difficulty in prioritizing features and defining workflows",
+            "Requirement changes even after modules were completed",
+            "Need for extensive client and team training for adoption"
+        ],
+        "goals": [
+            "Digitize the entire business workflow into a centralized system",
+            "Create an easy-to-use interface for non-technical users",
+            "Enable real-time inventory and product management",
+            "Improve customer relationship tracking and service history",
+            "Streamline order, billing, and payment processes",
+            "Provide actionable insights through reports and analytics",
+            "Ensure scalability for future features and business growth"
+        ],
+        "solution_categories": [
+            {
+                "title": "System Architecture & Planning",
+                "items": [
+                    "Designed a modular CRM system covering products, inventory, customers, employees, and orders",
+                    "Structured workflows to replicate and improve existing offline processes",
+                    "Planned scalability to accommodate future feature expansion"
+                ]
+            },
+            {
+                "title": "Core CRM Modules",
+                "items": [
+                    "Built product management system with categories, specifications, and compatibility mapping",
+                    "Developed real-time inventory tracking with stock logs and alerts",
+                    "Created customer management system with service history and follow-ups",
+                    "Implemented order lifecycle management including invoicing and payment tracking",
+                    "Added employee management with roles, attendance, and performance tracking"
+                ]
+            },
+            {
+                "title": "Automation & Smart Features",
+                "items": [
+                    "Integrated automated alerts for stock, payments, and follow-ups",
+                    "Enabled barcode/QR-based product identification",
+                    "Implemented role-based access control for secure workflow management"
+                ]
+            },
+            {
+                "title": "Analytics & Reporting",
+                "items": [
+                    "Built dashboards for sales performance, inventory movement, and profit visibility",
+                    "Provided insights into top-selling products and employee performance",
+                    "Enabled data-driven decision-making across operations"
+                ]
+            },
+            {
+                "title": "User Experience & Simplicity",
+                "items": [
+                    "Designed simple, intuitive interfaces for non-technical users",
+                    "Translated complex workflows into easy-to-use dashboards",
+                    "Ensured minimal learning curve for staff adoption"
+                ]
+            },
+            {
+                "title": "Training & Implementation",
+                "items": [
+                    "Conducted live training sessions and walkthroughs",
+                    "Created tutorial content for ongoing learning",
+                    "Guided client through digital transition step-by-step"
+                ]
+            }
+        ],
+        "features": [
+            "Centralized product and inventory management system",
+            "Real-time stock tracking with alerts and supplier mapping",
+            "Customer relationship management with history and follow-ups",
+            "Order-to-delivery workflow with invoicing and payment tracking",
+            "Employee management with roles, attendance, and performance tracking",
+            "Advanced analytics dashboards and reporting",
+            "Role-based access control for secure operations",
+            "Automated notifications and alerts system",
+            "Barcode and QR code integration",
+            "User-friendly interface for non-technical teams"
+        ],
+        "results": [
+            "Complete transformation from manual to digital operations",
+            "Centralized and accurate business data across all departments",
+            "Reduced manual errors and operational inefficiencies",
+            "Improved inventory visibility and stock management",
+            "Faster sales cycles and better order tracking",
+            "Enhanced customer relationships and retention",
+            "Clear employee accountability and performance tracking",
+            "Data-driven decision-making through analytics",
+            "Scalable system supporting long-term business growth"
+        ],
+        "slug": "automotive-crm-system",
+        "techStack": [
+            "Next.js",
+            "TypeScript",
+            "Custom Backend",
+            "Database Management",
+            "QR/Barcode Integration"
+        ]
+    },
+    {
+        "id": "chalogoa",
+        "title": "ChaloGoa",
+        "tagline": "A Premium Goa-Focused Travel Experience Platform",
+        "year": "2024",
+        "type": "Travel & Booking Platform",
+        "industry": "Tourism, Regional Travel Experiences",
+        "brandOwner": "ChaloGoa",
+        "websiteLink": "https://chalogoa.com/",
+        "thumbnail": "/media/projects/chalogoa.webp",
+        "overview": "ChaloGoa is a travel platform dedicated exclusively to Goa, offering curated trips, local experiences, and travel services. LogicNodes designed and developed the entire website to position the brand as a Goa-specialist platform. The focus was on creating a visually rich, user-friendly, and conversion-driven experience that captures the essence of Goa while enabling seamless exploration and booking.",
+        "challenges": [
+            "Creating a strong Goa-centric identity in a crowded travel market",
+            "Delivering a premium visual experience expected from travel platforms",
+            "Designing a clear booking and enquiry flow to drive conversions",
+            "Balancing UI/UX design and development without misalignment",
+            "Handling heavy visual content while maintaining performance"
+        ],
+        "goals": [
+            "Build a visually immersive and destination-focused travel website",
+            "Clearly present tours, experiences, and itineraries",
+            "Enable easy enquiry and booking flow for users",
+            "Create a scalable system for adding new tours and content",
+            "Ensure high performance and mobile responsiveness",
+            "Establish trust through design, content, and structure"
+        ],
+        "solution_categories": [
+            {
+                "title": "UI/UX & Visual Design",
+                "items": [
+                    "Created a coastal-inspired color palette reflecting Goa’s environment",
+                    "Designed large hero sections with high-quality destination imagery",
+                    "Used clean typography and spacing for clarity and readability",
+                    "Built a relaxed yet premium visual experience"
+                ]
+            },
+            {
+                "title": "Experience Architecture",
+                "items": [
+                    "Structured the homepage to guide users toward tours and experiences",
+                    "Categorized offerings into beaches, adventure, culture, and local experiences",
+                    "Designed detailed trip pages with itinerary, highlights, and galleries",
+                    "Mapped user journey from discovery to booking"
+                ]
+            },
+            {
+                "title": "Development & CMS",
+                "items": [
+                    "Developed a fully responsive website for all devices",
+                    "Built a scalable backend for managing tours and content",
+                    "Integrated enquiry and booking mechanisms within pages",
+                    "Optimized images for fast loading despite heavy visual content"
+                ]
+            },
+            {
+                "title": "Brand Identity Integration",
+                "items": [
+                    "Aligned visuals with Goa’s cultural and environmental identity",
+                    "Used photography-led storytelling to enhance engagement",
+                    "Maintained a balance between relaxed and professional design",
+                    "Integrated trust elements like testimonials and service assurances"
+                ]
+            },
+            {
+                "title": "Performance & Optimization",
+                "items": [
+                    "Implemented image optimization for faster load times",
+                    "Ensured mobile-first responsiveness for on-the-go users",
+                    "Delivered smooth navigation and reduced bounce rates"
+                ]
+            }
+        ],
+        "features": [
+            "Full UI/UX design tailored for travel experiences",
+            "Destination-based categorization of tours and activities",
+            "Detailed trip pages with itinerary and galleries",
+            "Integrated enquiry and booking flow",
+            "Scalable CMS for managing tours and content",
+            "Mobile-first responsive design",
+            "High-performance image optimization",
+            "Trust-building elements like testimonials and service highlights"
+        ],
+        "results": [
+            "Established a strong Goa-focused digital brand presence",
+            "Improved user engagement with intuitive exploration of tours",
+            "Enhanced conversion rates through clear booking pathways",
+            "Increased trust and credibility as a specialized travel platform",
+            "Enabled scalable growth with easy content and tour management",
+            "Delivered a seamless experience across all devices"
+        ],
+        "slug": "chalogoa",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "CMS Integration"
+        ]
+    },
+    {
+        "id": "pass-maldives",
+        "title": "Pass Maldives",
+        "tagline": "A Premium Maldives Travel & Experience Platform",
+        "year": "2024",
+        "type": "Travel & Booking Platform",
+        "industry": "Luxury Travel & Tourism",
+        "brandOwner": "Pass Maldives",
+        "websiteLink": "https://passmaldives-next-dev.netlify.app/",
+        "thumbnail": "/media/projects/pass-maldives.webp",
+        "overview": "Pass Maldives is a luxury travel platform focused exclusively on curated resort stays, activities, and experiences in the Maldives. LogicNodes designed and developed the entire website to create an immersive, premium digital experience that reflects the destination’s paradise-like appeal while enabling seamless exploration and booking.",
+        "challenges": [
+            "Creating a strong destination-specific identity aligned with the Maldives’ luxury appeal",
+            "Delivering a visually rich and immersive user experience expected in luxury travel",
+            "Structuring multiple offerings like resorts, activities, and tours clearly",
+            "Building a smooth enquiry and booking flow to drive conversions",
+            "Ensuring high performance despite heavy visual content",
+            "Optimizing the experience for mobile users planning travel on-the-go"
+        ],
+        "goals": [
+            "Design a visually immersive and premium travel website",
+            "Clearly present resorts, activities, and tours in structured formats",
+            "Enable intuitive navigation and filtering for users",
+            "Implement strong CTAs for enquiries and bookings",
+            "Ensure fast performance and responsiveness across devices",
+            "Create a scalable system for adding future content"
+        ],
+        "solution_categories": [
+            {
+                "title": "UI/UX & Visual Design",
+                "items": [
+                    "Developed a luxury-inspired design with turquoise tones and clean layouts",
+                    "Used large hero imagery to highlight Maldives destinations",
+                    "Implemented minimalist typography and spacious layouts for clarity",
+                    "Created visually rich sections to enhance user immersion"
+                ]
+            },
+            {
+                "title": "Experience Architecture",
+                "items": [
+                    "Structured website into clear categories: resorts, activities, and tours",
+                    "Designed intuitive navigation and browsing experience",
+                    "Built detailed pages with images, descriptions, and CTAs",
+                    "Mapped user journey from discovery to enquiry or booking"
+                ]
+            },
+            {
+                "title": "Development & Scalability",
+                "items": [
+                    "Developed a fully responsive website across all devices",
+                    "Built modular components for easy addition of new content",
+                    "Integrated enquiry and booking forms within pages",
+                    "Implemented filtering for activities and experiences"
+                ]
+            },
+            {
+                "title": "Brand Identity Integration",
+                "items": [
+                    "Aligned visuals with Maldives-specific themes and luxury travel aesthetics",
+                    "Used photography-led storytelling for engagement",
+                    "Positioned the brand as a premium travel curator",
+                    "Incorporated trust elements and clear service presentation"
+                ]
+            },
+            {
+                "title": "Performance & Optimization",
+                "items": [
+                    "Optimized image-heavy pages for fast loading",
+                    "Ensured mobile-first responsiveness for travel users",
+                    "Improved navigation flow to reduce bounce and increase engagement"
+                ]
+            }
+        ],
+        "features": [
+            "Luxury-focused UI/UX design for travel experiences",
+            "Structured resort, activity, and tour listings",
+            "Detailed pages with images and descriptions",
+            "Integrated enquiry and booking system",
+            "Filtering and navigation for activities",
+            "Scalable modular content system",
+            "Mobile-first responsive design",
+            "High-performance image optimization"
+        ],
+        "results": [
+            "Established a premium digital identity in the Maldives travel market",
+            "Improved user engagement through immersive visual experience",
+            "Enhanced conversion potential with clear enquiry and booking flows",
+            "Strengthened brand positioning as a curated travel specialist",
+            "Enabled scalable content expansion for future offerings",
+            "Delivered smooth performance across all devices"
+        ],
+        "slug": "pass-maldives",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "CMS Integration"
+        ]
+    },
+    {
+        "id": "lets-ladakh",
+        "title": "Let’s Ladakh",
+        "tagline": "A Premium Ladakh Travel Experience Platform",
+        "year": "2024",
+        "type": "Travel & Booking Platform",
+        "industry": "Travel & Tourism",
+        "brandOwner": "Let’s Ladakh",
+        "websiteLink": "https://letsladakh.com/",
+        "thumbnail": "/media/projects/lets-ladakh.webp",
+        "overview": "Let’s Ladakh is a destination-focused travel brand offering curated journeys across Ladakh, including high-altitude landscapes, cultural experiences, and adventure trips. LogicNodes designed and developed the complete website to establish a strong, specialist identity while delivering a seamless and visually immersive experience for users exploring and booking travel packages.",
+        "challenges": [
+            "Creating a strong destination-specific identity for a Ladakh-only brand",
+            "Managing multiple package types and large volumes of destination content",
+            "Ensuring clear structure for complex travel offerings and itineraries",
+            "Meeting high user expectations for trust, safety, and expertise in high-altitude travel",
+            "Handling image-heavy content while maintaining performance and responsiveness"
+        ],
+        "goals": [
+            "Build a premium visual identity aligned with Ladakh’s landscape",
+            "Present curated travel packages in a clear and structured manner",
+            "Enable seamless enquiry and booking experience",
+            "Position the brand as a Ladakh travel specialist",
+            "Ensure high performance and responsiveness across devices",
+            "Create a scalable system for adding new packages and content"
+        ],
+        "solution_categories": [
+            {
+                "title": "UI/UX & Visual Design",
+                "items": [
+                    "Developed a visual identity inspired by Ladakh’s landscapes and culture",
+                    "Used large scenic imagery and minimal layouts for immersive experience",
+                    "Applied clean typography and structured spacing for clarity",
+                    "Designed intuitive layouts for better user flow"
+                ]
+            },
+            {
+                "title": "Experience Architecture",
+                "items": [
+                    "Structured website sections for packages, destinations, and custom journeys",
+                    "Created dedicated pages for exclusive, curated, and customized trips",
+                    "Designed destination-focused sections like Pangong Lake, Nubra Valley, and Tso Moriri",
+                    "Mapped user journey from discovery to enquiry and booking"
+                ]
+            },
+            {
+                "title": "Development & Scalability",
+                "items": [
+                    "Built a fully responsive website across desktop, tablet, and mobile",
+                    "Developed modular components for easy addition of new packages",
+                    "Integrated enquiry and booking forms across pages",
+                    "Optimized performance for image-heavy content"
+                ]
+            },
+            {
+                "title": "Brand Positioning & Content",
+                "items": [
+                    "Positioned the brand as a Ladakh specialist with local expertise",
+                    "Emphasized curated journeys, safety, and acclimatization knowledge",
+                    "Structured content to support both standard and custom travel experiences",
+                    "Aligned messaging with 'Your Ladakh, Your Way' philosophy"
+                ]
+            },
+            {
+                "title": "Performance & Optimization",
+                "items": [
+                    "Optimized images and layouts for faster loading",
+                    "Ensured smooth scrolling and navigation",
+                    "Delivered mobile-first responsive design for travel users"
+                ]
+            }
+        ],
+        "features": [
+            "Full UI/UX design tailored for destination-based travel",
+            "Structured package categories (exclusive, curated, custom)",
+            "Destination-focused sections with detailed content",
+            "Integrated enquiry and booking system",
+            "Scalable modular CMS-ready structure",
+            "Mobile-first responsive design",
+            "High-performance image optimization",
+            "Clear navigation and user flow"
+        ],
+        "results": [
+            "Established a strong specialist travel brand identity",
+            "Improved clarity of offerings and user understanding",
+            "Enhanced trust through premium design and structured content",
+            "Enabled scalable growth with easy addition of new packages",
+            "Delivered seamless experience across devices",
+            "Positioned the brand as an authentic Ladakh travel expert"
+        ],
+        "slug": "lets-ladakh",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "CMS Integration"
+        ]
+    },
+    {
+        "id": "sellitfast",
+        "title": "SellItFast",
+        "tagline": "A Scalable Electronics Resale Marketplace Platform",
+        "year": "2024",
+        "type": "E-Commerce Marketplace System",
+        "industry": "E-Commerce, Electronics Resale & Marketplace",
+        "brandOwner": "SellItFast",
+        "websiteLink": "https://sellitfast-dev.netlify.app/",
+        "thumbnail": "/media/projects/sellitfast.webp",
+        "overview": "SellItFast is a multi-vendor electronics resale marketplace designed to connect buyers, vendors, and administrators through a unified digital platform. LogicNodes handled the complete design and development—from front-end experience to a complex backend system with role-based access. The platform enables vendors to manage listings, enquiries, orders, and payments, while admins oversee operations, vendor assignments, and analytics.",
+        "challenges": [
+            "Designing a multi-role system with distinct workflows for admins and vendors",
+            "Building a full marketplace beyond a basic e-commerce storefront",
+            "Managing complex workflows including enquiry, order processing, and vendor assignment",
+            "Ensuring smooth user experience for buyers, vendors, and admins",
+            "Creating a scalable backend to support growth and multiple vendors"
+        ],
+        "goals": [
+            "Develop a complete electronics resale marketplace platform",
+            "Enable vendors to manage products, orders, and payments independently",
+            "Provide admins with full control over operations and vendor management",
+            "Create a seamless buying experience for end users",
+            "Implement role-based access control for system security",
+            "Build a scalable architecture for future expansion"
+        ],
+        "solution_categories": [
+            {
+                "title": "UI/UX & Platform Design",
+                "items": [
+                    "Designed a modern e-commerce interface with product grids and filters",
+                    "Created dedicated vendor dashboards for onboarding, listings, and order tracking",
+                    "Built admin dashboards for managing vendors, payments, and queries",
+                    "Ensured intuitive navigation for buyers, vendors, and admins"
+                ]
+            },
+            {
+                "title": "Marketplace Development",
+                "items": [
+                    "Developed a fully functional front-end for buyers and sellers",
+                    "Implemented backend systems for product listing, inventory, and order management",
+                    "Built enquiry and quote workflows connecting buyers to vendors",
+                    "Integrated payment systems for orders and vendor payouts"
+                ]
+            },
+            {
+                "title": "Role-Based System Architecture",
+                "items": [
+                    "Implemented role-based access control for admins and vendors",
+                    "Enabled admins to assign queries and manage vendors",
+                    "Restricted vendor access to relevant modules only",
+                    "Ensured secure and organized workflow management"
+                ]
+            },
+            {
+                "title": "Workflow & Automation",
+                "items": [
+                    "Created enquiry-to-order flow: enquiry → vendor assignment → response → confirmation",
+                    "Built vendor assignment logic controlled by admin",
+                    "Enabled automated tracking of orders, payments, and statuses",
+                    "Streamlined operations to reduce manual intervention"
+                ]
+            },
+            {
+                "title": "Analytics & Scalability",
+                "items": [
+                    "Developed dashboards for tracking payments, orders, and vendor performance",
+                    "Enabled reporting for business insights and operational decisions",
+                    "Designed scalable architecture for future vendor and category expansion"
+                ]
+            }
+        ],
+        "features": [
+            "Multi-vendor marketplace platform",
+            "Role-based access control for admin and vendors",
+            "Product listing and inventory management system",
+            "Enquiry and quote handling workflow",
+            "Order management and payment processing",
+            "Vendor assignment and management system",
+            "Admin analytics dashboard and reporting",
+            "Responsive design across all devices",
+            "Scalable backend architecture",
+            "Vendor dashboards for independent operations"
+        ],
+        "results": [
+            "Transformed the business into a full-scale electronics resale marketplace",
+            "Enabled vendors to manage operations independently",
+            "Improved operational efficiency through role-based workflows",
+            "Provided admins with complete control and visibility over platform activities",
+            "Enhanced user experience for buyers, vendors, and administrators",
+            "Built a scalable system ready for marketplace expansion",
+            "Reduced manual workload through structured automation"
+        ],
+        "slug": "sellitfast",
+        "techStack": [
+            "Next.js",
+            "TypeScript",
+            "Custom Backend",
+            "Database Management",
+            "Payment Integration"
+        ]
+    },
+    {
+        "id": "mkh-sancheti-school",
+        "title": "MKH Sancheti Public School",
+        "tagline": "A Modern Digital Presence for a Progressive School",
+        "year": "2024",
+        "type": "Educational Website",
+        "industry": "Education, K-12 School",
+        "brandOwner": "MKH Sancheti Public School",
+        "websiteLink": "https://mkhsancheti.com/",
+        "thumbnail": "/media/projects/mkh-sancheti.webp",
+        "overview": "MKH Sancheti Public School is a CBSE-affiliated co-educational institution in Nagpur offering modern infrastructure and holistic education. LogicNodes redesigned and developed the school’s website to create a structured, accessible, and visually modern platform that reflects its academic standards and supports communication with parents, students, and stakeholders.",
+        "challenges": [
+            "Unstructured layout that made it difficult to present academics, admissions, and facilities clearly",
+            "Outdated visual design that did not reflect the school’s modern infrastructure",
+            "Poor navigation making it hard for users to find key information",
+            "Limited mobile responsiveness affecting accessibility",
+            "Lack of trust-building elements like affiliations, faculty, and facilities"
+        ],
+        "goals": [
+            "Create a modern and professional website aligned with educational standards",
+            "Improve structure and clarity of academic and administrative information",
+            "Enhance navigation for parents, students, and visitors",
+            "Ensure full responsiveness across devices",
+            "Highlight trust elements such as affiliations, facilities, and faculty",
+            "Enable easy content updates for future scalability"
+        ],
+        "solution_categories": [
+            {
+                "title": "UI/UX & Visual Design",
+                "items": [
+                    "Designed a clean and modern interface suitable for a progressive school",
+                    "Created clear visual hierarchy for sections like academics, admissions, and facilities",
+                    "Used consistent typography, colors, and spacing for professionalism and readability"
+                ]
+            },
+            {
+                "title": "Website Structure & Content",
+                "items": [
+                    "Structured homepage to highlight mission, infrastructure, and key offerings",
+                    "Created dedicated pages for academics, admissions, faculty, and facilities",
+                    "Organized content for clarity and easy access",
+                    "Implemented a downloads section for forms and documents"
+                ]
+            },
+            {
+                "title": "Development & Responsiveness",
+                "items": [
+                    "Built a fully responsive website across mobile, tablet, and desktop",
+                    "Ensured fast loading speeds and smooth navigation",
+                    "Implemented modular layouts for easy content updates"
+                ]
+            },
+            {
+                "title": "Trust & Accessibility",
+                "items": [
+                    "Highlighted affiliations, certifications, and infrastructure",
+                    "Showcased faculty and student activities",
+                    "Improved accessibility and usability for parents and students"
+                ]
+            }
+        ],
+        "features": [
+            "Modern UI/UX design for educational institutions",
+            "Structured academic and administrative pages",
+            "Download repository for forms and documents",
+            "Faculty and infrastructure showcase",
+            "Clear and accessible navigation",
+            "Mobile-first responsive design",
+            "Performance-optimized pages",
+            "Scalable content management structure"
+        ],
+        "results": [
+            "Established a modern and credible digital identity for the school",
+            "Improved accessibility of key information for parents and students",
+            "Enhanced trust through clear presentation of facilities and affiliations",
+            "Enabled easy content updates for admissions and curriculum",
+            "Improved engagement with better navigation and responsiveness",
+            "Aligned the website with the institution’s academic standards and reputation"
+        ],
+        "slug": "mkh-sancheti-school",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "CMS Integration"
+        ]
+    },
+    {
+        "id": "cheforeca",
+        "title": "Chef Orecá",
+        "tagline": "A Premium Digital Experience for Fine Dining",
+        "year": "2024",
+        "type": "Restaurant Website",
+        "industry": "Hospitality, Fine Dining",
+        "brandOwner": "Chef Orecá",
+        "websiteLink": "https://cheforeca.piexxi.in/",
+        "thumbnail": "/media/projects/cheforeca.webp",
+        "overview": "Chef Orecá is a premium fine-dining restaurant that required a digital presence matching its culinary excellence and ambiance. LogicNodes designed and developed a complete website from scratch, focusing on visual storytelling, seamless navigation, and conversion-driven elements like reservations. The result is a polished, brand-aligned platform that enhances customer experience and supports bookings.",
+        "challenges": [
+            "Existing digital presence did not reflect the premium dining experience",
+            "Need for strong visual storytelling using food and ambiance imagery",
+            "Lack of clear structure for menu, reservations, gallery, and contact",
+            "Requirement for mobile-first experience as users browse on smartphones",
+            "Need to drive reservations and enquiries through the website",
+            "Absence of a cohesive brand identity in the digital experience"
+        ],
+        "goals": [
+            "Create a premium, visually rich website aligned with the restaurant’s brand",
+            "Showcase menu, ambiance, and dining experience effectively",
+            "Enable easy reservations and enquiry flow",
+            "Design intuitive navigation for all sections",
+            "Ensure responsive performance across all devices",
+            "Build a scalable structure for menu and content updates"
+        ],
+        "solution_categories": [
+            {
+                "title": "UI/UX & Visual Design",
+                "items": [
+                    "Designed a refined and contemporary interface reflecting fine dining aesthetics",
+                    "Used large, high-quality food and interior imagery for visual storytelling",
+                    "Applied elegant typography and clean layouts for a premium feel",
+                    "Created intuitive navigation across key sections"
+                ]
+            },
+            {
+                "title": "Website Structure & Experience",
+                "items": [
+                    "Structured pages for home, menu, gallery, reservations, and contact",
+                    "Designed clear user flow from exploration to booking",
+                    "Built engaging homepage highlighting culinary experience",
+                    "Created visually rich gallery and menu sections"
+                ]
+            },
+            {
+                "title": "Development & Functionality",
+                "items": [
+                    "Developed a fully responsive website for all devices",
+                    "Integrated reservation and enquiry forms",
+                    "Implemented dynamic menu structure with categories and pricing",
+                    "Added contact details, location map, and operational info"
+                ]
+            },
+            {
+                "title": "Brand Identity Integration",
+                "items": [
+                    "Aligned visuals with restaurant’s ambiance and dining experience",
+                    "Maintained consistency in colors, typography, and layout",
+                    "Created a cohesive digital identity reflecting premium positioning"
+                ]
+            },
+            {
+                "title": "Performance & Optimization",
+                "items": [
+                    "Optimized image-heavy pages for fast loading",
+                    "Ensured smooth navigation and responsiveness",
+                    "Delivered mobile-first experience for on-the-go users"
+                ]
+            }
+        ],
+        "features": [
+            "Premium UI/UX design for fine dining experience",
+            "Structured menu with categories and pricing",
+            "Online reservation and enquiry system",
+            "Gallery showcasing food and ambiance",
+            "Responsive design across all devices",
+            "Contact and map integration",
+            "Scalable menu and content management",
+            "Clean, brand-aligned visuals and typography"
+        ],
+        "results": [
+            "Elevated digital presence to match the restaurant’s premium brand",
+            "Improved user engagement through visual storytelling",
+            "Simplified reservation and enquiry process",
+            "Enhanced credibility and customer trust",
+            "Delivered seamless experience across mobile and desktop",
+            "Created a digital platform supporting business growth and bookings"
+        ],
+        "slug": "cheforeca",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "CMS Integration"
+        ]
+    },
+    {
+        "id": "smile-creative-agency",
+        "title": "Smile Creative Agency",
+        "tagline": "A Modern Digital Presence for a Full-Service Creative Agency",
+        "year": "2024",
+        "type": "Agency Website",
+        "industry": "Creative Services, Digital Marketing",
+        "brandOwner": "Smile Creative Agency",
+        "websiteLink": "https://smilecreative.agency/",
+        "thumbnail": "/media/projects/smile-creative.webp",
+        "overview": "Smile Creative Agency is a full-service digital marketing and web design firm offering services across website design, print marketing, search marketing, social media, and video production. LogicNodes designed and developed a complete website to reflect the agency’s creativity, strategic capabilities, and diverse service offerings while improving clarity, navigation, and lead generation.",
+        "challenges": [
+            "Existing website did not reflect the agency’s creative strength and full-service capabilities",
+            "Scattered service presentation made it difficult for users to understand offerings",
+            "Outdated visual identity and inconsistent digital experience",
+            "Need to appeal to a diverse client base across multiple industries",
+            "Requirement for a website that functions as both portfolio and lead-generation tool"
+        ],
+        "goals": [
+            "Create a modern and professional website aligned with agency branding",
+            "Clearly present all service offerings in a structured and intuitive way",
+            "Showcase portfolio and industry experience for credibility",
+            "Improve navigation and user flow for better engagement",
+            "Enable easy content updates through CMS",
+            "Drive lead generation through clear CTAs and contact pathways"
+        ],
+        "solution_categories": [
+            {
+                "title": "UI/UX & Visual Design",
+                "items": [
+                    "Designed a clean and modern interface reflecting creativity and professionalism",
+                    "Used strong typography, whitespace, and structured layouts for clarity",
+                    "Created visually distinct sections for each service offering",
+                    "Ensured consistent visual identity across all pages"
+                ]
+            },
+            {
+                "title": "Website Structure & Content",
+                "items": [
+                    "Structured service sections including website design, marketing, branding, and media",
+                    "Built clear navigation for easy access to services, portfolio, and contact",
+                    "Created 'Who We Are' section highlighting agency philosophy and approach",
+                    "Organized industries/portfolio sections to demonstrate credibility across sectors"
+                ]
+            },
+            {
+                "title": "Development & CMS",
+                "items": [
+                    "Developed a fully responsive website for all devices",
+                    "Implemented CMS for managing services, case studies, and blog content",
+                    "Enabled easy content updates without developer dependency",
+                    "Optimized performance for fast loading and smooth navigation"
+                ]
+            },
+            {
+                "title": "Conversion & Lead Generation",
+                "items": [
+                    "Integrated strong CTAs like 'Start a Conversation'",
+                    "Designed lead capture and contact sections",
+                    "Structured content to guide users toward engagement",
+                    "Improved user journey from discovery to inquiry"
+                ]
+            },
+            {
+                "title": "Brand Positioning",
+                "items": [
+                    "Positioned the agency as a full-service creative and strategic partner",
+                    "Highlighted cross-industry expertise including charities, e-commerce, and professionals",
+                    "Aligned messaging with client-focused and solution-driven approach"
+                ]
+            }
+        ],
+        "features": [
+            "Modern UI/UX design for creative agency",
+            "Structured service sections for clarity",
+            "Portfolio and industry showcase",
+            "CMS-enabled content management",
+            "Lead capture and contact system",
+            "Responsive design across all devices",
+            "Performance-optimized pages",
+            "Clear navigation and user flow"
+        ],
+        "results": [
+            "Enhanced digital presence reflecting agency’s creative and strategic capabilities",
+            "Improved clarity of services leading to better client understanding",
+            "Strengthened credibility through portfolio and industry showcase",
+            "Enabled independent content management via CMS",
+            "Increased engagement through improved navigation and design",
+            "Positioned the agency as a professional and full-service digital partner"
+        ],
+        "slug": "smile-creative-agency",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "CMS Integration"
+        ]
+    },
+    {
+        "id": "abo-eye-institute",
+        "title": "ABO Eye Institute",
+        "tagline": "A Modern Digital Presence for Advanced Eye Care",
+        "year": "2024",
+        "type": "Healthcare Website",
+        "industry": "Healthcare, Ophthalmology, Eye Hospital",
+        "brandOwner": "ABO Eye Institute",
+        "websiteLink": "https://aboeye.com/",
+        "thumbnail": "/media/projects/abo-eye.webp",
+        "overview": "ABO Eye Institute is a state-of-the-art ophthalmic hospital offering advanced eye care services including refractive surgery, cataract treatment, retina care, paediatric ophthalmology, telemedicine, and emergency services. LogicNodes designed and developed a complete digital platform to reflect the hospital’s clinical excellence, technological sophistication, and patient-centric approach.",
+        "challenges": [
+            "Difficulty in clearly presenting a wide range of specialized medical services",
+            "Lack of premium, clinical visual identity expected from a top-tier hospital",
+            "Complex navigation due to multiple departments and service categories",
+            "Insufficient trust-building elements like doctor profiles, equipment, and testimonials",
+            "Need for high performance and mobile optimization for patient accessibility"
+        ],
+        "goals": [
+            "Create a clean, professional, and trustworthy healthcare website",
+            "Structure complex medical services into intuitive and accessible sections",
+            "Enhance credibility through trust signals like doctors, facilities, and testimonials",
+            "Enable easy appointment booking and patient enquiries",
+            "Ensure seamless experience across devices",
+            "Reflect advanced technology and patient-first care in design and content"
+        ],
+        "solution_categories": [
+            {
+                "title": "UI/UX & Visual Design",
+                "items": [
+                    "Designed a clean, clinical interface with high readability",
+                    "Used calming color palettes and structured layouts",
+                    "Created clear visual hierarchy for specialties and services",
+                    "Developed intuitive navigation for quick access to information"
+                ]
+            },
+            {
+                "title": "Service Architecture & Content",
+                "items": [
+                    "Structured dedicated pages for each specialty including cataract, retina, and refractive surgery",
+                    "Organized content for easy understanding by patients and families",
+                    "Highlighted key offerings like telemedicine and emergency care",
+                    "Built clear pathways from service discovery to appointment booking"
+                ]
+            },
+            {
+                "title": "Trust & Credibility",
+                "items": [
+                    "Showcased doctor profiles and medical expertise",
+                    "Highlighted advanced equipment and facilities",
+                    "Integrated patient testimonials and success stories",
+                    "Emphasized certifications, emergency services, and institutional credibility"
+                ]
+            },
+            {
+                "title": "Development & Functionality",
+                "items": [
+                    "Developed a fully responsive website across all devices",
+                    "Integrated appointment booking and enquiry forms",
+                    "Built modular content system for easy updates",
+                    "Optimized performance for fast loading and smooth navigation"
+                ]
+            },
+            {
+                "title": "Performance & Accessibility",
+                "items": [
+                    "Ensured mobile-first responsiveness for patients on-the-go",
+                    "Optimized images and code for fast access to critical information",
+                    "Improved usability for diverse audiences including patients and families"
+                ]
+            }
+        ],
+        "features": [
+            "Healthcare-focused UI/UX design with high readability",
+            "Structured specialty pages for multiple eye-care services",
+            "Doctor profiles and facility showcase",
+            "Appointment booking and enquiry system",
+            "Patient testimonials and trust elements",
+            "Responsive design across all devices",
+            "Performance-optimized pages",
+            "Scalable content management structure"
+        ],
+        "results": [
+            "Established a premium digital identity aligned with clinical excellence",
+            "Improved patient navigation and understanding of services",
+            "Enhanced trust through structured presentation of expertise and facilities",
+            "Increased ease of appointment booking and enquiries",
+            "Delivered seamless experience across mobile and desktop devices",
+            "Positioned the hospital as a modern and reliable eye-care provider"
+        ],
+        "slug": "abo-eye-institute",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "CMS Integration"
+        ]
+    },
+    {
+        "id": "ignition-capital-advisors",
+        "title": "Ignition Capital Advisors",
+        "tagline": "A Premium Digital Presence for Venture Capital & Advisory",
+        "year": "2024",
+        "type": "Corporate Website",
+        "industry": "Venture Capital, Corporate Advisory",
+        "brandOwner": "Ignition Capital Advisors",
+        "websiteLink": "https://ignitioncapitaladvisors.in/",
+        "thumbnail": "/media/projects/ignition-capital.webp",
+        "overview": "Ignition Capital Advisors is a venture capital and advisory firm supporting startups and corporates with funding, investment strategy, and growth advisory. LogicNodes designed and developed a complete website to establish a strong, credible digital presence that communicates expertise, thought leadership, and global positioning within the investment ecosystem.",
+        "challenges": [
+            "Need for a highly professional and authoritative visual identity",
+            "Complex service offerings requiring clear and concise presentation",
+            "Requirement to build trust among founders, corporates, and investors",
+            "Need to highlight thought leadership and strategic insights",
+            "Ensuring premium design and performance across all devices"
+        ],
+        "goals": [
+            "Create a polished and credible website aligned with VC/advisory standards",
+            "Clearly communicate services like funding, strategy, and CVC support",
+            "Highlight expertise through team profiles, insights, and experience",
+            "Establish strong brand positioning in the startup and corporate ecosystem",
+            "Enable easy content updates through CMS",
+            "Ensure high performance and responsiveness across devices"
+        ],
+        "solution_categories": [
+            {
+                "title": "UI/UX & Visual Design",
+                "items": [
+                    "Designed a refined and professional interface with modern typography",
+                    "Created balanced layouts emphasizing clarity and authority",
+                    "Developed structured pages for services, insights, and portfolio",
+                    "Ensured a clean and premium user experience"
+                ]
+            },
+            {
+                "title": "Website Structure & Content",
+                "items": [
+                    "Organized content into key sections: about, services, insights, and contact",
+                    "Clarified value proposition for startups and corporate clients",
+                    "Built intuitive navigation for easy access to services and information",
+                    "Created structured content flow for better understanding"
+                ]
+            },
+            {
+                "title": "Brand Positioning & Strategy",
+                "items": [
+                    "Positioned the firm as a bridge between corporates and startups",
+                    "Highlighted strategic advisory and venture capital expertise",
+                    "Developed messaging aligned with investment ecosystem expectations",
+                    "Integrated thought leadership through insights section"
+                ]
+            },
+            {
+                "title": "Development & CMS",
+                "items": [
+                    "Built a fully responsive website across all devices",
+                    "Implemented CMS for managing content, insights, and team profiles",
+                    "Enabled easy updates for services and future expansion",
+                    "Optimized performance for speed and usability"
+                ]
+            },
+            {
+                "title": "Trust & Credibility",
+                "items": [
+                    "Highlighted team credentials and industry expertise",
+                    "Showcased insights and thought leadership content",
+                    "Designed layouts that reinforce professionalism and authority",
+                    "Created clear contact pathways for engagement"
+                ]
+            }
+        ],
+        "features": [
+            "Professional UI/UX design for VC and advisory firms",
+            "Structured service and value proposition sections",
+            "Insights/blog section for thought leadership",
+            "CMS-enabled content management",
+            "Responsive design across all devices",
+            "Clear navigation and user flow",
+            "Lead capture and contact system",
+            "Premium visual styling aligned with corporate branding"
+        ],
+        "results": [
+            "Established a credible and professional digital presence",
+            "Improved clarity of services for startups and corporates",
+            "Enhanced trust through structured content and design",
+            "Enabled easy content updates via CMS",
+            "Elevated brand perception in the venture capital ecosystem",
+            "Delivered seamless experience across devices"
+        ],
+        "slug": "ignition-capital-advisors",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "CMS Integration"
+        ]
+    },
+    {
+        "id": "spectrokavs",
+        "title": "SpectroKAVS",
+        "tagline": "A Premium Digital Platform for Cleanroom & Industrial Solutions",
+        "year": "2024",
+        "type": "Corporate Website",
+        "industry": "Pharmaceutical, Biotech Infrastructure, Cleanroom Systems",
+        "brandOwner": "SpectroKAVS",
+        "websiteLink": "https://spectrokavs.com/",
+        "thumbnail": "/media/projects/spectrokavs.webp",
+        "overview": "SpectroKAVS is a cleanroom and modular infrastructure solutions provider serving pharmaceutical, biotech, and critical-environment industries. LogicNodes designed and developed a complete website to reflect the company’s technical expertise, engineering precision, and B2B credibility. The platform presents complex industrial services in a clear, structured, and professional manner while supporting lead generation and future scalability.",
+        "challenges": [
+            "Existing website did not reflect technical depth and full-service capabilities",
+            "Lack of strong industrial visual identity aligned with B2B audience",
+            "Complex service offerings needed simplification for clarity",
+            "Need for strong trust signals for procurement decision-makers",
+            "Requirement for high performance across desktop and mobile devices"
+        ],
+        "goals": [
+            "Create a professional and technically credible digital presence",
+            "Clearly present services like design, manufacturing, and installation",
+            "Simplify complex offerings into structured and understandable sections",
+            "Highlight certifications, experience, and industry expertise",
+            "Enable effective lead generation for B2B inquiries",
+            "Ensure scalability for future services and content expansion"
+        ],
+        "solution_categories": [
+            {
+                "title": "UI/UX & Visual Design",
+                "items": [
+                    "Developed a clean industrial design with corporate color palette",
+                    "Used structured layouts and strong visual hierarchy",
+                    "Created service-focused pages for clarity and navigation",
+                    "Designed visual elements reflecting engineering precision"
+                ]
+            },
+            {
+                "title": "Website Structure & Content",
+                "items": [
+                    "Structured content around design, manufacturing, and installation flow",
+                    "Created dedicated pages for cleanroom solutions and modular systems",
+                    "Organized content for industries served and service categories",
+                    "Built intuitive navigation for technical and business audiences"
+                ]
+            },
+            {
+                "title": "Development & CMS",
+                "items": [
+                    "Developed a fully responsive website across all devices",
+                    "Implemented CMS-ready backend for content updates",
+                    "Enabled management of services, portfolio, certifications, and blogs",
+                    "Optimized performance for image-heavy industrial content"
+                ]
+            },
+            {
+                "title": "Trust & Credibility",
+                "items": [
+                    "Highlighted certifications, expertise, and industrial experience",
+                    "Showcased portfolio and case studies for real-world validation",
+                    "Used strong industrial visuals to reinforce credibility",
+                    "Created clear messaging around reliability and precision"
+                ]
+            },
+            {
+                "title": "Conversion & Lead Generation",
+                "items": [
+                    "Integrated lead capture forms and contact modules",
+                    "Designed CTAs targeting B2B inquiries and partnerships",
+                    "Structured user flow to guide visitors toward engagement",
+                    "Enabled direct contact options for procurement and engineering teams"
+                ]
+            }
+        ],
+        "features": [
+            "Industrial-focused UI/UX design",
+            "Structured service pages for cleanroom and modular solutions",
+            "Portfolio and case-study showcase",
+            "CMS-enabled content management",
+            "Lead generation forms and contact system",
+            "Responsive design across all devices",
+            "Performance-optimized for heavy content",
+            "Clear navigation and user flow"
+        ],
+        "results": [
+            "Established a professional and credible B2B digital presence",
+            "Improved clarity of complex industrial services",
+            "Enhanced trust among procurement and engineering audiences",
+            "Enabled effective lead generation through structured design",
+            "Delivered scalable platform for future growth and expansion",
+            "Improved usability across mobile and desktop devices"
+        ],
+        "slug": "spectrokavs",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "CMS Integration"
+        ]
+    },
+    {
+        "id": "strongbong",
+        "title": "StrongBong",
+        "tagline": "A Premium E-Commerce Experience for Smoking Accessories",
+        "year": "2024",
+        "type": "E-Commerce Website",
+        "industry": "E-Commerce, Smoking Accessories",
+        "brandOwner": "StrongBong",
+        "websiteLink": "https://strongbong.co.in/",
+        "thumbnail": "/media/projects/strongbong.webp",
+        "overview": "StrongBong is an online store specializing in premium smoking accessories including bongs, pipes, grinders, and related products. LogicNodes designed and developed a complete e-commerce platform focused on product presentation, seamless shopping experience, and strong brand positioning around quality, craftsmanship, and Indian manufacturing standards.",
+        "challenges": [
+            "Need to establish a premium digital presence aligned with product quality",
+            "Presenting detailed product specifications, variants, and materials clearly",
+            "Ensuring smooth e-commerce experience from browsing to checkout",
+            "Building trust around product quality and 'Made in India' positioning",
+            "Handling image-heavy product pages while maintaining performance"
+        ],
+        "goals": [
+            "Create a modern, product-focused e-commerce website",
+            "Enable easy browsing, filtering, and product discovery",
+            "Highlight product quality, materials, and craftsmanship",
+            "Implement seamless cart and checkout experience",
+            "Ensure responsiveness across all devices",
+            "Build scalable backend for product management"
+        ],
+        "solution_categories": [
+            {
+                "title": "UI/UX & Visual Design",
+                "items": [
+                    "Designed a clean, modern e-commerce interface with product-centric focus",
+                    "Used high-quality visuals and structured layouts for clarity",
+                    "Created intuitive category navigation for browsing products",
+                    "Highlighted product details and materials through clear layouts"
+                ]
+            },
+            {
+                "title": "E-Commerce Experience",
+                "items": [
+                    "Designed product listing and detail pages with variants and specifications",
+                    "Implemented filtering and categorization for easy discovery",
+                    "Created seamless flow from product selection to checkout",
+                    "Optimized user journey for higher conversions"
+                ]
+            },
+            {
+                "title": "Development & CMS",
+                "items": [
+                    "Developed a fully responsive website across all devices",
+                    "Built product catalog system with variant management",
+                    "Implemented backend for adding and managing products and categories",
+                    "Enabled easy updates for product images, descriptions, and pricing"
+                ]
+            },
+            {
+                "title": "Brand Identity Integration",
+                "items": [
+                    "Aligned visuals with premium product positioning",
+                    "Emphasized craftsmanship and quality through design and content",
+                    "Integrated 'Made in India' narrative into brand storytelling",
+                    "Maintained a clean and refined UI supporting product credibility"
+                ]
+            },
+            {
+                "title": "Performance & Optimization",
+                "items": [
+                    "Optimized image-heavy pages for fast loading",
+                    "Ensured smooth navigation and responsive experience",
+                    "Improved usability across mobile and desktop platforms"
+                ]
+            }
+        ],
+        "features": [
+            "Product-focused e-commerce UI/UX design",
+            "Category and filter-based product browsing",
+            "Detailed product pages with variants and specifications",
+            "Shopping cart and checkout workflow",
+            "CMS-enabled product and category management",
+            "Responsive design across all devices",
+            "Performance-optimized product pages",
+            "Clean and premium visual presentation"
+        ],
+        "results": [
+            "Established a premium digital storefront aligned with product quality",
+            "Improved product discovery and browsing experience",
+            "Enhanced trust through clear presentation of materials and craftsmanship",
+            "Enabled seamless purchasing across devices",
+            "Provided scalable platform for expanding product range",
+            "Strengthened brand positioning as a premium accessories retailer"
+        ],
+        "slug": "strongbong",
+        "techStack": [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "E-Commerce Backend"
+        ]
+    },
+    {
+        "id": "campus-networking-app",
+        "title": "Campus Networking App",
+        "tagline": "A Verified Social Platform for Campus Communities",
+        "year": "2024",
+        "type": "Mobile App & Platform System",
+        "industry": "Social Networking, EdTech, Community Platforms",
+        "brandOwner": "Confidential Client",
+        "websiteLink": "",
+        "thumbnail": "/media/projects/campus.webp",
+        "overview": "The Campus Networking App is a mobile-first social platform designed to connect students within verified campus environments. LogicNodes delivered a complete MVP including mobile apps (Android & iOS), backend architecture, matching engine, community modules, chat system, and a web-based admin panel. The platform enables safe, verified networking with features like matching, communities, and real-time communication.",
+        "challenges": [
+            "Building the entire platform from scratch with no existing system",
+            "Ensuring secure onboarding through campus email verification and ID fallback",
+            "Developing a complex matching system with limits and compatibility logic",
+            "Integrating communities, feeds, and real-time chat into one ecosystem",
+            "Implementing safety features like reporting, blocking, and moderation",
+            "Creating a powerful admin panel for moderation and analytics"
+        ],
+        "goals": [
+            "Develop a complete mobile-first networking platform for students",
+            "Enable secure and verified user onboarding",
+            "Implement intelligent matching with preference-based logic",
+            "Create community-driven engagement through feeds and groups",
+            "Ensure user safety with moderation and reporting tools",
+            "Build scalable backend and admin system for growth"
+        ],
+        "solution_categories": [
+            {
+                "title": "UI/UX & Product Design",
+                "items": [
+                    "Designed complete mobile app experience in Figma",
+                    "Created onboarding, profile, discovery, chat, and community screens",
+                    "Focused on clean, modern, mobile-first UX",
+                    "Ensured intuitive navigation and engagement flows"
+                ]
+            },
+            {
+                "title": "Mobile App Development",
+                "items": [
+                    "Developed Android and iOS apps with full feature implementation",
+                    "Integrated onboarding with email OTP verification",
+                    "Built profile management and discovery modules",
+                    "Implemented chat and match systems with performance optimization"
+                ]
+            },
+            {
+                "title": "Backend & System Architecture",
+                "items": [
+                    "Built authentication system with OTP and ID verification fallback",
+                    "Developed real-time APIs for chat, profiles, and communities",
+                    "Implemented matching engine with compatibility scoring",
+                    "Integrated Supabase authentication and Node.js APIs",
+                    "Ensured security with token-based auth and rate limiting"
+                ]
+            },
+            {
+                "title": "Admin Panel & Moderation",
+                "items": [
+                    "Developed web-based admin dashboard",
+                    "Enabled user moderation and report handling",
+                    "Implemented community management and announcements",
+                    "Built analytics and monitoring tools for platform control"
+                ]
+            },
+            {
+                "title": "Safety & Engagement Systems",
+                "items": [
+                    "Implemented reporting and blocking workflows",
+                    "Designed community feeds and engagement modules",
+                    "Built matching logic with usage limits",
+                    "Ensured safe and moderated user interactions"
+                ]
+            }
+        ],
+        "features": [
+            "Mobile apps for Android and iOS",
+            "Campus-verified onboarding with OTP and ID verification",
+            "Profile creation and discovery system",
+            "Smart matching engine with compatibility scoring",
+            "1:1 chat system",
+            "Community and feed modules",
+            "Admin dashboard for moderation and management",
+            "Reporting and blocking system",
+            "Real-time APIs and scalable backend",
+            "Analytics and engagement tracking"
+        ],
+        "results": [
+            "Delivered a complete MVP ready for pilot deployment",
+            "Enabled safe and verified campus networking",
+            "Improved user engagement through matching and communities",
+            "Provided full admin control over moderation and platform activity",
+            "Built scalable architecture for future growth",
+            "Established a modern, secure social networking ecosystem"
+        ],
+        "slug": "campus-networking-app",
+        "techStack": [
+            "React Native",
+            "Node.js",
+            "Supabase",
+            "TypeScript",
+            "REST APIs",
+            "Real-time Systems"
+        ]
+    },
+    {
+        "id": "yanisa",
+        "title": "Yanisa",
+        "tagline": "A Fully Automated Client Onboarding & Service Management System",
+        "year": "2024",
+        "type": "Business Automation Platform",
+        "industry": "Service Businesses, SaaS, Digital Agencies",
+        "brandOwner": "Yanisa",
+        "websiteLink": "https://yanisa-admin.netlify.app/services",
+        "thumbnail": "/media/projects/yanisa.webp",
+        "overview": "Yanisa is a fully automated onboarding and service management system designed for service-based businesses. LogicNodes built the entire platform from scratch, enabling dynamic service selection, automated pricing, legal agreement capture, payment processing, invoice generation, and a powerful admin dashboard. The system integrates seamlessly with WordPress while functioning as a scalable standalone platform.",
+        "challenges": [
+            "Manual onboarding processes scattered across multiple platforms",
+            "No dynamic pricing for customizable services",
+            "Disconnected workflows for T&C, payments, and invoices",
+            "Lack of legal compliance through digital agreement capture",
+            "No centralized admin system to manage clients and services"
+        ],
+        "goals": [
+            "Automate the entire onboarding process end-to-end",
+            "Enable dynamic service selection with real-time pricing",
+            "Ensure legal compliance through digital agreements and signatures",
+            "Integrate secure payment workflows",
+            "Provide a powerful admin panel for full operational control",
+            "Allow seamless integration with WordPress websites"
+        ],
+        "solution_categories": [
+            {
+                "title": "Dynamic Service & Pricing System",
+                "items": [
+                    "Built customizable service selection with package and custom bundles",
+                    "Implemented real-time pricing updates based on selections",
+                    "Enabled admin control for adding/editing services and pricing",
+                    "Supported add-ons and custom pricing rules"
+                ]
+            },
+            {
+                "title": "Legal & Compliance System",
+                "items": [
+                    "Auto-generated terms and conditions based on selected services",
+                    "Implemented digital signature and agreement capture",
+                    "Stored timestamp and IP logs for legal validation",
+                    "Ensured secure storage of agreements"
+                ]
+            },
+            {
+                "title": "Payment & Invoice Automation",
+                "items": [
+                    "Integrated secure payment gateway with auto-calculated totals",
+                    "Implemented GST/tax and discount logic",
+                    "Generated branded invoices automatically",
+                    "Sent automated emails with invoice and agreement copies"
+                ]
+            },
+            {
+                "title": "Admin Panel & Control System",
+                "items": [
+                    "Developed a full-featured admin dashboard",
+                    "Enabled service, pricing, and category management",
+                    "Implemented client tracking and onboarding logs",
+                    "Provided payment tracking and invoice repository",
+                    "Allowed editing of agreements and system configurations"
+                ]
+            },
+            {
+                "title": "Integration & Architecture",
+                "items": [
+                    "Built API-driven architecture for scalability",
+                    "Integrated seamlessly with WordPress via custom APIs",
+                    "Enabled modular onboarding entry points",
+                    "Ensured secure, scalable and multi-workflow support"
+                ]
+            }
+        ],
+        "features": [
+            "Dynamic service selection and custom bundle builder",
+            "Real-time pricing calculation",
+            "Digital agreement and signature system",
+            "Secure payment gateway integration",
+            "Automated invoice generation and email delivery",
+            "Full admin dashboard for operations control",
+            "Client onboarding tracking and logs",
+            "WordPress integration with custom APIs",
+            "Scalable and secure system architecture"
+        ],
+        "results": [
+            "100% automated onboarding process",
+            "Improved conversion rates with seamless user flow",
+            "Eliminated manual dependency for onboarding and billing",
+            "Ensured legal compliance with digital agreements",
+            "Centralized control through admin dashboard",
+            "Faster onboarding and improved operational efficiency"
+        ],
+        "slug": "yanisa",
+        "techStack": [
+            "Next.js",
+            "Node.js",
+            "TypeScript",
+            "REST APIs",
+            "WordPress Integration",
+            "Payment Gateway Integration"
+        ]
     }
 ]
