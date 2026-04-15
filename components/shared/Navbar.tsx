@@ -123,6 +123,7 @@ export function Navbar() {
     };
 
     const navLinks = [
+        { name: "About Us", href: "/about", desc: "Who we are" },
         {
             name: "Products",
             href: "/products",
@@ -134,7 +135,6 @@ export function Navbar() {
             href: "/ai-solutions",
             desc: "AI-first business solutions",
         },
-        { name: "About Us", href: "/about", desc: "Who we are" },
         {
             name: "Services",
             href: "/services",
@@ -214,9 +214,9 @@ export function Navbar() {
                                             duration: 0.2,
                                             ease: "easeOut",
                                         }}
-                                        className="absolute top-full left-1/2 -translate-x-[25%] mt-4 w-[600px] bg-[#0a0a0a] backdrop-blur-3xl border border-white/10 rounded-3xl overflow-hidden shadow-2xl z-50 pointer-events-auto"
+                                        className="absolute top-full left-1/2 -translate-x-[25%] mt-4 w-150 bg-[#0a0a0a] backdrop-blur-3xl border border-white/10 rounded-3xl overflow-hidden shadow-2xl z-50 pointer-events-auto"
                                     >
-                                        <div className="flex h-[320px]">
+                                        <div className="flex h-80">
                                             {/* Left Column: List */}
                                             <div className="w-[40%] bg-white/5 p-4 border-r border-white/5">
                                                 <div className="space-y-1">
