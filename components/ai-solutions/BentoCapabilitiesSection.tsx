@@ -7,6 +7,13 @@ export function BentoCapabilitiesSection() {
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,rgba(2,6,16,0.95)_0%,rgba(0,0,0,1)_25%)]" />
 
       <div className="mx-auto max-w-360 px-3 sm:px-5 lg:px-6">
+        <div className="mb-8 max-w-3xl px-2 md:mb-10">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-200/78">Why Teams Choose Us</p>
+          <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight text-white md:text-5xl">
+            Enterprise AI capability without carrying full in-house complexity.
+          </h2>
+        </div>
+
         <div className="grid grid-cols-1 gap-4 md:grid-cols-12 md:auto-rows-62.5 lg:auto-rows-67.5">
           <article className="group relative overflow-hidden rounded-3xl border border-white/10 bg-[#03143f] md:col-span-7 md:row-span-2 md:col-start-1 md:row-start-1">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(96,164,255,0.2),transparent_48%)]" />

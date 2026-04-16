@@ -2,6 +2,8 @@
 
 import { TextAnimate } from "@/components/ui/text-animate"
 import { motion } from "framer-motion"
+import Link from "next/link"
+import { ArrowUpRight } from "lucide-react"
 
 export function Hero() {
     return (
@@ -63,8 +65,30 @@ export function Hero() {
                         transition={{ duration: 0.72, ease: "easeOut", delay: 0.5 }}
                         className="mt-6 max-w-2xl text-sm leading-relaxed text-white/75 md:text-xl reveal"
                     >
-                        We design and deploy practical AI systems that automate workflows, improve decisions, and unlock measurable business outcomes.
+                        We design and deploy practical AI systems across consulting, development, and integration so your
+                        teams can automate workflows, improve decisions, and scale measurable outcomes.
                     </motion.p>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.72, ease: "easeOut", delay: 0.6 }}
+                        className="mt-10 flex flex-wrap items-center gap-4"
+                    >
+                        <Link
+                            href="/contact"
+                            className="inline-flex items-center gap-2 rounded-full bg-[#2d79ff] px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#4387ff] md:text-base"
+                        >
+                            Start Your AI Project
+                            <ArrowUpRight className="h-4 w-4" />
+                        </Link>
+                        <Link
+                            href="/services"
+                            className="inline-flex items-center rounded-full border border-white/25 bg-black/20 px-7 py-3.5 text-sm font-semibold text-white/90 transition-colors hover:bg-black/35 md:text-base"
+                        >
+                            View Service Stack
+                        </Link>
+                    </motion.div>
                 </div>
             </div>
         </section>
