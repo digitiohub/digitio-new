@@ -88,5 +88,14 @@
     "ogTitle": "Products",
     "description": "Discover our suite of AI-driven digital products including Soryouth CRM, LeadFlow, NexGine, and more.",
     "eyebrow": "Our Suite"
+  },
+  {
+    "key": "ai-solutions",
+    "slug": "ai-solutions",
+    "route": "/ai-solutions",
+    "title": "AI Solutions | DigitioHub - Consulting, Development, and Integration",
+    "ogTitle": "AI Solutions",
+    "description": "Explore DigitioHub AI solutions spanning consulting, custom development, integration, and scalable implementation for real business outcomes.",
+    "eyebrow": "Intelligent Execution"
   }
 ]

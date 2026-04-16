@@ -1,9 +1,13 @@
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 import { Hero } from "@/components/ai-solutions/Hero";
 import { BentoCapabilitiesSection } from "@/components/ai-solutions/BentoCapabilitiesSection";
 import { AIServiceSuiteSection } from "@/components/ai-solutions/AIServiceSuiteSection";
 import { AIDeliveryProcessSection } from "@/components/ai-solutions/AIDeliveryProcessSection";
 import { AIUseCasesSection } from "@/components/ai-solutions/AIUseCasesSection";
 import { AIEngagementCtaSection } from "@/components/ai-solutions/AIEngagementCtaSection";
+
+export const metadata: Metadata = createPageMetadata("ai-solutions");
 
 const AITechSolutionsPage = () => {
   return (
