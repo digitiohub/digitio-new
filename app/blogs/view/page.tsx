@@ -107,12 +107,6 @@ export default function BlogViewPage() {
             {state.blog.author ? `  •  ${state.blog.author}` : ""}
           </p>
 
-          <h1 className="mb-4 text-3xl font-semibold sm:text-4xl">{state.blog.title}</h1>
-
-          {state.blog.excerpt ? (
-            <p className="mb-8 text-base text-white/70 sm:text-lg">{state.blog.excerpt}</p>
-          ) : null}
-
           <div
             className="max-w-none text-white/85 leading-8 [&_h1]:mt-10 [&_h1]:mb-5 [&_h1]:text-3xl [&_h1]:font-bold [&_h1]:leading-tight [&_h1]:text-white [&_h2]:mt-9 [&_h2]:mb-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:leading-tight [&_h2]:text-white [&_h3]:mt-8 [&_h3]:mb-3 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:leading-tight [&_h3]:text-white [&_p]:my-5 [&_p]:text-lg [&_p]:leading-8 [&_p]:text-white/85 [&_ul]:my-5 [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-6 [&_ol]:my-5 [&_ol]:list-decimal [&_ol]:space-y-2 [&_ol]:pl-6 [&_li]:text-lg [&_li]:leading-8 [&_li]:text-white/85 [&_strong]:font-semibold [&_strong]:text-white [&_a]:font-medium [&_a]:text-cyan-300 [&_a]:underline [&_a]:underline-offset-4 hover:[&_a]:text-cyan-200"
             dangerouslySetInnerHTML={{ __html: state.blog.content_html }}
