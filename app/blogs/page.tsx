@@ -4,11 +4,13 @@ import Link from "next/link";
 import { useMemo, useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { buildBlogsApiUrl, type BlogListResponse } from "@/lib/blog-api";
+import { fallbackBlogListResponse } from "@/lib/fallback-blog";
 
 type BlogState = {
   loading: boolean;
   error: string | null;
   data: BlogListResponse | null;
+  usingFallback: boolean;
 };
 
 function readPositiveInt(value: string | null, fallback: number) {
@@ -23,6 +25,7 @@ export default function BlogsListingPage() {
     loading: true,
     error: null,
     data: null,
+    usingFallback: false,
   });
 
   const page = readPositiveInt(searchParams.get("page"), 1);
@@ -38,7 +41,7 @@ export default function BlogsListingPage() {
 
     async function loadBlogs() {
       try {
-        setState({ loading: true, error: null, data: null });
+        setState({ loading: true, error: null, data: null, usingFallback: false });
 
         const response = await fetch(`${buildBlogsApiUrl("/blogs")}?${query}`, {
           method: "GET",
@@ -51,14 +54,15 @@ export default function BlogsListingPage() {
         const payload = (await response.json()) as BlogListResponse;
 
         if (!cancelled) {
-          setState({ loading: false, error: null, data: payload });
+          setState({ loading: false, error: null, data: payload, usingFallback: false });
         }
-      } catch (error) {
+      } catch {
         if (!cancelled) {
           setState({
             loading: false,
-            error: error instanceof Error ? error.message : "Failed to fetch blogs",
-            data: null,
+            error: null,
+            data: fallbackBlogListResponse,
+            usingFallback: true,
           });
         }
       }

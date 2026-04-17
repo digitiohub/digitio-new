@@ -4,11 +4,13 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { buildBlogsApiUrl, type BlogDetail } from "@/lib/blog-api";
+import { fallbackBlogDetail } from "@/lib/fallback-blog";
 
 type BlogDetailState = {
   loading: boolean;
   error: string | null;
   blog: BlogDetail | null;
+  usingFallback: boolean;
 };
 
 export default function BlogViewPage() {
@@ -19,6 +21,7 @@ export default function BlogViewPage() {
     loading: true,
     error: null,
     blog: null,
+    usingFallback: false,
   });
 
   useEffect(() => {
@@ -26,12 +29,12 @@ export default function BlogViewPage() {
 
     async function loadBlog() {
       if (!slug) {
-        setState({ loading: false, error: "Missing `slug` query param.", blog: null });
+        setState({ loading: false, error: "Missing `slug` query param.", blog: null, usingFallback: false });
         return;
       }
 
       try {
-        setState({ loading: true, error: null, blog: null });
+        setState({ loading: true, error: null, blog: null, usingFallback: false });
 
         const endpoint = new URL(buildBlogsApiUrl("/blogs"));
         endpoint.searchParams.set("slug", slug);
@@ -45,14 +48,15 @@ export default function BlogViewPage() {
         const payload = (await response.json()) as BlogDetail;
 
         if (!cancelled) {
-          setState({ loading: false, error: null, blog: payload });
+          setState({ loading: false, error: null, blog: payload, usingFallback: false });
         }
-      } catch (error) {
+      } catch {
         if (!cancelled) {
           setState({
             loading: false,
-            error: error instanceof Error ? error.message : "Failed to fetch blog.",
-            blog: null,
+            error: null,
+            blog: { ...fallbackBlogDetail, slug: slug || fallbackBlogDetail.slug },
+            usingFallback: true,
           });
         }
       }
@@ -110,7 +114,7 @@ export default function BlogViewPage() {
           ) : null}
 
           <div
-            className="prose prose-invert max-w-none prose-headings:text-white prose-p:text-white/85 prose-a:text-cyan-300"
+            className="max-w-none text-white/85 leading-8 [&_h1]:mt-10 [&_h1]:mb-5 [&_h1]:text-3xl [&_h1]:font-bold [&_h1]:leading-tight [&_h1]:text-white [&_h2]:mt-9 [&_h2]:mb-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:leading-tight [&_h2]:text-white [&_h3]:mt-8 [&_h3]:mb-3 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:leading-tight [&_h3]:text-white [&_p]:my-5 [&_p]:text-lg [&_p]:leading-8 [&_p]:text-white/85 [&_ul]:my-5 [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-6 [&_ol]:my-5 [&_ol]:list-decimal [&_ol]:space-y-2 [&_ol]:pl-6 [&_li]:text-lg [&_li]:leading-8 [&_li]:text-white/85 [&_strong]:font-semibold [&_strong]:text-white [&_a]:font-medium [&_a]:text-cyan-300 [&_a]:underline [&_a]:underline-offset-4 hover:[&_a]:text-cyan-200"
             dangerouslySetInnerHTML={{ __html: state.blog.content_html }}
           />
         </article>
