@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import { buildBlogsApiUrl, type BlogDetail } from "@/lib/blog-api";
 import { fallbackBlogDetail } from "@/lib/fallback-blog";
 
@@ -13,9 +12,12 @@ type BlogDetailState = {
   usingFallback: boolean;
 };
 
-export default function BlogViewClient() {
-  const searchParams = useSearchParams();
-  const slug = searchParams.get("slug")?.trim() || "";
+type BlogViewClientProps = {
+  slug: string;
+};
+
+export default function BlogViewClient({ slug }: BlogViewClientProps) {
+  const normalizedSlug = slug.trim();
   const [state, setState] = useState<BlogDetailState>({
     loading: true,
     error: null,
@@ -27,8 +29,8 @@ export default function BlogViewClient() {
     let cancelled = false;
 
     async function loadBlog() {
-      if (!slug) {
-        setState({ loading: false, error: "Missing `slug` query param.", blog: null, usingFallback: false });
+      if (!normalizedSlug) {
+        setState({ loading: false, error: "Missing blog slug.", blog: null, usingFallback: false });
         return;
       }
 
@@ -36,7 +38,7 @@ export default function BlogViewClient() {
         setState({ loading: true, error: null, blog: null, usingFallback: false });
 
         const endpoint = new URL(buildBlogsApiUrl("/blogs"));
-        endpoint.searchParams.set("slug", slug);
+        endpoint.searchParams.set("slug", normalizedSlug);
 
         const response = await fetch(endpoint.toString(), { method: "GET" });
 
@@ -54,7 +56,7 @@ export default function BlogViewClient() {
           setState({
             loading: false,
             error: null,
-            blog: { ...fallbackBlogDetail, slug: slug || fallbackBlogDetail.slug },
+            blog: { ...fallbackBlogDetail, slug: normalizedSlug || fallbackBlogDetail.slug },
             usingFallback: true,
           });
         }
@@ -65,7 +67,7 @@ export default function BlogViewClient() {
     return () => {
       cancelled = true;
     };
-  }, [slug]);
+  }, [normalizedSlug]);
 
   return (
     <section className="mx-auto w-full max-w-4xl px-4 pb-16 pt-28 sm:px-6 sm:pt-32 lg:px-8">

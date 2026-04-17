@@ -180,7 +180,7 @@ export default function BlogsListingClient() {
                   <h2 className="line-clamp-2 text-lg font-semibold">{blog.title}</h2>
                   <p className="line-clamp-3 text-sm text-white/70">{blog.excerpt}</p>
                   <Link
-                    href={`/blogs/view?slug=${encodeURIComponent(blog.slug)}`}
+                    href={`/blogs/${encodeURIComponent(blog.slug)}`}
                     className="inline-flex rounded-full border border-cyan-300/60 px-4 py-2 text-xs font-semibold tracking-wide text-cyan-200 transition hover:bg-cyan-300/10"
                   >
                     Read article

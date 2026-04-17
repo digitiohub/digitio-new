@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import BlogsListingClient from "@/components/blogs/BlogsListingClient";
 import { createPageMetadata } from "@/lib/metadata";
-import BlogsListingClient from "./BlogsListingClient";
 
 export const metadata: Metadata = createPageMetadata("blogs");
 
