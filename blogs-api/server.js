@@ -5,6 +5,7 @@ import pool from './db.js';
 
 const app = express();
 const PORT = Number(process.env.PORT) || 3000;
+const writeToken = String(process.env.BLOGS_WRITE_TOKEN || '').trim();
 
 const allowedOrigins = (process.env.FRONTEND_ORIGIN || '')
   .split(',')
@@ -35,6 +36,37 @@ function parsePositiveInt(value, fallback, max = Number.MAX_SAFE_INTEGER) {
   return Math.min(parsed, max);
 }
 
+function slugify(value) {
+  const base = String(value ?? '')
+    .toLowerCase()
+    .trim()
+    .replace(/['"]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .replace(/-{2,}/g, '-');
+
+  return base || 'untitled-blog';
+}
+
+function asOptionalTrimmedString(value) {
+  if (value === null || value === undefined) return null;
+  const normalized = String(value).trim();
+  return normalized.length > 0 ? normalized : null;
+}
+
+async function createUniqueSlug(baseSlug) {
+  const safeBase = slugify(baseSlug);
+  const maxAttempts = 30;
+
+  for (let attempt = 0; attempt < maxAttempts; attempt += 1) {
+    const candidate = attempt === 0 ? safeBase : `${safeBase}-${attempt + 1}`;
+    const exists = await pool.query('SELECT 1 FROM blogs WHERE slug = $1 LIMIT 1', [candidate]);
+    if (exists.rowCount === 0) return candidate;
+  }
+
+  return `${safeBase}-${Date.now()}`;
+}
+
 app.get('/', (req, res) => {
   res.json({
     name: 'blogs-api',
@@ -51,6 +83,102 @@ app.get('/health', async (req, res) => {
   } catch (err) {
     console.error('Health check failed:', err);
     res.status(500).json({ ok: false, db: 'down' });
+  }
+});
+
+app.post('/blogs', async (req, res) => {
+  try {
+    if (writeToken) {
+      const authHeader = String(req.headers.authorization || '');
+      const token = authHeader.startsWith('Bearer ') ? authHeader.slice(7).trim() : '';
+      if (token !== writeToken) {
+        return res.status(401).json({ error: 'Unauthorized' });
+      }
+    }
+
+    const title = String(req.body?.title ?? '').trim();
+    const contentHtml = String(req.body?.contentHtml ?? '').trim();
+    const excerpt = String(req.body?.excerpt ?? req.body?.description ?? '').trim();
+    const author = String(req.body?.author ?? '').trim();
+
+    if (!title) return res.status(400).json({ error: '`title` is required' });
+    if (!contentHtml) return res.status(400).json({ error: '`contentHtml` is required' });
+    if (!excerpt) return res.status(400).json({ error: '`excerpt` or `description` is required' });
+    if (!author) return res.status(400).json({ error: '`author` is required' });
+
+    const explicitSlug = asOptionalTrimmedString(req.body?.slug);
+    const slug = await createUniqueSlug(explicitSlug || title);
+
+    const category = asOptionalTrimmedString(req.body?.category);
+    const coverImageUrl = asOptionalTrimmedString(req.body?.coverImageUrl);
+    const thumbnailUrl = asOptionalTrimmedString(req.body?.thumbnailUrl);
+    const seoTitle = asOptionalTrimmedString(req.body?.seoTitle) ?? title;
+    const seoDescription =
+      asOptionalTrimmedString(req.body?.seoDescription) ??
+      asOptionalTrimmedString(req.body?.description) ??
+      excerpt;
+
+    const publishedAtInput = asOptionalTrimmedString(req.body?.publishedAt);
+    let publishedAt = null;
+    if (publishedAtInput) {
+      const parsed = new Date(publishedAtInput);
+      if (Number.isNaN(parsed.getTime())) {
+        return res.status(400).json({ error: '`publishedAt` must be a valid ISO date-time string' });
+      }
+      publishedAt = parsed.toISOString();
+    }
+
+    const tags = Array.isArray(req.body?.tags) ? req.body.tags : [];
+    const normalizedTags = tags
+      .map((tag) => String(tag ?? '').trim().toLowerCase())
+      .filter(Boolean)
+      .slice(0, 20);
+
+    const insertResult = await pool.query(
+      `
+        INSERT INTO blogs (
+          slug,
+          title,
+          excerpt,
+          author,
+          category,
+          cover_image_url,
+          thumbnail_url,
+          content_html,
+          tags_json,
+          seo_title,
+          seo_description,
+          published_at
+        )
+        VALUES (
+          $1, $2, $3, $4, $5, $6, $7, $8, $9::jsonb, $10, $11, $12
+        )
+        RETURNING *
+      `,
+      [
+        slug,
+        title,
+        excerpt,
+        author,
+        category,
+        coverImageUrl,
+        thumbnailUrl,
+        contentHtml,
+        JSON.stringify(normalizedTags),
+        seoTitle,
+        seoDescription,
+        publishedAt,
+      ]
+    );
+
+    return res.status(201).json(insertResult.rows[0]);
+  } catch (err) {
+    if (err?.code === '23505') {
+      return res.status(409).json({ error: 'A blog with this slug already exists' });
+    }
+
+    console.error('Failed to create blog:', err);
+    return res.status(500).json({ error: 'Failed to create blog' });
   }
 });
 
