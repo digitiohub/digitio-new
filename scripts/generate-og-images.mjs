@@ -9,6 +9,7 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, "..");
 const outputDir = path.join(rootDir, "public", "og");
 const logoPath = path.join(rootDir, "public", "logos", "logo_white.png");
+const robotoFontPath = path.join(rootDir, "public", "fonts", "Roboto.ttf");
 
 const WIDTH = 1200;
 const HEIGHT = 630;
@@ -118,7 +119,7 @@ function renderBackground() {
   `;
 }
 
-function renderOverlay(page) {
+function renderOverlay(page, robotoFontDataUri) {
   const isHome = page.slug === "home";
   const subtitle = escapeXml(page.eyebrow.toUpperCase());
   const titleLines = wrapText(page.ogTitle, isHome ? 24 : 22, 2);
@@ -136,16 +137,26 @@ function renderOverlay(page) {
   const badgeText = isHome ? "digitiohub.in" : pageLink;
   const topBadge = `
       <rect x="878" y="58" width="252" height="44" rx="22" fill="rgba(63,140,255,0.10)" stroke="rgba(63,140,255,0.32)" />
-      <text x="914" y="86" fill="${COLORS.primaryLight}" font-size="16" font-family="Arial, sans-serif" font-weight="500">${badgeText}</text>
+      <text x="914" y="86" fill="${COLORS.primaryLight}" font-size="16" font-family="RobotoEmbedded, Arial, sans-serif" font-weight="500">${badgeText}</text>
     `;
 
   return `
     <svg width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <style>
+          @font-face {
+            font-family: 'RobotoEmbedded';
+            src: url('${robotoFontDataUri}') format('truetype');
+            font-weight: 400 700;
+            font-style: normal;
+          }
+        </style>
+      </defs>
       ${topBadge}
       <rect x="70" y="254" width="40" height="3" rx="1.5" fill="${COLORS.primary}" />
-      <text x="126" y="268" fill="${COLORS.primary}" font-size="18" font-family="Arial, sans-serif" letter-spacing="4" font-weight="600">${subtitle}</text>
-      <text x="70" y="355" fill="${COLORS.text}" font-size="64" font-family="Arial, sans-serif" font-weight="700">${titleText}</text>
-      <text x="70" y="434" fill="${COLORS.textMuted}" font-size="18" font-family="Arial, sans-serif">${descriptionText}</text>
+      <text x="126" y="268" fill="${COLORS.primary}" font-size="18" font-family="RobotoEmbedded, Arial, sans-serif" letter-spacing="4" font-weight="600">${subtitle}</text>
+      <text x="70" y="355" fill="${COLORS.text}" font-size="64" font-family="RobotoEmbedded, Arial, sans-serif" font-weight="700">${titleText}</text>
+      <text x="70" y="434" fill="${COLORS.textMuted}" font-size="18" font-family="RobotoEmbedded, Arial, sans-serif">${descriptionText}</text>
       <circle cx="1098" cy="565" r="4" fill="${COLORS.primary}" />
       <circle cx="1114" cy="565" r="4" fill="rgba(63,140,255,0.55)" />
       <circle cx="1130" cy="565" r="4" fill="rgba(63,140,255,0.28)" />
@@ -153,9 +164,9 @@ function renderOverlay(page) {
   `;
 }
 
-async function generateImage(page, logoBuffer) {
+async function generateImage(page, logoBuffer, robotoFontDataUri) {
   const background = await sharp(Buffer.from(renderBackground())).png().toBuffer();
-  const overlay = await sharp(Buffer.from(renderOverlay(page))).png().toBuffer();
+  const overlay = await sharp(Buffer.from(renderOverlay(page, robotoFontDataUri))).png().toBuffer();
   const logo = await sharp(logoBuffer)
     .resize({ width: page.slug === "home" ? 220 : 180, withoutEnlargement: true })
     .png()
@@ -173,6 +184,8 @@ async function generateImage(page, logoBuffer) {
 async function main() {
   await fs.mkdir(outputDir, { recursive: true });
   const logoBuffer = await fs.readFile(logoPath);
+  const robotoFontBuffer = await fs.readFile(robotoFontPath);
+  const robotoFontDataUri = `data:font/ttf;base64,${robotoFontBuffer.toString("base64")}`;
 
   // Filter out duplicate slugs to avoid redundant generation
   const uniquePages = [];
@@ -185,7 +198,7 @@ async function main() {
     }
   }
 
-  await Promise.all(uniquePages.map((page) => generateImage(page, logoBuffer)));
+  await Promise.all(uniquePages.map((page) => generateImage(page, logoBuffer, robotoFontDataUri)));
   console.log(`Generated ${uniquePages.length} OG image(s) in ${outputDir}`);
 }
 
@@ -194,5 +207,3 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
-
-
