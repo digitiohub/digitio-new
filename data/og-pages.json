@@ -97,5 +97,14 @@
     "ogTitle": "AI Solutions",
     "description": "Explore DigitioHub AI solutions spanning consulting, custom development, integration, and scalable implementation for real business outcomes.",
     "eyebrow": "Intelligent Execution"
+  },
+  {
+    "key": "blogs",
+    "slug": "blogs",
+    "route": "/blogs",
+    "title": "Blogs | DigitioHub - Engineering, AI, Cloud, and Product Insights",
+    "ogTitle": "DigitioHub Blogs",
+    "description": "Read technical insights from DigitioHub on engineering execution, AI adoption, cloud architecture, security, and product-led digital growth.",
+    "eyebrow": "Technical Insights"
   }
 ]
