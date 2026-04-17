@@ -146,6 +146,7 @@ export function Navbar() {
             desc: "Sectors we specialize in",
         },
         { name: "Portfolio", href: "/portfolio", desc: "Our latest work" },
+        { name: "Blogs", href: "/blogs", desc: "Latest news and insights" },
     ];
 
     return (
