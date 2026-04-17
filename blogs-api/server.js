@@ -4,7 +4,7 @@ import cors from 'cors';
 import pool from './db.js';
 
 const app = express();
-const PORT = Number(process.env.PORT) || 3001;
+const PORT = Number(process.env.PORT) || 3000;
 
 const allowedOrigins = (process.env.FRONTEND_ORIGIN || '')
   .split(',')
