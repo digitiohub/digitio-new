@@ -41,3 +41,4 @@ yarn-error.log*
 next-env.d.ts
 public/og
 scripts/deploy.ps1
+blogs-api/node_modules
