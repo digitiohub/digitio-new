@@ -14,14 +14,14 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: "Aditya Bhoye",
-        role: "Co-Founder, Business & Growth",
-        bio: "Handles partnerships, collaborations, and expansion strategies while building long-term relationships with clients and agencies.",
+        role: "Co-Founder, Operations & Delivery",
+        bio: "Manages project execution, client success, and operational efficiency to ensure timely and high-quality delivery across all projects.",
         image: "/team/aditya.webp",
     },
     {
         name: "Lalit Patil",
-        role: "Co-Founder, Operations & Delivery",
-        bio: "Manages project execution, client success, and operational efficiency to ensure timely and high-quality delivery across all projects.",
+        role: "Co-Founder, Business & Growth",
+        bio: "Handles partnerships, collaborations, and expansion strategies while building long-term relationships with clients and agencies.",
         image: "/team/lalit.webp",
     },
     {
