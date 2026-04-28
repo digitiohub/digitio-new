@@ -44,6 +44,10 @@ const organizationSchema = {
   founder: {
     "@type": "Person",
     name: "Somesh Chaudhari",
+    sameAs: [
+      "https://in.linkedin.com/in/somesh-chaudhari-852715186",
+      "https://www.instagram.com/someshh.18",
+    ],
   },
   email: "info@digitiohub.in",
   telephone: "+91-84839-52398",
