@@ -18,6 +18,7 @@ import {
     ArrowRight,
     ChevronRight,
     LayoutGrid,
+    Target,
     Cog,
     Brain,
     Sun,
@@ -35,11 +36,19 @@ import {
 
 const products = [
     {
+        name: "All Products",
+        title: "Explore the full product suite",
+        slug: "",
+        desc: "Browse every internal product, compare workflows, and jump into the right solution page.",
+        icon: LayoutGrid,
+        color: "#94a3b8",
+    },
+    {
         name: "LeadFlow",
         title: "LeadFlow — The Smartest CRM",
         slug: "leadflow",
         desc: "AI-powered lead management and sales automation platform designed for modern sales teams.",
-        icon: LayoutGrid,
+        icon: Target,
         color: "#3b82f6",
     },
     {
@@ -80,7 +89,7 @@ export function Navbar() {
     const { scrollY } = useScroll();
     const [hidden, setHidden] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const [isProductsHovered, setIsProductsHovered] = useState(false);
+    const [activeDropdown, setActiveDropdown] = useState<"solutions" | null>(null);
     const [activeProduct, setActiveProduct] = useState(products[0]);
     const [isSheetOpen, setIsSheetOpen] = useState(false);
     const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -111,14 +120,14 @@ export function Navbar() {
         }
     });
 
-    const handleMouseEnter = () => {
+    const handleMouseEnter = (dropdown: "solutions") => {
         if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
-        setIsProductsHovered(true);
+        setActiveDropdown(dropdown);
     };
 
     const handleMouseLeave = () => {
         hoverTimeoutRef.current = setTimeout(() => {
-            setIsProductsHovered(false);
+            setActiveDropdown(null);
         }, 300);
     };
 
@@ -129,6 +138,7 @@ export function Navbar() {
             href: "/products",
             desc: "Explore our product suite",
             hasDropdown: true,
+            dropdown: "solutions" as const,
         },
         {
             name: "AI Tech Solutions",
@@ -141,11 +151,10 @@ export function Navbar() {
             desc: "Bespoke digital engineering",
         },
         {
-            name: "Industry",
-            href: "/#industries",
-            desc: "Sectors we specialize in",
+            name: "Portfolio",
+            href: "/portfolio",
+            desc: "Case studies and proof of work",
         },
-        { name: "Portfolio", href: "/portfolio", desc: "Our latest work" },
         { name: "Blogs", href: "/blogs", desc: "Latest news and insights" },
     ];
 
@@ -158,7 +167,7 @@ export function Navbar() {
             animate={hidden ? "hidden" : "visible"}
             transition={{ duration: 0.35, ease: "easeInOut" }}
             className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-5 transition-colors duration-300 ${
-                isScrolled || isProductsHovered
+                isScrolled || activeDropdown !== null
                     ? "bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-white/10"
                     : "bg-transparent border-transparent"
             }`}
@@ -181,7 +190,9 @@ export function Navbar() {
                         key={link.name}
                         className="relative"
                         onMouseEnter={
-                            link.hasDropdown ? handleMouseEnter : undefined
+                            link.hasDropdown && link.dropdown
+                                ? () => handleMouseEnter(link.dropdown)
+                                : undefined
                         }
                         onMouseLeave={
                             link.hasDropdown ? handleMouseLeave : undefined
@@ -189,13 +200,13 @@ export function Navbar() {
                     >
                         <Link
                             href={link.href}
-                            className={`hover:text-white transition-colors py-2 flex items-center gap-1 ${isProductsHovered && link.name === "Products" ? "text-white" : ""}`}
+                            className={`hover:text-white transition-colors py-2 flex items-center gap-1 ${activeDropdown === link.dropdown ? "text-white" : ""}`}
                         >
                             {link.name}
                             {link.hasDropdown && (
                                 <motion.div
                                     animate={{
-                                        rotate: isProductsHovered ? 180 : 0,
+                                        rotate: activeDropdown === link.dropdown ? 180 : 0,
                                     }}
                                     transition={{ duration: 0.3 }}
                                 >
@@ -206,7 +217,7 @@ export function Navbar() {
 
                         {link.hasDropdown && (
                             <AnimatePresence>
-                                {isProductsHovered && (
+                                {activeDropdown === link.dropdown && link.dropdown === "solutions" && (
                                     <motion.div
                                         initial={{ opacity: 0, y: 10 }}
                                         animate={{ opacity: 1, y: 0 }}
@@ -224,7 +235,7 @@ export function Navbar() {
                                                     {products.map((product) => (
                                                         <Link
                                                             key={product.slug}
-                                                            href={`/products#${product.slug}`}
+                                                            href={product.slug ? `/products/${product.slug}` : "/products"}
                                                             onMouseEnter={() =>
                                                                 setActiveProduct(
                                                                     product,
@@ -292,10 +303,10 @@ export function Navbar() {
                                                             {activeProduct.desc}
                                                         </p>
                                                         <Link
-                                                            href={`/products#${activeProduct.slug}`}
+                                                            href={activeProduct.slug ? `/products/${activeProduct.slug}` : "/products"}
                                                             className="inline-flex items-center gap-2 mt-4 text-[#f84f39] text-sm font-bold hover:gap-3 transition-all"
                                                         >
-                                                            Learn More{" "}
+                                                            View Solution{" "}
                                                             <ArrowRight className="w-4 h-4" />
                                                         </Link>
                                                     </motion.div>

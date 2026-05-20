@@ -3,6 +3,8 @@ import ogPages from "@/data/og-pages.json";
 import projectsData from "@/data/projects.json";
 import { buildBlogsApiUrl, type BlogListResponse } from "@/lib/blog-api";
 import { getSiteMetadataBase } from "@/lib/metadata";
+import { getProductStaticParams } from "@/lib/products";
+import { getSectors } from "@/lib/sectors";
 
 type Project = {
   slug: string;
@@ -61,6 +63,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
   const staticRoutes = getStaticRoutes();
   const projects = projectsData as Project[];
+  const products = getProductStaticParams();
+  const sectors = getSectors();
   const blogs = await fetchPublishedBlogs();
 
   const entries: MetadataRoute.Sitemap = [
@@ -70,6 +74,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
     ...projects.map((project) => ({
       url: new URL(`/portfolio/${project.slug}`, metadataBase).toString(),
+      lastModified: now,
+    })),
+    ...products.map((product) => ({
+      url: new URL(`/products/${product.slug}`, metadataBase).toString(),
+      lastModified: now,
+    })),
+    ...sectors.map((sector) => ({
+      url: new URL(`/portfolio/sectors/${sector.slug}`, metadataBase).toString(),
       lastModified: now,
     })),
     ...blogs.map((blog) => ({

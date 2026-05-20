@@ -61,7 +61,7 @@ export function PortfolioHero() {
                         transition={{ duration: 0.72, ease: "easeOut", delay: 0.3 }}
                         className="max-w-2xl text-sm leading-relaxed text-white/75 md:text-lg reveal text-justify"
                     >
-                        A collection of systems, products, and experiences we&apos;ve designed and built to power the next decade of digital growth.
+                        Explore our work through two clearer entry points: reusable solutions for recurring business problems, and sector-specific case studies for teams that want proof inside their own market context.
                     </motion.p>
                 </div>
             </div>
