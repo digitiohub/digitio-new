@@ -196,6 +196,7 @@ export default function PortfolioClient({
                                 <motion.div
                                     key={sector.slug}
                                     variants={cardMotion}
+                                    className="h-full"
                                     style={{
                                         willChange: "transform, opacity",
                                         transform: "translate3d(0,0,0)",
@@ -203,7 +204,7 @@ export default function PortfolioClient({
                                 >
                                     <Link
                                         href={`/portfolio/sectors/${sector.slug}`}
-                                        className={`group relative block overflow-hidden rounded-[1.9rem] border border-white/8 bg-white/[0.03] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.05] ${style.glow}`}
+                                        className={`group relative flex h-full flex-col overflow-hidden rounded-[1.9rem] border border-white/8 bg-white/[0.03] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.05] ${style.glow}`}
                                     >
                                         <div
                                             className={`absolute inset-0 bg-linear-to-br ${style.accent} opacity-80`}
