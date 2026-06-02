@@ -1,0 +1,40 @@
+{
+    "slug": "prism",
+    "title": "PRISM — Post Production Management System",
+    "overview": "PRISM is a comprehensive studio management platform designed for post-production houses handling film, TV serial, web series, and advertisement editing workflows. It brings end-to-end control over studio resources, bookings, billing, and conflict resolution into one unified system.",
+    "problem": "Post-production studios struggle with manual scheduling that causes frequent double-bookings, no real-time visibility into room and editor availability across locations, error-prone invoice generation, and the operational chaos of managing multiple studio branches independently without centralized control.",
+    "solution": "PRISM digitizes and centralizes every layer of studio operations — from booking calendars with automated conflict detection to role-based access, multi-company support, and automated chalan and invoice generation — giving studio managers and editors a single source of truth for every resource, booking, and billing event.",
+    "howItWorks": [
+        "Resource Setup: Configure rooms, editors, equipment, and leave schedules across all studio locations in a centralized master.",
+        "Smart Booking Calendar: Create and manage bookings with real-time conflict detection, preventing double-bookings before they happen.",
+        "Editor & Room Availability: Live dashboard showing resource status across all locations, enabling instant booking decisions.",
+        "Automated Billing: Generate accurate chalans and invoices based on booking data, eliminating manual calculation errors.",
+        "Leave Management: Integrated leave tracking with booking impact analysis to flag scheduling risks proactively.",
+        "Multi-Company Control: Franchise-ready architecture with centralized oversight and role-based permissions per branch."
+    ],
+    "features": [
+        "Booking Calendar: Real-time conflict detection and centralized scheduling for rooms and editors.",
+        "Resource Master: Manage customer, project, room, and editor records across all locations.",
+        "Conflict Report: Automated detection and reporting of scheduling conflicts before they disrupt operations.",
+        "Chalan & Invoice Generation: Accurate, automated billing tied directly to booking records.",
+        "Leave Management: Track editor leave with direct impact analysis on active bookings.",
+        "Multi-Company Support: Centralized control with location-level isolation and role-based access.",
+        "User Rights Management: Granular permissions for different staff levels and operational roles."
+    ],
+    "useCases": [
+        "Film & TV Post-Production Houses: Schedule editing bays, dubbing studios, and colorist rooms without conflicts.",
+        "Multi-Location Studio Chains: Operate franchise branches with shared visibility and centralized billing.",
+        "Advertisement Production: Manage tight turnaround bookings with automated conflict alerts.",
+        "Web Series Studios: Handle long-running project timelines with editor leave tracking and billing.",
+        "Independent Editing Studios: Replace spreadsheets and manual logs with a professional operations layer."
+    ],
+    "whyBetter": [
+        "100% Conflict Elimination: Automated conflict detection removes the root cause of double-booking disruptions.",
+        "80% Faster Billing: Automated chalan and invoice generation replaces hours of manual invoicing work.",
+        "35% Better Utilization: Unified availability visibility across locations fills booking gaps that manual systems miss.",
+        "Built for Post-Production: Purpose-built for studio workflows, not adapted from generic booking or ERP tools."
+    ],
+    "summary": "PRISM transforms fragmented studio operations into a conflict-free, automated management system — giving post-production businesses the operational clarity and billing accuracy they need to scale.",
+    "image": "/products/prism.webp",
+    "status": "Live"
+}

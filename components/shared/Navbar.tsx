@@ -23,6 +23,7 @@ import {
     Brain,
     Sun,
     Plane,
+    Clapperboard,
 } from "lucide-react";
 import {
     Sheet,
@@ -82,6 +83,14 @@ const products = [
         desc: "Specialized, multi-tenant travel management platform designed for tour operators and luxury travel agencies.",
         icon: Plane,
         color: "#ec4899",
+    },
+    {
+        name: "PRISM",
+        title: "PRISM — Post Production Management",
+        slug: "prism",
+        desc: "Comprehensive studio management system for post-production houses — bookings, conflict detection, billing, and editor scheduling.",
+        icon: Clapperboard,
+        color: "#6366f1",
     },
 ];
 
@@ -228,9 +237,9 @@ export function Navbar() {
                                         }}
                                         className="absolute top-full left-1/2 -translate-x-[25%] mt-4 w-150 bg-[#0a0a0a] backdrop-blur-3xl border border-white/10 rounded-3xl overflow-hidden shadow-2xl z-50 pointer-events-auto"
                                     >
-                                        <div className="flex h-80">
+                                        <div className="flex" style={{minHeight: "20rem", maxHeight: "min(32rem, calc(100vh - 6rem))"}}>
                                             {/* Left Column: List */}
-                                            <div className="w-[40%] bg-white/5 p-4 border-r border-white/5">
+                                            <div className="w-[40%] bg-white/5 p-3 border-r border-white/5 overflow-y-auto">
                                                 <div className="space-y-1">
                                                     {products.map((product) => (
                                                         <Link
@@ -241,7 +250,7 @@ export function Navbar() {
                                                                     product,
                                                                 )
                                                             }
-                                                            className={`group flex items-center gap-3 p-3 rounded-2xl transition-all duration-300 ${
+                                                            className={`group flex items-center gap-3 p-2 rounded-2xl transition-all duration-300 ${
                                                                 activeProduct.slug ===
                                                                 product.slug
                                                                     ? "bg-white/10 text-white shadow-lg"

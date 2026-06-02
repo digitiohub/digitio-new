@@ -154,4 +154,28 @@ export const productRelationships: Record<string, ProductRelationshipMapItem> = 
         seoDescription:
             "Explore GarageMate, DigitioHub's workshop ERP for job cards, inventory, service history, invoicing, and customer updates.",
     },
+    prism: {
+        relatedProductSlugs: ["leadflow", "garagemate", "soryouth"],
+        relatedCaseStudySlugs: [],
+        positioningSummary:
+            "A purpose-built studio management system for post-production houses — centralizing bookings, editor availability, conflict detection, and billing across all locations.",
+        idealFor: [
+            "Post-production studios managing multiple editing bays and editors",
+            "Multi-location studio chains needing centralized booking control",
+            "Film, TV, and ad production houses replacing manual scheduling with automation",
+        ],
+        valueHighlights: [
+            "Eliminates double-bookings with real-time automated conflict detection",
+            "Reduces billing processing time by 80% through automated chalan generation",
+            "Improves studio utilization by 35% with live availability dashboards",
+        ],
+        implementationNotes: [
+            "Best where manual booking coordination causes recurring scheduling conflicts",
+            "Strong fit for studios billing per session or per editor shift",
+            "Scales naturally from single-location to multi-company franchise operations",
+        ],
+        ctaLabel: "Digitize Your Studio Operations",
+        seoDescription:
+            "Explore PRISM, DigitioHub's post-production management system for booking conflict detection, editor scheduling, chalan generation, and multi-studio control.",
+    },
 };

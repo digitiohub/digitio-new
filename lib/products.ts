@@ -69,7 +69,7 @@ interface ProjectRecord {
     industry?: string;
 }
 
-const PRODUCT_ORDER = ["nexgine", "trajectories", "leadflow", "soryouth", "garagemate"];
+const PRODUCT_ORDER = ["nexgine", "trajectories", "leadflow", "soryouth", "garagemate", "prism"];
 
 const THEME_MAP: Record<string, ProductContent["theme"]> = {
     soryouth: {
@@ -96,6 +96,11 @@ const THEME_MAP: Record<string, ProductContent["theme"]> = {
         gradient: "from-purple-500/20 via-violet-500/10 to-transparent",
         accent: "#8b5cf6",
         iconLabel: "Analytics",
+    },
+    prism: {
+        gradient: "from-indigo-500/20 via-blue-600/10 to-transparent",
+        accent: "#6366f1",
+        iconLabel: "Studio ERP",
     },
 };
 
