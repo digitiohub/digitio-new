@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: getSiteMetadataBase(),
   title: "DigitioHub",
-  description: "DigitioHub is a leading digital marketing agency that provides comprehensive, high-quality solutions tailored to elevate your business, drive tangible results, and establish your brand's digital presence.",
+  description: "DigitioHub is a technology-driven software company focused on building ERP systems, custom business software, and scalable digital solutions. We empower businesses with smart, efficient, and future-ready technology.",
   icons: {
     icon: [
       { url: withAssetVersion("/favicon.ico") },
