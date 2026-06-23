@@ -39,13 +39,13 @@ export const teamMembers: TeamMember[] = [
     {
         name: "Mihir Nagda",
         role: "Full-Stack Developer",
-        bio: "Drives end-to-end application development, building robust frontend and backend systems with seamless integrations.",
+        bio: "Builds scalable web applications from concept to deployment, combining clean architecture, performant APIs, and intuitive user experiences.",
         image: "/team/mihir.webp",
     },
     {
         name: "Janhavi Bandhane",
         role: "Full-Stack Developer",
-        bio: "Shapes the visual identity and user experience, delivering impactful designs aligned with brand strategy and digital excellence.",
+        bio: "Transforms complex requirements into reliable digital solutions, focusing on seamless frontend interactions, efficient backend systems, and maintainable code.",
         image: "/team/janhavi.webp",
     },
     {
