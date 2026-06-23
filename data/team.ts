@@ -31,27 +31,27 @@ export const teamMembers: TeamMember[] = [
         image: "/team/rupin.webp",
     },
     {
-        name: "Mihir Nagda",
-        role: "Full Stack Software Developer",
-        bio: "Drives end-to-end application development, building robust frontend and backend systems with seamless integrations.",
-        image: "/team/mihir.webp",
-    },
-    {
         name: "Sumit Kamble",
         role: "Flutter Developer",
         bio: "Builds high-performance cross-platform mobile applications with clean architecture, responsive UI, and reliable integrations for production use.",
         image: "/team/sumit.webp",
     },
     {
+        name: "Mihir Nagda",
+        role: "Full-Stack Developer",
+        bio: "Drives end-to-end application development, building robust frontend and backend systems with seamless integrations.",
+        image: "/team/mihir.webp",
+    },
+    {
+        name: "Janhavi Bandhane",
+        role: "Full-Stack Developer",
+        bio: "Shapes the visual identity and user experience, delivering impactful designs aligned with brand strategy and digital excellence.",
+        image: "/team/janhavi.webp",
+    },
+    {
         name: "Rupa Gohil",
         role: "Graphic Designer",
         bio: "Shapes the visual identity and user experience, delivering impactful designs aligned with brand strategy and digital excellence.",
         image: "/team/rupa.webp",
-    },
-    {
-        name: "Sukhendu Reddy",
-        role: "Advisor & Investor",
-        bio: "Provides strategic guidance on business growth, market positioning, and long-term value creation while supporting DigitioHub's expansion journey.",
-        image: "/team/sukhi.webp",
     },
 ];
