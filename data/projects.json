@@ -2799,7 +2799,7 @@
         "title": "ME Manager",
         "tagline": "Pharma Field Force Management Platform",
         "year": "2025",
-        "type": "Mobile App, Admin Panel & Analytics System",
+        "type": "App Development",
         "industry": "Pharmaceutical Field Force Operations",
         "brandOwner": "Confidential Client",
         "websiteLink": "",
@@ -2883,6 +2883,152 @@
             "Backend APIs",
             "Database",
             "Excel Reporting",
+            "Analytics Dashboard"
+        ],
+        "screenShowcase": [
+            {
+                "src": "/media/projects/memanager/screen-01.jpg",
+                "alt": "ME Manager mobile app dashboard",
+                "label": "Medical Executive dashboard",
+                "format": "mobile"
+            },
+            {
+                "src": "/media/projects/memanager/screen-02.jpg",
+                "alt": "ME Manager execute camp form",
+                "label": "Camp execution form",
+                "format": "mobile"
+            },
+            {
+                "src": "/media/projects/memanager/screen-03.jpg",
+                "alt": "ME Manager notifications list",
+                "label": "Reminder and notification center",
+                "format": "mobile"
+            },
+            {
+                "src": "/media/projects/memanager/screen-04.jpg",
+                "alt": "ME Manager BCC entry workflow",
+                "label": "BCC input workflow",
+                "format": "mobile"
+            },
+            {
+                "src": "/media/projects/memanager/screen-05.jpg",
+                "alt": "ME Manager Rx summary dashboard",
+                "label": "Rx tracking overview",
+                "format": "mobile"
+            },
+            {
+                "src": "/media/projects/memanager/screen-06.jpg",
+                "alt": "ME Manager doctor list screen",
+                "label": "Doctor search and mapping",
+                "format": "mobile"
+            },
+            {
+                "src": "/media/projects/memanager/screen-07.jpg",
+                "alt": "ME Manager festival template editor",
+                "label": "Promotional template editor",
+                "format": "mobile"
+            },
+            {
+                "src": "/media/projects/memanager/screen-08.jpg",
+                "alt": "ME Manager plan a camp workflow",
+                "label": "Camp planning workflow",
+                "format": "mobile"
+            }
+        ]
+    },
+    {
+        "id": "bishipro",
+        "title": "BishiPro",
+        "tagline": "Jewellery Scheme Management Platform",
+        "year": "2025",
+        "type": "App Development",
+        "industry": "Jewellery Retail, Savings Schemes & Business Operations",
+        "brandOwner": "BishiPro",
+        "websiteLink": "",
+        "thumbnail": "/media/projects/yanisa.webp",
+        "overview": "BishiPro is a complete application designed to simplify jewellery scheme management for jewellers, staff, customers, and the platform owner. The platform brings customer profiles, savings schemes, instalments, payments, maturity tracking, reminders, reporting, and business analytics into one organized system supported by a customer-facing mobile app, admin panel, backend, and database.",
+        "challenges": [
+            "Jewellers were managing customer schemes, instalments, payment updates, and maturity details manually or through scattered systems",
+            "Customer and payment records were vulnerable to manual errors",
+            "Pending dues and maturity dates were difficult to identify quickly",
+            "Customers lacked transparent access to their own scheme progress",
+            "Branch-wise collection, dues, and scheme performance were hard to monitor",
+            "Payment follow-ups and maturity planning consumed too much operational time"
+        ],
+        "goals": [
+            "Create a centralized platform for jewellery savings scheme management",
+            "Enable jewellers to create schemes, enroll customers, track instalments, and monitor payments",
+            "Give customers a simple mobile app to view scheme progress, payment status, reminders, and maturity updates",
+            "Support platform-owner control over jeweller accounts, workspaces, and business activity",
+            "Provide dashboard analytics for collections, pending dues, branch performance, scheme mix, and maturity planning",
+            "Reduce manual record keeping while improving transparency between jewellers and customers"
+        ],
+        "solution_categories": [
+            {
+                "title": "Customer Mobile Application",
+                "items": [
+                    "Built OTP-based customer login for secure access",
+                    "Enabled customers to view profiles, enrolled schemes, instalment progress, payment status, and maturity updates",
+                    "Added notifications, reminders, and in-app instalment payment workflows"
+                ]
+            },
+            {
+                "title": "Jeweller & Staff Admin Panel",
+                "items": [
+                    "Developed modules for jeweller accounts, staff users, customers, branches, schemes, enrolments, instalments, and receipts",
+                    "Enabled authorized users to manage pending dues, reminders, upcoming maturities, and customer follow-ups",
+                    "Created operational dashboards for day-to-day monitoring and decision-making"
+                ]
+            },
+            {
+                "title": "Platform Owner Control",
+                "items": [
+                    "Provided super-admin control over jeweller accounts, workspace activity, platform data, and app configuration",
+                    "Supported centralized visibility across customer, jeweller, staff, scheme, payment, and branch records",
+                    "Structured data for accuracy, security, and easy access"
+                ]
+            },
+            {
+                "title": "Analytics & Business Insights",
+                "items": [
+                    "Added dashboards for active customers, total collections, pending dues, monthly collection trends, and recent payment activity",
+                    "Built branch-wise collection comparison, branch-wise pending due analysis, and scheme performance mix views",
+                    "Supported maturity tracking, high pending customer identification, gold liability, and projected payout visibility"
+                ]
+            }
+        ],
+        "features": [
+            "Jeweller account creation and login",
+            "Jeweller staff account creation and login",
+            "Customer OTP-based login",
+            "Customer profile management",
+            "Scheme creation and management",
+            "Customer enrolment into schemes",
+            "App user to jeweller customer-profile mapping",
+            "Instalment tracking and payment updates",
+            "In-app instalment payments",
+            "Pending due tracking",
+            "Maturity tracking and redemption planning",
+            "Reminder and notification management",
+            "Branch management",
+            "Reports and performance monitoring",
+            "Platform-owner admin control"
+        ],
+        "results": [
+            "Reduced manual record keeping for jewellery scheme operations",
+            "Improved accuracy of customer, instalment, payment, and maturity records",
+            "Made scheme tracking more transparent for customers",
+            "Helped jewellers identify pending dues and high-priority follow-ups faster",
+            "Provided branch-wise and scheme-wise visibility for better business decisions",
+            "Created a scalable platform for jeweller operations, customer engagement, payments, reminders, and analytics"
+        ],
+        "slug": "bishipro",
+        "techStack": [
+            "Mobile App",
+            "Admin Panel",
+            "Backend APIs",
+            "Database",
+            "Payment Integration",
             "Analytics Dashboard"
         ]
     }

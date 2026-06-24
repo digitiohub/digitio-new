@@ -119,6 +119,12 @@ const sectorStyles: Record<
         chip: "text-indigo-200 border-indigo-400/20 bg-indigo-500/10",
         icon: "text-indigo-300 border-indigo-400/20 bg-indigo-500/10",
     },
+    "app-development": {
+        accent: "from-cyan-500/18 via-emerald-500/10 to-transparent",
+        glow: "group-hover:shadow-[0_30px_80px_-40px_rgba(34,211,238,0.42)]",
+        chip: "text-cyan-200 border-cyan-400/20 bg-cyan-500/10",
+        icon: "text-cyan-300 border-cyan-400/20 bg-cyan-500/10",
+    },
     "creative-marketing-corporate": {
         accent: "from-pink-500/18 via-fuchsia-500/10 to-transparent",
         glow: "group-hover:shadow-[0_30px_80px_-40px_rgba(236,72,153,0.45)]",
@@ -204,7 +210,7 @@ export default function PortfolioClient({
                                 >
                                     <Link
                                         href={`/portfolio/sectors/${sector.slug}`}
-                                        className={`group relative flex h-full flex-col overflow-hidden rounded-[1.9rem] border border-white/8 bg-white/[0.03] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.05] ${style.glow}`}
+                                        className={`group relative flex h-full flex-col overflow-hidden rounded-[1.9rem] border border-white/8 bg-white/3 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/5 ${style.glow}`}
                                     >
                                         <div
                                             className={`absolute inset-0 bg-linear-to-br ${style.accent} opacity-80`}

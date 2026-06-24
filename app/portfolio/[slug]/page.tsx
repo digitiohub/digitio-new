@@ -37,6 +37,12 @@ interface Project {
     }[];
     features?: string[];
     results?: string[];
+    screenShowcase?: {
+        src: string;
+        alt: string;
+        label?: string;
+        format?: "mobile" | "desktop";
+    }[];
 }
 
 const projects = projectsData as Project[];

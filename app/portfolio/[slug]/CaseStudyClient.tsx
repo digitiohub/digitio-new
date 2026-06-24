@@ -29,6 +29,12 @@ interface Project {
     }[];
     features?: string[];
     results?: string[];
+    screenShowcase?: {
+        src: string;
+        alt: string;
+        label?: string;
+        format?: "mobile" | "desktop";
+    }[];
 }
 
 export default function CaseStudyClient({ project }: { project: Project }) {
@@ -156,6 +162,76 @@ export default function CaseStudyClient({ project }: { project: Project }) {
                             <p className="text-2xl md:text-4xl font-light leading-snug text-zinc-200">
                                 {project.overview || project.description}
                             </p>
+                        </div>
+                    </div>
+                </section>
+            )}
+
+            {/* App Screens */}
+            {project.screenShowcase && project.screenShowcase.length > 0 && (
+                <section className="border-y border-white/5 bg-[#03060c] py-24 md:py-32">
+                    <div className="container mx-auto px-6 md:px-10">
+                        <div className="mb-16 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+                            <div className="max-w-2xl">
+                                <p className="mb-4 text-xs font-bold uppercase tracking-[0.3em] text-blue-500">
+                                    Product Screens
+                                </p>
+                                <h2 className="text-3xl font-bold tracking-tight text-white md:text-5xl">
+                                    Interface moments from the working product.
+                                </h2>
+                            </div>
+                            <p className="max-w-md text-sm leading-relaxed text-zinc-400 md:text-right">
+                                Key mobile and admin views showing how the system handles daily operational work.
+                            </p>
+                        </div>
+
+                        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                            {project.screenShowcase.map((screen, index) => {
+                                const isDesktop = screen.format === "desktop";
+
+                                return (
+                                    <motion.figure
+                                        key={`${screen.src}-${index}`}
+                                        initial={{ opacity: 0, y: 28 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{
+                                            duration: 0.55,
+                                            delay: Math.min(index * 0.08, 0.32),
+                                        }}
+                                        viewport={{ once: true, amount: 0.2 }}
+                                        className={
+                                            isDesktop
+                                                ? "overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/4 p-3 sm:col-span-2 lg:col-span-2"
+                                                : "mx-auto w-full max-w-66 rounded-[1.6rem] border border-white/10 bg-white/4 p-2.5 shadow-2xl shadow-black/40"
+                                        }
+                                    >
+                                        <div
+                                            className={
+                                                isDesktop
+                                                    ? "relative aspect-16/10 overflow-hidden rounded-[1.25rem] bg-black"
+                                                    : "relative aspect-9/18.5 overflow-hidden rounded-[1.2rem] bg-black"
+                                            }
+                                        >
+                                            <Image
+                                                src={screen.src}
+                                                alt={screen.alt}
+                                                fill
+                                                sizes={
+                                                    isDesktop
+                                                        ? "(min-width: 1280px) 66vw, (min-width: 768px) 90vw, 100vw"
+                                                        : "(min-width: 1024px) 24vw, (min-width: 640px) 45vw, 90vw"
+                                                }
+                                                className="object-cover"
+                                            />
+                                        </div>
+                                        {screen.label && (
+                                            <figcaption className="px-2 pt-4 text-sm font-medium text-zinc-300">
+                                                {screen.label}
+                                            </figcaption>
+                                        )}
+                                    </motion.figure>
+                                );
+                            })}
                         </div>
                     </div>
                 </section>

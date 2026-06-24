@@ -233,6 +233,26 @@ export const sectorDefinitions: SectorDefinition[] = [
         ],
     },
     {
+        slug: "app-development",
+        title: "App Development",
+        summary:
+            "Mobile apps, admin panels, dashboards, and backend systems built for businesses that need structured operations, customer access, and clearer reporting.",
+        heroProjectSlug: "bishipro",
+        projectSlugs: ["bishipro", "memanager"],
+        productSlugs: [],
+        subtags: ["Mobile apps", "Admin panels", "Dashboards", "Business workflows"],
+        operatingPriorities: [
+            "Turn manual workflows into guided mobile and admin experiences",
+            "Keep customer, staff, payment, reminder, and reporting data in one system",
+            "Give business teams clearer visibility without adding operational friction",
+        ],
+        decisionDrivers: [
+            "App projects need backend structure, role access, and day-to-day usability together",
+            "Operational clarity matters as much as screen design",
+            "Teams need platforms that support field users, admins, and customers at once",
+        ],
+    },
+    {
         slug: "creative-marketing-corporate",
         title: "Creative, Marketing & Corporate",
         summary:
@@ -506,6 +526,22 @@ export const projectSectorMeta: Record<string, ProjectSectorMeta> = {
         summaryOverride:
             "A SaaS product experience shaped around faster content workflows, clearer user actions, and scalable product thinking.",
         tags: ["saas", "platform", "consumer", "automation"],
+    },
+    bishipro: {
+        sectorSlug: "app-development",
+        subsector: "Jewellery scheme app",
+        featuredRank: 1,
+        summaryOverride:
+            "A mobile app and admin system for jewellers to manage savings schemes, instalments, dues, maturities, payments, and customer visibility.",
+        tags: ["mobile-app", "platform", "admin-panel", "automation", "consumer"],
+    },
+    memanager: {
+        sectorSlug: "app-development",
+        subsector: "Pharma field force app",
+        featuredRank: 2,
+        summaryOverride:
+            "A mobile app and admin platform for pharma teams to manage field activity, doctor engagement, reminders, Excel reports, and hierarchy analytics.",
+        tags: ["mobile-app", "platform", "admin-panel", "automation", "b2b", "healthcare"],
     },
     "outline-next": {
         sectorSlug: "creative-marketing-corporate",
