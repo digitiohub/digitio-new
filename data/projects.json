@@ -2793,5 +2793,97 @@
             "WordPress Integration",
             "Payment Gateway Integration"
         ]
+    },
+    {
+        "id": "memanager",
+        "title": "ME Manager",
+        "tagline": "Pharma Field Force Management Platform",
+        "year": "2025",
+        "type": "Mobile App, Admin Panel & Analytics System",
+        "industry": "Pharmaceutical Field Force Operations",
+        "brandOwner": "Confidential Client",
+        "websiteLink": "",
+        "thumbnail": "/media/projects/campus.webp",
+        "overview": "ME Manager is a company-scoped application for pharmaceutical teams to manage field force activities, doctor engagement, brand promotion, camps, prescription tracking, reminders, reporting, and performance monitoring from one organized platform. The system combines a field-force mobile app, admin panel, backend, database, Excel reports, notifications, and analytics so companies can reduce manual reporting and gain clear visibility across their sales hierarchy.",
+        "challenges": [
+            "Field activities were difficult to track through manual or scattered reporting systems",
+            "Managers had limited visibility into Medical Executive performance and hierarchy-level progress",
+            "Doctor visits, camps, prescriptions, conversions, and brand activities were prone to manual errors",
+            "Doctor-to-ME mapping and brand mapping needed a structured company-level workflow",
+            "Head office teams needed stronger control over field force data, reminders, reports, and analytics",
+            "Management reports took too much time to prepare and lacked flexible filtering"
+        ],
+        "goals": [
+            "Create a centralized platform for pharma field force operations",
+            "Support company-scoped workspaces with separate users, doctors, brands, activities, and reports",
+            "Enable Medical Executives to record visits, camps, Rx tracking, initiatives, reminders, and doctor conversions",
+            "Give managers visibility into team activity across ABM, RM, and DSM hierarchy levels",
+            "Provide head office users with an admin panel for users, hierarchy, doctors, brands, reports, reminders, and notifications",
+            "Generate structured Excel reports from both mobile app and admin panel"
+        ],
+        "solution_categories": [
+            {
+                "title": "Company-Scoped Platform Structure",
+                "items": [
+                    "Built separate company workspaces managed by a super admin",
+                    "Enabled head office users to manage company-specific users, doctors, brands, reports, and activity data",
+                    "Maintained clean separation of operational records across companies"
+                ]
+            },
+            {
+                "title": "Field Force Mobile Application",
+                "items": [
+                    "Enabled Medical Executives and managers to securely log in and manage daily field activity",
+                    "Built workflows for doctor visits, Rx tracking, camp planning, initiatives, reminders, and notifications",
+                    "Added tools for greeting, awareness, reminder, and promotional image creation"
+                ]
+            },
+            {
+                "title": "Admin Panel & Operations Control",
+                "items": [
+                    "Developed admin modules for company, head office user, field user, doctor, brand, and hierarchy management",
+                    "Supported doctor-to-ME mapping, brand mapping, camp management, initiative management, and competition management",
+                    "Added advanced Excel report generation with filters for company, user, hierarchy, doctor, brand, activity, status, and date range"
+                ]
+            },
+            {
+                "title": "Analytics & Performance Insights",
+                "items": [
+                    "Created analytics for field activity, doctor engagement, Rx tracking, camp outcomes, brand activity, and team productivity",
+                    "Supported hierarchy-based performance visibility for ABM, RM, and DSM users",
+                    "Added Champion League ranking, doctor conversion tracking, follow-up monitoring, and report-ready performance data"
+                ]
+            }
+        ],
+        "features": [
+            "Company management by super admin",
+            "Head office user and field force user management",
+            "Medical Executive and manager hierarchy import",
+            "Doctor mapping and brand mapping",
+            "Doctor visit, Rx tracking, camp, and initiative workflows",
+            "Reminder and notification management",
+            "Image editor for greeting, awareness, reminder, and brand templates",
+            "Champion League competition module",
+            "Doctor conversion tracking",
+            "Mobile and admin-side Excel report generation",
+            "Advanced analytics and hierarchy-based performance monitoring"
+        ],
+        "results": [
+            "Reduced manual field reporting for pharmaceutical teams",
+            "Improved accuracy of doctor visit, camp, Rx, brand, and initiative records",
+            "Gave managers clearer visibility into team performance across hierarchy levels",
+            "Helped head office users manage company-wide data and reporting from one admin panel",
+            "Made report preparation faster through structured Excel exports and advanced filters",
+            "Created a scalable foundation for reminders, notifications, competitions, analytics, and field performance review"
+        ],
+        "slug": "memanager",
+        "techStack": [
+            "Mobile App",
+            "Admin Panel",
+            "Backend APIs",
+            "Database",
+            "Excel Reporting",
+            "Analytics Dashboard"
+        ]
     }
 ]
