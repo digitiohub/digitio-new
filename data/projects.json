@@ -2803,7 +2803,7 @@
         "industry": "Pharmaceutical Field Force Operations",
         "brandOwner": "Confidential Client",
         "websiteLink": "",
-        "thumbnail": "/media/projects/campus.webp",
+        "thumbnail": "/media/projects/memanager.webp",
         "overview": "ME Manager is a company-scoped application for pharmaceutical teams to manage field force activities, doctor engagement, brand promotion, camps, prescription tracking, reminders, reporting, and performance monitoring from one organized platform. The system combines a field-force mobile app, admin panel, backend, database, Excel reports, notifications, and analytics so companies can reduce manual reporting and gain clear visibility across their sales hierarchy.",
         "challenges": [
             "Field activities were difficult to track through manual or scattered reporting systems",
@@ -2945,7 +2945,7 @@
         "industry": "Jewellery Retail, Savings Schemes & Business Operations",
         "brandOwner": "BishiPro",
         "websiteLink": "",
-        "thumbnail": "/media/projects/yanisa.webp",
+        "thumbnail": "/media/projects/bishipro.webp",
         "overview": "BishiPro is a complete application designed to simplify jewellery scheme management for jewellers, staff, customers, and the platform owner. The platform brings customer profiles, savings schemes, instalments, payments, maturity tracking, reminders, reporting, and business analytics into one organized system supported by a customer-facing mobile app, admin panel, backend, and database.",
         "challenges": [
             "Jewellers were managing customer schemes, instalments, payment updates, and maturity details manually or through scattered systems",
@@ -3030,6 +3030,38 @@
             "Database",
             "Payment Integration",
             "Analytics Dashboard"
+        ],
+        "screenShowcase": [
+            {
+                "src": "/media/projects/bishipro/screen-01.jpg",
+                "alt": "BishiPro home savings overview screen",
+                "label": "Customer savings overview",
+                "format": "mobile"
+            },
+            {
+                "src": "/media/projects/bishipro/screen-02.jpg",
+                "alt": "BishiPro scheme details screen",
+                "label": "Scheme details and maturity plan",
+                "format": "mobile"
+            },
+            {
+                "src": "/media/projects/bishipro/screen-03.jpg",
+                "alt": "BishiPro installment history screen",
+                "label": "Installment history and payments",
+                "format": "mobile"
+            },
+            {
+                "src": "/media/projects/bishipro/screen-04.jpg",
+                "alt": "BishiPro reminders screen",
+                "label": "Due date and maturity reminders",
+                "format": "mobile"
+            },
+            {
+                "src": "/media/projects/bishipro/screen-05.jpg",
+                "alt": "BishiPro digital passbook screen",
+                "label": "Digital passbook summary",
+                "format": "mobile"
+            }
         ]
     }
 ]
