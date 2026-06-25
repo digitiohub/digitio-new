@@ -2587,108 +2587,131 @@
         ]
     },
     {
-        "id": "campus-networking-app",
-        "title": "Campus Networking App",
-        "tagline": "A Verified Social Platform for Campus Communities",
+        "id": "contrast",
+        "title": "Contrast",
+        "tagline": "A Campus-Focused Social Connection App",
         "year": "2024",
-        "type": "Mobile App & Platform System",
-        "industry": "Social Networking, EdTech, Community Platforms",
-        "brandOwner": "Confidential Client",
+        "type": "App Development",
+        "industry": "Campus Social Networking, Student Communities",
+        "brandOwner": "Contrast",
         "websiteLink": "",
-        "thumbnail": "/media/projects/campus.webp",
-        "overview": "The Campus Networking App is a mobile-first social platform designed to connect students within verified campus environments. LogicNodes delivered a complete MVP including mobile apps (Android & iOS), backend architecture, matching engine, community modules, chat system, and a web-based admin panel. The platform enables safe, verified networking with features like matching, communities, and real-time communication.",
+        "thumbnail": "/media/projects/contrast.webp",
+        "overview": "Contrast is a campus-focused social connection application designed to help university students discover, connect, and communicate with relevant people within their campus network. The application uses university email-based login to create a trusted student environment where users can build expressive profiles, set preferences, send likes, match with others, chat, and participate in interest-based communities.",
         "challenges": [
-            "Building the entire platform from scratch with no existing system",
-            "Ensuring secure onboarding through campus email verification and ID fallback",
-            "Developing a complex matching system with limits and compatibility logic",
-            "Integrating communities, feeds, and real-time chat into one ecosystem",
-            "Implementing safety features like reporting, blocking, and moderation",
-            "Creating a powerful admin panel for moderation and analytics"
+            "Students found it difficult to meet people outside their course, class, friend circle, or existing social group",
+            "Starting conversations with new people often felt awkward without shared context",
+            "Random social media did not provide a focused university-based environment",
+            "Campus identity needed to be verified through university email access",
+            "Students needed better ways to express personality through photos, prompts, interests, hometown, and language",
+            "The platform needed admin-side monitoring, community management, reports, and activity control"
         ],
         "goals": [
-            "Develop a complete mobile-first networking platform for students",
-            "Enable secure and verified user onboarding",
-            "Implement intelligent matching with preference-based logic",
-            "Create community-driven engagement through feeds and groups",
-            "Ensure user safety with moderation and reporting tools",
-            "Build scalable backend and admin system for growth"
+            "Create a trusted campus social layer for university students",
+            "Enable university email-based signup and login",
+            "Help students create expressive profiles with photos, prompts, interests, hometown, language, and preferences",
+            "Support discovery, likes, mutual matches, and in-app chat",
+            "Add interest-based communities for broader campus engagement",
+            "Provide an admin panel for user management, community management, activity tracking, and platform control"
         ],
         "solution_categories": [
             {
-                "title": "UI/UX & Product Design",
+                "title": "Campus-Scoped Access",
                 "items": [
-                    "Designed complete mobile app experience in Figma",
-                    "Created onboarding, profile, discovery, chat, and community screens",
-                    "Focused on clean, modern, mobile-first UX",
-                    "Ensured intuitive navigation and engagement flows"
+                    "Implemented university email-based login to keep the platform focused on verified campus users",
+                    "Structured access around recognized university networks and email domains",
+                    "Reduced unrelated outside-user access while keeping discovery relevant to students"
                 ]
             },
             {
-                "title": "Mobile App Development",
+                "title": "Profile & Discovery Experience",
                 "items": [
-                    "Developed Android and iOS apps with full feature implementation",
-                    "Integrated onboarding with email OTP verification",
-                    "Built profile management and discovery modules",
-                    "Implemented chat and match systems with performance optimization"
+                    "Built onboarding flows for profile completion, photos, prompt answers, interests, hometown, language, and preferences",
+                    "Created student discovery screens that help users understand personality before expressing interest",
+                    "Made first interactions easier by giving users richer profile context"
                 ]
             },
             {
-                "title": "Backend & System Architecture",
+                "title": "Matchmaking & Chat",
                 "items": [
-                    "Built authentication system with OTP and ID verification fallback",
-                    "Developed real-time APIs for chat, profiles, and communities",
-                    "Implemented matching engine with compatibility scoring",
-                    "Integrated Supabase authentication and Node.js APIs",
-                    "Ensured security with token-based auth and rate limiting"
+                    "Developed like and mutual match workflows for student discovery",
+                    "Enabled in-app chat after matching",
+                    "Stored profile, like, match, and chat records in a structured backend system"
                 ]
             },
             {
-                "title": "Admin Panel & Moderation",
+                "title": "Communities & Admin Control",
                 "items": [
-                    "Developed web-based admin dashboard",
-                    "Enabled user moderation and report handling",
-                    "Implemented community management and announcements",
-                    "Built analytics and monitoring tools for platform control"
-                ]
-            },
-            {
-                "title": "Safety & Engagement Systems",
-                "items": [
-                    "Implemented reporting and blocking workflows",
-                    "Designed community feeds and engagement modules",
-                    "Built matching logic with usage limits",
-                    "Ensured safe and moderated user interactions"
+                    "Added interest-based communities for topic, activity, and campus-based engagement",
+                    "Built admin-side tools for user management, community management, reports, and activity tracking",
+                    "Supported app configuration and platform monitoring through an admin panel"
                 ]
             }
         ],
         "features": [
-            "Mobile apps for Android and iOS",
-            "Campus-verified onboarding with OTP and ID verification",
-            "Profile creation and discovery system",
-            "Smart matching engine with compatibility scoring",
-            "1:1 chat system",
-            "Community and feed modules",
-            "Admin dashboard for moderation and management",
-            "Reporting and blocking system",
-            "Real-time APIs and scalable backend",
-            "Analytics and engagement tracking"
+            "University email-based login",
+            "Student profile creation",
+            "Photo upload and profile customization",
+            "Prompt-based profile sections",
+            "Interest, hometown, and language details",
+            "Personal preference-based discovery",
+            "Student matchmaking",
+            "Like and match system",
+            "In-app chat after matching",
+            "Interest-based communities",
+            "Profile completion guidance during onboarding",
+            "Admin-side user and community management",
+            "Reports and activity tracking",
+            "Secure storage for profile, match, chat, and community data"
         ],
         "results": [
-            "Delivered a complete MVP ready for pilot deployment",
-            "Enabled safe and verified campus networking",
-            "Improved user engagement through matching and communities",
-            "Provided full admin control over moderation and platform activity",
-            "Built scalable architecture for future growth",
-            "Established a modern, secure social networking ecosystem"
+            "Created a structured way for students to meet people beyond their immediate circle",
+            "Improved campus discovery through profiles, prompts, interests, and preferences",
+            "Reduced awkward first conversations by giving users richer context",
+            "Built a trusted student network through university email-based access",
+            "Added communities for shared-interest engagement beyond one-to-one matching",
+            "Gave admins control over users, communities, activity records, reports, and app settings"
         ],
-        "slug": "campus-networking-app",
+        "slug": "contrast",
         "techStack": [
             "React Native",
             "Node.js",
             "Supabase",
             "TypeScript",
             "REST APIs",
-            "Real-time Systems"
+            "Real-time Chat",
+            "Admin Panel"
+        ],
+        "screenShowcase": [
+            {
+                "src": "/media/projects/contrast/screen-01.jpg",
+                "alt": "Contrast course selection screen",
+                "label": "Course-based profile setup",
+                "format": "mobile"
+            },
+            {
+                "src": "/media/projects/contrast/screen-02.jpg",
+                "alt": "Contrast university email signup screen",
+                "label": "University email signup",
+                "format": "mobile"
+            },
+            {
+                "src": "/media/projects/contrast/screen-03.jpg",
+                "alt": "Contrast student discovery profile screen",
+                "label": "Student discovery profiles",
+                "format": "mobile"
+            },
+            {
+                "src": "/media/projects/contrast/screen-04.jpg",
+                "alt": "Contrast communities screen",
+                "label": "Interest-based communities",
+                "format": "mobile"
+            },
+            {
+                "src": "/media/projects/contrast/screen-05.jpg",
+                "alt": "Contrast interest selection screen",
+                "label": "Interest and preference selection",
+                "format": "mobile"
+            }
         ]
     },
     {

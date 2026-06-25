@@ -130,7 +130,7 @@ export const sectorDefinitions: SectorDefinition[] = [
         projectSlugs: [
             "iilos",
             "mkh-sancheti-school",
-            "campus-networking-app",
+            "contrast",
             "bharatvishwasaarti",
         ],
         productSlugs: [],
@@ -415,12 +415,12 @@ export const projectSectorMeta: Record<string, ProjectSectorMeta> = {
             "A school-facing digital presence designed to communicate trust, academics, and parent-facing information with more clarity.",
         tags: ["education", "website", "consumer", "branding"],
     },
-    "campus-networking-app": {
+    contrast: {
         sectorSlug: "education-community",
         subsector: "Student community",
         featuredRank: 3,
         summaryOverride:
-            "A verified campus platform combining matching, communities, and moderation into a mobile-first student ecosystem.",
+            "A campus social app combining university email access, expressive profiles, matching, chat, communities, and admin monitoring.",
         tags: ["education", "community", "mobile-app", "platform", "automation", "consumer"],
     },
     bharatvishwasaarti: {
