@@ -2683,31 +2683,31 @@
         ],
         "screenShowcase": [
             {
-                "src": "/media/projects/contrast/screen-01.jpg",
+                "src": "/media/projects/contrast/screen-01.webp",
                 "alt": "Contrast course selection screen",
                 "label": "Course-based profile setup",
                 "format": "mobile"
             },
             {
-                "src": "/media/projects/contrast/screen-02.jpg",
+                "src": "/media/projects/contrast/screen-02.webp",
                 "alt": "Contrast university email signup screen",
                 "label": "University email signup",
                 "format": "mobile"
             },
             {
-                "src": "/media/projects/contrast/screen-03.jpg",
+                "src": "/media/projects/contrast/screen-03.webp",
                 "alt": "Contrast student discovery profile screen",
                 "label": "Student discovery profiles",
                 "format": "mobile"
             },
             {
-                "src": "/media/projects/contrast/screen-04.jpg",
+                "src": "/media/projects/contrast/screen-04.webp",
                 "alt": "Contrast communities screen",
                 "label": "Interest-based communities",
                 "format": "mobile"
             },
             {
-                "src": "/media/projects/contrast/screen-05.jpg",
+                "src": "/media/projects/contrast/screen-05.webp",
                 "alt": "Contrast interest selection screen",
                 "label": "Interest and preference selection",
                 "format": "mobile"
@@ -2910,49 +2910,49 @@
         ],
         "screenShowcase": [
             {
-                "src": "/media/projects/memanager/screen-01.jpg",
+                "src": "/media/projects/memanager/screen-01.webp",
                 "alt": "ME Manager mobile app dashboard",
                 "label": "Medical Executive dashboard",
                 "format": "mobile"
             },
             {
-                "src": "/media/projects/memanager/screen-02.jpg",
+                "src": "/media/projects/memanager/screen-02.webp",
                 "alt": "ME Manager execute camp form",
                 "label": "Camp execution form",
                 "format": "mobile"
             },
             {
-                "src": "/media/projects/memanager/screen-03.jpg",
+                "src": "/media/projects/memanager/screen-03.webp",
                 "alt": "ME Manager notifications list",
                 "label": "Reminder and notification center",
                 "format": "mobile"
             },
             {
-                "src": "/media/projects/memanager/screen-04.jpg",
+                "src": "/media/projects/memanager/screen-04.webp",
                 "alt": "ME Manager BCC entry workflow",
                 "label": "BCC input workflow",
                 "format": "mobile"
             },
             {
-                "src": "/media/projects/memanager/screen-05.jpg",
+                "src": "/media/projects/memanager/screen-05.webp",
                 "alt": "ME Manager Rx summary dashboard",
                 "label": "Rx tracking overview",
                 "format": "mobile"
             },
             {
-                "src": "/media/projects/memanager/screen-06.jpg",
+                "src": "/media/projects/memanager/screen-06.webp",
                 "alt": "ME Manager doctor list screen",
                 "label": "Doctor search and mapping",
                 "format": "mobile"
             },
             {
-                "src": "/media/projects/memanager/screen-07.jpg",
+                "src": "/media/projects/memanager/screen-07.webp",
                 "alt": "ME Manager festival template editor",
                 "label": "Promotional template editor",
                 "format": "mobile"
             },
             {
-                "src": "/media/projects/memanager/screen-08.jpg",
+                "src": "/media/projects/memanager/screen-08.webp",
                 "alt": "ME Manager plan a camp workflow",
                 "label": "Camp planning workflow",
                 "format": "mobile"
@@ -2968,7 +2968,7 @@
         "industry": "Jewellery Retail, Savings Schemes & Business Operations",
         "brandOwner": "BishiPro",
         "websiteLink": "",
-        "thumbnail": "/media/projects/bishipro.png",
+        "thumbnail": "/media/projects/bishipro.webp",
         "overview": "BishiPro is a complete application designed to simplify jewellery scheme management for jewellers, staff, customers, and the platform owner. The platform brings customer profiles, savings schemes, instalments, payments, maturity tracking, reminders, reporting, and business analytics into one organized system supported by a customer-facing mobile app, admin panel, backend, and database.",
         "challenges": [
             "Jewellers were managing customer schemes, instalments, payment updates, and maturity details manually or through scattered systems",
@@ -3056,31 +3056,31 @@
         ],
         "screenShowcase": [
             {
-                "src": "/media/projects/bishipro/screen-01.jpg",
+                "src": "/media/projects/bishipro/screen-01.webp",
                 "alt": "BishiPro home savings overview screen",
                 "label": "Customer savings overview",
                 "format": "mobile"
             },
             {
-                "src": "/media/projects/bishipro/screen-02.jpg",
+                "src": "/media/projects/bishipro/screen-02.webp",
                 "alt": "BishiPro scheme details screen",
                 "label": "Scheme details and maturity plan",
                 "format": "mobile"
             },
             {
-                "src": "/media/projects/bishipro/screen-03.jpg",
+                "src": "/media/projects/bishipro/screen-03.webp",
                 "alt": "BishiPro installment history screen",
                 "label": "Installment history and payments",
                 "format": "mobile"
             },
             {
-                "src": "/media/projects/bishipro/screen-04.jpg",
+                "src": "/media/projects/bishipro/screen-04.webp",
                 "alt": "BishiPro reminders screen",
                 "label": "Due date and maturity reminders",
                 "format": "mobile"
             },
             {
-                "src": "/media/projects/bishipro/screen-05.jpg",
+                "src": "/media/projects/bishipro/screen-05.webp",
                 "alt": "BishiPro digital passbook screen",
                 "label": "Digital passbook summary",
                 "format": "mobile"
