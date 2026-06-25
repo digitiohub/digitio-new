@@ -238,7 +238,7 @@ export const sectorDefinitions: SectorDefinition[] = [
         summary:
             "Mobile apps, admin panels, dashboards, and backend systems built for businesses that need structured operations, customer access, and clearer reporting.",
         heroProjectSlug: "bishipro",
-        projectSlugs: ["bishipro", "memanager"],
+        projectSlugs: ["memanager", "bishipro", "contrast"],
         productSlugs: [],
         subtags: ["Mobile apps", "Admin panels", "Dashboards", "Business workflows"],
         operatingPriorities: [
