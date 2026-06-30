@@ -178,4 +178,28 @@ export const productRelationships: Record<string, ProductRelationshipMapItem> = 
         seoDescription:
             "Explore PRISM, DigitioHub's post-production management system for booking conflict detection, editor scheduling, chalan generation, and multi-studio control.",
     },
+    bishipro: {
+        relatedProductSlugs: ["leadflow", "soryouth", "nexgine"],
+        relatedCaseStudySlugs: ["memanager", "yanisa", "automotive-crm-system"],
+        positioningSummary:
+            "A jewellery scheme operating system for retailers that need cleaner control over customer enrolments, instalments, dues, maturities, payments, reminders, and branch-level analytics.",
+        idealFor: [
+            "Jewellery retailers running customer savings schemes",
+            "Multi-branch jewellers needing collection and due visibility",
+            "Teams replacing paper registers or disconnected payment tracking",
+        ],
+        valueHighlights: [
+            "Centralizes schemes, customers, instalments, payments, and maturities",
+            "Gives customers transparent mobile access to scheme progress",
+            "Improves follow-up control through due, reminder, and maturity tracking",
+        ],
+        implementationNotes: [
+            "Best where savings schemes drive repeat customer engagement",
+            "Useful when branches need consistent reporting and operational control",
+            "Can support platform-owner oversight across multiple jeweller workspaces",
+        ],
+        ctaLabel: "Plan Your Jewellery Scheme Platform",
+        seoDescription:
+            "Explore BishiPro, DigitioHub's jewellery scheme management platform for customer enrolments, instalments, payments, maturity tracking, reminders, and analytics.",
+    },
 };

@@ -24,6 +24,7 @@ import {
     Sun,
     Plane,
     Clapperboard,
+    Gem,
 } from "lucide-react";
 import {
     Sheet,
@@ -91,6 +92,14 @@ const products = [
         desc: "Comprehensive studio management system for post-production houses — bookings, conflict detection, billing, and editor scheduling.",
         icon: Clapperboard,
         color: "#6366f1",
+    },
+    {
+        name: "BishiPro",
+        title: "BishiPro — Jewellery Scheme Management",
+        slug: "bishipro",
+        desc: "Jewellery scheme management platform for customer enrolments, instalments, payments, maturity tracking, reminders, and analytics.",
+        icon: Gem,
+        color: "#eab308",
     },
 ];
 

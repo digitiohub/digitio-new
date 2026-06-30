@@ -1,0 +1,77 @@
+{
+    "slug": "bishipro",
+    "title": "BishiPro — Jewellery Scheme Management Platform",
+    "overview": "BishiPro is a complete jewellery scheme management platform for jewellers, staff, customers, and platform owners. It brings customer profiles, savings schemes, instalments, payments, maturity tracking, reminders, reporting, and business analytics into one organized system with a customer-facing mobile app and admin control.",
+    "problem": "Jewellers often manage savings schemes, instalments, payment updates, maturity dates, reminders, and branch records manually or through scattered tools. That creates payment errors, missed follow-ups, weak customer transparency, and limited visibility into dues, collections, liabilities, and scheme performance.",
+    "solution": "BishiPro centralizes the entire jewellery scheme workflow. Jewellers can create schemes, enroll customers, track instalments, manage dues, monitor maturities, and view analytics, while customers get clear mobile access to their scheme progress, payment status, reminders, and digital passbook.",
+    "howItWorks": [
+        "Workspace Setup: Create jeweller accounts, branches, staff users, schemes, customer profiles, and role-based access.",
+        "Customer Enrollment: Map app users to jeweller customer profiles and enroll them into active jewellery savings schemes.",
+        "Instalment Tracking: Record payments, update receipts, track pending dues, and support in-app instalment workflows.",
+        "Customer Visibility: Give customers OTP-based access to schemes, maturity progress, reminders, and digital passbook details.",
+        "Operations Dashboard: Monitor collections, dues, recent payments, branch performance, scheme mix, maturity planning, and gold liability."
+    ],
+    "features": [
+        "Jeweller and staff account management with role-based access.",
+        "Customer OTP login, profile mapping, and mobile scheme visibility.",
+        "Scheme creation, customer enrollment, instalment tracking, and receipt management.",
+        "Pending due tracking, reminders, notifications, and maturity planning.",
+        "Branch management with collection, due, and performance reporting.",
+        "Platform-owner admin control across jeweller accounts, app settings, and business activity.",
+        "Analytics for collections, scheme performance, high-pending customers, projected payout, and gold liability."
+    ],
+    "useCases": [
+        "Jewellery Retailers: Replace manual scheme registers with a structured digital operating system.",
+        "Multi-Branch Jewellers: Track collections, dues, and maturity planning across branches from one dashboard.",
+        "Customer Engagement: Give customers transparent access to payment history, reminders, and scheme progress.",
+        "Platform Owners: Manage jeweller workspaces, activity, configuration, and reporting centrally.",
+        "Finance and Operations Teams: Monitor liabilities, pending dues, maturity schedules, and branch-wise performance."
+    ],
+    "whyBetter": [
+        "Designed for Jewellery Schemes: Built around enrolments, instalments, maturity, redemption, and branch operations.",
+        "Customer Transparency: Mobile access reduces confusion around paid instalments, dues, and maturity timelines.",
+        "Stronger Follow-Up Control: Pending dues, reminders, and maturity alerts help teams act before records go stale.",
+        "Business Visibility: Dashboards connect collections, scheme performance, branch health, and projected payout planning."
+    ],
+    "summary": "BishiPro turns jewellery savings scheme operations into a clear app and admin system, giving jewellers stronger control and customers better transparency.",
+    "image": "/media/projects/bishipro.webp",
+    "gallery": [
+        {
+            "src": "/products/bishipro/screen-01.webp",
+            "alt": "BishiPro customer savings overview screen"
+        },
+        {
+            "src": "/products/bishipro/screen-02.webp",
+            "alt": "BishiPro scheme details and maturity plan screen"
+        },
+        {
+            "src": "/products/bishipro/screen-03.webp",
+            "alt": "BishiPro installment history and payments screen"
+        },
+        {
+            "src": "/products/bishipro/screen-04.webp",
+            "alt": "BishiPro due date and maturity reminders screen"
+        },
+        {
+            "src": "/products/bishipro/screen-05.webp",
+            "alt": "BishiPro digital passbook summary screen"
+        },
+        {
+            "src": "/products/bishipro/screen-06.webp",
+            "alt": "BishiPro customer scheme activity screen"
+        },
+        {
+            "src": "/products/bishipro/Screenshot%202026-06-13%20124226.png",
+            "alt": "BishiPro admin dashboard overview"
+        },
+        {
+            "src": "/products/bishipro/Screenshot%202026-06-13%20124247.png",
+            "alt": "BishiPro admin management table"
+        },
+        {
+            "src": "/products/bishipro/Screenshot%202026-06-13%20124302.png",
+            "alt": "BishiPro admin analytics view"
+        }
+    ],
+    "status": "Live"
+}

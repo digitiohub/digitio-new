@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import projectsData from "@/data/projects.json";
 import { createPageMetadata } from "@/lib/metadata";
 import CaseStudyClient from "./CaseStudyClient";
@@ -48,9 +48,11 @@ interface Project {
 const projects = projectsData as Project[];
 
 export async function generateStaticParams() {
-    return projects.map((project) => ({
-        slug: project.slug,
-    }));
+    return projects
+        .filter((project) => project.slug !== "bishipro")
+        .map((project) => ({
+            slug: project.slug,
+        }));
 }
 
 export default async function CaseStudyPage({
@@ -59,6 +61,10 @@ export default async function CaseStudyPage({
     params: Promise<{ slug: string }>;
 }) {
     const { slug } = await params;
+    if (slug === "bishipro") {
+        redirect("/products/bishipro");
+    }
+
     const project = projects.find((p) => p.slug === slug);
 
     if (!project) {

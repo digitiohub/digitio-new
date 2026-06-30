@@ -67,7 +67,7 @@ export interface SectorPageData {
 
 const allProjects = projectsData as PortfolioProject[];
 
-const PUBLIC_PROJECT_EXCLUSIONS = new Set(["alkem"]);
+const PUBLIC_PROJECT_EXCLUSIONS = new Set(["alkem", "bishipro"]);
 
 const projectsBySlug = new Map(
     allProjects.map((project) => [project.slug, project]),
