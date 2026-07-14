@@ -20,7 +20,7 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: "Lalit Patil",
-        role: "Co-Founder, Business & Growth",
+        role: "Business & Growth",
         bio: "Handles partnerships, collaborations, and expansion strategies while building long-term relationships with clients and agencies.",
         image: "/team/lalit.webp",
     },
