@@ -19,22 +19,10 @@ export const teamMembers: TeamMember[] = [
         image: "/team/aditya.webp",
     },
     {
-        name: "Lalit Patil",
-        role: "Business & Growth",
-        bio: "Handles partnerships, collaborations, and expansion strategies while building long-term relationships with clients and agencies.",
-        image: "/team/lalit.webp",
-    },
-    {
         name: "Rupin Desai",
         role: "Head Software Developer",
         bio: "Leads core software architecture and development, ensuring scalable, secure, and high-performance technology solutions across all projects.",
         image: "/team/rupin.webp",
-    },
-    {
-        name: "Sumit Kamble",
-        role: "Flutter Developer",
-        bio: "Builds high-performance cross-platform mobile applications with clean architecture, responsive UI, and reliable integrations for production use.",
-        image: "/team/sumit.webp",
     },
     {
         name: "Mihir Nagda",
@@ -49,9 +37,15 @@ export const teamMembers: TeamMember[] = [
         image: "/team/janhavi.webp",
     },
     {
-        name: "Rupa Gohil",
-        role: "Graphic Designer",
-        bio: "Shapes the visual identity and user experience, delivering impactful designs aligned with brand strategy and digital excellence.",
-        image: "/team/rupa.webp",
+        name: "Shilpesh Dodake",
+        role: "Jr AI Engineer",
+        bio: "Develops and implements AI-driven solutions, focusing on machine learning models, data analysis, and automation to enhance product capabilities.",
+        image: "/team/shilpesh.webp",
+    },
+    {
+        name: "Sumit Kamble",
+        role: "Flutter Developer",
+        bio: "Builds high-performance cross-platform mobile applications with clean architecture, responsive UI, and reliable integrations for production use.",
+        image: "/team/sumit.webp",
     },
 ];
