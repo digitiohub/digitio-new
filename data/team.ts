@@ -37,15 +37,21 @@ export const teamMembers: TeamMember[] = [
         image: "/team/janhavi.webp",
     },
     {
+        name: "Harsh Kamble",
+        role: "Full Stack Developer",
+        bio: "Develops robust web applications with a focus on clean architecture, responsive design, and efficient backend systems to deliver seamless user experiences.",
+        image: "/team/harsh.webp",
+    },
+    {
+        name: "Sumit Kamble",
+        role: "App Developer",
+        bio: "Builds high-performance cross-platform mobile applications with clean architecture, responsive UI, and reliable integrations for production use.",
+        image: "/team/sumit.webp",
+    },
+    {
         name: "Shilpesh Dodake",
         role: "Jr AI Engineer",
         bio: "Develops and implements AI-driven solutions, focusing on machine learning models, data analysis, and automation to enhance product capabilities.",
         image: "/team/shilpesh.webp",
-    },
-    {
-        name: "Sumit Kamble",
-        role: "Flutter Developer",
-        bio: "Builds high-performance cross-platform mobile applications with clean architecture, responsive UI, and reliable integrations for production use.",
-        image: "/team/sumit.webp",
-    },
+    }
 ];
