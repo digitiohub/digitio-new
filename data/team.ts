@@ -53,5 +53,11 @@ export const teamMembers: TeamMember[] = [
         role: "Jr AI Engineer",
         bio: "Develops and implements AI-driven solutions, focusing on machine learning models, data analysis, and automation to enhance product capabilities.",
         image: "/team/shilpesh.webp",
+    },
+    {
+        name: "Viraj Mhadgut",
+        role: "AI Engineer",
+        bio: "Designs and builds AI-driven systems and intelligent automation, applying machine learning and modern AI tooling to solve real business problems.",
+        image: "/team/viraj.webp",
     }
 ];
