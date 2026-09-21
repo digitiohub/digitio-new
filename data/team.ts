@@ -59,5 +59,11 @@ export const teamMembers: TeamMember[] = [
         role: "AI Engineer",
         bio: "Designs and builds AI-driven systems and intelligent automation, applying machine learning and modern AI tooling to solve real business problems.",
         image: "/team/viraj.webp",
+    },
+    {
+        name: "Anuj Jha",
+        role: "Software Developer Intern",
+        bio: "Supports feature development and testing across projects, gaining hands-on experience with production-grade software practices.",
+        image: "/team/anuj.webp",
     }
 ];
