@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Orbit, Sparkles, Target } from "lucide-react";
+import { Layers, Orbit, Sparkles, Target } from "lucide-react";
 import { vision } from "@/data/about";
 import { revealUp, stagger } from "@/components/about/motion";
 
@@ -9,17 +9,22 @@ const visionPillars = [
   {
     icon: Orbit,
     label: "Scalable Systems",
-    description: "Architected to grow with product complexity and business demand.",
+    description: "Technology architectures designed to evolve with growing businesses, users and operational complexity.",
   },
   {
     icon: Sparkles,
-    label: "Creative Intelligence",
-    description: "Blending thoughtful design with modern AI-led execution.",
+    label: "Artificial Intelligence",
+    description: "Applying AI where it creates measurable improvements in productivity, decision-making and customer experience.",
+  },
+  {
+    icon: Layers,
+    label: "Product Innovation",
+    description: "Building technology products that solve industry-specific challenges rather than simply adding more software.",
   },
   {
     icon: Target,
     label: "Measured Impact",
-    description: "Focused on outcomes teams can actually feel in operations and growth.",
+    description: "Focusing on business outcomes including efficiency, automation, scalability and long-term technology value.",
   },
 ];
 
