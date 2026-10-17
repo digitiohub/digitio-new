@@ -179,7 +179,7 @@ export const sectorDefinitions: SectorDefinition[] = [
             "Structured B2B platforms for manufacturers, infrastructure providers, and operational businesses that need technical clarity and strong credibility.",
         heroProjectSlug: "spectrokavs",
         projectSlugs: ["spectrokavs", "suman-steels", "shubhaam-logistics"],
-        productSlugs: ["nexgine", "leadflow"],
+        productSlugs: ["leadflow"],
         subtags: ["B2B websites", "Operations", "Supply chains", "Technical sales"],
         operatingPriorities: [
             "Explain technical offerings without making buyers work too hard",
@@ -219,7 +219,7 @@ export const sectorDefinitions: SectorDefinition[] = [
             "Software products and internal platforms designed to automate workflows, centralize knowledge, and give teams operational control at scale.",
         heroProjectSlug: "yanisa",
         projectSlugs: ["yanisa", "pptpro", "automotive-crm-system"],
-        productSlugs: ["leadflow", "nexgine", "soryouth"],
+        productSlugs: ["leadflow", "soryouth"],
         subtags: ["Automation", "Dashboards", "Knowledge systems", "Business ops"],
         operatingPriorities: [
             "Automate repetitive operational work without fragmenting ownership",
@@ -279,7 +279,7 @@ export const sectorDefinitions: SectorDefinition[] = [
             "Credibility-heavy digital experiences for advisory, investment, and strategic firms where authority and decision-maker trust drive conversion.",
         heroProjectSlug: "ignition-capital-advisors",
         projectSlugs: ["ignition-capital-advisors"],
-        productSlugs: ["nexgine"],
+        productSlugs: [],
         subtags: ["Corporate trust", "Advisory positioning", "Executive audiences"],
         operatingPriorities: [
             "Present authority and strategic depth without overcomplicating the experience",

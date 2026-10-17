@@ -40,7 +40,7 @@ export const productRelationships: Record<string, ProductRelationshipMapItem> = 
             "Explore NexGine, DigitioHub's AI knowledge system for searchable internal intelligence, semantic search, and source-backed team answers.",
     },
     trajectories: {
-        relatedProductSlugs: ["leadflow", "garagemate", "nexgine"],
+        relatedProductSlugs: ["leadflow", "garagemate"],
         relatedCaseStudySlugs: [
             "safari-sutra",
             "pass-maldives",
@@ -69,7 +69,7 @@ export const productRelationships: Record<string, ProductRelationshipMapItem> = 
             "Explore Trajectories, DigitioHub's travel management platform for tour operators, luxury agencies, itineraries, quotations, and payments.",
     },
     leadflow: {
-        relatedProductSlugs: ["nexgine", "trajectories", "garagemate"],
+        relatedProductSlugs: ["trajectories", "garagemate"],
         relatedCaseStudySlugs: [
             "promeat",
             "realestatepicture",
@@ -98,7 +98,7 @@ export const productRelationships: Record<string, ProductRelationshipMapItem> = 
             "Explore LeadFlow, DigitioHub's lead management and sales automation platform for multi-channel capture, routing, and follow-ups.",
     },
     soryouth: {
-        relatedProductSlugs: ["leadflow", "nexgine", "garagemate"],
+        relatedProductSlugs: ["leadflow", "garagemate"],
         relatedCaseStudySlugs: [
             "sajeev-krushi",
             "ecobird-recycling",
@@ -179,7 +179,7 @@ export const productRelationships: Record<string, ProductRelationshipMapItem> = 
             "Explore PRISM, DigitioHub's post-production management system for booking conflict detection, editor scheduling, chalan generation, and multi-studio control.",
     },
     bishipro: {
-        relatedProductSlugs: ["leadflow", "soryouth", "nexgine"],
+        relatedProductSlugs: ["leadflow", "soryouth"],
         relatedCaseStudySlugs: ["memanager", "yanisa", "automotive-crm-system"],
         positioningSummary:
             "A jewellery scheme operating system for retailers that need cleaner control over customer enrolments, instalments, dues, maturities, payments, reminders, and branch-level analytics.",

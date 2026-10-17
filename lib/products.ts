@@ -69,7 +69,7 @@ interface ProjectRecord {
     industry?: string;
 }
 
-const PRODUCT_ORDER = ["nexgine", "trajectories", "leadflow", "soryouth", "garagemate", "prism", "bishipro"];
+const PRODUCT_ORDER = ["trajectories", "leadflow", "soryouth", "garagemate", "prism", "bishipro"];
 
 const THEME_MAP: Record<string, ProductContent["theme"]> = {
     soryouth: {
