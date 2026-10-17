@@ -61,14 +61,14 @@ const products = [
         icon: Cog,
         color: "#f59e0b",
     },
-    {
-        name: "NexGine",
-        title: "NexGine — AI Knowledge System",
-        slug: "nexgine",
-        desc: "Advanced AI knowledge management platform that transforms unstructured data into an intelligent internal brain.",
-        icon: Brain,
-        color: "#8b5cf6",
-    },
+    // {
+    //     name: "NexGine",
+    //     title: "NexGine — AI Knowledge System",
+    //     slug: "nexgine",
+    //     desc: "Advanced AI knowledge management platform that transforms unstructured data into an intelligent internal brain.",
+    //     icon: Brain,
+    //     color: "#8b5cf6",
+    // },
     {
         name: "Soryouth",
         title: "Soryouth Renewable Energy",
